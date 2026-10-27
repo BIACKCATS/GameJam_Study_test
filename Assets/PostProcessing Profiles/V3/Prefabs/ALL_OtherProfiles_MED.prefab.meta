@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: d0bf529d094ba8d4e80aa2ba99178ce4
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 98845
+  packageName: Post Processing Profiles
+  packageVersion: 3.27
+  assetPath: Assets/PostProcessing Profiles/V3/Prefabs/ALL_OtherProfiles_MED.prefab
+  uploadId: 593594

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 8b6c81d93ed99b7448140cd2ff7109cd
+timeCreated: 1505998216
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 98845
+  packageName: Post Processing Profiles
+  packageVersion: 3.27
+  assetPath: Assets/PostProcessing Profiles/V3/Prefabs/Light_Flare01.prefab
+  uploadId: 593594

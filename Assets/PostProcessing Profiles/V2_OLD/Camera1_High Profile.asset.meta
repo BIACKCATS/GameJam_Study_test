@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: f0d09beffb5f458428b74f8f8ffdc50d
+timeCreated: 1523288495
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 98845
+  packageName: Post Processing Profiles
+  packageVersion: 3.27
+  assetPath: Assets/PostProcessing Profiles/V2_OLD/Camera1_High Profile.asset
+  uploadId: 593594

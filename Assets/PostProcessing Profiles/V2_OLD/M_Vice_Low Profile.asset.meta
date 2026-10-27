@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 5cceea9d1e68e8241b1561df31873ffd
+timeCreated: 1514387107
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: -1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 98845
+  packageName: Post Processing Profiles
+  packageVersion: 3.27
+  assetPath: Assets/PostProcessing Profiles/V2_OLD/M_Vice_Low Profile.asset
+  uploadId: 593594

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 1ef692b0dfbd2464697b4bb57c3350cb
+timeCreated: 1523288565
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 98845
+  packageName: Post Processing Profiles
+  packageVersion: 3.27
+  assetPath: Assets/PostProcessing Profiles/V3/MediumProfiles/Ice_Med Profile.asset
+  uploadId: 593594

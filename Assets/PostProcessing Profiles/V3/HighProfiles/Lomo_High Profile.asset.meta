@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 0f0408918b624ce49920fb02c0b8c7fa
+timeCreated: 1514396746
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: -1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 98845
+  packageName: Post Processing Profiles
+  packageVersion: 3.27
+  assetPath: Assets/PostProcessing Profiles/V3/HighProfiles/Lomo_High Profile.asset
+  uploadId: 593594

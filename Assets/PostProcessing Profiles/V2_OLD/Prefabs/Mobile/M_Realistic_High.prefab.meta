@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: bb8b98aba4ed85943b5b1974cb05d187
+timeCreated: 1512597614
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: -1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 98845
+  packageName: Post Processing Profiles
+  packageVersion: 3.27
+  assetPath: Assets/PostProcessing Profiles/V2_OLD/Prefabs/Mobile/M_Realistic_High.prefab
+  uploadId: 593594

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 0596e7b7f8a4b2d47858d4555b3b6504
+timeCreated: 1514397499
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: -1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 98845
+  packageName: Post Processing Profiles
+  packageVersion: 3.27
+  assetPath: Assets/PostProcessing Profiles/V2_OLD/M_Lomo_Low Profile.asset
+  uploadId: 593594

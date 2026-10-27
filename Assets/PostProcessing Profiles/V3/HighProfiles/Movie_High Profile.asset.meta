@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: d39191332f946ba4d9bb1e44bda2a68f
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 98845
+  packageName: Post Processing Profiles
+  packageVersion: 3.27
+  assetPath: Assets/PostProcessing Profiles/V3/HighProfiles/Movie_High Profile.asset
+  uploadId: 593594

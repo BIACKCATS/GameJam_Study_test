@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: ba0dde3f6b2f43f4391863084860a5b6
+timeCreated: 1506260012
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: -1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 98845
+  packageName: Post Processing Profiles
+  packageVersion: 3.27
+  assetPath: Assets/PostProcessing Profiles/V2_OLD/Prefabs/Blood_Med.prefab
+  uploadId: 593594

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: a233d46dd42978045b2e59733579c5a7
+timeCreated: 1523279405
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 11700000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 98845
+  packageName: Post Processing Profiles
+  packageVersion: 3.27
+  assetPath: Assets/PostProcessing Profiles/Luts/ice_v2_LUT.asset
+  uploadId: 593594

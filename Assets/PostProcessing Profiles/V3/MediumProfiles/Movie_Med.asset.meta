@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 7e1c4203217c41f4eb1ede241d45661b
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 98845
+  packageName: Post Processing Profiles
+  packageVersion: 3.27
+  assetPath: Assets/PostProcessing Profiles/V3/MediumProfiles/Movie_Med.asset
+  uploadId: 593594

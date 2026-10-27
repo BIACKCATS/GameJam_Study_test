@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 5571d6e0d6a24af4da95315e52acb6a4
+timeCreated: 1512597614
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: -1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 98845
+  packageName: Post Processing Profiles
+  packageVersion: 3.27
+  assetPath: Assets/PostProcessing Profiles/V3/Prefabs/Mobile/ALL_OtherProfiles_Mobile.prefab
+  uploadId: 593594

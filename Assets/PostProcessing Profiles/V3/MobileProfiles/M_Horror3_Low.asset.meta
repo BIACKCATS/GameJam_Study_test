@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 3b8e296d4ab2e394fa8c640d100a2de6
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 98845
+  packageName: Post Processing Profiles
+  packageVersion: 3.27
+  assetPath: Assets/PostProcessing Profiles/V3/MobileProfiles/M_Horror3_Low.asset
+  uploadId: 593594

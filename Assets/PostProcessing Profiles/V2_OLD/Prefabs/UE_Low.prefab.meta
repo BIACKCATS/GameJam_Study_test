@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 08e24d2056a79d34b96dbcb1eb5c7921
+timeCreated: 1503735619
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 98845
+  packageName: Post Processing Profiles
+  packageVersion: 3.27
+  assetPath: Assets/PostProcessing Profiles/V2_OLD/Prefabs/UE_Low.prefab
+  uploadId: 593594

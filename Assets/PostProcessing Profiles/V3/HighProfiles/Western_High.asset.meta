@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 7d3edd0b05646234ba2d0a9977fed342
+timeCreated: 1549569061
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 98845
+  packageName: Post Processing Profiles
+  packageVersion: 3.27
+  assetPath: Assets/PostProcessing Profiles/V3/HighProfiles/Western_High.asset
+  uploadId: 593594

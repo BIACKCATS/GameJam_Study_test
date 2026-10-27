@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 9fe1234d2f073c54d92b70cd1d9ae562
+timeCreated: 1505998369
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: -1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 98845
+  packageName: Post Processing Profiles
+  packageVersion: 3.27
+  assetPath: Assets/PostProcessing Profiles/V2_OLD/Prefabs/Camera_BW_Med.prefab
+  uploadId: 593594

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 006217103ede730479192bdc5e1dc91a
+timeCreated: 1523288656
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 98845
+  packageName: Post Processing Profiles
+  packageVersion: 3.27
+  assetPath: Assets/PostProcessing Profiles/V3/Prefabs/Mobile/M_Ice_High.prefab
+  uploadId: 593594

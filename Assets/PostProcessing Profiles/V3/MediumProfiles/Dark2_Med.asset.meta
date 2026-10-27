@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: c5dbe9457257fe34ebfa076efbe84399
+timeCreated: 1549635295
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 98845
+  packageName: Post Processing Profiles
+  packageVersion: 3.27
+  assetPath: Assets/PostProcessing Profiles/V3/MediumProfiles/Dark2_Med.asset
+  uploadId: 593594

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 039ad62e9f6c9f94d99fec0d7d839b66
+timeCreated: 1517834918
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 98845
+  packageName: Post Processing Profiles
+  packageVersion: 3.27
+  assetPath: Assets/PostProcessing Profiles/V2_OLD/Prefabs/Horror_Low.prefab
+  uploadId: 593594

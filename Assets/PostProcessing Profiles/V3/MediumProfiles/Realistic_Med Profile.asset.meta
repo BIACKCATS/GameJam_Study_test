@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 6f139dc5dfbdb1f4190d02a8abb316a9
+timeCreated: 1514396183
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: -1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 98845
+  packageName: Post Processing Profiles
+  packageVersion: 3.27
+  assetPath: Assets/PostProcessing Profiles/V3/MediumProfiles/Realistic_Med Profile.asset
+  uploadId: 593594

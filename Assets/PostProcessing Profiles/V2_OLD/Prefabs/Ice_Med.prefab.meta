@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 0aa43693949da5a49ad2703ab616ae99
+timeCreated: 1523288644
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 98845
+  packageName: Post Processing Profiles
+  packageVersion: 3.27
+  assetPath: Assets/PostProcessing Profiles/V2_OLD/Prefabs/Ice_Med.prefab
+  uploadId: 593594

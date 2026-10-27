@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: e76a049a4e79c6a45bd2d06c9174ba9f
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 98845
+  packageName: Post Processing Profiles
+  packageVersion: 3.27
+  assetPath: Assets/PostProcessing Profiles/V3/HighProfiles/Vice2(OldLut)_High.asset
+  uploadId: 593594

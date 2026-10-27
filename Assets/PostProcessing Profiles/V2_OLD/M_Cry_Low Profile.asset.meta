@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 375626b44ba295f4fa790334e8e4a0fc
+timeCreated: 1514402660
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: -1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 98845
+  packageName: Post Processing Profiles
+  packageVersion: 3.27
+  assetPath: Assets/PostProcessing Profiles/V2_OLD/M_Cry_Low Profile.asset
+  uploadId: 593594

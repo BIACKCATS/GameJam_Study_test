@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: c24e7012b90acc14895f1eecdf6a1b86
+timeCreated: 1523288580
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 98845
+  packageName: Post Processing Profiles
+  packageVersion: 3.27
+  assetPath: Assets/PostProcessing Profiles/V2_OLD/Ice_Low Profile.asset
+  uploadId: 593594

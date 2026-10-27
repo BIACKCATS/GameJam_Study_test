@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: e8e48265ca2c86a4dbf0154fb89c0551
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 98845
+  packageName: Post Processing Profiles
+  packageVersion: 3.27
+  assetPath: Assets/PostProcessing Profiles/V3/MobileProfiles/M_Movie_Low.asset
+  uploadId: 593594

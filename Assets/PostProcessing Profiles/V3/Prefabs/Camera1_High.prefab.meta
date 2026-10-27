@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: c02f0d9408565df42aaebd82b4355206
+timeCreated: 1505998306
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: -1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 98845
+  packageName: Post Processing Profiles
+  packageVersion: 3.27
+  assetPath: Assets/PostProcessing Profiles/V3/Prefabs/Camera1_High.prefab
+  uploadId: 593594

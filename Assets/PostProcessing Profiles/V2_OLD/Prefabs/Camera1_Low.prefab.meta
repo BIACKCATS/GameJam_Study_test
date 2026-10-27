@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 5c1aae24f0313e148a4397e5b030e96b
+timeCreated: 1505998319
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: -1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 98845
+  packageName: Post Processing Profiles
+  packageVersion: 3.27
+  assetPath: Assets/PostProcessing Profiles/V2_OLD/Prefabs/Camera1_Low.prefab
+  uploadId: 593594

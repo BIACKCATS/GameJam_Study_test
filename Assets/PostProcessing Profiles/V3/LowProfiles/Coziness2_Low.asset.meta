@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: c091477b43018cc45bfbf617c91d9c7a
+timeCreated: 1549635295
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 98845
+  packageName: Post Processing Profiles
+  packageVersion: 3.27
+  assetPath: Assets/PostProcessing Profiles/V3/LowProfiles/Coziness2_Low.asset
+  uploadId: 593594

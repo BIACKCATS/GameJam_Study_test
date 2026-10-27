@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 3744ad06de870344689fcabd93f06742
+timeCreated: 1506255245
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 98845
+  packageName: Post Processing Profiles
+  packageVersion: 3.27
+  assetPath: Assets/PostProcessing Profiles/LightFlares/Flares/Flare2.flare
+  uploadId: 593594

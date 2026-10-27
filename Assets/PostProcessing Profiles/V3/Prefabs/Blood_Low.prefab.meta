@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 6f5d40e2cac1d834d9623cfd65113eee
+timeCreated: 1506260006
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: -1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 98845
+  packageName: Post Processing Profiles
+  packageVersion: 3.27
+  assetPath: Assets/PostProcessing Profiles/V3/Prefabs/Blood_Low.prefab
+  uploadId: 593594

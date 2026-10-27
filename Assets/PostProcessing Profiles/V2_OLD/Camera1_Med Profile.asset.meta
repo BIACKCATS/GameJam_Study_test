@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 148d898fe62d5274aa05a87bb805aa74
+timeCreated: 1514450111
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: -1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 98845
+  packageName: Post Processing Profiles
+  packageVersion: 3.27
+  assetPath: Assets/PostProcessing Profiles/V2_OLD/Camera1_Med Profile.asset
+  uploadId: 593594

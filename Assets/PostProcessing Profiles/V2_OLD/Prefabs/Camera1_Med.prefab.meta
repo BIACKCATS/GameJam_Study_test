@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: c7d662ca628b5d34fbbbe080947d2013
+timeCreated: 1505998313
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: -1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 98845
+  packageName: Post Processing Profiles
+  packageVersion: 3.27
+  assetPath: Assets/PostProcessing Profiles/V2_OLD/Prefabs/Camera1_Med.prefab
+  uploadId: 593594

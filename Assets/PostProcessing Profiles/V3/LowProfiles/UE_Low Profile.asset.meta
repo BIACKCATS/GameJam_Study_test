@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 6ffe420a8d1d09043a69b4a799b443c5
+timeCreated: 1514394693
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: -1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 98845
+  packageName: Post Processing Profiles
+  packageVersion: 3.27
+  assetPath: Assets/PostProcessing Profiles/V3/LowProfiles/UE_Low Profile.asset
+  uploadId: 593594

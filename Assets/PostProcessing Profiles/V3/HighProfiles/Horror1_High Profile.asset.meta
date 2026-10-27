@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 741a84c9c4551eb4c9d7f428d57f4849
+timeCreated: 1514387800
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: -1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 98845
+  packageName: Post Processing Profiles
+  packageVersion: 3.27
+  assetPath: Assets/PostProcessing Profiles/V3/HighProfiles/Horror1_High Profile.asset
+  uploadId: 593594

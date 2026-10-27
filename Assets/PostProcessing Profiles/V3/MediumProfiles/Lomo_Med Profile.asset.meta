@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 0b9d2385c67823c498419a990b5a3f0d
+timeCreated: 1514397501
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: -1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 98845
+  packageName: Post Processing Profiles
+  packageVersion: 3.27
+  assetPath: Assets/PostProcessing Profiles/V3/MediumProfiles/Lomo_Med Profile.asset
+  uploadId: 593594

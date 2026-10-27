@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 2308998ce0723b143a2d8cd2c6f43d19
+timeCreated: 1517834623
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: -1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 98845
+  packageName: Post Processing Profiles
+  packageVersion: 3.27
+  assetPath: Assets/PostProcessing Profiles/V2_OLD/Horror1_Med Profile.asset
+  uploadId: 593594

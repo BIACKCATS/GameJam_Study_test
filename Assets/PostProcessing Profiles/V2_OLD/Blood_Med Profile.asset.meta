@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: c7823d2fb9edbdd4e9030bdf4c3ced07
+timeCreated: 1514451628
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: -1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 98845
+  packageName: Post Processing Profiles
+  packageVersion: 3.27
+  assetPath: Assets/PostProcessing Profiles/V2_OLD/Blood_Med Profile.asset
+  uploadId: 593594

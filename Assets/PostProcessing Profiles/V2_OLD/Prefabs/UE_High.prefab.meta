@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 26e273690f7384e4b9a9ce94d4851ae5
+timeCreated: 1503735607
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 98845
+  packageName: Post Processing Profiles
+  packageVersion: 3.27
+  assetPath: Assets/PostProcessing Profiles/V2_OLD/Prefabs/UE_High.prefab
+  uploadId: 593594

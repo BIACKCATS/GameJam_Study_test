@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 081d083e8e8e68946b25bfd6bff657a6
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 98845
+  packageName: Post Processing Profiles
+  packageVersion: 3.27
+  assetPath: Assets/PostProcessing Profiles/V3/LowProfiles/Aqua_Low.asset
+  uploadId: 593594

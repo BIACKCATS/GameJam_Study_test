@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 1a54bdb6eea02ff45a25915a83620d55
+timeCreated: 1517834623
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: -1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 98845
+  packageName: Post Processing Profiles
+  packageVersion: 3.27
+  assetPath: Assets/PostProcessing Profiles/V3/LowProfiles/Horror1_Low Profile.asset
+  uploadId: 593594

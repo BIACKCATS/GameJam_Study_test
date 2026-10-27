@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 8cb1ec35baf5d5d49973eb9f8610351c
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 98845
+  packageName: Post Processing Profiles
+  packageVersion: 3.27
+  assetPath: Assets/PostProcessing Profiles/V3/MediumProfiles/Dark_Med.asset
+  uploadId: 593594

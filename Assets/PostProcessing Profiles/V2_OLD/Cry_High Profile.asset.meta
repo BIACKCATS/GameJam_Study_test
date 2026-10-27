@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 65821b30719745f4388165dd536cc2bd
+timeCreated: 1514402660
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: -1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 98845
+  packageName: Post Processing Profiles
+  packageVersion: 3.27
+  assetPath: Assets/PostProcessing Profiles/V2_OLD/Cry_High Profile.asset
+  uploadId: 593594

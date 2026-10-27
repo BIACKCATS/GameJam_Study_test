@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 36126c211391e4e4bb5b01b664fc82d3
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 98845
+  packageName: Post Processing Profiles
+  packageVersion: 3.27
+  assetPath: Assets/PostProcessing Profiles/V3/HighProfiles/Dark_High.asset
+  uploadId: 593594

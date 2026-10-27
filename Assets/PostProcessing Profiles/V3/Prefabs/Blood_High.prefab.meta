@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 870314bcb8e773845a0c4273f8e3eb3f
+timeCreated: 1506259995
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: -1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 98845
+  packageName: Post Processing Profiles
+  packageVersion: 3.27
+  assetPath: Assets/PostProcessing Profiles/V3/Prefabs/Blood_High.prefab
+  uploadId: 593594

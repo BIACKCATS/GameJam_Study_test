@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: a6dbb96b9d112024d000e929e39e7c39
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 98845
+  packageName: Post Processing Profiles
+  packageVersion: 3.27
+  assetPath: Assets/PostProcessing Profiles/LightFlares/Materials/Flare_profile.mat
+  uploadId: 593594

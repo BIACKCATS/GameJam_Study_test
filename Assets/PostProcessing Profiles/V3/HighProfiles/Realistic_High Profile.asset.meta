@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 3ef420523e5ee19458f44cb921da43b7
+timeCreated: 1514395161
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: -1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 98845
+  packageName: Post Processing Profiles
+  packageVersion: 3.27
+  assetPath: Assets/PostProcessing Profiles/V3/HighProfiles/Realistic_High Profile.asset
+  uploadId: 593594

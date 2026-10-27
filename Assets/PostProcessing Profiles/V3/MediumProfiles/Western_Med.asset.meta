@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: fa1e5387597c9ac4ea50f23ed5526df0
+timeCreated: 1549635322
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 98845
+  packageName: Post Processing Profiles
+  packageVersion: 3.27
+  assetPath: Assets/PostProcessing Profiles/V3/MediumProfiles/Western_Med.asset
+  uploadId: 593594

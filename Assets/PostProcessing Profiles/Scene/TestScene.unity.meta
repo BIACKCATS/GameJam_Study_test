@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 839b900a521bb004ba842d0b47a42785
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 98845
+  packageName: Post Processing Profiles
+  packageVersion: 3.27
+  assetPath: Assets/PostProcessing Profiles/Scene/TestScene.unity
+  uploadId: 593594
