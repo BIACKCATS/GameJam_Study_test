@@ -1,0 +1,9 @@
+Source: Packages/com.febucci.text-animator-unity/Samples~/Use case examples/DamageNumbers/Assets/Textures/PlayerSpriteSheett.png
+SHA256 source=55ab26889c1cc4c5d2765c3c1d811909b44d8c0f0fbd7e60839ddf4903c74d7d
+SHA256 copy=55ab26889c1cc4c5d2765c3c1d811909b44d8c0f0fbd7e60839ddf4903c74d7d
+Actual sample provenance: Febucci Text Animator 3.20.1 DamageNumbers sample, not original game art.
+96x16; six 16x16 rectangles x=0,16,32,48,64,80 y=0, center pivots, PPU16.
+Test resolution 160x120 logical, 640x480 capture (4x), not a global game standard.
+Normal PNG stores original alpha; normal importer may repack runtime alpha. Pixel normals are interpreted cap/torso/clothing regions, not luminance heights.
+ON=Accurate/OFF=Disabled on same Light2D. Lit material, intensity/color/radius and ambient unchanged.
+URP Sprite-Lit baseline performs diffuse normal relighting, not PBR/specular gloss. No custom shader.

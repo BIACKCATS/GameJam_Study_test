@@ -1,0 +1,22 @@
+UTC=2026-11-04T13:09:40.8954055Z
+project=D:/orca/workspaces/GameJam_Study_test/ai-testing/Assets Unity=6000.4.5f1 GPU=Intel(R) Arc(TM) 140T GPU (16GB) API=Direct3D12
+sourceSHA256=55ab26889c1cc4c5d2765c3c1d811909b44d8c0f0fbd7e60839ddf4903c74d7d diffuseSHA256=55ab26889c1cc4c5d2765c3c1d811909b44d8c0f0fbd7e60839ddf4903c74d7d normalSHA256=ddcb0d38266e06df2b9b1ea118a20a95054c0df50a3d154cab6da0976f462d61
+size source=96x16 normal=96x16 RGBA mismatch=0 alpha mismatch=0 flat=114 directional=290
+diffuse type=Sprite mode=Multiple PPU=16 filter=Point mip=False compression=Uncompressed
+normal type=NormalMap sRGB=False filter=Point mip=False compression=Uncompressed convert=False
+secondary=_NormalMap path=Assets/hty/Textures/Player_Normal.png
+override Standalone diffuse=False/Compressed normal=False/Compressed
+override Android diffuse=False/Compressed normal=False/Compressed
+override iPhone diffuse=False/Uncompressed normal=False/Uncompressed
+override WebGL diffuse=False/Uncompressed normal=False/Uncompressed
+spriteCount=6
+sprite=PlayerSpriteSheett_0 rect=(x:0.00, y:0.00, width:16.00, height:16.00) pivotPixels=(8.00, 8.00) PPU=16
+sprite=PlayerSpriteSheett_1 rect=(x:16.00, y:0.00, width:16.00, height:16.00) pivotPixels=(8.00, 8.00) PPU=16
+sprite=PlayerSpriteSheett_2 rect=(x:32.00, y:0.00, width:16.00, height:16.00) pivotPixels=(8.00, 8.00) PPU=16
+sprite=PlayerSpriteSheett_3 rect=(x:48.00, y:0.00, width:16.00, height:16.00) pivotPixels=(8.00, 8.00) PPU=16
+sprite=PlayerSpriteSheett_4 rect=(x:64.00, y:0.00, width:16.00, height:16.00) pivotPixels=(8.00, 8.00) PPU=16
+sprite=PlayerSpriteSheett_5 rect=(x:80.00, y:0.00, width:16.00, height:16.00) pivotPixels=(8.00, 8.00) PPU=16
+material=Universal Render Pipeline/2D/Sprite-Lit-Default sortingLayer=0 lightType=Point normalQuality=Accurate distance=1.4 intensity=0.65 color=RGBA(1.000, 0.960, 0.900, 1.000) inner=2.4 outer=4.5
+targetSortingLayers=0
+cameraPPU=16 reference=160x120 grid=UpscaleRenderTexture crop=Windowbox filter=1
+pipeline=Assets/Settings/UniversalRP.asset renderer=UnityEngine.Rendering.Universal.Renderer2D quality=0 compileFailed=False

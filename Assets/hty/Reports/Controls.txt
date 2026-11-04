@@ -1,0 +1,1 @@
+PASS: actual runtime Update consumed temporary Input System keyboard events for four arrows, N OFF/ON, period/comma frame step, Space animation and O orbit. Temporary keyboard removed, original device restored. Render capture proves 60 advancing camera frames; orbit capture uses fixed F0.

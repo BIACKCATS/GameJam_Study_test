@@ -1,0 +1,2 @@
+﻿Frozen UTC: 2026-11-04T13:01:13.3853871Z
+Do not regenerate without coordination. Manifest excludes itself; its SHA256 is reported through Orca. Automatic settings cleanup remains pending outside this artifact.

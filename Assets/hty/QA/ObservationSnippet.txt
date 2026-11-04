@@ -1,0 +1,17 @@
+var c=UnityEngine.Object.FindAnyObjectByType<Hty.CharacterLighting.CharacterNormalLighting>();
+c.enabled=true;c.animate=true;c.slowOrbit=true;c.normals=true;
+var target=new UnityEngine.RenderTexture(640,480,24,UnityEngine.RenderTextureFormat.ARGB32){filterMode=UnityEngine.FilterMode.Point,antiAliasing=1};target.Create();c.testCamera.targetTexture=target;
+var events=new System.Text.StringBuilder("sample,unityFrame,frame,time,orbit,x,y,sprite,normalQuality\n");
+int prior=-1,count=0;
+System.Action<UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Camera> observe=null;
+observe=(context,camera)=>{
+ if(camera!=c.testCamera||c.frame==prior)return;
+ prior=c.frame;
+ var previous=UnityEngine.RenderTexture.active;UnityEngine.RenderTexture.active=target;
+ var image=new UnityEngine.Texture2D(640,480,UnityEngine.TextureFormat.RGB24,false);image.ReadPixels(new UnityEngine.Rect(0,0,640,480),0,0);image.Apply();
+ System.IO.File.WriteAllBytes("Assets/hty/QA/Captures/Transition_"+count.ToString("D2")+".png",image.EncodeToPNG());UnityEngine.Object.DestroyImmediate(image);UnityEngine.RenderTexture.active=previous;
+ events.AppendLine(count+","+UnityEngine.Time.frameCount+","+c.frame+","+UnityEngine.Time.unscaledTime.ToString(System.Globalization.CultureInfo.InvariantCulture)+","+c.orbitAngle.ToString(System.Globalization.CultureInfo.InvariantCulture)+","+c.movingLight.transform.position.x.ToString(System.Globalization.CultureInfo.InvariantCulture)+","+c.movingLight.transform.position.y.ToString(System.Globalization.CultureInfo.InvariantCulture)+","+c.character.sprite.name+","+c.movingLight.normalMapQuality);
+ if(++count>=13){UnityEngine.Rendering.RenderPipelineManager.endCameraRendering-=observe;c.testCamera.targetTexture=null;UnityEditor.EditorApplication.delayCall+=()=>{if(UnityEngine.RenderTexture.active==target)UnityEngine.RenderTexture.active=null;target.Release();UnityEngine.Object.DestroyImmediate(target);};System.IO.File.WriteAllText("Assets/hty/QA/LiveTransitions.csv",events.ToString());}
+};
+UnityEngine.Rendering.RenderPipelineManager.endCameraRendering+=observe;
+return "Live observation armed for13 natural animation transitions at slow orbit0.35rad/s";

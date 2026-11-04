@@ -1,0 +1,14 @@
+sample,unityFrame,frame,time,orbit,x,y,sprite,normalQuality
+0,24449,0,217.5851,2.832724,-1.286115,0.4103749,PlayerSpriteSheett_0,Accurate
+1,24464,1,217.737,2.885885,-1.306104,0.3414556,PlayerSpriteSheett_1,Accurate
+2,24483,2,217.8876,2.938603,-1.322282,0.2721584,PlayerSpriteSheett_2,Accurate
+3,24502,3,218.0391,2.991606,-1.334844,0.201723,PlayerSpriteSheett_3,Accurate
+4,24520,4,218.1916,3.044989,-1.343706,0.130212,PlayerSpriteSheett_4,Accurate
+5,24537,5,218.3438,3.098255,-1.348732,0.05848731,PlayerSpriteSheett_5,Accurate
+6,24557,0,218.4986,3.152432,-1.349921,-0.01463278,PlayerSpriteSheett_0,Accurate
+7,24577,1,218.6524,3.206274,-1.347177,-0.08725867,PlayerSpriteSheett_1,Accurate
+8,24596,2,218.8089,3.261059,-1.340378,-0.1608956,PlayerSpriteSheett_2,Accurate
+9,24613,3,218.9669,3.31636,-1.329436,-0.2347361,PlayerSpriteSheett_3,Accurate
+10,24628,4,219.1241,3.371373,-1.314517,-0.3074812,PlayerSpriteSheett_4,Accurate
+11,24641,5,219.2778,3.425153,-1.296088,-0.3776965,PlayerSpriteSheett_5,Accurate
+12,24654,0,219.4281,3.477772,-1.27443,-0.4453417,PlayerSpriteSheett_0,Accurate
