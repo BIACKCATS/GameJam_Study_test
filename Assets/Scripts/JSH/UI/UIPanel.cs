@@ -16,12 +16,17 @@ namespace JSH.UI
         private CanvasGroup _group;
         private Tween _tween;
 
+        private bool _hasState;
+
         public bool IsVisible { get; private set; }
 
         private void Awake()
         {
-            TryGetComponent(out _group);
-            SetVisible(_visibleOnStart, true);
+            // Apply the default only if nobody set a state before Awake (GameFlowUI may have).
+            if (!_hasState)
+            {
+                SetVisible(_visibleOnStart, true);
+            }
         }
 
         private void OnDisable() => KillTween();
@@ -32,7 +37,19 @@ namespace JSH.UI
 
         public void SetVisible(bool visible, bool instant)
         {
+            // Safe even if called before Awake (e.g. panel GameObject starts inactive).
+            if (_group == null && !TryGetComponent(out _group))
+            {
+                return;
+            }
+
+            _hasState = true;
             IsVisible = visible;
+            if (visible && !gameObject.activeSelf)
+            {
+                gameObject.SetActive(true);
+            }
+
             _group.interactable = visible;
             _group.blocksRaycasts = visible;
 

@@ -9,8 +9,8 @@ namespace JSH.Gameplay
 {
     /// <summary>
     /// HP + i-frames + knockback + Feel feedbacks. Works for player, enemies, breakables.
-    /// Juice: assign MMF_Player (shake/flash/floating text). With an MMF_FloatingText feedback set to
-    /// "Use Intensity As Value", the damage amount is shown as the number.
+    /// Juice: MMF_Players are played at intensity 1, except _damageNumberFeedback which gets the damage
+    /// amount as intensity (MMF_FloatingText "Use Intensity As Value" shows it as the number).
     /// UI: HealthBarBinder (JSH.UI) drives a Feel MMProgressBar from the Changed event.
     /// Pool-friendly: resets on IPoolable.OnSpawned.
     /// </summary>
@@ -29,7 +29,10 @@ namespace JSH.Gameplay
 
         [Header("Juice (optional)")]
         [SerializeField, Min(0f)] private float _hitStopDuration = 0.05f;
+        [Tooltip("Shake / flash etc. Played at intensity 1.")]
         [SerializeField] private MMF_Player _damageFeedback;
+        [Tooltip("Floating damage number only. Played with intensity = damage amount; set MMF_FloatingText 'Use Intensity As Value'. Keep other feedbacks out of it (they would scale by damage).")]
+        [SerializeField] private MMF_Player _damageNumberFeedback;
         [SerializeField] private MMF_Player _healFeedback;
         [SerializeField] private MMF_Player _deathFeedback;
 
@@ -84,7 +87,8 @@ namespace JSH.Gameplay
             }
 
             HitStop.Play(_hitStopDuration);
-            PlayFeedback(_damageFeedback, info.Amount);
+            PlayFeedback(_damageFeedback, 1f);
+            PlayFeedback(_damageNumberFeedback, info.Amount);
 
             Damaged?.Invoke(this, info);
             Changed?.Invoke(this);
@@ -105,7 +109,7 @@ namespace JSH.Gameplay
             }
 
             Current = Mathf.Min(_maxHealth, Current + amount);
-            PlayFeedback(_healFeedback, amount);
+            PlayFeedback(_healFeedback, 1f);
             Changed?.Invoke(this);
         }
 
@@ -141,7 +145,7 @@ namespace JSH.Gameplay
         private void Die(in DamageInfo info)
         {
             IsDead = true;
-            PlayFeedback(_deathFeedback, info.Amount);
+            PlayFeedback(_deathFeedback, 1f);
             Died?.Invoke(this, info);
             EventBus<ActorDiedEvent>.Raise(new ActorDiedEvent(this, info.Source));
 

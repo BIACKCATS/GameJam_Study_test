@@ -26,6 +26,15 @@ namespace JSH.UI
             _bar.SetBar(_health.Current, 0f, _health.Max);
         }
 
+        // Snap again after every Awake has run (Health may initialize after our OnEnable).
+        private void Start()
+        {
+            if (_health != null && _bar != null)
+            {
+                _bar.SetBar(_health.Current, 0f, _health.Max);
+            }
+        }
+
         private void OnDisable()
         {
             if (_health != null)
@@ -47,16 +56,21 @@ namespace JSH.UI
 
         private void OnHealthChanged(Health health)
         {
-            _bar.UpdateBar(health.Current, 0f, health.Max);
-
             if (_hideOnDeath && health.IsDead)
             {
                 _bar.gameObject.SetActive(false);
+                return;
             }
-            else if (!_bar.gameObject.activeSelf && !health.IsDead)
+
+            if (!_bar.gameObject.activeSelf)
             {
+                // Revived / respawned: show and snap without the drain animation.
                 _bar.gameObject.SetActive(true);
+                _bar.SetBar(health.Current, 0f, health.Max);
+                return;
             }
+
+            _bar.UpdateBar(health.Current, 0f, health.Max);
         }
     }
 }

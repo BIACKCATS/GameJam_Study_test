@@ -23,8 +23,10 @@ namespace JSH.Gameplay
         [Tooltip("Return to pool / destroy after a successful hit (bullets).")]
         [SerializeField] private bool _despawnOnHit;
 
-        [Tooltip("Who gets credit for the hit. Defaults to the root of this object.")]
+        [Tooltip("Who gets credit for the hit and is never hit by it. Defaults to this collider's Rigidbody2D object (or this object).")]
         [SerializeField] private GameObject _owner;
+
+        private Transform _ownerTransform;
 
         public int Damage
         {
@@ -36,8 +38,12 @@ namespace JSH.Gameplay
         {
             if (_owner == null)
             {
-                _owner = transform.root.gameObject;
+                _owner = TryGetComponent(out Collider2D self) && self.attachedRigidbody != null
+                    ? self.attachedRigidbody.gameObject
+                    : gameObject;
             }
+
+            _ownerTransform = _owner.transform;
         }
 
         private void OnTriggerEnter2D(Collider2D other) => TryHit(other);
@@ -67,15 +73,21 @@ namespace JSH.Gameplay
                 return;
             }
 
-            Component holder = other.attachedRigidbody != null ? other.attachedRigidbody : other;
-            if (holder.transform.root == transform.root)
+            if (other.transform.IsChildOf(_ownerTransform))
             {
-                return; // never hit ourselves
+                return; // never hit the owner or its own parts
             }
 
-            if (!holder.TryGetComponent(out IDamageable target))
+            // IDamageable on the Rigidbody2D object first, then on the collider object.
+            Component holder = other.attachedRigidbody;
+            IDamageable target = null;
+            if (holder == null || !holder.TryGetComponent(out target))
             {
-                return;
+                holder = other;
+                if (!other.TryGetComponent(out target))
+                {
+                    return;
+                }
             }
 
             Vector2 hitPoint = other.ClosestPoint(transform.position);
