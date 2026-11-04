@@ -1,4 +1,4 @@
-namespace JSH.Core
+namespace JSH.Test
 {
     public class TestSignal : UnityEngine.MonoBehaviour
     {
