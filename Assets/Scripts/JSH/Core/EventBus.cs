@@ -5,7 +5,7 @@ namespace JSH.Core
     /// <summary>
     /// Zero-allocation typed event bus. Define events as readonly structs (see GameEvents.cs).
     /// Subscribe in OnEnable, Unsubscribe in OnDisable.
-    /// Usage: EventBus&lt;GameStateChangedEvent&gt;.Raise(new GameStateChangedEvent(prev, next));
+    /// Usage: EventBus<GameStateChangedEvent>.Raise(new GameStateChangedEvent(prev, next));
     /// </summary>
     public static class EventBus<T> where T : struct
     {

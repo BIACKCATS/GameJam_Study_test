@@ -5,7 +5,7 @@ namespace JSH.Core
 {
     /// <summary>
     /// Owns the game flow state and Time.timeScale.
-    /// Listen via EventBus&lt;GameStateChangedEvent&gt;.
+    /// Listen via EventBus <GameStateChangedEvent>
     /// </summary>
     public sealed class GameManager : Singleton<GameManager>
     {
