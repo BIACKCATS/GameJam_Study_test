@@ -595,6 +595,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1683203395712193985, guid: 14adedc8114de5241afca47efe99d239, type: 3}
+      propertyPath: strength
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1683203395712193985, guid: 14adedc8114de5241afca47efe99d239, type: 3}
+      propertyPath: frequency
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 6148260923076279825, guid: 14adedc8114de5241afca47efe99d239, type: 3}
       propertyPath: m_Name
       value: TempFolderStage
@@ -638,6 +646,18 @@ PrefabInstance:
     - target: {fileID: 6782457661062371713, guid: 14adedc8114de5241afca47efe99d239, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7304347681026998425, guid: 14adedc8114de5241afca47efe99d239, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7399559393810646920, guid: 14adedc8114de5241afca47efe99d239, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7399559393810646920, guid: 14adedc8114de5241afca47efe99d239, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

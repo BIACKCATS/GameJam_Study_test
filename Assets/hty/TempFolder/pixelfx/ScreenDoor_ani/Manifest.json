@@ -1,0 +1,206 @@
+﻿[
+    {
+        "sha256":  "4B2030CC4C3422226AC078232883B75453A76136BFBDEB41319447B822E524CD",
+        "path":  "README_KO.md"
+    },
+    {
+        "sha256":  "EC4FF1C7E8C6CD5E37A7AC4D5A915C7D21E98080E02A0EFE8C56442D3CD66928",
+        "path":  "Exports\\BlackWindowValidation.json"
+    },
+    {
+        "sha256":  "4B4C71B0F72847B59D5837A197B47153029FD950B39B39A97082C6AC3687CF5D",
+        "path":  "Exports\\Contact.png"
+    },
+    {
+        "sha256":  "290ACD0F7CC3D31A860DC64F7A83DC5406A703570E6F7619FFAB6F0B3E6D3884",
+        "path":  "Exports\\FramePreservation.json"
+    },
+    {
+        "sha256":  "3F79C35826D294B8E5EAD4D175F6AB3FC1C55819433C72A2AC9561A6D36DC570",
+        "path":  "Exports\\GifValidation.json"
+    },
+    {
+        "sha256":  "5583A095A549237565BA14C97A19D440BB2200B403CB2AFA1C529859982367D6",
+        "path":  "Exports\\SubwayDoor_Wide_OpenHoldClose_01.png"
+    },
+    {
+        "sha256":  "F1057510B070EB3B49923531C4479C4DC977E470D64BF28553910B6963F38A80",
+        "path":  "Exports\\SubwayDoor_Wide_OpenHoldClose_02.png"
+    },
+    {
+        "sha256":  "D9467551872D64BE9A21EF073F72917C12BAD2917B05B2E186B3707BF8B46DDD",
+        "path":  "Exports\\SubwayDoor_Wide_OpenHoldClose_03.png"
+    },
+    {
+        "sha256":  "C13717553F232BABF3B80A8E8D17504E8A111CA8D5CFFF746A959A30A7D1294F",
+        "path":  "Exports\\SubwayDoor_Wide_OpenHoldClose_04.png"
+    },
+    {
+        "sha256":  "204F49021CB6195099A21515F485C7128D6AEDDCDAD644778041E3E2FFCFF077",
+        "path":  "Exports\\SubwayDoor_Wide_OpenHoldClose_05.png"
+    },
+    {
+        "sha256":  "237F1080EA8A4FA4C86CE6434CD2DD237A6730A91DDFE421FB44045E5D5F0E83",
+        "path":  "Exports\\SubwayDoor_Wide_OpenHoldClose_06.png"
+    },
+    {
+        "sha256":  "E38C75B1BCA4024C8BCB77D2E81B8B270CE7425ED4DC76E43AA5E59496DC8C60",
+        "path":  "Exports\\SubwayDoor_Wide_OpenHoldClose_07.png"
+    },
+    {
+        "sha256":  "0E90BB2A3AE0977E6258DF1972F703CF5932889CBC1380AA155F51115B088849",
+        "path":  "Exports\\SubwayDoor_Wide_OpenHoldClose_08.png"
+    },
+    {
+        "sha256":  "38D164C5C7A090516A390995C176D83D2C9EFD15D16344585234CBAAD6B00589",
+        "path":  "Exports\\SubwayDoor_Wide_OpenHoldClose_09.png"
+    },
+    {
+        "sha256":  "18C5E38FE10D3199FA7BF301C386D6CB330A0ECC9ABC2ABBEE31C783FB1E27E9",
+        "path":  "Exports\\SubwayDoor_Wide_OpenHoldClose_10.png"
+    },
+    {
+        "sha256":  "18C5E38FE10D3199FA7BF301C386D6CB330A0ECC9ABC2ABBEE31C783FB1E27E9",
+        "path":  "Exports\\SubwayDoor_Wide_OpenHoldClose_11.png"
+    },
+    {
+        "sha256":  "18C5E38FE10D3199FA7BF301C386D6CB330A0ECC9ABC2ABBEE31C783FB1E27E9",
+        "path":  "Exports\\SubwayDoor_Wide_OpenHoldClose_12.png"
+    },
+    {
+        "sha256":  "18C5E38FE10D3199FA7BF301C386D6CB330A0ECC9ABC2ABBEE31C783FB1E27E9",
+        "path":  "Exports\\SubwayDoor_Wide_OpenHoldClose_13.png"
+    },
+    {
+        "sha256":  "18C5E38FE10D3199FA7BF301C386D6CB330A0ECC9ABC2ABBEE31C783FB1E27E9",
+        "path":  "Exports\\SubwayDoor_Wide_OpenHoldClose_14.png"
+    },
+    {
+        "sha256":  "18C5E38FE10D3199FA7BF301C386D6CB330A0ECC9ABC2ABBEE31C783FB1E27E9",
+        "path":  "Exports\\SubwayDoor_Wide_OpenHoldClose_15.png"
+    },
+    {
+        "sha256":  "18C5E38FE10D3199FA7BF301C386D6CB330A0ECC9ABC2ABBEE31C783FB1E27E9",
+        "path":  "Exports\\SubwayDoor_Wide_OpenHoldClose_16.png"
+    },
+    {
+        "sha256":  "18C5E38FE10D3199FA7BF301C386D6CB330A0ECC9ABC2ABBEE31C783FB1E27E9",
+        "path":  "Exports\\SubwayDoor_Wide_OpenHoldClose_17.png"
+    },
+    {
+        "sha256":  "18C5E38FE10D3199FA7BF301C386D6CB330A0ECC9ABC2ABBEE31C783FB1E27E9",
+        "path":  "Exports\\SubwayDoor_Wide_OpenHoldClose_18.png"
+    },
+    {
+        "sha256":  "18C5E38FE10D3199FA7BF301C386D6CB330A0ECC9ABC2ABBEE31C783FB1E27E9",
+        "path":  "Exports\\SubwayDoor_Wide_OpenHoldClose_19.png"
+    },
+    {
+        "sha256":  "18C5E38FE10D3199FA7BF301C386D6CB330A0ECC9ABC2ABBEE31C783FB1E27E9",
+        "path":  "Exports\\SubwayDoor_Wide_OpenHoldClose_20.png"
+    },
+    {
+        "sha256":  "18C5E38FE10D3199FA7BF301C386D6CB330A0ECC9ABC2ABBEE31C783FB1E27E9",
+        "path":  "Exports\\SubwayDoor_Wide_OpenHoldClose_21.png"
+    },
+    {
+        "sha256":  "18C5E38FE10D3199FA7BF301C386D6CB330A0ECC9ABC2ABBEE31C783FB1E27E9",
+        "path":  "Exports\\SubwayDoor_Wide_OpenHoldClose_22.png"
+    },
+    {
+        "sha256":  "18C5E38FE10D3199FA7BF301C386D6CB330A0ECC9ABC2ABBEE31C783FB1E27E9",
+        "path":  "Exports\\SubwayDoor_Wide_OpenHoldClose_23.png"
+    },
+    {
+        "sha256":  "18C5E38FE10D3199FA7BF301C386D6CB330A0ECC9ABC2ABBEE31C783FB1E27E9",
+        "path":  "Exports\\SubwayDoor_Wide_OpenHoldClose_24.png"
+    },
+    {
+        "sha256":  "18C5E38FE10D3199FA7BF301C386D6CB330A0ECC9ABC2ABBEE31C783FB1E27E9",
+        "path":  "Exports\\SubwayDoor_Wide_OpenHoldClose_25.png"
+    },
+    {
+        "sha256":  "18C5E38FE10D3199FA7BF301C386D6CB330A0ECC9ABC2ABBEE31C783FB1E27E9",
+        "path":  "Exports\\SubwayDoor_Wide_OpenHoldClose_26.png"
+    },
+    {
+        "sha256":  "18C5E38FE10D3199FA7BF301C386D6CB330A0ECC9ABC2ABBEE31C783FB1E27E9",
+        "path":  "Exports\\SubwayDoor_Wide_OpenHoldClose_27.png"
+    },
+    {
+        "sha256":  "38D164C5C7A090516A390995C176D83D2C9EFD15D16344585234CBAAD6B00589",
+        "path":  "Exports\\SubwayDoor_Wide_OpenHoldClose_28.png"
+    },
+    {
+        "sha256":  "0E90BB2A3AE0977E6258DF1972F703CF5932889CBC1380AA155F51115B088849",
+        "path":  "Exports\\SubwayDoor_Wide_OpenHoldClose_29.png"
+    },
+    {
+        "sha256":  "E38C75B1BCA4024C8BCB77D2E81B8B270CE7425ED4DC76E43AA5E59496DC8C60",
+        "path":  "Exports\\SubwayDoor_Wide_OpenHoldClose_30.png"
+    },
+    {
+        "sha256":  "237F1080EA8A4FA4C86CE6434CD2DD237A6730A91DDFE421FB44045E5D5F0E83",
+        "path":  "Exports\\SubwayDoor_Wide_OpenHoldClose_31.png"
+    },
+    {
+        "sha256":  "204F49021CB6195099A21515F485C7128D6AEDDCDAD644778041E3E2FFCFF077",
+        "path":  "Exports\\SubwayDoor_Wide_OpenHoldClose_32.png"
+    },
+    {
+        "sha256":  "C13717553F232BABF3B80A8E8D17504E8A111CA8D5CFFF746A959A30A7D1294F",
+        "path":  "Exports\\SubwayDoor_Wide_OpenHoldClose_33.png"
+    },
+    {
+        "sha256":  "D9467551872D64BE9A21EF073F72917C12BAD2917B05B2E186B3707BF8B46DDD",
+        "path":  "Exports\\SubwayDoor_Wide_OpenHoldClose_34.png"
+    },
+    {
+        "sha256":  "F1057510B070EB3B49923531C4479C4DC977E470D64BF28553910B6963F38A80",
+        "path":  "Exports\\SubwayDoor_Wide_OpenHoldClose_35.png"
+    },
+    {
+        "sha256":  "5583A095A549237565BA14C97A19D440BB2200B403CB2AFA1C529859982367D6",
+        "path":  "Exports\\SubwayDoor_Wide_OpenHoldClose_36.png"
+    },
+    {
+        "sha256":  "1D62A4193688950064AF1311CA3C002B109A545DB7D2E79238C1B5B1730018DE",
+        "path":  "Exports\\SubwayDoor_Wide_OpenHoldClose_Preview.gif"
+    },
+    {
+        "sha256":  "AB254BE4EF99E4108DAB2617C8853D32C71C57BC5EC139DB42ADDCC5C2D05248",
+        "path":  "Exports\\SubwayDoor_Wide_OpenHoldClose_Spritesheet.json"
+    },
+    {
+        "sha256":  "C43F4C7AFE841ED64B490D77DA68CEB7FA3FA486C35BB60B7732971051221090",
+        "path":  "Exports\\SubwayDoor_Wide_OpenHoldClose_Spritesheet.png"
+    },
+    {
+        "sha256":  "92228C7FC4AA9CDFEBDFA058C832026EF5739CAC887ED5714F80DECB9780FC94",
+        "path":  "Exports\\Validation.json"
+    },
+    {
+        "sha256":  "FA17BDBE511438B75165EF8B24082C683539F355138E100EE02B537B0657690F",
+        "path":  "Source\\gif.mjs"
+    },
+    {
+        "sha256":  "DEF5BA5CDA21EBE7BCF48A7381BE6990D9C1A923A6711744744E32E0B4DA4AC3",
+        "path":  "Source\\Passage.rgba"
+    },
+    {
+        "sha256":  "70ECA96EC29C960282D2FA1D8459313626095270B5EECF66B83200F9976890DE",
+        "path":  "Source\\Reference.rgba"
+    },
+    {
+        "sha256":  "3B6FE3A16E054F7CFA7C8C3CDA908D6DD9DE337C2891E68E565E087237BF7CF2",
+        "path":  "Source\\render.mjs"
+    },
+    {
+        "sha256":  "20C2615D74BE890734242D118315067F39AD92F5B39F588E3609A30BB2BD197D",
+        "path":  "Source\\subway-door-wide.mjs"
+    },
+    {
+        "sha256":  "1175CBD16030576C81445401ADB1ECC75976B89315AA76874BD3D023774D0365",
+        "path":  "Source\\WindowMask.json"
+    }
+]

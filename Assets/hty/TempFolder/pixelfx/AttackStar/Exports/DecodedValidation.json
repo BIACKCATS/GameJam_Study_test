@@ -1,0 +1,19 @@
+{
+    "gifSeconds":  0.5,
+    "lastPNGAlphaSum":  0,
+    "gifFrames":  12,
+    "gifDelaysCentiseconds":  [
+                                  4,
+                                  4,
+                                  5,
+                                  4,
+                                  4,
+                                  4,
+                                  4,
+                                  4,
+                                  5,
+                                  4,
+                                  4,
+                                  4
+                              ]
+}

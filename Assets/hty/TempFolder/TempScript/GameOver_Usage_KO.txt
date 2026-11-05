@@ -1,0 +1,28 @@
+﻿게임 오버 연출 사용법
+
+TempFolderStage 안의 GameOverPresentation 프리팹이 활성 상태여야 합니다.
+GameOverSequenceController.PlayGameOver(); // 시작. 성공 true, 중복 실행/참조 오류 false + Debug.LogError
+GameOverSequenceController.StopGameOver(); // 화면을 숨기고 초기화
+GameOverSequenceController.IsPlaying; // 화면 표시 중인지 확인
+
+시간 순서(실제 시간 기준, Time.timeScale=0에서도 작동)
+0.0초: 중앙 캐릭터와 조명, 오른쪽 위 입력 애니메이션
+1.2초: 오른쪽 초록 말풍선
+1.7초: 왼쪽 중앙 입력 애니메이션
+2.2초: 왼쪽 회색 말풍선, On Sequence Completed 호출
+마지막 화면과 조명 깜빡임은 StopGameOver를 호출할 때까지 유지됩니다.
+
+추가 구현 연결
+컨트롤러의 On Started / On Right Bubble Shown / On Left Typing Started /
+On Sequence Completed / On Stopped에 다른 컴포넌트의 public void 함수를 연결하세요.
+코드에서도 controller.onSequenceCompleted.AddListener(MyNextStep)으로 연결할 수 있습니다.
+해제 시 RemoveListener(MyNextStep)을 호출하세요.
+이벤트에서 다음 씬 전환, 재시작 UI 등을 추가할 수 있습니다.
+현재 게임 로직 정지, 사망 판정 및 씬 전환은 자동으로 실행하지 않습니다.
+
+Right Message / Left Message에 문구를 입력할 수 있습니다.
+한글 표시가 필요하면 Message 오브젝트의 Text에 프로젝트의 한글 지원 Font를 연결하세요.
+조명 간격, 두 번 깜빡일 확률, 밝기, 각 단계 지연과 입력 FPS는 인스펙터에서 조절합니다.
+
+테스트: 플레이 모드에서 GameOverSequenceController 컴포넌트 메뉴의
+Test > Play Game Over / Stop Game Over를 실행하세요.
