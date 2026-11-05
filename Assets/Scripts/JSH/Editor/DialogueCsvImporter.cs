@@ -9,7 +9,7 @@ using UnityEngine;
 namespace JSH.Editor
 {
     /// <summary>
-    /// Converts a dialogue CSV (UTF-8) into one DialogueData asset per CharacterID:
+    /// Converts a dialogue CSV (UTF-8, or CP949 as saved by Korean Excel) into one DialogueData asset per CharacterID:
     /// Assets/Prefabs/JSH/Data/Dialogue/Dialogue_&lt;CharacterID&gt;.asset (existing assets are overwritten in place,
     /// so Talkable references survive a re-import).
     /// Columns (header names, any order, case-insensitive): CharacterID, Path, Text, ChoiceA, ChoiceB, Outcome.
@@ -64,7 +64,7 @@ namespace JSH.Editor
             string text;
             try
             {
-                text = File.ReadAllText(filePath, Encoding.UTF8);
+                text = ReadText(filePath);
             }
             catch (Exception e)
             {
@@ -98,6 +98,30 @@ namespace JSH.Editor
             }
             AssetDatabase.SaveAssets();
             Report(Path.GetFileName(filePath), written, errors, warnings);
+        }
+
+        /// <summary>
+        /// UTF-8 (with or without BOM); falls back to CP949 for CSVs saved by Korean Excel.
+        /// FileShare.ReadWrite so the file can stay open in Excel while importing.
+        /// </summary>
+        private static string ReadText(string filePath)
+        {
+            byte[] bytes;
+            using (var stream = new FileStream(filePath, FileMode.Open, FileAccess.Read, FileShare.ReadWrite))
+            using (var memory = new MemoryStream())
+            {
+                stream.CopyTo(memory);
+                bytes = memory.ToArray();
+            }
+            try
+            {
+                return new UTF8Encoding(false, true).GetString(bytes);
+            }
+            catch (DecoderFallbackException)
+            {
+                Debug.Log($"{LogTag} {Path.GetFileName(filePath)} is not UTF-8; reading as CP949 (Korean Excel).");
+                return Encoding.GetEncoding(949).GetString(bytes);
+            }
         }
 
         // ---------- CSV parsing ----------
