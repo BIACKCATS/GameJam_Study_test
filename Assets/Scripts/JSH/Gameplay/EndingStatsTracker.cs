@@ -63,6 +63,7 @@ namespace JSH.Gameplay
         private void OnDefeated(VillainDefeatedEvent evt)
         {
             _notEmbraced++;
+            if (evt.Villain != null) EmbracedVillains.MarkDefeated(evt.Villain.Id);
             Publish();
         }
 
