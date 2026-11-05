@@ -50,8 +50,8 @@ namespace JSH.Juice
         [Tooltip("Hide the player and every NPC of the current car while a presentation plays; show them again " +
                  "after it has fully finished (fade out / zoom back) and the event session closed.")]
         [SerializeField] private bool _hideActors = true;
-        [Tooltip("Empty = found automatically.")]
-        [SerializeField] private PlayerController2D _player;
+        [Tooltip("Player root to hide. Empty = found automatically (PlayerController2D, then SideViewMover, then the \"Player\" tag).")]
+        [SerializeField] private Transform _player;
 
         private readonly List<Renderer> _hiddenRenderers = new List<Renderer>(64);
         private readonly List<Renderer> _rendererBuffer = new List<Renderer>(16);
@@ -71,7 +71,17 @@ namespace JSH.Juice
         {
             // MinigameDirector may wake after this component.
             if (MinigameDirector.HasInstance) MinigameDirector.Instance.SetEventHold(_isPlaying);
-            if (_player == null) _player = FindAnyObjectByType<PlayerController2D>();
+            if (_player == null) _player = FindPlayer();
+        }
+
+        private static Transform FindPlayer()
+        {
+            PlayerController2D controller = FindAnyObjectByType<PlayerController2D>();
+            if (controller != null) return controller.transform;
+            SideViewMover mover = FindAnyObjectByType<SideViewMover>();
+            if (mover != null) return mover.transform;
+            GameObject tagged = GameObject.FindWithTag("Player");
+            return tagged != null ? tagged.transform : null;
         }
 
         private void OnDisable()
@@ -95,7 +105,7 @@ namespace JSH.Juice
         {
             if (!_hideActors || _actorsHidden) return;
             _hiddenRenderers.Clear();
-            if (_player != null) HideUnder(_player.transform);
+            if (_player != null) HideUnder(_player);
             TrainCar car = TrainProgress.HasInstance ? TrainProgress.Instance.CurrentCar : null;
             if (car != null)
             {
