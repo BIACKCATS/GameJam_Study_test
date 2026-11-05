@@ -38,6 +38,7 @@ namespace JSH.Test
             EventBus<MinigameFinishedEvent>.Subscribe(OnMinigameFinished);
             EventBus<PassengerCounterattackEvent>.Subscribe(OnCounterattack);
             EventBus<VillainCounterattackEvent>.Subscribe(OnVillainCounterattack);
+            EventBus<CarChangedEvent>.Subscribe(OnCarChanged);
             EventBus<LivesChangedEvent>.Subscribe(OnLives);
             EventBus<LivesDepletedEvent>.Subscribe(OnDepleted);
         }
@@ -52,6 +53,7 @@ namespace JSH.Test
             EventBus<MinigameFinishedEvent>.Unsubscribe(OnMinigameFinished);
             EventBus<PassengerCounterattackEvent>.Unsubscribe(OnCounterattack);
             EventBus<VillainCounterattackEvent>.Unsubscribe(OnVillainCounterattack);
+            EventBus<CarChangedEvent>.Unsubscribe(OnCarChanged);
             EventBus<LivesChangedEvent>.Unsubscribe(OnLives);
             EventBus<LivesDepletedEvent>.Unsubscribe(OnDepleted);
         }
@@ -72,6 +74,7 @@ namespace JSH.Test
         private void OnMinigameFinished(MinigameFinishedEvent e) => Log($"Minigame finished: {e.Type} success={e.Success} reflex={e.ReflexResult} / {NameOf(e.Target)}");
         private void OnCounterattack(PassengerCounterattackEvent e) => Log($"Passenger counterattack! {NameOf(e.Passenger)} (wasGuarding={e.WasGuarding})");
         private void OnVillainCounterattack(VillainCounterattackEvent e) => Log("Villain counterattack! " + e.Villain.name);
+        private void OnCarChanged(CarChangedEvent e) => Log($"Car {(e.From != null ? e.From.Index : -1)} -> {e.To.Index} ({e.To.name}) forward={e.IsForward} unresolvedVillains={e.UnresolvedVillains} lifeLost={e.LifeLost}");
         private void OnLives(LivesChangedEvent e) => Log($"Lives {e.Current}/{e.Max} (delta {e.Delta})");
         private void OnDepleted(LivesDepletedEvent e) => Log("Lives depleted -> bad ending");
 
