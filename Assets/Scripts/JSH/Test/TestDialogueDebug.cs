@@ -37,6 +37,7 @@ namespace JSH.Test
             EventBus<MinigameStateChangedEvent>.Subscribe(OnMinigameState);
             EventBus<MinigameFinishedEvent>.Subscribe(OnMinigameFinished);
             EventBus<PassengerCounterattackEvent>.Subscribe(OnCounterattack);
+            EventBus<VillainCounterattackEvent>.Subscribe(OnVillainCounterattack);
             EventBus<LivesChangedEvent>.Subscribe(OnLives);
             EventBus<LivesDepletedEvent>.Subscribe(OnDepleted);
         }
@@ -50,6 +51,7 @@ namespace JSH.Test
             EventBus<MinigameStateChangedEvent>.Unsubscribe(OnMinigameState);
             EventBus<MinigameFinishedEvent>.Unsubscribe(OnMinigameFinished);
             EventBus<PassengerCounterattackEvent>.Unsubscribe(OnCounterattack);
+            EventBus<VillainCounterattackEvent>.Unsubscribe(OnVillainCounterattack);
             EventBus<LivesChangedEvent>.Unsubscribe(OnLives);
             EventBus<LivesDepletedEvent>.Unsubscribe(OnDepleted);
         }
@@ -69,6 +71,7 @@ namespace JSH.Test
         private void OnMinigameState(MinigameStateChangedEvent e) => Log($"Minigame {(e.IsActive ? "start" : "end")}: {e.Type} / {NameOf(e.Target)}");
         private void OnMinigameFinished(MinigameFinishedEvent e) => Log($"Minigame finished: {e.Type} success={e.Success} reflex={e.ReflexResult} / {NameOf(e.Target)}");
         private void OnCounterattack(PassengerCounterattackEvent e) => Log($"Passenger counterattack! {NameOf(e.Passenger)} (wasGuarding={e.WasGuarding})");
+        private void OnVillainCounterattack(VillainCounterattackEvent e) => Log("Villain counterattack! " + e.Villain.name);
         private void OnLives(LivesChangedEvent e) => Log($"Lives {e.Current}/{e.Max} (delta {e.Delta})");
         private void OnDepleted(LivesDepletedEvent e) => Log("Lives depleted -> bad ending");
 
@@ -125,7 +128,7 @@ namespace JSH.Test
             if (d.ActiveReflex != null)
             {
                 ReflexMinigame r = d.ActiveReflex;
-                GUILayout.Label(r.IsReady ? $"Time {r.TimeLeft:0.0}s   Click to HIT" : "Ready...");
+                GUILayout.Label(r.IsReady ? "Click to HIT (no time limit)" : "Ready...");
                 GUILayout.Label(r.IsGuarding ? "   [ GUARD ]" : "   [ OPEN!! ]");
             }
             else if (d.ActiveTiming != null)

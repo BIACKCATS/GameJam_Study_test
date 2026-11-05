@@ -8,10 +8,11 @@ namespace JSH.Gameplay
 {
     /// <summary>
     /// Runs the minigames chosen in dialogue and applies their results (one per scene, e.g. on [Managers]).
-    ///  - Accuse ("퇴치")   -> Reflex.
-    ///  - Persuade ("설득") -> Timing; success = life +1 (+ villain converted), fail/timeout -> Reflex.
-    ///  - Reflex: villain open = defeated; villain guarded = defeated + life -1; passenger = life -1 + counterattack;
-    ///    timeout = no effect.
+    ///  - Accuse ("퇴치")   -> Reflex (no time limit).
+    ///  - Persuade ("설득") -> Timing; villain success = converted + life +1, passenger success = no effect,
+    ///    fail or timeout -> Reflex.
+    ///  - Reflex: villain open = defeated; villain guarded = villain counterattack + life -1 + defeated;
+    ///    passenger (any state) = passenger counterattack + life -1.
     /// Input: Left Click (Hit / Stop). UI reads ActiveReflex / ActiveTiming each frame and listens to the events.
     /// </summary>
     public class MinigameDirector : Singleton<MinigameDirector>
@@ -110,6 +111,8 @@ namespace JSH.Gameplay
                     if (_villain != null) _villain.Defeat();
                     break;
                 case ReflexResult.VillainDefeatedGuarded:
+                    // Order matters for feedback: counterattack -> life -1 -> defeated.
+                    if (_villain != null) EventBus<VillainCounterattackEvent>.Raise(new VillainCounterattackEvent(_villain));
                     DamagePlayer();
                     if (_villain != null) _villain.Defeat();
                     break;
@@ -127,10 +130,11 @@ namespace JSH.Gameplay
         private void FinishTiming()
         {
             bool success = _timing.Success;
-            if (success)
+            // Only a villain persuasion pays off (converted + life +1). Passenger success = no effect.
+            if (success && _villain != null)
             {
                 if (LifeSystem.HasInstance) LifeSystem.Instance.Heal(1);
-                if (_villain != null) _villain.Convert();
+                _villain.Convert();
             }
 
             EventBus<MinigameFinishedEvent>.Raise(new MinigameFinishedEvent(_target, MinigameType.Timing, success, ReflexResult.None));

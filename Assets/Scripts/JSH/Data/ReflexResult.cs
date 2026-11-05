@@ -4,8 +4,8 @@ namespace JSH.Data
     {
         None = 0,
         VillainDefeatedOpen = 1,    // hit while open: defeated, no life loss
-        VillainDefeatedGuarded = 2, // hit while guarding: defeated, life -1
-        PassengerHit = 3,           // hit a passenger (any state): life -1, counterattack
-        TimedOut = 4,               // no hit within the time limit: no effect
+        VillainDefeatedGuarded = 2, // hit while guarding: villain counterattack, life -1, defeated
+        PassengerHit = 3,           // hit a passenger (any state): passenger counterattack, life -1
+        // 4 was TimedOut (removed: Reflex has no time limit). Do not reuse.
     }
 }
