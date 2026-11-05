@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1119375345464212684}
   - component: {fileID: 3081012362127532647}
+  - component: {fileID: 6919894518573600905}
   m_Layer: 0
   m_Name: GameOverPresentation
   m_TagString: Untagged
@@ -55,6 +56,7 @@ MonoBehaviour:
   leftBubble: {fileID: 6345412378652499487}
   rightText: {fileID: 4204178240669890744}
   leftText: {fileID: 7903314079327347959}
+  endingMessages: {fileID: 6919894518573600905}
   characterFadeDuration: 0.8
   rightMessage: 
   leftMessage: 
@@ -64,7 +66,7 @@ MonoBehaviour:
   doubleFlickerGap: 0.08
   lightOpacity: 0.65
   rightTypingDelay: 0
-  rightBubbleDelay: 2
+  rightBubbleDelay: 1.5
   leftTypingDelay: 0.5
   leftBubbleDelay: 1.5
   typingFramesPerSecond: 24
@@ -85,6 +87,19 @@ MonoBehaviour:
   onStopped:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &6919894518573600905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 81324017942221823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd2bc42c82523eb44acfd3da9892e85a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameOverEndingMessages
+  presentationPrefab: {fileID: 7046604901982180992, guid: d220b7290e91e6e4eb105539406c999b, type: 3}
 --- !u!1 &98516897289710842
 GameObject:
   m_ObjectHideFlags: 0
@@ -222,14 +237,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.RawImage
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 0}
+  m_Texture: {fileID: 2800000, guid: 2a4dc5dffd487f64ca28c1d23a4d9b31, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -372,6 +387,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 524224976802799521}
+  - {fileID: 272875509758771465}
   - {fileID: 508573941878349420}
   - {fileID: 326341772790890462}
   - {fileID: 6247346149760250332}
@@ -474,7 +490,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2942034508752771859}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0.00000004371139, y: -1, z: -1.9106857e-15, w: 0.000000043711392}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -841,7 +857,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -180}
-  m_SizeDelta: {x: 345, y: 168.75}
+  m_SizeDelta: {x: 345, y: 168.72539}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8805057536148052426
 CanvasRenderer:
@@ -871,13 +887,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: a59123cd38b17804b991124bc4479650, type: 3}
+  m_Texture: {fileID: 2800000, guid: 6916154280405324182b2da644da2c77, type: 3}
   m_UVRect:
     serializedVersion: 2
-    x: 0.2578125
-    y: 0.097222224
-    width: 0.47916666
-    height: 0.41666666
+    x: 0.25989583
+    y: 0.1037037
+    width: 0.47604167
+    height: 0.4138889
 --- !u!1 &6265039885796092650
 GameObject:
   m_ObjectHideFlags: 0
@@ -1057,14 +1073,14 @@ RectTransform:
   m_GameObject: {fileID: 6631988422144227671}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.1, y: 1.343198, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7675040939916976127}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 73}
+  m_AnchoredPosition: {x: 0, y: -22}
   m_SizeDelta: {x: 720, y: 405}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1367162442057302966
@@ -1120,6 +1136,77 @@ MonoBehaviour:
   bloomThreshold: 1
   bloomScatter: 0.7
   textureWidth: 1024
+--- !u!1 &7197578393369190267
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 272875509758771465}
+  - component: {fileID: 7493556291390577149}
+  - component: {fileID: 6678000886972616697}
+  m_Layer: 0
+  m_Name: FloorLight
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &272875509758771465
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7197578393369190267}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7675040939916976127}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -247.49016}
+  m_SizeDelta: {x: 414, y: 124.2}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &7493556291390577149
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7197578393369190267}
+  m_CullTransparentMesh: 1
+--- !u!114 &6678000886972616697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7197578393369190267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd8d6afdc3f8304fa6c1e49482e671f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameOverFloorLight
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0.98, b: 0.9, a: 0.18}
+  m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  character: {fileID: 9011190184121062089}
+  sourceLight: {fileID: 7069791079131844245}
+  widthMultiplier: 1.2
+  heightRatio: 0.3
+  floorOffset: {x: 0, y: -67.49016}
+  opacity: 0.28
 --- !u!1 &7602618693501627031
 GameObject:
   m_ObjectHideFlags: 0

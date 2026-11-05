@@ -87,6 +87,7 @@ public sealed class PassengerAttackController : MonoBehaviour
     /// Returns false and logs an error for invalid input, missing references, or a busy effect.</summary>
     public static bool PlayAttack(string key)
     {
+        if(TrueEndingController.IsPlaying)return false;
         if (!instance || !instance.isActiveAndEnabled)
         {
             Debug.LogError("PassengerAttackController: Place an active PassengerAttack prefab in the scene first.");

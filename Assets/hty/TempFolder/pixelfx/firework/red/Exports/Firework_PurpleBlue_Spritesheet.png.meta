@@ -1,0 +1,7202 @@
+fileFormatVersion: 2
+guid: 135968395dccfd745b09a9c2478cbe2b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4071571322455855901
+    second: Firework_PurpleBlue_Spritesheet_0
+  - first:
+      213: 8513865256945213639
+    second: Firework_PurpleBlue_Spritesheet_1
+  - first:
+      213: -6520110514774242671
+    second: Firework_PurpleBlue_Spritesheet_2
+  - first:
+      213: -6882406081839410211
+    second: Firework_PurpleBlue_Spritesheet_3
+  - first:
+      213: -1889168954265844238
+    second: Firework_PurpleBlue_Spritesheet_4
+  - first:
+      213: -8904209634571448369
+    second: Firework_PurpleBlue_Spritesheet_5
+  - first:
+      213: 2044419303631523899
+    second: Firework_PurpleBlue_Spritesheet_6
+  - first:
+      213: -6739848720321215732
+    second: Firework_PurpleBlue_Spritesheet_7
+  - first:
+      213: -1023162896966254313
+    second: Firework_PurpleBlue_Spritesheet_8
+  - first:
+      213: -693075794372344792
+    second: Firework_PurpleBlue_Spritesheet_9
+  - first:
+      213: -4787331683029693306
+    second: Firework_PurpleBlue_Spritesheet_10
+  - first:
+      213: -8767750413467850870
+    second: Firework_PurpleBlue_Spritesheet_11
+  - first:
+      213: -2556555568095334261
+    second: Firework_PurpleBlue_Spritesheet_12
+  - first:
+      213: -6837145618284042435
+    second: Firework_PurpleBlue_Spritesheet_13
+  - first:
+      213: 7499339687555411306
+    second: Firework_PurpleBlue_Spritesheet_14
+  - first:
+      213: 8635686876893746103
+    second: Firework_PurpleBlue_Spritesheet_15
+  - first:
+      213: 1634831544393662663
+    second: Firework_PurpleBlue_Spritesheet_16
+  - first:
+      213: -7138409894242694478
+    second: Firework_PurpleBlue_Spritesheet_17
+  - first:
+      213: -6038896209376069692
+    second: Firework_PurpleBlue_Spritesheet_18
+  - first:
+      213: 1321866223206484020
+    second: Firework_PurpleBlue_Spritesheet_19
+  - first:
+      213: -4159519680284182907
+    second: Firework_PurpleBlue_Spritesheet_20
+  - first:
+      213: -5433778844556493272
+    second: Firework_PurpleBlue_Spritesheet_21
+  - first:
+      213: 4925935352719779969
+    second: Firework_PurpleBlue_Spritesheet_22
+  - first:
+      213: -1987178846271057497
+    second: Firework_PurpleBlue_Spritesheet_23
+  - first:
+      213: 8045215922655943334
+    second: Firework_PurpleBlue_Spritesheet_24
+  - first:
+      213: -8509918578358866181
+    second: Firework_PurpleBlue_Spritesheet_25
+  - first:
+      213: -6170720601695992021
+    second: Firework_PurpleBlue_Spritesheet_26
+  - first:
+      213: -4774328682768134162
+    second: Firework_PurpleBlue_Spritesheet_27
+  - first:
+      213: -732908797242957112
+    second: Firework_PurpleBlue_Spritesheet_28
+  - first:
+      213: -1334773600973205871
+    second: Firework_PurpleBlue_Spritesheet_29
+  - first:
+      213: -6538023354234397688
+    second: Firework_PurpleBlue_Spritesheet_30
+  - first:
+      213: -4844411945120378742
+    second: Firework_PurpleBlue_Spritesheet_31
+  - first:
+      213: 5989099826013760395
+    second: Firework_PurpleBlue_Spritesheet_32
+  - first:
+      213: 3402452135354564318
+    second: Firework_PurpleBlue_Spritesheet_33
+  - first:
+      213: 3811026212175571867
+    second: Firework_PurpleBlue_Spritesheet_34
+  - first:
+      213: -8424284481867040850
+    second: Firework_PurpleBlue_Spritesheet_35
+  - first:
+      213: 8723690792651698983
+    second: Firework_PurpleBlue_Spritesheet_36
+  - first:
+      213: -7896886526065272468
+    second: Firework_PurpleBlue_Spritesheet_37
+  - first:
+      213: -4034095145114294087
+    second: Firework_PurpleBlue_Spritesheet_38
+  - first:
+      213: -2743172182469534746
+    second: Firework_PurpleBlue_Spritesheet_39
+  - first:
+      213: -3416521139952309377
+    second: Firework_PurpleBlue_Spritesheet_40
+  - first:
+      213: -8520809070598006916
+    second: Firework_PurpleBlue_Spritesheet_41
+  - first:
+      213: 3948288387294379011
+    second: Firework_PurpleBlue_Spritesheet_42
+  - first:
+      213: -2083132543422450698
+    second: Firework_PurpleBlue_Spritesheet_43
+  - first:
+      213: 6169695315525375801
+    second: Firework_PurpleBlue_Spritesheet_44
+  - first:
+      213: -2255802305955494448
+    second: Firework_PurpleBlue_Spritesheet_45
+  - first:
+      213: 5855886536821192204
+    second: Firework_PurpleBlue_Spritesheet_46
+  - first:
+      213: 4261222318001249984
+    second: Firework_PurpleBlue_Spritesheet_47
+  - first:
+      213: -1303065748822014843
+    second: Firework_PurpleBlue_Spritesheet_48
+  - first:
+      213: 6364923871356691548
+    second: Firework_PurpleBlue_Spritesheet_49
+  - first:
+      213: 3229850810854331622
+    second: Firework_PurpleBlue_Spritesheet_50
+  - first:
+      213: 27137162879540582
+    second: Firework_PurpleBlue_Spritesheet_51
+  - first:
+      213: 3646234494102493685
+    second: Firework_PurpleBlue_Spritesheet_52
+  - first:
+      213: -718335040302926181
+    second: Firework_PurpleBlue_Spritesheet_53
+  - first:
+      213: 1056709226098425270
+    second: Firework_PurpleBlue_Spritesheet_54
+  - first:
+      213: 8601628023730059668
+    second: Firework_PurpleBlue_Spritesheet_55
+  - first:
+      213: -292855261488209109
+    second: Firework_PurpleBlue_Spritesheet_56
+  - first:
+      213: 7464338368702304633
+    second: Firework_PurpleBlue_Spritesheet_57
+  - first:
+      213: 8854861919967265805
+    second: Firework_PurpleBlue_Spritesheet_58
+  - first:
+      213: 5147427125068186696
+    second: Firework_PurpleBlue_Spritesheet_59
+  - first:
+      213: -7152058509046291185
+    second: Firework_PurpleBlue_Spritesheet_60
+  - first:
+      213: 4090635781011211451
+    second: Firework_PurpleBlue_Spritesheet_61
+  - first:
+      213: -9169916783800667141
+    second: Firework_PurpleBlue_Spritesheet_62
+  - first:
+      213: 4395993764445649244
+    second: Firework_PurpleBlue_Spritesheet_63
+  - first:
+      213: 2894505928528533603
+    second: Firework_PurpleBlue_Spritesheet_64
+  - first:
+      213: -6423133669371014203
+    second: Firework_PurpleBlue_Spritesheet_65
+  - first:
+      213: -5135349166712438570
+    second: Firework_PurpleBlue_Spritesheet_66
+  - first:
+      213: 125691790419118240
+    second: Firework_PurpleBlue_Spritesheet_67
+  - first:
+      213: 3133833839205544352
+    second: Firework_PurpleBlue_Spritesheet_68
+  - first:
+      213: -8350771979198763787
+    second: Firework_PurpleBlue_Spritesheet_69
+  - first:
+      213: -7841921260431939279
+    second: Firework_PurpleBlue_Spritesheet_70
+  - first:
+      213: -8150135038956221178
+    second: Firework_PurpleBlue_Spritesheet_71
+  - first:
+      213: -6946718922064205560
+    second: Firework_PurpleBlue_Spritesheet_72
+  - first:
+      213: 1600039544963328763
+    second: Firework_PurpleBlue_Spritesheet_73
+  - first:
+      213: 5049443830146053604
+    second: Firework_PurpleBlue_Spritesheet_74
+  - first:
+      213: 8088364641159982271
+    second: Firework_PurpleBlue_Spritesheet_75
+  - first:
+      213: 6208944518279895987
+    second: Firework_PurpleBlue_Spritesheet_76
+  - first:
+      213: 2079933980474883828
+    second: Firework_PurpleBlue_Spritesheet_77
+  - first:
+      213: -2655731914655509469
+    second: Firework_PurpleBlue_Spritesheet_78
+  - first:
+      213: -5170601663687033670
+    second: Firework_PurpleBlue_Spritesheet_79
+  - first:
+      213: -1841003085207390522
+    second: Firework_PurpleBlue_Spritesheet_80
+  - first:
+      213: -6064317522718429811
+    second: Firework_PurpleBlue_Spritesheet_81
+  - first:
+      213: -8030949142158173131
+    second: Firework_PurpleBlue_Spritesheet_82
+  - first:
+      213: -6290657422098293758
+    second: Firework_PurpleBlue_Spritesheet_83
+  - first:
+      213: 3088088734895502631
+    second: Firework_PurpleBlue_Spritesheet_84
+  - first:
+      213: -6442856820711043760
+    second: Firework_PurpleBlue_Spritesheet_85
+  - first:
+      213: 2489401563849686330
+    second: Firework_PurpleBlue_Spritesheet_86
+  - first:
+      213: 1486241247928694590
+    second: Firework_PurpleBlue_Spritesheet_87
+  - first:
+      213: -6090871648125062541
+    second: Firework_PurpleBlue_Spritesheet_88
+  - first:
+      213: 8411055276690148387
+    second: Firework_PurpleBlue_Spritesheet_89
+  - first:
+      213: -8417001664744364548
+    second: Firework_PurpleBlue_Spritesheet_90
+  - first:
+      213: -6877199630833319022
+    second: Firework_PurpleBlue_Spritesheet_91
+  - first:
+      213: 2472719338777158885
+    second: Firework_PurpleBlue_Spritesheet_92
+  - first:
+      213: 7044719134260206174
+    second: Firework_PurpleBlue_Spritesheet_93
+  - first:
+      213: 7972452776878750586
+    second: Firework_PurpleBlue_Spritesheet_94
+  - first:
+      213: 6859495906404895267
+    second: Firework_PurpleBlue_Spritesheet_95
+  - first:
+      213: 6473987237556443973
+    second: Firework_PurpleBlue_Spritesheet_96
+  - first:
+      213: 4385718309532222312
+    second: Firework_PurpleBlue_Spritesheet_97
+  - first:
+      213: 2538883728317747633
+    second: Firework_PurpleBlue_Spritesheet_98
+  - first:
+      213: -4399362305876631817
+    second: Firework_PurpleBlue_Spritesheet_99
+  - first:
+      213: -8346436068381590046
+    second: Firework_PurpleBlue_Spritesheet_100
+  - first:
+      213: -5022708398025213923
+    second: Firework_PurpleBlue_Spritesheet_101
+  - first:
+      213: 5973090142987997928
+    second: Firework_PurpleBlue_Spritesheet_102
+  - first:
+      213: -56230319445717250
+    second: Firework_PurpleBlue_Spritesheet_103
+  - first:
+      213: 1635426579547624489
+    second: Firework_PurpleBlue_Spritesheet_104
+  - first:
+      213: 1770978900052647172
+    second: Firework_PurpleBlue_Spritesheet_105
+  - first:
+      213: -4139423181932146883
+    second: Firework_PurpleBlue_Spritesheet_106
+  - first:
+      213: 6863342532500677817
+    second: Firework_PurpleBlue_Spritesheet_107
+  - first:
+      213: -4924187505460786402
+    second: Firework_PurpleBlue_Spritesheet_108
+  - first:
+      213: 1248003563934405271
+    second: Firework_PurpleBlue_Spritesheet_109
+  - first:
+      213: -1900328750651356765
+    second: Firework_PurpleBlue_Spritesheet_110
+  - first:
+      213: -6662659554765246230
+    second: Firework_PurpleBlue_Spritesheet_111
+  - first:
+      213: 7119725712554277812
+    second: Firework_PurpleBlue_Spritesheet_112
+  - first:
+      213: -201479469704160639
+    second: Firework_PurpleBlue_Spritesheet_113
+  - first:
+      213: -7737132008918731113
+    second: Firework_PurpleBlue_Spritesheet_114
+  - first:
+      213: -5935003715521502080
+    second: Firework_PurpleBlue_Spritesheet_115
+  - first:
+      213: 4094006099102430424
+    second: Firework_PurpleBlue_Spritesheet_116
+  - first:
+      213: -9033770580959307846
+    second: Firework_PurpleBlue_Spritesheet_117
+  - first:
+      213: 5547289993831400577
+    second: Firework_PurpleBlue_Spritesheet_118
+  - first:
+      213: -7690071070577476195
+    second: Firework_PurpleBlue_Spritesheet_119
+  - first:
+      213: -2976748540193467569
+    second: Firework_PurpleBlue_Spritesheet_120
+  - first:
+      213: 4659035109742115036
+    second: Firework_PurpleBlue_Spritesheet_121
+  - first:
+      213: 3052300009162352719
+    second: Firework_PurpleBlue_Spritesheet_122
+  - first:
+      213: -5870475515038984221
+    second: Firework_PurpleBlue_Spritesheet_123
+  - first:
+      213: -1637168420041944865
+    second: Firework_PurpleBlue_Spritesheet_124
+  - first:
+      213: 3863973083425615387
+    second: Firework_PurpleBlue_Spritesheet_125
+  - first:
+      213: 6694428476014878892
+    second: Firework_PurpleBlue_Spritesheet_126
+  - first:
+      213: 6390617381500996594
+    second: Firework_PurpleBlue_Spritesheet_127
+  - first:
+      213: 6681463592394961386
+    second: Firework_PurpleBlue_Spritesheet_128
+  - first:
+      213: 5888070935716819333
+    second: Firework_PurpleBlue_Spritesheet_129
+  - first:
+      213: -6891370166681066709
+    second: Firework_PurpleBlue_Spritesheet_130
+  - first:
+      213: 8307245608359656442
+    second: Firework_PurpleBlue_Spritesheet_131
+  - first:
+      213: 2550307603245105298
+    second: Firework_PurpleBlue_Spritesheet_132
+  - first:
+      213: 3152330729691545581
+    second: Firework_PurpleBlue_Spritesheet_133
+  - first:
+      213: -2604261866532660415
+    second: Firework_PurpleBlue_Spritesheet_134
+  - first:
+      213: -7543923243938161026
+    second: Firework_PurpleBlue_Spritesheet_135
+  - first:
+      213: -311428653799602180
+    second: Firework_PurpleBlue_Spritesheet_136
+  - first:
+      213: -7124527975435341854
+    second: Firework_PurpleBlue_Spritesheet_137
+  - first:
+      213: -8244644685979773048
+    second: Firework_PurpleBlue_Spritesheet_138
+  - first:
+      213: -9186093474632676506
+    second: Firework_PurpleBlue_Spritesheet_139
+  - first:
+      213: -6807542786398128144
+    second: Firework_PurpleBlue_Spritesheet_140
+  - first:
+      213: 435067876521769193
+    second: Firework_PurpleBlue_Spritesheet_141
+  - first:
+      213: -4971038964085204345
+    second: Firework_PurpleBlue_Spritesheet_142
+  - first:
+      213: -864771656151571008
+    second: Firework_PurpleBlue_Spritesheet_143
+  - first:
+      213: -6196156626390852553
+    second: Firework_PurpleBlue_Spritesheet_144
+  - first:
+      213: -3199853948799896993
+    second: Firework_PurpleBlue_Spritesheet_145
+  - first:
+      213: 5892674899645564214
+    second: Firework_PurpleBlue_Spritesheet_146
+  - first:
+      213: -2207357159510055341
+    second: Firework_PurpleBlue_Spritesheet_147
+  - first:
+      213: -5179298500742912226
+    second: Firework_PurpleBlue_Spritesheet_148
+  - first:
+      213: 4915794687189130395
+    second: Firework_PurpleBlue_Spritesheet_149
+  - first:
+      213: 5039794336364500760
+    second: Firework_PurpleBlue_Spritesheet_150
+  - first:
+      213: -915881483457536205
+    second: Firework_PurpleBlue_Spritesheet_151
+  - first:
+      213: 8892464956791759000
+    second: Firework_PurpleBlue_Spritesheet_152
+  - first:
+      213: 2162276280108577426
+    second: Firework_PurpleBlue_Spritesheet_153
+  - first:
+      213: 4608170622297035186
+    second: Firework_PurpleBlue_Spritesheet_154
+  - first:
+      213: -8177864767708670466
+    second: Firework_PurpleBlue_Spritesheet_155
+  - first:
+      213: -6102108251372055718
+    second: Firework_PurpleBlue_Spritesheet_156
+  - first:
+      213: 3641987371446830780
+    second: Firework_PurpleBlue_Spritesheet_157
+  - first:
+      213: 6379034177647823811
+    second: Firework_PurpleBlue_Spritesheet_158
+  - first:
+      213: 7679768891740745738
+    second: Firework_PurpleBlue_Spritesheet_159
+  - first:
+      213: -3893984470483426754
+    second: Firework_PurpleBlue_Spritesheet_160
+  - first:
+      213: -7024624520838399527
+    second: Firework_PurpleBlue_Spritesheet_161
+  - first:
+      213: 8271635311443760898
+    second: Firework_PurpleBlue_Spritesheet_162
+  - first:
+      213: 5329243384240626677
+    second: Firework_PurpleBlue_Spritesheet_163
+  - first:
+      213: 3265538423380034946
+    second: Firework_PurpleBlue_Spritesheet_164
+  - first:
+      213: 2765549756221088961
+    second: Firework_PurpleBlue_Spritesheet_165
+  - first:
+      213: -311111588836174322
+    second: Firework_PurpleBlue_Spritesheet_166
+  - first:
+      213: 5728647695112688565
+    second: Firework_PurpleBlue_Spritesheet_167
+  - first:
+      213: 6622459949546915747
+    second: Firework_PurpleBlue_Spritesheet_168
+  - first:
+      213: 2581890482350888257
+    second: Firework_PurpleBlue_Spritesheet_169
+  - first:
+      213: 4672795586811334748
+    second: Firework_PurpleBlue_Spritesheet_170
+  - first:
+      213: 6246909795077070473
+    second: Firework_PurpleBlue_Spritesheet_171
+  - first:
+      213: -3551247561038084442
+    second: Firework_PurpleBlue_Spritesheet_172
+  - first:
+      213: -5407178090087646072
+    second: Firework_PurpleBlue_Spritesheet_173
+  - first:
+      213: 1100333625577902401
+    second: Firework_PurpleBlue_Spritesheet_174
+  - first:
+      213: 5531544306767582005
+    second: Firework_PurpleBlue_Spritesheet_175
+  - first:
+      213: -2979109164492913526
+    second: Firework_PurpleBlue_Spritesheet_176
+  - first:
+      213: -211505224278234820
+    second: Firework_PurpleBlue_Spritesheet_177
+  - first:
+      213: 8776858500541279135
+    second: Firework_PurpleBlue_Spritesheet_178
+  - first:
+      213: -8125329958246081297
+    second: Firework_PurpleBlue_Spritesheet_179
+  - first:
+      213: -3677353710516709299
+    second: Firework_PurpleBlue_Spritesheet_180
+  - first:
+      213: 4922200108553768481
+    second: Firework_PurpleBlue_Spritesheet_181
+  - first:
+      213: 8664969733203892544
+    second: Firework_PurpleBlue_Spritesheet_182
+  - first:
+      213: -7122358077821970612
+    second: Firework_PurpleBlue_Spritesheet_183
+  - first:
+      213: -5153537071229397620
+    second: Firework_PurpleBlue_Spritesheet_184
+  - first:
+      213: 7423129751391110320
+    second: Firework_PurpleBlue_Spritesheet_185
+  - first:
+      213: 4523206906281551626
+    second: Firework_PurpleBlue_Spritesheet_186
+  - first:
+      213: -8235861693199244408
+    second: Firework_PurpleBlue_Spritesheet_187
+  - first:
+      213: 7157916144350616469
+    second: Firework_PurpleBlue_Spritesheet_188
+  - first:
+      213: -1467702220229288745
+    second: Firework_PurpleBlue_Spritesheet_189
+  - first:
+      213: -236805737582532393
+    second: Firework_PurpleBlue_Spritesheet_190
+  - first:
+      213: -3571827828529747096
+    second: Firework_PurpleBlue_Spritesheet_191
+  - first:
+      213: 7684343430107640217
+    second: Firework_PurpleBlue_Spritesheet_192
+  - first:
+      213: 5780863672919055004
+    second: Firework_PurpleBlue_Spritesheet_193
+  - first:
+      213: 639517045486430495
+    second: Firework_PurpleBlue_Spritesheet_194
+  - first:
+      213: 3265536952047063405
+    second: Firework_PurpleBlue_Spritesheet_195
+  - first:
+      213: -5770608729595939882
+    second: Firework_PurpleBlue_Spritesheet_196
+  - first:
+      213: -5579115743822233024
+    second: Firework_PurpleBlue_Spritesheet_197
+  - first:
+      213: 6624112528285324228
+    second: Firework_PurpleBlue_Spritesheet_198
+  - first:
+      213: -7185772324057285539
+    second: Firework_PurpleBlue_Spritesheet_199
+  - first:
+      213: 3665920608531225868
+    second: Firework_PurpleBlue_Spritesheet_200
+  - first:
+      213: -4403463750882668944
+    second: Firework_PurpleBlue_Spritesheet_201
+  - first:
+      213: -584928818274644447
+    second: Firework_PurpleBlue_Spritesheet_202
+  - first:
+      213: -1504226501709554521
+    second: Firework_PurpleBlue_Spritesheet_203
+  - first:
+      213: -7833555363711491405
+    second: Firework_PurpleBlue_Spritesheet_204
+  - first:
+      213: -5406156750657859827
+    second: Firework_PurpleBlue_Spritesheet_205
+  - first:
+      213: -3651734842237381388
+    second: Firework_PurpleBlue_Spritesheet_206
+  - first:
+      213: 7058038883150410451
+    second: Firework_PurpleBlue_Spritesheet_207
+  - first:
+      213: -2295427997261779216
+    second: Firework_PurpleBlue_Spritesheet_208
+  - first:
+      213: 234069191601731845
+    second: Firework_PurpleBlue_Spritesheet_209
+  - first:
+      213: 7020596847124117868
+    second: Firework_PurpleBlue_Spritesheet_210
+  - first:
+      213: -8753567658380579338
+    second: Firework_PurpleBlue_Spritesheet_211
+  - first:
+      213: 4607208537890386918
+    second: Firework_PurpleBlue_Spritesheet_212
+  - first:
+      213: -5067303726172843002
+    second: Firework_PurpleBlue_Spritesheet_213
+  - first:
+      213: -5666242225391161241
+    second: Firework_PurpleBlue_Spritesheet_214
+  - first:
+      213: -6896470244185548592
+    second: Firework_PurpleBlue_Spritesheet_215
+  - first:
+      213: -8664856141716489205
+    second: Firework_PurpleBlue_Spritesheet_216
+  - first:
+      213: 7331767406091454235
+    second: Firework_PurpleBlue_Spritesheet_217
+  - first:
+      213: -816221541901411899
+    second: Firework_PurpleBlue_Spritesheet_218
+  - first:
+      213: 4060305538239915645
+    second: Firework_PurpleBlue_Spritesheet_219
+  - first:
+      213: 5788628595630525813
+    second: Firework_PurpleBlue_Spritesheet_220
+  - first:
+      213: 932020443932802418
+    second: Firework_PurpleBlue_Spritesheet_221
+  - first:
+      213: -508436271282092457
+    second: Firework_PurpleBlue_Spritesheet_222
+  - first:
+      213: 1254001240129385204
+    second: Firework_PurpleBlue_Spritesheet_223
+  - first:
+      213: -7108748494067497148
+    second: Firework_PurpleBlue_Spritesheet_224
+  - first:
+      213: 2628661046298078812
+    second: Firework_PurpleBlue_Spritesheet_225
+  - first:
+      213: -1174682275782901885
+    second: Firework_PurpleBlue_Spritesheet_226
+  - first:
+      213: 7479092252026697528
+    second: Firework_PurpleBlue_Spritesheet_227
+  - first:
+      213: -5156646238762099725
+    second: Firework_PurpleBlue_Spritesheet_228
+  - first:
+      213: -4315696567255801967
+    second: Firework_PurpleBlue_Spritesheet_229
+  - first:
+      213: 1264398451272547655
+    second: Firework_PurpleBlue_Spritesheet_230
+  - first:
+      213: 8031889267642301198
+    second: Firework_PurpleBlue_Spritesheet_231
+  - first:
+      213: 1773764663942278731
+    second: Firework_PurpleBlue_Spritesheet_232
+  - first:
+      213: 819407389668097116
+    second: Firework_PurpleBlue_Spritesheet_233
+  - first:
+      213: -2374327913501539453
+    second: Firework_PurpleBlue_Spritesheet_234
+  - first:
+      213: -6802027677387382273
+    second: Firework_PurpleBlue_Spritesheet_235
+  - first:
+      213: -3793763083606940399
+    second: Firework_PurpleBlue_Spritesheet_236
+  - first:
+      213: 5725147354849667372
+    second: Firework_PurpleBlue_Spritesheet_237
+  - first:
+      213: 5481161615362781117
+    second: Firework_PurpleBlue_Spritesheet_238
+  - first:
+      213: -8731716131617568577
+    second: Firework_PurpleBlue_Spritesheet_239
+  - first:
+      213: 6615179234890228443
+    second: Firework_PurpleBlue_Spritesheet_240
+  - first:
+      213: -5291465976439395513
+    second: Firework_PurpleBlue_Spritesheet_241
+  - first:
+      213: 4159457672778776744
+    second: Firework_PurpleBlue_Spritesheet_242
+  - first:
+      213: 3719614671844209942
+    second: Firework_PurpleBlue_Spritesheet_243
+  - first:
+      213: -3574623055331503179
+    second: Firework_PurpleBlue_Spritesheet_244
+  - first:
+      213: 5621720858354170579
+    second: Firework_PurpleBlue_Spritesheet_245
+  - first:
+      213: -8226727357172505458
+    second: Firework_PurpleBlue_Spritesheet_246
+  - first:
+      213: -4218770484673299261
+    second: Firework_PurpleBlue_Spritesheet_247
+  - first:
+      213: -5378888328185443707
+    second: Firework_PurpleBlue_Spritesheet_248
+  - first:
+      213: -1406325016773850596
+    second: Firework_PurpleBlue_Spritesheet_249
+  - first:
+      213: 8248093494375941048
+    second: Firework_PurpleBlue_Spritesheet_250
+  - first:
+      213: -6825653573807197596
+    second: Firework_PurpleBlue_Spritesheet_251
+  - first:
+      213: -3528380072255233289
+    second: Firework_PurpleBlue_Spritesheet_252
+  - first:
+      213: 7637351936400251564
+    second: Firework_PurpleBlue_Spritesheet_253
+  - first:
+      213: -7288260727090031718
+    second: Firework_PurpleBlue_Spritesheet_254
+  - first:
+      213: 4054571947292102362
+    second: Firework_PurpleBlue_Spritesheet_255
+  - first:
+      213: -6923345855330013392
+    second: Firework_PurpleBlue_Spritesheet_256
+  - first:
+      213: -8222860615144070790
+    second: Firework_PurpleBlue_Spritesheet_257
+  - first:
+      213: -7546075655968544703
+    second: Firework_PurpleBlue_Spritesheet_258
+  - first:
+      213: -7111756725651449513
+    second: Firework_PurpleBlue_Spritesheet_259
+  - first:
+      213: -8688355595465313260
+    second: Firework_PurpleBlue_Spritesheet_260
+  - first:
+      213: -1531078598555621761
+    second: Firework_PurpleBlue_Spritesheet_261
+  - first:
+      213: 4191963814519467368
+    second: Firework_PurpleBlue_Spritesheet_262
+  - first:
+      213: -6442081910653902548
+    second: Firework_PurpleBlue_Spritesheet_263
+  - first:
+      213: -2852331655203394568
+    second: Firework_PurpleBlue_Spritesheet_264
+  - first:
+      213: 6341439867098252881
+    second: Firework_PurpleBlue_Spritesheet_265
+  - first:
+      213: 7519928569984590211
+    second: Firework_PurpleBlue_Spritesheet_266
+  - first:
+      213: -6827695625550667608
+    second: Firework_PurpleBlue_Spritesheet_267
+  - first:
+      213: -4948397483336242964
+    second: Firework_PurpleBlue_Spritesheet_268
+  - first:
+      213: -6652441589457094526
+    second: Firework_PurpleBlue_Spritesheet_269
+  - first:
+      213: -7888058008888017930
+    second: Firework_PurpleBlue_Spritesheet_270
+  - first:
+      213: 6066596969192011997
+    second: Firework_PurpleBlue_Spritesheet_271
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 555
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ece95f447fde77c0800000000000000
+      internalID: -4071571322455855901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 548
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c062c1c753572670800000000000000
+      internalID: 8513865256945213639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 542
+        width: 34
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19a8796280ae385a0800000000000000
+      internalID: -6520110514774242671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 561
+        width: 24
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd359f31228cc70a0800000000000000
+      internalID: -6882406081839410211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 563
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f5c94868d258c5e0800000000000000
+      internalID: -1889168954265844238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 564
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcf02cd8384ed6480800000000000000
+      internalID: -8904209634571448369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 560
+        width: 24
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3098ec568c3f5c10800000000000000
+      internalID: 2044419303631523899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 553
+        width: 23
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0302615c4f3772a0800000000000000
+      internalID: -6739848720321215732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 536
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71187f224cefcc1f0800000000000000
+      internalID: -1023162896966254313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 533
+        width: 11
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 824c302bc33b166f0800000000000000
+      internalID: -693075794372344792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 531
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68cca0bd23bff8db0800000000000000
+      internalID: -4787331683029693306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 548
+        width: 23
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a87e6f5d371b25680800000000000000
+      internalID: -8767750413467850870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 433
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b80712b814a458cd0800000000000000
+      internalID: -2556555568095334261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 419
+        width: 14
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d37af80f8449d11a0800000000000000
+      internalID: -6837145618284042435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 431
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6daabe66b1031860800000000000000
+      internalID: 7499339687555411306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 435
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b311c0f57f18d770800000000000000
+      internalID: 8635686876893746103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 410
+        width: 29
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c0003fb0a610b610800000000000000
+      internalID: 1634831544393662663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 433
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bac788a5064fec90800000000000000
+      internalID: -7138409894242694478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 439
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c7bfac94e7813ca0800000000000000
+      internalID: -6038896209376069692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 440
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4384fc29356385210800000000000000
+      internalID: 1321866223206484020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 433
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5863a6c83ea6646c0800000000000000
+      internalID: -4159519680284182907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 415
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82e7d262ee65794b0800000000000000
+      internalID: -5433778844556493272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 422
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 188a665ca107c5440800000000000000
+      internalID: 4925935352719779969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 415
+        width: 11
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a1d7da2e5f1c64e0800000000000000
+      internalID: -1987178846271057497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_24
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 424
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6aa593b914956af60800000000000000
+      internalID: 8045215922655943334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_25
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 423
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfe2c65f322b6e980800000000000000
+      internalID: -8509918578358866181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_26
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 425
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b27c9bf7e423d5aa0800000000000000
+      internalID: -6170720601695992021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_27
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 429
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eef85a6cb5d2ebdb0800000000000000
+      internalID: -4774328682768134162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_28
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 425
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c2239ff45f24d5f0800000000000000
+      internalID: -732908797242957112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_29
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 422
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19e4c6a5b7ee97de0800000000000000
+      internalID: -1334773600973205871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_30
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 427
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80c96a536664445a0800000000000000
+      internalID: -6538023354234397688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_31
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 429
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a80d071b00135ccb0800000000000000
+      internalID: -4844411945120378742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_32
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 422
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8b67e56f8e8d1350800000000000000
+      internalID: 5989099826013760395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_33
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 422
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edef31da030f73f20800000000000000
+      internalID: 3402452135354564318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_34
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 429
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9b6d66f52c73e430800000000000000
+      internalID: 3811026212175571867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_35
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 426
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea7ba73c5ede61b80800000000000000
+      internalID: -8424284481867040850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_36
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 430
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 723b95a4e86c01970800000000000000
+      internalID: 8723690792651698983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_37
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 425
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c699f464b8f986290800000000000000
+      internalID: -7896886526065272468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_38
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 422
+        width: 36
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b8a55dc6d30408c0800000000000000
+      internalID: -4034095145114294087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_39
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 429
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6eb9b2a1f6b4ee9d0800000000000000
+      internalID: -2743172182469534746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_40
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 423
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7ba78def141690d0800000000000000
+      internalID: -3416521139952309377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_41
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 418
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c775414ab4100c980800000000000000
+      internalID: -8520809070598006916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_42
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 419
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30c3b7b8e532bc630800000000000000
+      internalID: 3948288387294379011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_43
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 417
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f3bf391df93713e0800000000000000
+      internalID: -2083132543422450698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_44
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 417
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 937184673392f9550800000000000000
+      internalID: 6169695315525375801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_45
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 419
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d5040621c7c1b0e0800000000000000
+      internalID: -2255802305955494448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_46
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 419
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c06383887c9444150800000000000000
+      internalID: 5855886536821192204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_47
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 417
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ce5e6d0f17e22b30800000000000000
+      internalID: 4261222318001249984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_48
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 418
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5844c7afa949aede0800000000000000
+      internalID: -1303065748822014843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_49
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 420
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c54ae96c980c45850800000000000000
+      internalID: 6364923871356691548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_50
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 418
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e4da72333cb2dc20800000000000000
+      internalID: 3229850810854331622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_51
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 423
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66d95a91b19606000800000000000000
+      internalID: 27137162879540582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_52
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 421
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f951cc24f60a9230800000000000000
+      internalID: 3646234494102493685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_53
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 422
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9637053616f706f0800000000000000
+      internalID: -718335040302926181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_54
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 420
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bd7974417f2aae00800000000000000
+      internalID: 1056709226098425270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_55
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 413
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 499b97c3d1f1f5770800000000000000
+      internalID: 8601628023730059668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_56
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 412
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b232468f0b19febf0800000000000000
+      internalID: -292855261488209109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_57
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 407
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 971d1d5d238a69760800000000000000
+      internalID: 7464338368702304633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_58
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 414
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0448ca400ac2ea70800000000000000
+      internalID: 8854861919967265805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_59
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 413
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84446e0b2b55f6740800000000000000
+      internalID: 5147427125068186696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_60
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 409
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f056c73eda8cebc90800000000000000
+      internalID: -7152058509046291185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_61
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 413
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb40da8d19bd4c830800000000000000
+      internalID: 4090635781011211451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_62
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 404
+        width: 23
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf33ba9f449edb080800000000000000
+      internalID: -9169916783800667141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_63
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 409
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c597d9ca905b10d30800000000000000
+      internalID: 4395993764445649244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_64
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 416
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36894366ec95b2820800000000000000
+      internalID: 2894505928528533603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_65
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 409
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c31a4c75f17cd6a0800000000000000
+      internalID: -6423133669371014203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_66
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 409
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d0c18024239bb8b0800000000000000
+      internalID: -5135349166712438570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_67
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 412
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a84d17740c8eb100800000000000000
+      internalID: 125691790419118240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_68
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 410
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a1f1f2e54d9d7b20800000000000000
+      internalID: 3133833839205544352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_69
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 397
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fc629311291c1c80800000000000000
+      internalID: -8350771979198763787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_70
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 398
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 139ee537926eb2390800000000000000
+      internalID: -7841921260431939279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_71
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 404
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60dcc830d57e4ee80800000000000000
+      internalID: -8150135038956221178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_72
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 395
+        width: 14
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 809e0e712fb489f90800000000000000
+      internalID: -6946718922064205560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_73
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 411
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfaed102d7b743610800000000000000
+      internalID: 1600039544963328763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_74
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 405
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e5b421196a331640800000000000000
+      internalID: 5049443830146053604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_75
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 413
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbcab2289c4af3070800000000000000
+      internalID: 8088364641159982271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_76
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 411
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bb9e2a942a9a2650800000000000000
+      internalID: 6208944518279895987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_77
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 398
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fe387e6fe86ddc10800000000000000
+      internalID: 2079933980474883828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_78
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 407
+        width: 25
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3245a40f4e1f42bd0800000000000000
+      internalID: -2655731914655509469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_79
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 400
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abcf3e09e255e38b0800000000000000
+      internalID: -5170601663687033670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_80
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 406
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c6b0d3b2717376e0800000000000000
+      internalID: -1841003085207390522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_81
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 403
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8de03dd75737dba0800000000000000
+      internalID: -6064317522718429811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_82
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 395
+        width: 21
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53c1f641e465c8090800000000000000
+      internalID: -8030949142158173131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_83
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 409
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20c1828676813b8a0800000000000000
+      internalID: -6290657422098293758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_84
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 405
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 725f45ec7581bda20800000000000000
+      internalID: 3088088734895502631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_85
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 401
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05dc0d67bdf5696a0800000000000000
+      internalID: -6442856820711043760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_86
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 403
+        width: 20
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3dff8c68812c8220800000000000000
+      internalID: 2489401563849686330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_87
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 408
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e37b2516a8030a410800000000000000
+      internalID: 1486241247928694590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_88
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 403
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 372f101c180e87ba0800000000000000
+      internalID: -6090871648125062541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_89
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 407
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32c8a41e5321ab470800000000000000
+      internalID: 8411055276690148387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_90
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 405
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf56a03c49dc03b80800000000000000
+      internalID: -8417001664744364548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_91
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 409
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2938bba6f574f80a0800000000000000
+      internalID: -6877199630833319022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_92
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 389
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e42d09332dd05220800000000000000
+      internalID: 2472719338777158885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_93
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 404
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5a1af36abed3c160800000000000000
+      internalID: 7044719134260206174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_94
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 388
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7b3f6a8f87d3ae60800000000000000
+      internalID: 7972452776878750586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_95
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 396
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32a82870f23d13f50800000000000000
+      internalID: 6859495906404895267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_96
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 386
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54bd6f6871938d950800000000000000
+      internalID: 6473987237556443973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_97
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 398
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8634894e0933ddc30800000000000000
+      internalID: 4385718309532222312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_98
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 383
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b11660ac4deb3320800000000000000
+      internalID: 2538883728317747633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_99
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 391
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fedaf7aa4352f2c0800000000000000
+      internalID: -4399362305876631817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_100
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 391
+        width: 20
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ed7b9bfd908b2c80800000000000000
+      internalID: -8346436068381590046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_101
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 389
+        width: 22
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d18f55dc251cb4ab0800000000000000
+      internalID: -5022708398025213923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_102
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 391
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e2df2896dda4e250800000000000000
+      internalID: 5973090142987997928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_103
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 401
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efec4d782da383ff0800000000000000
+      internalID: -56230319445717250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_104
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 389
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9241b2a2fc332b610800000000000000
+      internalID: 1635426579547624489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_105
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 377
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40d99523de7c39810800000000000000
+      internalID: 1770978900052647172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_106
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 385
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3fcae13c80dd86c0800000000000000
+      internalID: -4139423181932146883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_107
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 384
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b468857bad7f3f50800000000000000
+      internalID: 6863342532500677817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_108
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 387
+        width: 20
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1bc791ad85c9abb0800000000000000
+      internalID: -4924187505460786402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_109
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 382
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7925bb211acc15110800000000000000
+      internalID: 1248003563934405271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_110
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 384
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a9c6f4d11da0a5e0800000000000000
+      internalID: -1900328750651356765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_111
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 380
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae0fada6f6a7983a0800000000000000
+      internalID: -6662659554765246230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_112
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 379
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bb330b40d85ec260800000000000000
+      internalID: 7119725712554277812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_113
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 384
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18adfb26d73343df0800000000000000
+      internalID: -201479469704160639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_114
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 388
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79638145e6f20a490800000000000000
+      internalID: -7737132008918731113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_115
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 384
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 084a7b3d091a2ada0800000000000000
+      internalID: -5935003715521502080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_116
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 383
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d4784d2bd4d0d830800000000000000
+      internalID: 4094006099102430424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_117
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 380
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab7db83058991a280800000000000000
+      internalID: -9033770580959307846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_118
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 385
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 184466ccbdeebfc40800000000000000
+      internalID: 5547289993831400577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_119
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 384
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9db8b4ea11674590800000000000000
+      internalID: -7690071070577476195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_120
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 382
+        width: 24
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f431b1469f670b6d0800000000000000
+      internalID: -2976748540193467569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_121
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 378
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd870486fb738a040800000000000000
+      internalID: 4659035109742115036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_122
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 365
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f482b02cfa2fb5a20800000000000000
+      internalID: 3052300009162352719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_123
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 381
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e719774f91e78ea0800000000000000
+      internalID: -5870475515038984221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_124
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 383
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd099edfefb9749e0800000000000000
+      internalID: -1637168420041944865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_125
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 374
+        width: 13
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1e21431c079f9530800000000000000
+      internalID: 3863973083425615387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_126
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 379
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca06027fa3367ec50800000000000000
+      internalID: 6694428476014878892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_127
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 374
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fbcdc746a800b850800000000000000
+      internalID: 6390617381500996594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_128
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 365
+        width: 13
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae13864ccb359bc50800000000000000
+      internalID: 6681463592394961386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_129
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 362
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 581f3b7d151a6b150800000000000000
+      internalID: 5888070935716819333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_130
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 373
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b23204f685fec50a0800000000000000
+      internalID: -6891370166681066709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_131
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 381
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afb733cfdd3494370800000000000000
+      internalID: 8307245608359656442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_132
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 374
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2900767c043846320800000000000000
+      internalID: 2550307603245105298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_133
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 379
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: defffcdc8145fbb20800000000000000
+      internalID: 3152330729691545581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_134
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 359
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14b993f51adcbdbd0800000000000000
+      internalID: -2604261866532660415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_135
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 370
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7ed04077c99e4790800000000000000
+      internalID: -7543923243938161026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_136
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 378
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf785651a459dabf0800000000000000
+      internalID: -311428653799602180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_137
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 374
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2efe7dfbd87902d90800000000000000
+      internalID: -7124527975435341854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_138
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 381
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8871dd01753259d80800000000000000
+      internalID: -8244644685979773048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_139
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 377
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66b4cf2a7a0748080800000000000000
+      internalID: -9186093474632676506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_140
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 376
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f7777757efb681a0800000000000000
+      internalID: -6807542786398128144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_141
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 376
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e87349bdeba90600800000000000000
+      internalID: 435067876521769193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_142
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 377
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78a531d5662530bb0800000000000000
+      internalID: -4971038964085204345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_143
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 366
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c5624fa2c6bff3f0800000000000000
+      internalID: -864771656151571008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_144
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 379
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73c5a4f7064d20aa0800000000000000
+      internalID: -6196156626390852553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_145
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 362
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f52b6a089c5d793d0800000000000000
+      internalID: -3199853948799896993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_146
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 369
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6350c3ab99cf6c150800000000000000
+      internalID: 5892674899645564214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_147
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 368
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 356ecf6cb54ed51e0800000000000000
+      internalID: -2207357159510055341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_148
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 366
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e176185647f6f18b0800000000000000
+      internalID: -5179298500742912226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_149
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 364
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9c19a61939683440800000000000000
+      internalID: 4915794687189130395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_150
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 368
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81718083f32f0f540800000000000000
+      internalID: 5039794336364500760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_151
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 369
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33fd722b4a22a43f0800000000000000
+      internalID: -915881483457536205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_152
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 360
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 890ae2f83c1686b70800000000000000
+      internalID: 8892464956791759000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_153
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 359
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 292ff1e02d2f10e10800000000000000
+      internalID: 2162276280108577426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_154
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 369
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b1d76e04c283ff30800000000000000
+      internalID: 4608170622297035186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_155
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 361
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef5da8b6253628e80800000000000000
+      internalID: -8177864767708670466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_156
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 362
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a531dff20e4f05ba0800000000000000
+      internalID: -6102108251372055718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_157
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 368
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb60c8fd730fa8230800000000000000
+      internalID: 3641987371446830780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_158
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 371
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cb46c879c1e68850800000000000000
+      internalID: 6379034177647823811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_159
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 365
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a007d4d2e15049a60800000000000000
+      internalID: 7679768891740745738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_160
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 372
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e32a2fb51c9c5f9c0800000000000000
+      internalID: -3893984470483426754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_161
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 365
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d9bde26735838e90800000000000000
+      internalID: -7024624520838399527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_162
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 364
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 207de22ad70cac270800000000000000
+      internalID: 8271635311443760898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_163
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 364
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fb53475f9645f940800000000000000
+      internalID: 5329243384240626677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_164
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 372
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 285c4fdf4e5815d20800000000000000
+      internalID: 3265538423380034946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_165
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 361
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c4e93cc9d4316620800000000000000
+      internalID: 2765549756221088961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_166
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 369
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0699e588a5beabf0800000000000000
+      internalID: -311111588836174322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_167
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 360
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b35d8e1abe308f40800000000000000
+      internalID: 5728647695112688565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_168
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 362
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a7ceff9c34b7eb50800000000000000
+      internalID: 6622459949546915747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_169
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 354
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1459c79d6b7b4d320800000000000000
+      internalID: 2581890482350888257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_170
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 356
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5017e324da19d040800000000000000
+      internalID: 4672795586811334748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_171
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 348
+        width: 23
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98e1a7f6c5b71b650800000000000000
+      internalID: 6246909795077070473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_172
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 351
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a64ad6982f67bec0800000000000000
+      internalID: -3551247561038084442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_173
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 356
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88cfc0fec28d5f4b0800000000000000
+      internalID: -5407178090087646072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_174
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 352
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1411df64a9b254f00800000000000000
+      internalID: 1100333625577902401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_175
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 350
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53357385d3ef3cc40800000000000000
+      internalID: 5531544306767582005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_176
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 360
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a840a47bff318a6d0800000000000000
+      internalID: -2979109164492913526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_177
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 343
+        width: 23
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c39a1ce7e15901df0800000000000000
+      internalID: -211505224278234820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_178
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 346
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9b61a0fd4aadc970800000000000000
+      internalID: 8776858500541279135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_179
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 246
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fec17ebe3770d3f80800000000000000
+      internalID: -8125329958246081297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_180
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 225
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d48df23a84a67fcc0800000000000000
+      internalID: -3677353710516709299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_181
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 205
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12e8cb77bea2f4440800000000000000
+      internalID: 4922200108553768481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_182
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 273
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04911293018204870800000000000000
+      internalID: 8664969733203892544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_183
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 219
+        width: 13
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c479948601d482d90800000000000000
+      internalID: -7122358077821970612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_184
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 197
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c85909c9655fa78b0800000000000000
+      internalID: -5153537071229397620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_185
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 250
+        width: 32
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b40d41fd21440760800000000000000
+      internalID: 7423129751391110320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_186
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 185
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a07618e57b8a5ce30800000000000000
+      internalID: 4523206906281551626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_187
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 209
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 883ac9dec6754bd80800000000000000
+      internalID: -8235861693199244408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_188
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 275
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59b5d0c1fc6065360800000000000000
+      internalID: 7157916144350616469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_189
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 205
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dc5e2f5b9ca1abe0800000000000000
+      internalID: -1467702220229288745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_190
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 217
+        width: 17
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d86e92bf62b6bcf0800000000000000
+      internalID: -236805737582532393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_191
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 283
+        width: 26
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86b21a9a3815e6ec0800000000000000
+      internalID: -3571827828529747096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_192
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 198
+        width: 18
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9913ca3e2a544aa60800000000000000
+      internalID: 7684343430107640217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_193
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 177
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9adc47d1e0c93050800000000000000
+      internalID: 5780863672919055004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_194
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 267
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f19a6045d5500e800800000000000000
+      internalID: 639517045486430495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_195
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 212
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d615dab6e84815d20800000000000000
+      internalID: 3265536952047063405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_196
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 241
+        width: 24
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d37aa63fedaaefa0800000000000000
+      internalID: -5770608729595939882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_197
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 182
+        width: 24
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 042cfa85acff292b0800000000000000
+      internalID: -5579115743822233024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_198
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 220
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c359a89f339deb50800000000000000
+      internalID: 6624112528285324228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_199
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 263
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5c7bb3a422074c90800000000000000
+      internalID: -7185772324057285539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_200
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 284
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0d994ede57ffd230800000000000000
+      internalID: 3665920608531225868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_201
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 247
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07e44539c01c3e2c0800000000000000
+      internalID: -4403463750882668944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_202
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 275
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12ec9dfb65ae1e7f0800000000000000
+      internalID: -584928818274644447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_203
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 188
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ac9fd767f9ef1be0800000000000000
+      internalID: -1504226501709554521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_204
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 219
+        width: 13
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b2ee9196ee994390800000000000000
+      internalID: -7833555363711491405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_205
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 271
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0f45fc041979f4b0800000000000000
+      internalID: -5406156750657859827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_206
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 195
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f4168a328e625dc0800000000000000
+      internalID: -3651734842237381388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_207
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 206
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d2331918f033f160800000000000000
+      internalID: 7058038883150410451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_208
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 246
+        width: 13
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fea9bfe5600520e0800000000000000
+      internalID: -2295427997261779216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_209
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 225
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 509b84a80b49f3300800000000000000
+      internalID: 234069191601731845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_210
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 246
+        width: 18
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c697f00c2ab2e6160800000000000000
+      internalID: 7020596847124117868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_211
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 222
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fda0e4d794158680800000000000000
+      internalID: -8753567658380579338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_212
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 203
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e37a1351c710ff30800000000000000
+      internalID: 4607208537890386918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_213
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 12
+        width: 116
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6045478db125da9b0800000000000000
+      internalID: -5067303726172843002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_214
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 274
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 760bd3097b67d51b0800000000000000
+      internalID: -5666242225391161241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_215
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 217
+        width: 15
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d8d44b1ad0da40a0800000000000000
+      internalID: -6896470244185548592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_216
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 196
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0c702b5f3f30c780800000000000000
+      internalID: -8664856141716489205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_217
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 244
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b174ed74c9bafb560800000000000000
+      internalID: 7331767406091454235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_218
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 181
+        width: 28
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c9d1f805d23ca4f0800000000000000
+      internalID: -816221541901411899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_219
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 277
+        width: 24
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d766756ef5a195830800000000000000
+      internalID: 4060305538239915645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_220
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 197
+        width: 23
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57dc93bc907555050800000000000000
+      internalID: 5788628595630525813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_221
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 216
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27d340cd7a33fec00800000000000000
+      internalID: 932020443932802418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_222
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 268
+        width: 34
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7568e43b7eba1f8f0800000000000000
+      internalID: -508436271282092457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_223
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 251
+        width: 21
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f2bfc1eb7b176110800000000000000
+      internalID: 1254001240129385204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_224
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 197
+        width: 19
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 447838d88e6a85d90800000000000000
+      internalID: -7108748494067497148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_225
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 212
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5ee08b5b41ea7420800000000000000
+      internalID: 2628661046298078812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_226
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 246
+        width: 32
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38f3304a1b0b2bfe0800000000000000
+      internalID: -1174682275782901885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_227
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 201
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8377d6cf6c21bc760800000000000000
+      internalID: 7479092252026697528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_228
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 224
+        width: 7
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fb1b322199ef68b0800000000000000
+      internalID: -5156646238762099725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_229
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 277
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19f585e66d09b14c0800000000000000
+      internalID: -4315696567255801967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_230
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 185
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74d77ae31bb0c8110800000000000000
+      internalID: 1264398451272547655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_231
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 225
+        width: 10
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0b7711fbb0077f60800000000000000
+      internalID: 8031889267642301198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_232
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 266
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4e6b65609dad9810800000000000000
+      internalID: 1773764663942278731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_233
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 195
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5c3f73fdae1f5b00800000000000000
+      internalID: 819407389668097116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_234
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 203
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3834277a751bc0fd0800000000000000
+      internalID: -2374327913501539453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_235
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 224
+        width: 14
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff123f8bdd75a91a0800000000000000
+      internalID: -6802027677387382273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_236
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 229
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1152e9f5398d95bc0800000000000000
+      internalID: -3793763083606940399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_237
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 209
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c29e494af2fc37f40800000000000000
+      internalID: 5725147354849667372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_238
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 254
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbf6430e27ff01c40800000000000000
+      internalID: 5481161615362781117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_239
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 266
+        width: 40
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb8036fd076b2d680800000000000000
+      internalID: -8731716131617568577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_240
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 194
+        width: 12
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd22c252776ddcb50800000000000000
+      internalID: 6615179234890228443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_241
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 13
+        width: 80
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74ba345dabfe096b0800000000000000
+      internalID: -5291465976439395513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_242
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 178
+        width: 27
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a0804437bc59b930800000000000000
+      internalID: 4159457672778776744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_243
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 218
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 615fa9036d9be9330800000000000000
+      internalID: 3719614671844209942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_244
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 236
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b35b053543646ec0800000000000000
+      internalID: -3574623055331503179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_245
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 199
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3daba94e55d540e40800000000000000
+      internalID: 5621720858354170579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_246
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 195
+        width: 67
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e84aeb34e0bc4dd80800000000000000
+      internalID: -8226727357172505458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_247
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 194
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cc3520a89ae375c0800000000000000
+      internalID: -4218770484673299261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_248
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 216
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58a030860995a55b0800000000000000
+      internalID: -5378888328185443707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_249
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 214
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1a037829dabb7ce0800000000000000
+      internalID: -1406325016773850596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_250
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 244
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b30d76355d177270800000000000000
+      internalID: 8248093494375941048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_251
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 175
+        width: 110
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 462b85d0d386641a0800000000000000
+      internalID: -6825653573807197596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_252
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 242
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f2e8a8b40da80fc0800000000000000
+      internalID: -3528380072255233289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_253
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 267
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: caa57c92f135df960800000000000000
+      internalID: 7637351936400251564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_254
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 175
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a935e5bcb75eada90800000000000000
+      internalID: -7288260727090031718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_255
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 268
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ade0c9a34bbb44830800000000000000
+      internalID: 4054571947292102362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_256
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 252
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03fa1e340a55bef90800000000000000
+      internalID: -6923345855330013392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_257
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 197
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a71a9cc46d782ed80800000000000000
+      internalID: -8222860615144070790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_258
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 237
+        width: 29
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 148a5c5fb24f64790800000000000000
+      internalID: -7546075655968544703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_259
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 180
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 759dc8e00f6fd4d90800000000000000
+      internalID: -7111756725651449513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_260
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 221
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 414330a6e92cc6780800000000000000
+      internalID: -8688355595465313260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_261
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 266
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f76a3e9602480cae0800000000000000
+      internalID: -1531078598555621761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_262
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 220
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86d69bb11e8dc2a30800000000000000
+      internalID: 4191963814519467368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_263
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 70
+        width: 12
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c21218542a02996a0800000000000000
+      internalID: -6442081910653902548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_264
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 13
+        width: 121
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fbeffdc87b7a68d0800000000000000
+      internalID: -2852331655203394568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_265
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 114
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15644e2f5f1510850800000000000000
+      internalID: 6341439867098252881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_266
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 73
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3812e3e21372c5860800000000000000
+      internalID: 7519928569984590211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_267
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 43
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a06094d0072f31a0800000000000000
+      internalID: -6827695625550667608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_268
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 72
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce86e46e4b2c35bb0800000000000000
+      internalID: -4948397483336242964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_269
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 30
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 288ff5bde97cda3a0800000000000000
+      internalID: -6652441589457094526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_270
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 46
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fbfd8c980df78290800000000000000
+      internalID: -7888058008888017930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_PurpleBlue_Spritesheet_271
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 93
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd8b6202dc1e03450800000000000000
+      internalID: 6066596969192011997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Firework_PurpleBlue_Spritesheet_0: -4071571322455855901
+      Firework_PurpleBlue_Spritesheet_1: 8513865256945213639
+      Firework_PurpleBlue_Spritesheet_10: -4787331683029693306
+      Firework_PurpleBlue_Spritesheet_100: -8346436068381590046
+      Firework_PurpleBlue_Spritesheet_101: -5022708398025213923
+      Firework_PurpleBlue_Spritesheet_102: 5973090142987997928
+      Firework_PurpleBlue_Spritesheet_103: -56230319445717250
+      Firework_PurpleBlue_Spritesheet_104: 1635426579547624489
+      Firework_PurpleBlue_Spritesheet_105: 1770978900052647172
+      Firework_PurpleBlue_Spritesheet_106: -4139423181932146883
+      Firework_PurpleBlue_Spritesheet_107: 6863342532500677817
+      Firework_PurpleBlue_Spritesheet_108: -4924187505460786402
+      Firework_PurpleBlue_Spritesheet_109: 1248003563934405271
+      Firework_PurpleBlue_Spritesheet_11: -8767750413467850870
+      Firework_PurpleBlue_Spritesheet_110: -1900328750651356765
+      Firework_PurpleBlue_Spritesheet_111: -6662659554765246230
+      Firework_PurpleBlue_Spritesheet_112: 7119725712554277812
+      Firework_PurpleBlue_Spritesheet_113: -201479469704160639
+      Firework_PurpleBlue_Spritesheet_114: -7737132008918731113
+      Firework_PurpleBlue_Spritesheet_115: -5935003715521502080
+      Firework_PurpleBlue_Spritesheet_116: 4094006099102430424
+      Firework_PurpleBlue_Spritesheet_117: -9033770580959307846
+      Firework_PurpleBlue_Spritesheet_118: 5547289993831400577
+      Firework_PurpleBlue_Spritesheet_119: -7690071070577476195
+      Firework_PurpleBlue_Spritesheet_12: -2556555568095334261
+      Firework_PurpleBlue_Spritesheet_120: -2976748540193467569
+      Firework_PurpleBlue_Spritesheet_121: 4659035109742115036
+      Firework_PurpleBlue_Spritesheet_122: 3052300009162352719
+      Firework_PurpleBlue_Spritesheet_123: -5870475515038984221
+      Firework_PurpleBlue_Spritesheet_124: -1637168420041944865
+      Firework_PurpleBlue_Spritesheet_125: 3863973083425615387
+      Firework_PurpleBlue_Spritesheet_126: 6694428476014878892
+      Firework_PurpleBlue_Spritesheet_127: 6390617381500996594
+      Firework_PurpleBlue_Spritesheet_128: 6681463592394961386
+      Firework_PurpleBlue_Spritesheet_129: 5888070935716819333
+      Firework_PurpleBlue_Spritesheet_13: -6837145618284042435
+      Firework_PurpleBlue_Spritesheet_130: -6891370166681066709
+      Firework_PurpleBlue_Spritesheet_131: 8307245608359656442
+      Firework_PurpleBlue_Spritesheet_132: 2550307603245105298
+      Firework_PurpleBlue_Spritesheet_133: 3152330729691545581
+      Firework_PurpleBlue_Spritesheet_134: -2604261866532660415
+      Firework_PurpleBlue_Spritesheet_135: -7543923243938161026
+      Firework_PurpleBlue_Spritesheet_136: -311428653799602180
+      Firework_PurpleBlue_Spritesheet_137: -7124527975435341854
+      Firework_PurpleBlue_Spritesheet_138: -8244644685979773048
+      Firework_PurpleBlue_Spritesheet_139: -9186093474632676506
+      Firework_PurpleBlue_Spritesheet_14: 7499339687555411306
+      Firework_PurpleBlue_Spritesheet_140: -6807542786398128144
+      Firework_PurpleBlue_Spritesheet_141: 435067876521769193
+      Firework_PurpleBlue_Spritesheet_142: -4971038964085204345
+      Firework_PurpleBlue_Spritesheet_143: -864771656151571008
+      Firework_PurpleBlue_Spritesheet_144: -6196156626390852553
+      Firework_PurpleBlue_Spritesheet_145: -3199853948799896993
+      Firework_PurpleBlue_Spritesheet_146: 5892674899645564214
+      Firework_PurpleBlue_Spritesheet_147: -2207357159510055341
+      Firework_PurpleBlue_Spritesheet_148: -5179298500742912226
+      Firework_PurpleBlue_Spritesheet_149: 4915794687189130395
+      Firework_PurpleBlue_Spritesheet_15: 8635686876893746103
+      Firework_PurpleBlue_Spritesheet_150: 5039794336364500760
+      Firework_PurpleBlue_Spritesheet_151: -915881483457536205
+      Firework_PurpleBlue_Spritesheet_152: 8892464956791759000
+      Firework_PurpleBlue_Spritesheet_153: 2162276280108577426
+      Firework_PurpleBlue_Spritesheet_154: 4608170622297035186
+      Firework_PurpleBlue_Spritesheet_155: -8177864767708670466
+      Firework_PurpleBlue_Spritesheet_156: -6102108251372055718
+      Firework_PurpleBlue_Spritesheet_157: 3641987371446830780
+      Firework_PurpleBlue_Spritesheet_158: 6379034177647823811
+      Firework_PurpleBlue_Spritesheet_159: 7679768891740745738
+      Firework_PurpleBlue_Spritesheet_16: 1634831544393662663
+      Firework_PurpleBlue_Spritesheet_160: -3893984470483426754
+      Firework_PurpleBlue_Spritesheet_161: -7024624520838399527
+      Firework_PurpleBlue_Spritesheet_162: 8271635311443760898
+      Firework_PurpleBlue_Spritesheet_163: 5329243384240626677
+      Firework_PurpleBlue_Spritesheet_164: 3265538423380034946
+      Firework_PurpleBlue_Spritesheet_165: 2765549756221088961
+      Firework_PurpleBlue_Spritesheet_166: -311111588836174322
+      Firework_PurpleBlue_Spritesheet_167: 5728647695112688565
+      Firework_PurpleBlue_Spritesheet_168: 6622459949546915747
+      Firework_PurpleBlue_Spritesheet_169: 2581890482350888257
+      Firework_PurpleBlue_Spritesheet_17: -7138409894242694478
+      Firework_PurpleBlue_Spritesheet_170: 4672795586811334748
+      Firework_PurpleBlue_Spritesheet_171: 6246909795077070473
+      Firework_PurpleBlue_Spritesheet_172: -3551247561038084442
+      Firework_PurpleBlue_Spritesheet_173: -5407178090087646072
+      Firework_PurpleBlue_Spritesheet_174: 1100333625577902401
+      Firework_PurpleBlue_Spritesheet_175: 5531544306767582005
+      Firework_PurpleBlue_Spritesheet_176: -2979109164492913526
+      Firework_PurpleBlue_Spritesheet_177: -211505224278234820
+      Firework_PurpleBlue_Spritesheet_178: 8776858500541279135
+      Firework_PurpleBlue_Spritesheet_179: -8125329958246081297
+      Firework_PurpleBlue_Spritesheet_18: -6038896209376069692
+      Firework_PurpleBlue_Spritesheet_180: -3677353710516709299
+      Firework_PurpleBlue_Spritesheet_181: 4922200108553768481
+      Firework_PurpleBlue_Spritesheet_182: 8664969733203892544
+      Firework_PurpleBlue_Spritesheet_183: -7122358077821970612
+      Firework_PurpleBlue_Spritesheet_184: -5153537071229397620
+      Firework_PurpleBlue_Spritesheet_185: 7423129751391110320
+      Firework_PurpleBlue_Spritesheet_186: 4523206906281551626
+      Firework_PurpleBlue_Spritesheet_187: -8235861693199244408
+      Firework_PurpleBlue_Spritesheet_188: 7157916144350616469
+      Firework_PurpleBlue_Spritesheet_189: -1467702220229288745
+      Firework_PurpleBlue_Spritesheet_19: 1321866223206484020
+      Firework_PurpleBlue_Spritesheet_190: -236805737582532393
+      Firework_PurpleBlue_Spritesheet_191: -3571827828529747096
+      Firework_PurpleBlue_Spritesheet_192: 7684343430107640217
+      Firework_PurpleBlue_Spritesheet_193: 5780863672919055004
+      Firework_PurpleBlue_Spritesheet_194: 639517045486430495
+      Firework_PurpleBlue_Spritesheet_195: 3265536952047063405
+      Firework_PurpleBlue_Spritesheet_196: -5770608729595939882
+      Firework_PurpleBlue_Spritesheet_197: -5579115743822233024
+      Firework_PurpleBlue_Spritesheet_198: 6624112528285324228
+      Firework_PurpleBlue_Spritesheet_199: -7185772324057285539
+      Firework_PurpleBlue_Spritesheet_2: -6520110514774242671
+      Firework_PurpleBlue_Spritesheet_20: -4159519680284182907
+      Firework_PurpleBlue_Spritesheet_200: 3665920608531225868
+      Firework_PurpleBlue_Spritesheet_201: -4403463750882668944
+      Firework_PurpleBlue_Spritesheet_202: -584928818274644447
+      Firework_PurpleBlue_Spritesheet_203: -1504226501709554521
+      Firework_PurpleBlue_Spritesheet_204: -7833555363711491405
+      Firework_PurpleBlue_Spritesheet_205: -5406156750657859827
+      Firework_PurpleBlue_Spritesheet_206: -3651734842237381388
+      Firework_PurpleBlue_Spritesheet_207: 7058038883150410451
+      Firework_PurpleBlue_Spritesheet_208: -2295427997261779216
+      Firework_PurpleBlue_Spritesheet_209: 234069191601731845
+      Firework_PurpleBlue_Spritesheet_21: -5433778844556493272
+      Firework_PurpleBlue_Spritesheet_210: 7020596847124117868
+      Firework_PurpleBlue_Spritesheet_211: -8753567658380579338
+      Firework_PurpleBlue_Spritesheet_212: 4607208537890386918
+      Firework_PurpleBlue_Spritesheet_213: -5067303726172843002
+      Firework_PurpleBlue_Spritesheet_214: -5666242225391161241
+      Firework_PurpleBlue_Spritesheet_215: -6896470244185548592
+      Firework_PurpleBlue_Spritesheet_216: -8664856141716489205
+      Firework_PurpleBlue_Spritesheet_217: 7331767406091454235
+      Firework_PurpleBlue_Spritesheet_218: -816221541901411899
+      Firework_PurpleBlue_Spritesheet_219: 4060305538239915645
+      Firework_PurpleBlue_Spritesheet_22: 4925935352719779969
+      Firework_PurpleBlue_Spritesheet_220: 5788628595630525813
+      Firework_PurpleBlue_Spritesheet_221: 932020443932802418
+      Firework_PurpleBlue_Spritesheet_222: -508436271282092457
+      Firework_PurpleBlue_Spritesheet_223: 1254001240129385204
+      Firework_PurpleBlue_Spritesheet_224: -7108748494067497148
+      Firework_PurpleBlue_Spritesheet_225: 2628661046298078812
+      Firework_PurpleBlue_Spritesheet_226: -1174682275782901885
+      Firework_PurpleBlue_Spritesheet_227: 7479092252026697528
+      Firework_PurpleBlue_Spritesheet_228: -5156646238762099725
+      Firework_PurpleBlue_Spritesheet_229: -4315696567255801967
+      Firework_PurpleBlue_Spritesheet_23: -1987178846271057497
+      Firework_PurpleBlue_Spritesheet_230: 1264398451272547655
+      Firework_PurpleBlue_Spritesheet_231: 8031889267642301198
+      Firework_PurpleBlue_Spritesheet_232: 1773764663942278731
+      Firework_PurpleBlue_Spritesheet_233: 819407389668097116
+      Firework_PurpleBlue_Spritesheet_234: -2374327913501539453
+      Firework_PurpleBlue_Spritesheet_235: -6802027677387382273
+      Firework_PurpleBlue_Spritesheet_236: -3793763083606940399
+      Firework_PurpleBlue_Spritesheet_237: 5725147354849667372
+      Firework_PurpleBlue_Spritesheet_238: 5481161615362781117
+      Firework_PurpleBlue_Spritesheet_239: -8731716131617568577
+      Firework_PurpleBlue_Spritesheet_24: 8045215922655943334
+      Firework_PurpleBlue_Spritesheet_240: 6615179234890228443
+      Firework_PurpleBlue_Spritesheet_241: -5291465976439395513
+      Firework_PurpleBlue_Spritesheet_242: 4159457672778776744
+      Firework_PurpleBlue_Spritesheet_243: 3719614671844209942
+      Firework_PurpleBlue_Spritesheet_244: -3574623055331503179
+      Firework_PurpleBlue_Spritesheet_245: 5621720858354170579
+      Firework_PurpleBlue_Spritesheet_246: -8226727357172505458
+      Firework_PurpleBlue_Spritesheet_247: -4218770484673299261
+      Firework_PurpleBlue_Spritesheet_248: -5378888328185443707
+      Firework_PurpleBlue_Spritesheet_249: -1406325016773850596
+      Firework_PurpleBlue_Spritesheet_25: -8509918578358866181
+      Firework_PurpleBlue_Spritesheet_250: 8248093494375941048
+      Firework_PurpleBlue_Spritesheet_251: -6825653573807197596
+      Firework_PurpleBlue_Spritesheet_252: -3528380072255233289
+      Firework_PurpleBlue_Spritesheet_253: 7637351936400251564
+      Firework_PurpleBlue_Spritesheet_254: -7288260727090031718
+      Firework_PurpleBlue_Spritesheet_255: 4054571947292102362
+      Firework_PurpleBlue_Spritesheet_256: -6923345855330013392
+      Firework_PurpleBlue_Spritesheet_257: -8222860615144070790
+      Firework_PurpleBlue_Spritesheet_258: -7546075655968544703
+      Firework_PurpleBlue_Spritesheet_259: -7111756725651449513
+      Firework_PurpleBlue_Spritesheet_26: -6170720601695992021
+      Firework_PurpleBlue_Spritesheet_260: -8688355595465313260
+      Firework_PurpleBlue_Spritesheet_261: -1531078598555621761
+      Firework_PurpleBlue_Spritesheet_262: 4191963814519467368
+      Firework_PurpleBlue_Spritesheet_263: -6442081910653902548
+      Firework_PurpleBlue_Spritesheet_264: -2852331655203394568
+      Firework_PurpleBlue_Spritesheet_265: 6341439867098252881
+      Firework_PurpleBlue_Spritesheet_266: 7519928569984590211
+      Firework_PurpleBlue_Spritesheet_267: -6827695625550667608
+      Firework_PurpleBlue_Spritesheet_268: -4948397483336242964
+      Firework_PurpleBlue_Spritesheet_269: -6652441589457094526
+      Firework_PurpleBlue_Spritesheet_27: -4774328682768134162
+      Firework_PurpleBlue_Spritesheet_270: -7888058008888017930
+      Firework_PurpleBlue_Spritesheet_271: 6066596969192011997
+      Firework_PurpleBlue_Spritesheet_28: -732908797242957112
+      Firework_PurpleBlue_Spritesheet_29: -1334773600973205871
+      Firework_PurpleBlue_Spritesheet_3: -6882406081839410211
+      Firework_PurpleBlue_Spritesheet_30: -6538023354234397688
+      Firework_PurpleBlue_Spritesheet_31: -4844411945120378742
+      Firework_PurpleBlue_Spritesheet_32: 5989099826013760395
+      Firework_PurpleBlue_Spritesheet_33: 3402452135354564318
+      Firework_PurpleBlue_Spritesheet_34: 3811026212175571867
+      Firework_PurpleBlue_Spritesheet_35: -8424284481867040850
+      Firework_PurpleBlue_Spritesheet_36: 8723690792651698983
+      Firework_PurpleBlue_Spritesheet_37: -7896886526065272468
+      Firework_PurpleBlue_Spritesheet_38: -4034095145114294087
+      Firework_PurpleBlue_Spritesheet_39: -2743172182469534746
+      Firework_PurpleBlue_Spritesheet_4: -1889168954265844238
+      Firework_PurpleBlue_Spritesheet_40: -3416521139952309377
+      Firework_PurpleBlue_Spritesheet_41: -8520809070598006916
+      Firework_PurpleBlue_Spritesheet_42: 3948288387294379011
+      Firework_PurpleBlue_Spritesheet_43: -2083132543422450698
+      Firework_PurpleBlue_Spritesheet_44: 6169695315525375801
+      Firework_PurpleBlue_Spritesheet_45: -2255802305955494448
+      Firework_PurpleBlue_Spritesheet_46: 5855886536821192204
+      Firework_PurpleBlue_Spritesheet_47: 4261222318001249984
+      Firework_PurpleBlue_Spritesheet_48: -1303065748822014843
+      Firework_PurpleBlue_Spritesheet_49: 6364923871356691548
+      Firework_PurpleBlue_Spritesheet_5: -8904209634571448369
+      Firework_PurpleBlue_Spritesheet_50: 3229850810854331622
+      Firework_PurpleBlue_Spritesheet_51: 27137162879540582
+      Firework_PurpleBlue_Spritesheet_52: 3646234494102493685
+      Firework_PurpleBlue_Spritesheet_53: -718335040302926181
+      Firework_PurpleBlue_Spritesheet_54: 1056709226098425270
+      Firework_PurpleBlue_Spritesheet_55: 8601628023730059668
+      Firework_PurpleBlue_Spritesheet_56: -292855261488209109
+      Firework_PurpleBlue_Spritesheet_57: 7464338368702304633
+      Firework_PurpleBlue_Spritesheet_58: 8854861919967265805
+      Firework_PurpleBlue_Spritesheet_59: 5147427125068186696
+      Firework_PurpleBlue_Spritesheet_6: 2044419303631523899
+      Firework_PurpleBlue_Spritesheet_60: -7152058509046291185
+      Firework_PurpleBlue_Spritesheet_61: 4090635781011211451
+      Firework_PurpleBlue_Spritesheet_62: -9169916783800667141
+      Firework_PurpleBlue_Spritesheet_63: 4395993764445649244
+      Firework_PurpleBlue_Spritesheet_64: 2894505928528533603
+      Firework_PurpleBlue_Spritesheet_65: -6423133669371014203
+      Firework_PurpleBlue_Spritesheet_66: -5135349166712438570
+      Firework_PurpleBlue_Spritesheet_67: 125691790419118240
+      Firework_PurpleBlue_Spritesheet_68: 3133833839205544352
+      Firework_PurpleBlue_Spritesheet_69: -8350771979198763787
+      Firework_PurpleBlue_Spritesheet_7: -6739848720321215732
+      Firework_PurpleBlue_Spritesheet_70: -7841921260431939279
+      Firework_PurpleBlue_Spritesheet_71: -8150135038956221178
+      Firework_PurpleBlue_Spritesheet_72: -6946718922064205560
+      Firework_PurpleBlue_Spritesheet_73: 1600039544963328763
+      Firework_PurpleBlue_Spritesheet_74: 5049443830146053604
+      Firework_PurpleBlue_Spritesheet_75: 8088364641159982271
+      Firework_PurpleBlue_Spritesheet_76: 6208944518279895987
+      Firework_PurpleBlue_Spritesheet_77: 2079933980474883828
+      Firework_PurpleBlue_Spritesheet_78: -2655731914655509469
+      Firework_PurpleBlue_Spritesheet_79: -5170601663687033670
+      Firework_PurpleBlue_Spritesheet_8: -1023162896966254313
+      Firework_PurpleBlue_Spritesheet_80: -1841003085207390522
+      Firework_PurpleBlue_Spritesheet_81: -6064317522718429811
+      Firework_PurpleBlue_Spritesheet_82: -8030949142158173131
+      Firework_PurpleBlue_Spritesheet_83: -6290657422098293758
+      Firework_PurpleBlue_Spritesheet_84: 3088088734895502631
+      Firework_PurpleBlue_Spritesheet_85: -6442856820711043760
+      Firework_PurpleBlue_Spritesheet_86: 2489401563849686330
+      Firework_PurpleBlue_Spritesheet_87: 1486241247928694590
+      Firework_PurpleBlue_Spritesheet_88: -6090871648125062541
+      Firework_PurpleBlue_Spritesheet_89: 8411055276690148387
+      Firework_PurpleBlue_Spritesheet_9: -693075794372344792
+      Firework_PurpleBlue_Spritesheet_90: -8417001664744364548
+      Firework_PurpleBlue_Spritesheet_91: -6877199630833319022
+      Firework_PurpleBlue_Spritesheet_92: 2472719338777158885
+      Firework_PurpleBlue_Spritesheet_93: 7044719134260206174
+      Firework_PurpleBlue_Spritesheet_94: 7972452776878750586
+      Firework_PurpleBlue_Spritesheet_95: 6859495906404895267
+      Firework_PurpleBlue_Spritesheet_96: 6473987237556443973
+      Firework_PurpleBlue_Spritesheet_97: 4385718309532222312
+      Firework_PurpleBlue_Spritesheet_98: 2538883728317747633
+      Firework_PurpleBlue_Spritesheet_99: -4399362305876631817
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

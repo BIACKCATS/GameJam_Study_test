@@ -6,6 +6,7 @@ public sealed class GameOverSequenceController : MonoBehaviour
     public GameObject presentation;
     public UnityEngine.UI.RawImage character, lightOverlay, rightTyping, leftTyping, rightBubble, leftBubble;
     public UnityEngine.UI.Text rightText, leftText;
+    public GameOverEndingMessages endingMessages;
     [Min(0)] public float characterFadeDuration = 0.8f;
     [TextArea] public string rightMessage = "";
     [TextArea] public string leftMessage = "";
@@ -50,6 +51,7 @@ public sealed class GameOverSequenceController : MonoBehaviour
     }
     public static bool PlayGameOver()
     {
+        if(TrueEndingController.IsPlaying)return false;
         if(!instance || !instance.isActiveAndEnabled){Debug.LogError("GameOverSequenceController: Place an active GameOverPresentation prefab in the scene.");return false;}
         return instance.Begin();
     }
@@ -70,6 +72,7 @@ public sealed class GameOverSequenceController : MonoBehaviour
         running=true;elapsed=0;stage=0;flickerPhase=0;flickerTimer=NextInterval();
         PauseWorld();
         presentation.SetActive(true);
+        if(endingMessages&&!endingMessages.Begin()){ResetPresentation();return false;}
         SetLight(true);
         rightBubble.color=rightBubbleColor;leftBubble.color=leftBubbleColor;
         if(rightText)rightText.text=rightMessage;
@@ -97,9 +100,9 @@ public sealed class GameOverSequenceController : MonoBehaviour
         rightTyping.enabled=elapsed>=rightStart&&elapsed<rightEnd;
         leftTyping.enabled=elapsed>=leftStart&&elapsed<leftEnd;
         AnimateTyping(rightTyping,elapsed-rightStart);AnimateTyping(leftTyping,elapsed-leftStart);
-        if(stage<1&&elapsed>=rightEnd){stage=1;rightBubble.gameObject.SetActive(true);InvokeSafely(onRightBubbleShown);if(!running)return;}
+        if(stage<1&&elapsed>=rightEnd){stage=1;if(endingMessages)endingMessages.ShowRightBubble();else rightBubble.gameObject.SetActive(true);InvokeSafely(onRightBubbleShown);if(!running)return;}
         if(stage<2&&elapsed>=leftStart){stage=2;InvokeSafely(onLeftTypingStarted);if(!running)return;}
-        if(stage<3&&elapsed>=leftEnd){stage=3;leftBubble.gameObject.SetActive(true);InvokeSafely(onSequenceCompleted);}
+        if(stage<3&&elapsed>=leftEnd){stage=3;if(endingMessages)endingMessages.ShowLeftBubble();else leftBubble.gameObject.SetActive(true);InvokeSafely(onSequenceCompleted);}
     }
     void AnimateTyping(UnityEngine.UI.RawImage image,float time)
     {
@@ -123,6 +126,7 @@ public sealed class GameOverSequenceController : MonoBehaviour
     void ResetPresentation()
     {
         running=false;
+        if(endingMessages)endingMessages.Stop();
         ResumeWorld();
         if(presentation)presentation.SetActive(false);
         if(rightTyping)rightTyping.enabled=false;if(leftTyping)leftTyping.enabled=false;

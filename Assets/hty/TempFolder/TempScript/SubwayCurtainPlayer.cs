@@ -40,7 +40,7 @@ public sealed class SubwayCurtainPlayer : MonoBehaviour
     }
     void Begin()
     {
-        if(GameOverSequenceController.IsPlaying)return;
+        if((GameOverSequenceController.IsPlaying || TrueEndingController.IsPlaying))return;
         if (IsPlaying) { Debug.LogError("SubwayCurtainPlayer: A transition is already playing.", this); return; }
         if (!overlay || !enterSheet || !exitSheet || !blackTexture)
         { Debug.LogError("SubwayCurtainPlayer: Assign overlay and all three textures.", this); return; }
@@ -68,9 +68,9 @@ public sealed class SubwayCurtainPlayer : MonoBehaviour
         while(hold<Mathf.Max(0,blackHoldSeconds))
         {
             yield return null;
-            if(!GameOverSequenceController.IsPlaying)hold+=Time.unscaledDeltaTime;
+            if(!(GameOverSequenceController.IsPlaying || TrueEndingController.IsPlaying))hold+=Time.unscaledDeltaTime;
         }
-        while(GameOverSequenceController.IsPlaying)yield return null;
+        while((GameOverSequenceController.IsPlaying || TrueEndingController.IsPlaying))yield return null;
         Phase = "Exit";
         yield return Animate(exitSheet);
         Finish();
@@ -81,7 +81,7 @@ public sealed class SubwayCurtainPlayer : MonoBehaviour
         float frame = 0;
         while (frame < 8)
         {
-            while(GameOverSequenceController.IsPlaying)yield return null;
+            while((GameOverSequenceController.IsPlaying || TrueEndingController.IsPlaying))yield return null;
             int index = Mathf.FloorToInt(frame);
             if (trainRoot && positionCaptured)
             {
@@ -91,7 +91,7 @@ public sealed class SubwayCurtainPlayer : MonoBehaviour
             }
             overlay.uvRect = new Rect(index % 3 / 3f, 1f - (index / 3 + 1) / 3f, 1f/3f, 1f/3f);
             yield return null;
-            if(!GameOverSequenceController.IsPlaying)frame += Time.unscaledDeltaTime * Mathf.Max(0.1f,framesPerSecond);
+            if(!(GameOverSequenceController.IsPlaying || TrueEndingController.IsPlaying))frame += Time.unscaledDeltaTime * Mathf.Max(0.1f,framesPerSecond);
         }
         if (trainRoot && positionCaptured)
             trainRoot.position = Phase == "Enter" ? originalPosition - slideVector * Coverage(7) : originalPosition;

@@ -30,7 +30,7 @@ public sealed class CrosshairFocusOverlay : MonoBehaviour
 
     void LateUpdate()
     {
-        if(GameOverSequenceController.IsPlaying)return;
+        if((GameOverSequenceController.IsPlaying || TrueEndingController.IsPlaying))return;
         if (!runtimeMaterial || !controller || !controller.crosshair || !panel) return;
         bool visible = controller.isActiveAndEnabled && controller.crosshair.isActiveAndEnabled;
         float target = visible && CrosshairAimController.IsAiming ? 1f : 0f;

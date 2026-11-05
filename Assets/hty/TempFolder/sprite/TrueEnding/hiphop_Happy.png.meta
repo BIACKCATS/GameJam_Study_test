@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: a59123cd38b17804b991124bc4479650
+guid: 83e97218ce310d945872c98ea683c4d4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5142857748390916790
-    second: BadEnd_0
+      213: -3526459630191266668
+    second: hiphop_Happy_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BadEnd_0
+      name: hiphop_Happy_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1920
-        height: 1080
+        x: 132
+        y: 6
+        width: 198
+        height: 422
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a4d4bc83026e0a8b0800000000000000
-      internalID: -5142857748390916790
+      spriteID: 494b1bb76af7f0fc0800000000000000
+      internalID: -3526459630191266668
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      BadEnd_0: -5142857748390916790
+      hiphop_Happy_0: -3526459630191266668
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

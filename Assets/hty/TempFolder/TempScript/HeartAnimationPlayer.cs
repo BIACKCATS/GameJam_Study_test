@@ -33,6 +33,7 @@ public sealed class HeartAnimationPlayer : MonoBehaviour
     /// <summary>Break one heart, numbered 1 to 3 from left to right.</summary>
     public static void PlayBreak(int heartNumber)
     {
+        if(TrueEndingController.IsPlaying)return;
         if (heartNumber < 1 || heartNumber > 3) { Debug.LogError($"HeartAnimationPlayer.PlayBreak: Invalid number {heartNumber}; expected 1..3."); return; }
         if (!instance || !instance.ready || !instance.isActiveAndEnabled)
         { Debug.LogError("HeartAnimationPlayer.PlayBreak: No active, configured controller in the scene."); return; }
@@ -52,6 +53,7 @@ public sealed class HeartAnimationPlayer : MonoBehaviour
     /// <summary>Restore a broken heart (1..3), then resume its shimmer.</summary>
     public static void PlayHeal(int heartNumber)
     {
+        if(TrueEndingController.IsPlaying)return;
         if (heartNumber < 1 || heartNumber > 3) { Debug.LogError($"HeartAnimationPlayer.PlayHeal: Invalid number {heartNumber}; expected 1..3."); return; }
         if (!instance || !instance.ready || !instance.isActiveAndEnabled)
         { Debug.LogError("HeartAnimationPlayer.PlayHeal: No active configured controller."); return; }
