@@ -7,10 +7,11 @@ namespace JSH.Gameplay
     /// <summary>
     /// Villain state. Add next to Talkable on villain prefabs; normal passengers have Talkable only.
     /// "Is this person a villain?" = TryGetComponent(out Villain _).
-    /// Resolved = converted (persuaded) or defeated (Reflex). Unresolved villains cost a life at the platform exit.
+    /// Resolved = converted (persuaded) or defeated (Reflex). Unresolved villains cost a life at the car exit.
+    /// Pooled by TrainCar: the state resets every time it is spawned (IPoolable.OnSpawned).
     /// </summary>
     [RequireComponent(typeof(Talkable))]
-    public class Villain : MonoBehaviour
+    public class Villain : MonoBehaviour, IPoolable
     {
         private Talkable _talkable;
         private bool _isConverted;
@@ -32,6 +33,14 @@ namespace JSH.Gameplay
             if (evt.Target != _talkable) return;
             if (evt.Effect == DialogueEffect.Convert) Convert();
         }
+
+        public void OnSpawned()
+        {
+            _isConverted = false;
+            _isDefeated = false;
+        }
+
+        public void OnDespawned() { }
 
         public void Convert()
         {

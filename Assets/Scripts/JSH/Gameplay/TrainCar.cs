@@ -1,60 +1,34 @@
 using System.Collections.Generic;
+using JSH.Core;
 using JSH.Data;
 using UnityEngine;
 
 namespace JSH.Gameplay
 {
     /// <summary>
-    /// One train car (= one platform). Put on each Platform root.
-    /// Passengers/villains are spawned onto random free seats of the SeatLayout (TrainProgress decides when).
-    /// Villains already standing inside the car's X range at Start are also counted (hand-placed specials).
+    /// The one on-screen train car. The game repeats it N times (TrainProgress owns the car number):
+    /// each new car despawns the previous NPCs and spawns passengers/villains onto random free seats of the
+    /// SeatLayout. NPCs are pooled per prefab (Villain resets its state on spawn via IPoolable).
     /// Select the car in the Scene view to see its seats (gizmos).
     /// </summary>
     public class TrainCar : MonoBehaviour
     {
-        [Tooltip("Defines the car's X range. Empty = this GameObject's BoxCollider2D.")]
-        [SerializeField] private Collider2D _bounds;
-        [Tooltip("Seat coordinates for this car's sprite (shared asset).")]
+        [Tooltip("Seat coordinates relative to this transform (match the car interior sprite).")]
         [SerializeField] private SeatLayout _seatLayout;
-        [Tooltip("Optional per-car rules. Empty = TrainProgress default.")]
-        [SerializeField] private CarSpawnSettings _spawnOverride;
+        [Tooltip("Parent for pooled NPCs. Empty = this transform.")]
+        [SerializeField] private Transform _npcRoot;
 
         private readonly List<Villain> _villains = new List<Villain>(4);
         private readonly List<Talkable> _npcs = new List<Talkable>(8);
         private readonly List<int> _freeSeats = new List<int>(16);
+        private readonly Dictionary<Talkable, ComponentPool<Talkable>> _pools = new Dictionary<Talkable, ComponentPool<Talkable>>();
 
-        /// <summary>0-based order from left to right (assigned by TrainProgress).</summary>
-        public int Index { get; private set; } = -1;
-        /// <summary>True once the exit judgment ran for this car (it only runs once).</summary>
-        public bool IsJudged { get; private set; }
-        /// <summary>True once passengers/villains were spawned (runs once).</summary>
-        public bool IsSpawned { get; private set; }
-        public float MinX => _bounds != null ? _bounds.bounds.min.x : transform.position.x;
-        public float MaxX => _bounds != null ? _bounds.bounds.max.x : transform.position.x;
         public IReadOnlyList<Villain> Villains => _villains;
         public IReadOnlyList<Talkable> Npcs => _npcs;
 
         private void Awake()
         {
-            if (_bounds == null && TryGetComponent(out BoxCollider2D own)) _bounds = own;
-        }
-
-        internal void Initialize(int index, Villain[] placedVillains)
-        {
-            Index = index;
-            for (int i = 0; i < placedVillains.Length; i++)
-            {
-                if (ContainsX(placedVillains[i].transform.position.x)) AddVillain(placedVillains[i]);
-            }
-        }
-
-        internal void MarkJudged() => IsJudged = true;
-
-        public bool ContainsX(float x) => x >= MinX && x <= MaxX;
-
-        public void AddVillain(Villain villain)
-        {
-            if (villain != null && !_villains.Contains(villain)) _villains.Add(villain);
+            if (_npcRoot == null) _npcRoot = transform;
         }
 
         public int CountUnresolvedVillains()
@@ -68,16 +42,21 @@ namespace JSH.Gameplay
             return count;
         }
 
-        /// <summary>
-        /// Spawn passengers/villains onto random free seats (villains first). Runs once per car.
-        /// NPCs are created with Instantiate (not pooled): spawned once per car and never despawned.
-        /// </summary>
-        public void Spawn(CarSpawnSettings defaults, System.Random rng)
+        /// <summary>Return every spawned NPC to its pool.</summary>
+        public void Despawn()
         {
-            if (IsSpawned) return;
-            IsSpawned = true;
+            for (int i = 0; i < _npcs.Count; i++)
+            {
+                if (_npcs[i] != null) PoolReturn.ReleaseOrDestroy(_npcs[i].gameObject);
+            }
+            _npcs.Clear();
+            _villains.Clear();
+        }
 
-            CarSpawnSettings settings = _spawnOverride != null ? _spawnOverride : defaults;
+        /// <summary>Despawn the previous car's NPCs, then seat new ones (villains first so they always fit).</summary>
+        public void Spawn(CarSpawnSettings settings, System.Random rng, int carIndex)
+        {
+            Despawn();
             if (settings == null || _seatLayout == null || _seatLayout.SeatCount == 0)
             {
                 Debug.LogWarning($"[TrainCar] {name}: missing CarSpawnSettings or SeatLayout (or 0 seats); nothing spawned.", this);
@@ -92,11 +71,11 @@ namespace JSH.Gameplay
             if (villains + passengers > _freeSeats.Count)
                 Debug.LogWarning($"[TrainCar] {name}: {villains + passengers} NPCs but {_freeSeats.Count} seats; extra NPCs skipped.", this);
 
-            for (int i = 0; i < villains; i++) SpawnOne(settings, rng, true);
-            for (int i = 0; i < passengers; i++) SpawnOne(settings, rng, false);
+            for (int i = 0; i < villains; i++) SpawnOne(settings, rng, true, carIndex);
+            for (int i = 0; i < passengers; i++) SpawnOne(settings, rng, false, carIndex);
         }
 
-        private void SpawnOne(CarSpawnSettings settings, System.Random rng, bool villain)
+        private void SpawnOne(CarSpawnSettings settings, System.Random rng, bool villain, int carIndex)
         {
             int prefabCount = villain ? settings.VillainPrefabCount : settings.PassengerPrefabCount;
             if (_freeSeats.Count == 0 || prefabCount == 0) return;
@@ -107,19 +86,28 @@ namespace JSH.Gameplay
 
             GameObject prefab = villain ? settings.GetVillainPrefab(rng.Next(prefabCount)) : settings.GetPassengerPrefab(rng.Next(prefabCount));
             if (prefab == null) return;
+            if (!prefab.TryGetComponent(out Talkable prefabTalkable))
+            {
+                Debug.LogWarning($"[TrainCar] {prefab.name} has no Talkable; skipped.", prefab);
+                return;
+            }
+
+            if (!_pools.TryGetValue(prefabTalkable, out ComponentPool<Talkable> pool))
+            {
+                pool = new ComponentPool<Talkable>(prefabTalkable, _npcRoot, 4, 16);
+                _pools.Add(prefabTalkable, pool);
+            }
 
             SeatPoint seat = _seatLayout.GetSeat(seatIndex);
-            GameObject npc = Instantiate(prefab, transform.TransformPoint(seat.LocalPosition), Quaternion.identity, transform);
-            npc.name = $"{prefab.name}_Car{Index}_Seat{seatIndex}";
+            Talkable npc = pool.Get(transform.TransformPoint(seat.LocalPosition));
+            npc.name = $"{prefab.name}_Car{carIndex}_Seat{seatIndex}";
 
             SpriteRenderer sr = npc.GetComponentInChildren<SpriteRenderer>();
             if (sr != null) sr.flipX = seat.FlipX;
-
-            if (npc.TryGetComponent(out Talkable talkable)) _npcs.Add(talkable);
-            else Debug.LogWarning($"[TrainCar] {prefab.name} has no Talkable.", prefab);
+            _npcs.Add(npc);
 
             bool hasVillain = npc.TryGetComponent(out Villain v);
-            if (hasVillain) AddVillain(v);
+            if (hasVillain) _villains.Add(v);
             if (villain != hasVillain) Debug.LogWarning($"[TrainCar] {prefab.name}: listed as {(villain ? "villain" : "passenger")} but Villain component is {(hasVillain ? "present" : "missing")}.", prefab);
         }
 

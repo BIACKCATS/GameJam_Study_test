@@ -1,4 +1,3 @@
-using System;
 using JSH.Core;
 using JSH.Data;
 using UnityEngine;
@@ -6,127 +5,151 @@ using UnityEngine;
 namespace JSH.Gameplay
 {
     /// <summary>
-    /// Tracks which train car the player is in (put on [Managers]). Cars (TrainCar) are found on Start and
-    /// ordered left to right. Moving forward out of a car judges it once: unresolved villains > 0 -> life -1
-    /// (regardless of how many). Moving backward never judges.
-    /// Spawning: one car ahead. Start spawns the starting car + the next one; entering car N forward spawns N+1,
-    /// so the player never sees NPCs pop in. (Same setup whether the villain was missed or not.)
+    /// One-screen train car repeated N times (default 9). Put on [SceneManagers].
+    /// The player reaching the right exit (CarExit) judges the current car once
+    /// (unresolved villains > 0 -> life -1, none -> life +1), then:
+    ///  - last car         -> TrainEndReachedEvent (no curtain; EndingController decides good/bad)
+    ///  - lives reached 0  -> nothing more (bad ending is pending)
+    ///  - otherwise        -> lock input, play the curtain (SubwayCurtainPlayer). While the screen is black
+    ///                        ("Black" phase): despawn NPCs, move the player to the start point, spawn the next car.
+    ///                        When the curtain is fully open again ("Idle"): unlock input.
+    /// The curtain is the teammate's component; it is only polled (Phase / IsPlaying), never modified.
+    /// Without a curtain the next car is set up instantly.
     /// </summary>
     public class TrainProgress : Singleton<TrainProgress>
     {
-        [Tooltip("Player transform used to find the starting car. Empty = the object with SideViewMover.")]
-        [SerializeField] private Transform _player;
-        [Tooltip("Default spawn rules for every car (TrainCar can override).")]
-        [SerializeField] private CarSpawnSettings _defaultSpawn;
+        private enum State { Playing, WaitingForBlack, WaitingForOpen, Ended }
+
+        private const string CurtainBlackPhase = "Black";
+
+        [SerializeField] private TrainCar _car;
+        [SerializeField, Min(1)] private int _carCount = 9;
+        [SerializeField] private CarSpawnSettings _spawnSettings;
         [Tooltip("0 = random every run; any other value = same layout every run (testing).")]
         [SerializeField] private int _randomSeed;
 
-        private TrainCar[] _cars = Array.Empty<TrainCar>();
-        private TrainCar _current;
+        [Header("Player")]
+        [Tooltip("Empty = the object with SideViewMover.")]
+        [SerializeField] private SideViewMover _player;
+        [Tooltip("Where the player is placed at the start of every new car.")]
+        [SerializeField] private Transform _playerStart;
+
+        [Header("Transition")]
+        [Tooltip("Teammate's curtain (TempFolderStage). Empty = instant car change.")]
+        [SerializeField] private SubwayCurtainPlayer _curtain;
+        [Tooltip("Safety: set up the next car anyway if the curtain has not gone black after this many seconds (unscaled).")]
+        [SerializeField, Min(0.5f)] private float _curtainTimeout = 5f;
+
+        private State _state = State.Playing;
+        private int _index;
+        private float _waitTime;
+        private Rigidbody2D _playerBody;
         private System.Random _rng;
-        private bool _endReached;
+        private int _lastUnresolved;
+        private bool _lastLifeLost;
 
-        public TrainCar CurrentCar => _current;
-        public int CarCount => _cars.Length;
-        public bool IsLastCar => _current != null && _current.Index == _cars.Length - 1;
-
-        public TrainCar GetCar(int index) => _cars[index];
+        public TrainCar CurrentCar => _car;
+        public int CurrentIndex => _index;
+        public int CarCount => _carCount;
+        public bool IsLastCar => _index >= _carCount - 1;
+        /// <summary>True from the exit until the curtain is open again (input is locked).</summary>
+        public bool IsTransitioning => _state == State.WaitingForBlack || _state == State.WaitingForOpen;
+        public bool IsEndReached => _state == State.Ended && IsLastCar;
 
         private void Start()
         {
-            _cars = FindObjectsByType<TrainCar>(FindObjectsSortMode.None);
-            Array.Sort(_cars, (a, b) => a.MinX.CompareTo(b.MinX));
-            Villain[] villains = FindObjectsByType<Villain>(FindObjectsSortMode.None);
-            for (int i = 0; i < _cars.Length; i++) _cars[i].Initialize(i, villains);
+            if (_player == null) _player = FindFirstObjectByType<SideViewMover>();
+            if (_player != null) _player.TryGetComponent(out _playerBody);
+            if (_car == null) Debug.LogError("[TrainProgress] TrainCar is not assigned.", this);
+            if (_playerStart == null) Debug.LogWarning("[TrainProgress] Player Start is not assigned; the player stays where it is between cars.", this);
 
-            if (_player == null)
-            {
-                SideViewMover mover = FindFirstObjectByType<SideViewMover>();
-                if (mover != null) _player = mover.transform;
-            }
-            _current = _player != null ? FindCarAt(_player.position.x) : null;
-            if (_current == null && _cars.Length > 0) _current = _cars[0];
-
-            _rng = new System.Random(_randomSeed != 0 ? _randomSeed : Environment.TickCount);
-            if (_current != null)
-            {
-                SpawnCar(_current.Index);
-                SpawnCar(_current.Index + 1);
-            }
+            _rng = new System.Random(_randomSeed != 0 ? _randomSeed : System.Environment.TickCount);
+            _index = 0;
+            if (_car != null) _car.Spawn(_spawnSettings, _rng, _index);
         }
 
-        private void SpawnCar(int index)
+        /// <summary>Called by CarExit when the player reaches the right exit. Runs once per car.</summary>
+        public void RequestExit()
         {
-            if (index >= 0 && index < _cars.Length) _cars[index].Spawn(_defaultSpawn, _rng);
-        }
+            if (_state != State.Playing || _car == null) return;
 
-        /// <summary>
-        /// Called by CarEntrance when the player leaves a boundary into car <paramref name="carIndex"/>.
-        /// Index == CarCount (exited the last car to the right) = end of the train: the last car is judged
-        /// like any other, then TrainEndReachedEvent is raised once.
-        /// </summary>
-        public void NotifyCrossed(int carIndex)
-        {
-            if (carIndex == _cars.Length && _cars.Length > 0 && IsLastCar)
+            _lastUnresolved = _car.CountUnresolvedVillains();
+            _lastLifeLost = _lastUnresolved > 0;
+            if (LifeSystem.HasInstance)
             {
-                ReachEnd();
+                if (_lastLifeLost) LifeSystem.Instance.Damage(1);
+                else LifeSystem.Instance.Heal(1);
+            }
+
+            if (IsLastCar)
+            {
+                _state = State.Ended;
+                EventBus<TrainEndReachedEvent>.Raise(new TrainEndReachedEvent(_car, _lastUnresolved, _lastLifeLost));
                 return;
             }
-            if (carIndex < 0 || carIndex >= _cars.Length) return;
-            TrainCar car = _cars[carIndex];
-            if (car == _current) return;
-
-            TrainCar from = _current;
-            bool forward = from == null || car.Index > from.Index;
-            int unresolved = 0;
-            bool lifeLost = false;
-            bool cleared = false;
-
-            // Judge the car being left: forward only, once per car.
-            if (forward && from != null && !from.IsJudged) Judge(from, out unresolved, out lifeLost, out cleared);
-
-            _current = car;
-            if (forward)
+            if (LifeSystem.HasInstance && LifeSystem.Instance.IsDepleted)
             {
-                SpawnCar(car.Index);     // safety (normally already spawned one car ahead)
-                SpawnCar(car.Index + 1); // look-ahead
+                _state = State.Ended; // EndingController shows the bad ending
+                return;
             }
-            EventBus<CarChangedEvent>.Raise(new CarChangedEvent(from, car, forward, unresolved, lifeLost, cleared));
-        }
 
-        public bool IsEndReached => _endReached;
+            if (_player != null) _player.SetInputLocked(true);
+            if (_curtain != null && _curtain.isActiveAndEnabled) _curtain.Play();
 
-        private void ReachEnd()
-        {
-            if (_endReached) return;
-            _endReached = true;
-
-            int unresolved = 0;
-            bool lifeLost = false;
-            bool cleared = false;
-            if (!_current.IsJudged) Judge(_current, out unresolved, out lifeLost, out cleared);
-            EventBus<TrainEndReachedEvent>.Raise(new TrainEndReachedEvent(_current, unresolved, lifeLost));
-        }
-
-        // Unresolved villains > 0 -> life -1 (regardless of count); none -> clean pass, life +1 (capped at max).
-        private static void Judge(TrainCar car, out int unresolved, out bool lifeLost, out bool cleared)
-        {
-            car.MarkJudged();
-            unresolved = car.CountUnresolvedVillains();
-            lifeLost = unresolved > 0;
-            cleared = !lifeLost;
-            if (!LifeSystem.HasInstance) return;
-            if (lifeLost) LifeSystem.Instance.Damage(1);
-            else LifeSystem.Instance.Heal(1);
-        }
-
-        private TrainCar FindCarAt(float x)
-        {
-            for (int i = 0; i < _cars.Length; i++)
+            if (_curtain != null && _curtain.IsPlaying)
             {
-                if (_cars[i].ContainsX(x)) return _cars[i];
+                _state = State.WaitingForBlack;
+                _waitTime = 0f;
             }
-            return null;
+            else
+            {
+                SetUpNextCar();
+                FinishTransition();
+            }
+        }
+
+        private void Update()
+        {
+            if (_state == State.WaitingForBlack)
+            {
+                _waitTime += Time.unscaledDeltaTime;
+                bool black = _curtain == null || !_curtain.IsPlaying || _curtain.Phase == CurtainBlackPhase;
+                if (!black && _waitTime < _curtainTimeout) return;
+                if (!black) Debug.LogWarning("[TrainProgress] Curtain did not reach the black phase in time; changing car anyway.", this);
+                SetUpNextCar();
+                _state = State.WaitingForOpen;
+            }
+            else if (_state == State.WaitingForOpen)
+            {
+                if (_curtain != null && _curtain.IsPlaying) return;
+                FinishTransition();
+            }
+        }
+
+        private void SetUpNextCar()
+        {
+            int from = _index;
+            _index++;
+
+            if (_player != null && _playerStart != null)
+            {
+                Vector3 p = _playerStart.position;
+                if (_playerBody != null)
+                {
+                    _playerBody.position = p;
+                    _playerBody.linearVelocity = Vector2.zero;
+                }
+                _player.transform.position = p;
+            }
+
+            if (_car != null) _car.Spawn(_spawnSettings, _rng, _index);
+            EventBus<CarChangedEvent>.Raise(new CarChangedEvent(from, _index, _lastUnresolved, _lastLifeLost, !_lastLifeLost));
+        }
+
+        private void FinishTransition()
+        {
+            _state = State.Playing;
+            if (_player != null) _player.SetInputLocked(false);
         }
     }
 }
