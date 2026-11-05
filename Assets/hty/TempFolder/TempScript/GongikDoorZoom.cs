@@ -1,6 +1,7 @@
 ﻿using System;
 using DG.Tweening;
 using UnityEngine;
+using BC.Core;
 
 // Zooms the train artwork, never the camera or screen resolution.
 public sealed class GongikDoorZoom : MonoBehaviour
@@ -98,6 +99,7 @@ public sealed class GongikDoorZoom : MonoBehaviour
             backgroundCaptured=true;
         }
         sequence=DOTween.Sequence();
+        if(SoundManager.Instance)SoundManager.Instance.PlaySound(SoundNames.PassingDark,0.8f);
         sequence.Append(zoomTarget.DOScale(scale,Mathf.Max(0.01f,zoomDuration)).SetEase(Ease.InOutCubic));
         sequence.Join(zoomTarget.DOMove(destination,Mathf.Max(0.01f,zoomDuration)).SetEase(Ease.InOutCubic));
         sequence.Insert(Mathf.Max(0.01f,zoomDuration)*backgroundBlackStart,

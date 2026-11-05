@@ -1,4 +1,5 @@
 using UnityEngine;
+using BC.Core;
 
 public sealed class GongikNagaController : MonoBehaviour
 {
@@ -36,6 +37,7 @@ public sealed class GongikNagaController : MonoBehaviour
     static GongikNagaController instance;
     public static bool IsPlaying => instance && instance.playing;
     bool playing, doorsRunning;
+    bool kickSoundPlayed, closeSoundPlayed;
     float elapsed;
     int selectedVillain;
 
@@ -71,6 +73,7 @@ public sealed class GongikNagaController : MonoBehaviour
         playing = true;
         if (!doorZoom) { Debug.LogError("GongikNagaController: Assign Door Zoom.",this); Cleanup();return false; }
         if (!stamp.Play(stampTexture, StartZoom, Cleanup)) { Cleanup(); return false; }
+        if (SoundManager.Instance) SoundManager.Instance.PlaySound(SoundNames.Naga, 0.8f);
         return true;
     }
     void StartZoom()
@@ -81,12 +84,16 @@ public sealed class GongikNagaController : MonoBehaviour
     void StartDoors()
     {
         if (!playing || !isActiveAndEnabled) return;
-        doorsRunning = true; elapsed = 0; doorStage.SetActive(true); RenderDoor();
+        doorsRunning = true; kickSoundPlayed=closeSoundPlayed=false; elapsed = 0; doorStage.SetActive(true); RenderDoor();
     }
     void Update() { if (doorsRunning) { elapsed += Time.deltaTime; RenderDoor(); } }
     void RenderDoor()
     {
         float opening = Mathf.Max(0.01f, openingDuration), hold = Mathf.Max(0.01f, openHoldDuration), closing = Mathf.Max(0.01f, closingDuration);
+        if(!kickSoundPlayed && elapsed>=opening)
+        {kickSoundPlayed=true;if(SoundManager.Instance)SoundManager.Instance.PlaySound(SoundNames.KickTheVillain,0.8f);}
+        if(!closeSoundPlayed && elapsed>=opening+hold)
+        {closeSoundPlayed=true;if(SoundManager.Instance)SoundManager.Instance.PlaySound(SoundNames.CloseTrainDoor,0.8f);}
         if (elapsed >= opening + hold + closing) { doorsRunning=false;doorZoom.Return(Cleanup);return; }
         int frame;
         if (elapsed < opening) frame = Mathf.Min(8, Mathf.FloorToInt(elapsed / opening * 9));

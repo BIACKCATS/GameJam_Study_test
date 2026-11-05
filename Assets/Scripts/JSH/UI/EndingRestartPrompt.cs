@@ -3,6 +3,7 @@ using DG.Tweening;
 using JSH.Core;
 using JSH.Gameplay;
 using UnityEngine;
+using BC.Core;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -109,6 +110,7 @@ namespace JSH.UI
             if (_line != null)
             {
                 _line.gameObject.SetActive(true);
+                _introSequence.AppendCallback(()=>{if(SoundManager.Instance)SoundManager.Instance.PlaySound(SoundNames.PaperStitching,0.8f);});
                 _introSequence.Append(_line.DOAnchorPos(_lineBasePos, _lineDuration).SetEase(_lineEase));
                 _introSequence.Join(_lineGroup.DOFade(1f, _lineDuration).SetEase(Ease.Linear));
             }

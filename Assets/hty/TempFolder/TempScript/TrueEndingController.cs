@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using DG.Tweening;
 using UnityEngine;
+using BC.Core;
 using UnityEngine.SceneManagement;
 
 public sealed class TrueEndingController : MonoBehaviour
@@ -76,6 +77,7 @@ public sealed class TrueEndingController : MonoBehaviour
             {pausedAnimators.Add(animator,animator.speed);animator.speed=0;}
         Time.timeScale=0;Cursor.visible=true;Cursor.lockState=CursorLockMode.None;
         running=true;returning=false;elapsed=0;FireworksLaunched=0;nextFirework=RandomInterval();
+        if(SoundManager.Instance) SoundManager.Instance.StopTrain();
         lineup.Clear();
         // Keep the protagonist near the middle of the selected cast.
         var selected=new List<RectTransform>();

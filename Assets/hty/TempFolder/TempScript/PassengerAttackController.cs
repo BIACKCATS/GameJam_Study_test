@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using BC.Core;
 
 public sealed class PassengerAttackController : MonoBehaviour
 {
@@ -142,7 +143,8 @@ public sealed class PassengerAttackController : MonoBehaviour
         playing = true;
         preparing = true;
         victim.enabled = attacker.enabled = false;
-        if (!objection.Play(selected.objectionTexture, StartCombat, CancelPreparation))
+        if (!objection.Play(selected.objectionTexture, StartCombat, CancelPreparation,
+            ()=>{if(SoundManager.Instance)SoundManager.Instance.PlaySound(SoundNames.YeYeItso,0.8f);}))
         {
             CancelPreparation();
             return false;
@@ -154,6 +156,7 @@ public sealed class PassengerAttackController : MonoBehaviour
     {
         if (!isActiveAndEnabled || !playing) return;
         preparing = false;
+        if(SoundManager.Instance)SoundManager.Instance.PlaySound(SoundNames.HecktopascalKick,0.8f);
         elapsed = 0;
         victim.enabled = attacker.enabled = true;
         RenderPose();
@@ -177,6 +180,7 @@ public sealed class PassengerAttackController : MonoBehaviour
         if (elapsed >= flight && !hitTriggered)
         {
             hitTriggered = true;
+            if(SoundManager.Instance)SoundManager.Instance.PlaySound(SoundNames.HecktopascalKicked,0.8f);
             if (cameraShake) cameraShake.PlayShake();
         }
         RenderImpact(elapsed - flight);

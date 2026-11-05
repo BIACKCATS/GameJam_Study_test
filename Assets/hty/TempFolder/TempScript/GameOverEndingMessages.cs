@@ -1,4 +1,5 @@
 using UnityEngine;
+using BC.Core;
 using DG.Tweening;
 
 // Instantiates the TempFolder variant; never edits the shared JSH prefab or scripts.
@@ -28,7 +29,8 @@ public sealed class GameOverEndingMessages : MonoBehaviour
     }
     public void ShowRightBubble()
     {
-        if(!header)return;
+        if(!header || header.activeSelf)return;
+        if(SoundManager.Instance)SoundManager.Instance.PlaySound(SoundNames.MessageSendingAlarm,0.8f);
         header.SetActive(true);
         header.transform.Find("HeaderBubble/Dots").gameObject.SetActive(false);
         var content=header.transform.Find("HeaderBubble/TitleText");

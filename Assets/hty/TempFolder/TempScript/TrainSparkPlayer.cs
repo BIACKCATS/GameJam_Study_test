@@ -1,4 +1,5 @@
 using UnityEngine;
+using BC.Core;
 
 [RequireComponent(typeof(SpriteRenderer))]
 public sealed class TrainSparkPlayer : MonoBehaviour
@@ -11,7 +12,10 @@ public sealed class TrainSparkPlayer : MonoBehaviour
     public Vector3 positionMax;
     public AudioSource audioSource;
     public AudioClip[] sparkSounds;
-    [Range(0, 1)] public float soundVolume = 0.35f;
+    public TextAsset legacySparkSound;
+    [Range(0, 1)] public float soundVolume = 0.2f;
+    [Tooltip("Probability of playing the Spark sound for each spark burst.")]
+    [Range(0, 1)] public float soundChance = 0.5f;
     [Min(1)] public float framesPerSecond = 30;
     [Min(1)] public float pixelsPerUnit = 100;
     Sprite[] frames;
@@ -63,11 +67,8 @@ public sealed class TrainSparkPlayer : MonoBehaviour
         elapsed = 0; playing = true; BurstCount++;
         bumpCount = 0;
         target.sprite = frames[0]; target.enabled = true;
-        if (audioSource && sparkSounds != null && sparkSounds.Length > 0)
-        {
-            var clip = sparkSounds[random.Next(sparkSounds.Length)];
-            if (clip) { audioSource.Stop(); audioSource.pitch = Range(0.9f, 1.1f); audioSource.PlayOneShot(clip, soundVolume); }
-        }
+        if(SoundManager.Instance && random.NextDouble() < Mathf.Clamp01(soundChance))
+            SoundManager.Instance.PlaySound(SoundNames.Spark, soundVolume);
     }
     void Update()
     {

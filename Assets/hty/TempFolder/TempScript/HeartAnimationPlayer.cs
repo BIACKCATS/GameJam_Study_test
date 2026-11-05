@@ -1,4 +1,5 @@
 using UnityEngine;
+using BC.Core;
 
 public sealed class HeartAnimationPlayer : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public sealed class HeartAnimationPlayer : MonoBehaviour
     [Header("Heart Break Audio")]
     public AudioSource breakAudioSource;
     public AudioClip breakSound;
+    public TextAsset healSound;
     [Range(0f, 1f)] public float breakSoundVolume = 0.4f;
     static HeartAnimationPlayer instance;
     readonly int[] states = new int[3]; // 0: shimmer, 1: breaking, 2: hidden, 3: healing
@@ -42,12 +44,7 @@ public sealed class HeartAnimationPlayer : MonoBehaviour
         { Debug.LogError($"HeartAnimationPlayer.PlayBreak: Heart {heartNumber} is already breaking or hidden.", instance); return; }
         if (!instance.hearts[index]) { Debug.LogError($"HeartAnimationPlayer: Heart {heartNumber} reference is missing.", instance); return; }
         instance.states[index] = 1; instance.frames[index] = 0; instance.Render(index);
-        if (!instance.breakAudioSource || !instance.breakSound)
-            Debug.LogError("HeartAnimationPlayer: Assign Break Audio Source and Break Sound to play the heart break sound.", instance);
-        else if (!instance.breakAudioSource.isActiveAndEnabled)
-            Debug.LogError("HeartAnimationPlayer: Break Audio Source is disabled.", instance);
-        else
-            instance.breakAudioSource.PlayOneShot(instance.breakSound, instance.breakSoundVolume);
+        if(SoundManager.Instance)SoundManager.Instance.PlaySound(SoundNames.HealthLose,instance.breakSoundVolume);
     }
 
     /// <summary>Restore a broken heart (1..3), then resume its shimmer.</summary>
@@ -62,6 +59,7 @@ public sealed class HeartAnimationPlayer : MonoBehaviour
         if (instance.states[index] == 0 || instance.states[index] == 3)
         { Debug.LogError($"HeartAnimationPlayer.PlayHeal: Heart {heartNumber} is already healthy or healing.", instance); return; }
         instance.states[index] = 3; instance.frames[index] = 0; instance.Render(index);
+        if(SoundManager.Instance) SoundManager.Instance.PlaySample(instance.healSound,0.8f);
     }
 
     void Update()

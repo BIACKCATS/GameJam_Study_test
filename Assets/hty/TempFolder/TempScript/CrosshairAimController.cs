@@ -1,4 +1,5 @@
 using UnityEngine;
+using BC.Core;
 #if ENABLE_INPUT_SYSTEM
 using UnityEngine.InputSystem;
 #endif
@@ -16,6 +17,7 @@ public sealed class CrosshairAimController : MonoBehaviour
     [Min(0.1f)] public float sizeMultiplier = 1;
     public bool escapeToStop = true;
     static CrosshairAimController instance;
+    public static bool IsVisible => instance && instance.aiming;
     public static bool IsAiming => instance && instance.aiming && !instance.closing;
     public static Vector2 AimScreenPosition => instance ? instance.aimPosition : Vector2.zero;
     bool aiming, previousVisible;
@@ -53,6 +55,7 @@ public sealed class CrosshairAimController : MonoBehaviour
         if(!crosshair || !animationSheet) { Debug.LogError("CrosshairAimController: Assign crosshair and animation sheet.",this); return; }
         if(!aiming) { previousVisible=Cursor.visible; previousLock=Cursor.lockState; }
         aiming=true; closing=false; frame=0; clicking=false; aimStartedFrame=Time.frameCount;
+        if(SoundManager.Instance)SoundManager.Instance.PlaySound(SoundNames.Aim,0.8f);
         Cursor.lockState=CursorLockMode.Confined; Cursor.visible=false;
         crosshair.texture=animationSheet; crosshair.enabled=true;
         UpdateVisual();
@@ -107,6 +110,7 @@ public sealed class CrosshairAimController : MonoBehaviour
         if(!instance || !instance.aiming || instance.closing) return;
         if(!instance.clickSheet) { Debug.LogError("CrosshairAimController: Assign Click Sheet.",instance); return; }
         instance.clicking=true; instance.clickFrame=0; instance.UpdateVisual();
+        if(SoundManager.Instance)SoundManager.Instance.PlaySound(SoundNames.Talk,0.8f);
     }
     void UpdateVisual()
     {
@@ -128,6 +132,8 @@ public sealed class CrosshairAimController : MonoBehaviour
     void End()
     {
         if(!aiming || closing) return;
+        // Temporary close cue: reuse Aim until a dedicated off event is supplied.
+        if(SoundManager.Instance)SoundManager.Instance.PlaySound(SoundNames.Aim,0.8f);
         if(!dismissSheet) { Debug.LogError("CrosshairAimController: Assign Dismiss Sheet.",this); EndImmediately(); return; }
         closing=true; dismissFrame=0;
         UpdateVisual();

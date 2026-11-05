@@ -1,4 +1,5 @@
 using UnityEngine;
+using BC.Core;
 using UnityEngine.Events;
 
 public sealed class GameOverSequenceController : MonoBehaviour
@@ -33,6 +34,7 @@ public sealed class GameOverSequenceController : MonoBehaviour
     static GameOverSequenceController instance;
     public static bool IsPlaying => instance && instance.running;
     bool running;
+    bool writingSound;
     float elapsed, flickerTimer;
     int stage, flickerPhase;
     bool doubleFlicker;
@@ -73,6 +75,7 @@ public sealed class GameOverSequenceController : MonoBehaviour
         PauseWorld();
         presentation.SetActive(true);
         if(endingMessages&&!endingMessages.Begin()){ResetPresentation();return false;}
+        if(SoundManager.Instance) SoundManager.Instance.StopTrain();
         SetLight(true);
         rightBubble.color=rightBubbleColor;leftBubble.color=leftBubbleColor;
         if(rightText)rightText.text=rightMessage;
@@ -99,6 +102,7 @@ public sealed class GameOverSequenceController : MonoBehaviour
         float leftEnd=leftStart+Mathf.Max(0,leftBubbleDelay);
         rightTyping.enabled=elapsed>=rightStart&&elapsed<rightEnd;
         leftTyping.enabled=elapsed>=leftStart&&elapsed<leftEnd;
+        SetWritingSound(rightTyping.enabled || leftTyping.enabled);
         AnimateTyping(rightTyping,elapsed-rightStart);AnimateTyping(leftTyping,elapsed-leftStart);
         if(stage<1&&elapsed>=rightEnd){stage=1;if(endingMessages)endingMessages.ShowRightBubble();else rightBubble.gameObject.SetActive(true);InvokeSafely(onRightBubbleShown);if(!running)return;}
         if(stage<2&&elapsed>=leftStart){stage=2;InvokeSafely(onLeftTypingStarted);if(!running)return;}
@@ -122,10 +126,24 @@ public sealed class GameOverSequenceController : MonoBehaviour
             default: SetLight(true);flickerPhase=0;flickerTimer=NextInterval();break;
         }
     }
-    void SetLight(bool on){var c=lightOverlay.color;c.a=on?lightOpacity:0;lightOverlay.color=c;}
+    void SetLight(bool on)
+    {
+        var c=lightOverlay.color;
+        if(!on && c.a>0 && SoundManager.Instance)SoundManager.Instance.PlaySound(SoundNames.TurnOffTheLight,0.8f);
+        c.a=on?lightOpacity:0;lightOverlay.color=c;
+    }
+    void SetWritingSound(bool active)
+    {
+        if(writingSound==active)return;
+        writingSound=active;
+        if(!SoundManager.Instance)return;
+        if(active)SoundManager.Instance.PlaySound(SoundNames.Writing,0.8f);
+        else SoundManager.Instance.StopSound(SoundNames.Writing);
+    }
     void ResetPresentation()
     {
         running=false;
+        SetWritingSound(false);
         if(endingMessages)endingMessages.Stop();
         ResumeWorld();
         if(presentation)presentation.SetActive(false);

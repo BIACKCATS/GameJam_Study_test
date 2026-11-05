@@ -5,6 +5,7 @@ using JSH.Gameplay;
 using MoreMountains.Feedbacks;
 using TMPro;
 using UnityEngine;
+using BC.Core;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
 
@@ -107,6 +108,7 @@ namespace JSH.UI
         private Coroutine _routine;
         private bool _initialized;
         private bool _finished;
+        private bool _writingSound;
 
         public bool IsPlaying => _routine != null;
 
@@ -221,7 +223,7 @@ namespace JSH.UI
             // Bubble + [Web] label pop at once.
             Pop(_bubble, _popDuration, _popEase);
             Pop(_webLabel, _popDuration, _popEase);
-            PlayClip(_popClip);
+            if(SoundManager.Instance)SoundManager.Instance.PlaySound(SoundNames.MessageComingAlarm,0.8f);
             yield return Wait(_popDuration);
 
             yield return Type(_receivedLine, _typeInterval);
@@ -475,13 +477,15 @@ namespace JSH.UI
                 text.maxVisibleCharacters = shown;
                 if (ticked)
                 {
-                    PlayClip(_typeClip);
+                    if(!_writingSound && SoundManager.Instance)
+                    {_writingSound=true;SoundManager.Instance.PlaySound(SoundNames.Writing,0.8f);}
                 }
 
                 yield return null;
             }
 
             text.maxVisibleCharacters = AllVisible;
+            StopWritingSound();
         }
 
         private static void Pop(RectTransform target, float duration, Ease ease)
@@ -567,6 +571,7 @@ namespace JSH.UI
 
         private void StopRoutine()
         {
+            StopWritingSound();
             if (_routine != null)
             {
                 StopCoroutine(_routine);
@@ -580,6 +585,12 @@ namespace JSH.UI
             {
                 _sfx.PlayOneShot(clip);
             }
+        }
+        private void StopWritingSound()
+        {
+            if(!_writingSound)return;
+            _writingSound=false;
+            if(SoundManager.Instance)SoundManager.Instance.StopSound(SoundNames.Writing);
         }
 
         private static IEnumerator Wait(float seconds)

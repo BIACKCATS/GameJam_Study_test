@@ -3,6 +3,7 @@ using System.Collections;
 using DG.Tweening;
 using TMPro;
 using UnityEngine;
+using BC.Core;
 using UnityEngine.Events;
 using UnityEngine.UI;
 
@@ -54,6 +55,7 @@ namespace JSH.UI
         private Graphic[] _dotGraphics = Array.Empty<Graphic>();
         private Coroutine _routine;
         private bool _initialized;
+        private bool _writingSound;
 
         public bool IsPlaying => _routine != null;
         public bool IsDone { get; private set; }
@@ -106,7 +108,9 @@ namespace JSH.UI
                 }
             }
 
+            if(SoundManager.Instance){_writingSound=true;SoundManager.Instance.PlaySound(SoundNames.Writing,0.8f);}
             yield return WaitUnscaled(_typingDuration);
+            StopWritingSound();
 
             KillTweens();
             if (_dotsRoot != null)
@@ -129,7 +133,7 @@ namespace JSH.UI
                 _content.DOScale(1f, _popDuration).SetEase(_popEase).SetUpdate(true);
             }
 
-            PlayClip(_popClip);
+            if(SoundManager.Instance)SoundManager.Instance.PlaySound(SoundNames.MessageSendingAlarm,0.8f);
             yield return WaitUnscaled(_popDuration);
             ApplyFinalState();
         }
@@ -298,6 +302,7 @@ namespace JSH.UI
 
         private void StopRoutine()
         {
+            StopWritingSound();
             if (_routine != null)
             {
                 StopCoroutine(_routine);
@@ -311,6 +316,12 @@ namespace JSH.UI
             {
                 _sfx.PlayOneShot(clip);
             }
+        }
+        private void StopWritingSound()
+        {
+            if(!_writingSound)return;
+            _writingSound=false;
+            if(SoundManager.Instance)SoundManager.Instance.StopSound(SoundNames.Writing);
         }
 
         private static IEnumerator WaitUnscaled(float seconds)

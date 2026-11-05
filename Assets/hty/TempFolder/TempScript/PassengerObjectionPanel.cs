@@ -20,7 +20,7 @@ public sealed class PassengerObjectionPanel : MonoBehaviour
 
     void Awake() { Hide(); }
 
-    public bool Play(Texture2D texture, Action completed, Action onCancelled)
+    public bool Play(Texture2D texture, Action completed, Action onCancelled, Action onImpact = null)
     {
         if (!isActiveAndEnabled || !panel || !opacity || !texture)
         {
@@ -45,6 +45,7 @@ public sealed class PassengerObjectionPanel : MonoBehaviour
         sequence = DOTween.Sequence();
         // Accelerate toward the screen, then briefly rebound before settling.
         sequence.Append(rect.DOScale(1f, Mathf.Max(0.01f, stampDuration)).SetEase(Ease.InCubic));
+        if(onImpact!=null)sequence.AppendCallback(()=>onImpact());
         float rebound = Mathf.Max(0.01f, reboundDuration);
         sequence.Append(rect.DOScale(1f + Mathf.Clamp(reboundStrength, 0, 0.3f), rebound * 0.4f).SetEase(Ease.OutQuad));
         sequence.Append(rect.DOScale(1f, rebound * 0.6f).SetEase(Ease.OutQuad));
