@@ -1020,6 +1020,7 @@ GameObject:
   - component: {fileID: 9213267360825895250}
   - component: {fileID: 3702544991387801436}
   - component: {fileID: 2242656575820566030}
+  - component: {fileID: 1303293879683038063}
   m_Layer: 0
   m_Name: CrosshairHUD
   m_TagString: Untagged
@@ -1116,6 +1117,20 @@ MonoBehaviour:
   framesPerSecond: 16
   sizeMultiplier: 1
   escapeToStop: 1
+--- !u!114 &1303293879683038063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6695953874346909904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c7628ba6dc54f44784e5cd25a39362a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CrosshairAxisExtension
+  controller: {fileID: 2242656575820566030}
+  extendToScreenEdges: 1
 --- !u!1 &6953315976451651929
 GameObject:
   m_ObjectHideFlags: 0
