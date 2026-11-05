@@ -1,3 +1,4 @@
+using Febucci.TextAnimatorForUnity;
 using JSH.Core;
 using JSH.Data;
 using JSH.Gameplay;
@@ -13,6 +14,9 @@ namespace JSH.UI
     /// radial choices around the portrait. Listens to DialogueRunner; owns dialogue input:
     ///  - node with choices: Left Click confirms the choice selected by mouse direction (RadialChoiceSelector)
     ///  - node without choices: Left Click / Space / Enter = next
+    ///  - while text is still being typed (Text Animator typewriter): the same input reveals it all instead
+    /// Choices and the "next" marker appear only after the body text is fully shown.
+    /// Text supports DialogueTextTags (e.g. &lt;angry&gt;) and any Text Animator / TMP tag.
     /// Put on an always-active object of the gameplay Canvas (not on the panel it shows/hides).
     /// </summary>
     public sealed class DialogueView : MonoBehaviour
@@ -21,6 +25,10 @@ namespace JSH.UI
         [SerializeField] private UIPanel _panel;
         [SerializeField] private TMP_Text _speakerText;
         [SerializeField] private TMP_Text _bodyText;
+        [Tooltip("Text Animator typewriter on the Speaker text (optional). Retypes only when the name changes.")]
+        [SerializeField] private TypewriterComponent _speakerTypewriter;
+        [Tooltip("Text Animator typewriter on the Body text (optional). Empty = text appears instantly.")]
+        [SerializeField] private TypewriterComponent _bodyTypewriter;
         [SerializeField] private Image _portraitImage;
         [Tooltip("Used when the Talkable has no portrait.")]
         [SerializeField] private Sprite _fallbackPortrait;
@@ -32,6 +40,9 @@ namespace JSH.UI
         private Talkable _target;
         private int _openedFrame = -1;
         private bool _started;
+        private string _shownSpeaker;
+        private DialogueNode _pendingNode; // choices / next marker wait until the body is fully typed
+        private int _pendingFrame = -1;
 
         private void Start()
         {
@@ -71,6 +82,8 @@ namespace JSH.UI
         private void OnStarted(Talkable target)
         {
             _target = target;
+            _shownSpeaker = null;
+            _pendingNode = null;
             _openedFrame = Time.frameCount; // the Shift+Click that opened the dialogue must not confirm a choice
 
             if (_portraitImage != null)
@@ -84,22 +97,55 @@ namespace JSH.UI
 
         private void OnNodeShown(DialogueNode node)
         {
-            if (_speakerText != null)
-                _speakerText.text = string.IsNullOrEmpty(node.Speaker) && _target != null ? _target.DisplayName : node.Speaker;
-            if (_bodyText != null) _bodyText.text = node.Text;
-
-            bool hasChoices = node.ChoiceCount > 0;
-            if (_choices != null)
+            string speaker = string.IsNullOrEmpty(node.Speaker) && _target != null ? _target.DisplayName : node.Speaker;
+            if (speaker != _shownSpeaker)
             {
-                if (hasChoices) _choices.Show(node);
-                else _choices.Hide();
+                _shownSpeaker = speaker;
+                ShowText(_speakerText, _speakerTypewriter, speaker);
             }
+            ShowText(_bodyText, _bodyTypewriter, node.Text);
+
+            // Hide the previous node's choices / marker; they come back once this body is fully shown.
+            if (_choices != null) _choices.Hide();
+            if (_nextIndicator != null) _nextIndicator.SetActive(false);
+            _pendingNode = node;
+            _pendingFrame = Time.frameCount;
+            // Without typewriters show controls now; with them, Update decides from the next frame on
+            // (so a typewriter that starts a frame late can't let the choices pop up early).
+            if (_bodyTypewriter == null && _speakerTypewriter == null) ShowNodeControls();
+        }
+
+        private static void ShowText(TMP_Text label, TypewriterComponent typewriter, string text)
+        {
+            string shown = DialogueTextTags.Expand(text);
+            if (typewriter != null) typewriter.ShowText(shown);
+            else if (label != null) label.text = shown;
+        }
+
+        private bool IsBodyTyping => (_bodyTypewriter != null && _bodyTypewriter.IsShowingText)
+                                     || (_speakerTypewriter != null && _speakerTypewriter.IsShowingText);
+
+        private void SkipBodyTyping()
+        {
+            if (_speakerTypewriter != null && _speakerTypewriter.IsShowingText) _speakerTypewriter.SkipTypewriter();
+            if (_bodyTypewriter != null && _bodyTypewriter.IsShowingText) _bodyTypewriter.SkipTypewriter();
+        }
+
+        private void ShowNodeControls()
+        {
+            DialogueNode node = _pendingNode;
+            _pendingNode = null;
+            if (node == null) return;
+            bool hasChoices = node.ChoiceCount > 0;
+            if (_choices != null && hasChoices) _choices.Show(node);
             if (_nextIndicator != null) _nextIndicator.SetActive(!hasChoices);
         }
 
         private void OnEnded(Talkable target)
         {
             _target = null;
+            _pendingNode = null;
+            _shownSpeaker = null;
             if (_choices != null) _choices.Hide();
             if (_nextIndicator != null) _nextIndicator.SetActive(false);
             if (_panel != null) _panel.Hide();
@@ -116,15 +162,34 @@ namespace JSH.UI
 
             Mouse mouse = Mouse.current;
             bool click = mouse != null && mouse.leftButton.wasPressedThisFrame;
+            Keyboard kb = Keyboard.current;
+            bool key = kb != null && (kb.spaceKey.wasPressedThisFrame || kb.enterKey.wasPressedThisFrame);
+
+            // 1) Body still typing: input reveals it; choices wait.
+            if (IsBodyTyping)
+            {
+                if (click || key) SkipBodyTyping();
+                return;
+            }
+            if (_pendingNode != null)
+            {
+                if (Time.frameCount > _pendingFrame) ShowNodeControls();
+                return; // no input on the frame the choices appear
+            }
 
             if (node.ChoiceCount > 0)
             {
-                if (click && _choices != null && _choices.SelectedIndex >= 0) _runner.Choose(_choices.SelectedIndex);
+                if (_choices == null) return;
+                // 2) Choice labels still typing: input reveals them instead of choosing.
+                if (_choices.IsTyping)
+                {
+                    if (click || key) _choices.SkipTyping();
+                    return;
+                }
+                if (click && _choices.SelectedIndex >= 0) _runner.Choose(_choices.SelectedIndex);
                 return;
             }
 
-            Keyboard kb = Keyboard.current;
-            bool key = kb != null && (kb.spaceKey.wasPressedThisFrame || kb.enterKey.wasPressedThisFrame);
             if (click || key) _runner.Advance();
         }
     }

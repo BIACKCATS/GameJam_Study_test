@@ -1,4 +1,5 @@
 using DG.Tweening;
+using Febucci.TextAnimatorForUnity;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -15,6 +16,8 @@ namespace JSH.UI
     public sealed class ChoiceSlotView : MonoBehaviour
     {
         [SerializeField] private TMP_Text _label;
+        [Tooltip("Text Animator typewriter on the Label (optional). Empty = text appears instantly.")]
+        [SerializeField] private TypewriterComponent _typewriter;
         [Tooltip("Box image tinted on highlight (optional).")]
         [SerializeField] private Graphic _background;
         [SerializeField] private Color _normalColor = new Color(0.1f, 0.1f, 0.1f, 0.85f);
@@ -48,6 +51,8 @@ namespace JSH.UI
         private bool _hasBase;
 
         public bool IsHighlighted { get; private set; }
+        /// <summary>True while the typewriter is still revealing the label.</summary>
+        public bool IsTyping => _typewriter != null && _typewriter.IsShowingText;
         public RectTransform Rect => _rect != null ? _rect : _rect = (RectTransform)transform;
 
         private void Awake()
@@ -68,8 +73,26 @@ namespace JSH.UI
         public void SetText(string text)
         {
             if (_label == null) return;
-            _label.text = text;
-            if (_autoResize) ResizeToFit(text);
+            string shown = DialogueTextTags.Expand(text);
+            string measured = shown;
+            if (_typewriter != null)
+            {
+                _typewriter.ShowText(shown);
+                // Size the box with what TMP will actually lay out (Text Animator tags removed).
+                string plain = _typewriter.TextAnimator != null ? _typewriter.TextAnimator.textWithoutTextAnimTags : null;
+                if (!string.IsNullOrEmpty(plain)) measured = plain;
+            }
+            else
+            {
+                _label.text = shown;
+            }
+            if (_autoResize) ResizeToFit(measured);
+        }
+
+        /// <summary>Reveal the whole label now.</summary>
+        public void SkipTyping()
+        {
+            if (IsTyping) _typewriter.SkipTypewriter();
         }
 
         private void CaptureBase()

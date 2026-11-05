@@ -61,6 +61,29 @@ namespace JSH.UI
             UpdateSelection();
         }
 
+        /// <summary>True while any shown choice label is still being typed.</summary>
+        public bool IsTyping
+        {
+            get
+            {
+                if (!IsShown) return false;
+                for (int i = 0; i < _activeCount; i++)
+                {
+                    if (_slots[i] != null && _slots[i].IsTyping) return true;
+                }
+                return false;
+            }
+        }
+
+        /// <summary>Reveal every shown choice label now.</summary>
+        public void SkipTyping()
+        {
+            for (int i = 0; i < _activeCount; i++)
+            {
+                if (_slots[i] != null) _slots[i].SkipTyping();
+            }
+        }
+
         public void Hide()
         {
             IsShown = false;
