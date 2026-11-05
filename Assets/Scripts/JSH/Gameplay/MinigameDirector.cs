@@ -11,11 +11,12 @@ namespace JSH.Gameplay
     /// (one per scene; everything stays in one Scene). The Talkable's dialogue is already finished (no more talks)
     /// unless stated otherwise:
     ///  - Embrace ("포용"/설득) -> Timing minigame (CurrentGoal = Embrace).
-    ///      villain:   success = converted + life +1. Fail / timeout = Counterattack (life -1), stays unresolved.
+    ///      villain:   success = converted + life +1. Fail / timeout = Counterattack (life -1), stays unresolved,
+    ///                 dialogue restarts from the beginning (can try again).
     ///      passenger: success = no effect. Fail / timeout = no life change, dialogue restarts from the beginning.
     ///  - Defeat ("퇴치") -> Timing minigame (CurrentGoal = Defeat).
     ///      villain:   success = Eject event (VillainEjectStartedEvent, then defeated + removed from the car).
-    ///                 Fail / timeout = Counterattack (life -1), stays unresolved.
+    ///                 Fail / timeout = Counterattack (life -1), stays unresolved, dialogue restarts from the beginning.
     ///      passenger: success or fail = Counterattack (life -1) - accusing an innocent always backfires.
     /// Legacy choice effects (DialogueEffect.Persuade / Accuse) map to Embrace / Defeat.
     /// Eject / Counterattack are timed placeholders until their presentation exists: the session (input lock)
@@ -166,7 +167,11 @@ namespace JSH.Gameplay
                 EventBus<MinigameFinishedEvent>.Raise(new MinigameFinishedEvent(_target, MinigameType.Timing, success));
                 if (_villain == null) StartCounterattack(CounterattackReason.AccusedPassenger); // passenger: always backfires
                 else if (success) StartEject(); // same session, no input-lock flicker
-                else StartCounterattack(CounterattackReason.DefeatFailed);
+                else
+                {
+                    _target.ResetDialogue(); // villain stays unresolved but can be talked to again from the beginning
+                    StartCounterattack(CounterattackReason.DefeatFailed);
+                }
                 return;
             }
 
@@ -180,7 +185,11 @@ namespace JSH.Gameplay
             EventBus<MinigameFinishedEvent>.Raise(new MinigameFinishedEvent(_target, MinigameType.Timing, success));
 
             if (success) EndSession();
-            else if (_villain != null) StartCounterattack(CounterattackReason.PersuadeFailed);
+            else if (_villain != null)
+            {
+                _target.ResetDialogue(); // villain stays unresolved but can be talked to again from the beginning
+                StartCounterattack(CounterattackReason.PersuadeFailed);
+            }
             else
             {
                 _target.ResetDialogue(); // passenger: no penalty, talk again from the beginning

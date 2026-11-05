@@ -34,7 +34,7 @@ namespace JSH.Gameplay
         private void Start()
         {
             // StartAim logs an error when no controller exists, so only use it if one is in the scene.
-            _hasCrosshair = _useCrosshair && FindFirstObjectByType<CrosshairAimController>() != null;
+            _hasCrosshair = _useCrosshair && FindAnyObjectByType<CrosshairAimController>() != null;
         }
 
         private void OnDisable() => SetAim(false);

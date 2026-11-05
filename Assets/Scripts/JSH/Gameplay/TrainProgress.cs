@@ -69,7 +69,7 @@ namespace JSH.Gameplay
 
         private void Start()
         {
-            if (_player == null) _player = FindFirstObjectByType<SideViewMover>();
+            if (_player == null) _player = FindAnyObjectByType<SideViewMover>();
             if (_player != null) _player.TryGetComponent(out _playerBody);
             if (_car == null) Debug.LogError("[TrainProgress] TrainCar is not assigned.", this);
             if (_playerStart == null) Debug.LogWarning("[TrainProgress] Player Start is not assigned; the player stays where it is between cars.", this);

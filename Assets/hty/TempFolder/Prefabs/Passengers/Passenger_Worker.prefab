@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 8543659645948850206}
   - component: {fileID: 4471434733289541907}
   - component: {fileID: 9049618559587165582}
+  - component: {fileID: 6659536849706222498}
+  - component: {fileID: 4150866803399569369}
   m_Layer: 0
   m_Name: Passenger_Worker
   m_TagString: Untagged
@@ -80,7 +82,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 20
+  m_SortingOrder: 2
   m_MaskInteraction: 0
   m_Sprite: {fileID: 1602740321404942409, guid: cd83cff311b6e354fa4c5fb16b88cff2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -114,3 +116,65 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!61 &6659536849706222498
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2658118904794576125}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0.17499995, y: 2.11}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.4291498, y: 0}
+    oldSize: {x: 2.47, y: 4.22}
+    newSize: {x: 2.47, y: 4.22}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 2.47, y: 4.22}
+  m_EdgeRadius: 0
+--- !u!114 &4150866803399569369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2658118904794576125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b90c39d740088694ea6b98e074717548, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::JSH.Gameplay.Talkable
+  _displayName: "\uC9C1\uC7A5\uC778"
+  _dialogue: {fileID: 11400000, guid: e4fb0bf2d3f86884caf773de90b1841d, type: 2}
+  _portrait: {fileID: 0}
+  _timingOverride: {fileID: 0}

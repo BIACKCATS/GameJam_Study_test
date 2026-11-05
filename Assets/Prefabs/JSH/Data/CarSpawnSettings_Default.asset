@@ -13,8 +13,10 @@ MonoBehaviour:
   m_Name: CarSpawnSettings_Default
   m_EditorClassIdentifier: Assembly-CSharp::JSH.Data.CarSpawnSettings
   _passengerPrefabs:
-  - {fileID: 6921997057980166158, guid: a3ca3be974eab334b9c2fda4ee2be17c, type: 3}
+  - {fileID: 3712236887215296066, guid: 81e92822498bc714c8c665b2d4148504, type: 3}
+  - {fileID: 6914813235361567076, guid: b3c1070bce7867845b6bc986b76684a5, type: 3}
+  - {fileID: 3548912700902324448, guid: b5b93d39dbbd793419d6d4d292b9cf6e, type: 3}
+  - {fileID: 2658118904794576125, guid: 84a6642465ecf3d47bc3c26e00a11b9c, type: 3}
   _villainPrefabs:
   - {fileID: 7158102606219403747, guid: 3013025c5c75aa44899d6cafb50e6146, type: 3}
-  _passengerCount: {x: 2, y: 4}
-  _villainCount: {x: 1, y: 1}
+  _maxNpcPerCar: 5
