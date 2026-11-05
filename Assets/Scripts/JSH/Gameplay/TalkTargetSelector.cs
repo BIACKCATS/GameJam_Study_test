@@ -1,3 +1,4 @@
+using JSH.Core;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -32,6 +33,7 @@ namespace JSH.Gameplay
             if (!kb.leftShiftKey.isPressed && !kb.rightShiftKey.isPressed) return;
             if (!DialogueRunner.HasInstance || DialogueRunner.Instance.IsActive) return;
             if (MinigameDirector.HasInstance && MinigameDirector.Instance.IsActive) return;
+            if (GameManager.HasInstance && !GameManager.Instance.IsPlaying) return; // paused / ending
 
             Vector2 screen = mouse.position.ReadValue();
             Vector3 world = _camera.ScreenToWorldPoint(new Vector3(screen.x, screen.y, -_camera.transform.position.z));

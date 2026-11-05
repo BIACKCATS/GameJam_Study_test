@@ -24,6 +24,7 @@ namespace JSH.Gameplay
         private TrainCar[] _cars = Array.Empty<TrainCar>();
         private TrainCar _current;
         private System.Random _rng;
+        private bool _endReached;
 
         public TrainCar CurrentCar => _current;
         public int CarCount => _cars.Length;
@@ -61,10 +62,16 @@ namespace JSH.Gameplay
 
         /// <summary>
         /// Called by CarEntrance when the player leaves a boundary into car <paramref name="carIndex"/>.
-        /// Index past the last car (end of the train) is ignored for now (ending hooks in later).
+        /// Index == CarCount (exited the last car to the right) = end of the train: the last car is judged
+        /// like any other, then TrainEndReachedEvent is raised once.
         /// </summary>
         public void NotifyCrossed(int carIndex)
         {
+            if (carIndex == _cars.Length && _cars.Length > 0 && IsLastCar)
+            {
+                ReachEnd();
+                return;
+            }
             if (carIndex < 0 || carIndex >= _cars.Length) return;
             TrainCar car = _cars[carIndex];
             if (car == _current) return;
@@ -76,21 +83,7 @@ namespace JSH.Gameplay
             bool cleared = false;
 
             // Judge the car being left: forward only, once per car.
-            if (forward && from != null && !from.IsJudged)
-            {
-                from.MarkJudged();
-                unresolved = from.CountUnresolvedVillains();
-                if (unresolved > 0)
-                {
-                    if (LifeSystem.HasInstance) LifeSystem.Instance.Damage(1);
-                    lifeLost = true;
-                }
-                else
-                {
-                    if (LifeSystem.HasInstance) LifeSystem.Instance.Heal(1); // clean pass: life +1 (capped at max)
-                    cleared = true;
-                }
-            }
+            if (forward && from != null && !from.IsJudged) Judge(from, out unresolved, out lifeLost, out cleared);
 
             _current = car;
             if (forward)
@@ -99,6 +92,32 @@ namespace JSH.Gameplay
                 SpawnCar(car.Index + 1); // look-ahead
             }
             EventBus<CarChangedEvent>.Raise(new CarChangedEvent(from, car, forward, unresolved, lifeLost, cleared));
+        }
+
+        public bool IsEndReached => _endReached;
+
+        private void ReachEnd()
+        {
+            if (_endReached) return;
+            _endReached = true;
+
+            int unresolved = 0;
+            bool lifeLost = false;
+            bool cleared = false;
+            if (!_current.IsJudged) Judge(_current, out unresolved, out lifeLost, out cleared);
+            EventBus<TrainEndReachedEvent>.Raise(new TrainEndReachedEvent(_current, unresolved, lifeLost));
+        }
+
+        // Unresolved villains > 0 -> life -1 (regardless of count); none -> clean pass, life +1 (capped at max).
+        private static void Judge(TrainCar car, out int unresolved, out bool lifeLost, out bool cleared)
+        {
+            car.MarkJudged();
+            unresolved = car.CountUnresolvedVillains();
+            lifeLost = unresolved > 0;
+            cleared = !lifeLost;
+            if (!LifeSystem.HasInstance) return;
+            if (lifeLost) LifeSystem.Instance.Damage(1);
+            else LifeSystem.Instance.Heal(1);
         }
 
         private TrainCar FindCarAt(float x)

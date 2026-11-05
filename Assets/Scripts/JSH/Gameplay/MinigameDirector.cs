@@ -69,6 +69,7 @@ namespace JSH.Gameplay
         private void Update()
         {
             if (!IsActive) return;
+            if (GameManager.HasInstance && GameManager.Instance.IsPaused) return; // pause-menu clicks must not hit
 
             bool click = Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame;
             float dt = Time.deltaTime;

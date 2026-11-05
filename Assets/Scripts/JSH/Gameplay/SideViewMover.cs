@@ -24,7 +24,9 @@ namespace JSH.Gameplay
 
         /// <summary>-1 = left, 0 = idle, 1 = right.</summary>
         public float MoveInput => _input;
-        public bool InputLocked => _manualLock || _dialogueLock || _minigameLock;
+        private bool _gameStateLock;
+
+        public bool InputLocked => _manualLock || _dialogueLock || _minigameLock || _gameStateLock;
 
         private void Awake()
         {
@@ -38,12 +40,14 @@ namespace JSH.Gameplay
         {
             EventBus<DialogueStateChangedEvent>.Subscribe(OnDialogueStateChanged);
             EventBus<MinigameStateChangedEvent>.Subscribe(OnMinigameStateChanged);
+            EventBus<GameStateChangedEvent>.Subscribe(OnGameStateChanged);
         }
 
         private void OnDisable()
         {
             EventBus<DialogueStateChangedEvent>.Unsubscribe(OnDialogueStateChanged);
             EventBus<MinigameStateChangedEvent>.Unsubscribe(OnMinigameStateChanged);
+            EventBus<GameStateChangedEvent>.Unsubscribe(OnGameStateChanged);
         }
 
         /// <summary>
@@ -55,6 +59,9 @@ namespace JSH.Gameplay
         private void OnDialogueStateChanged(DialogueStateChangedEvent evt) => _dialogueLock = evt.IsActive;
 
         private void OnMinigameStateChanged(MinigameStateChangedEvent evt) => _minigameLock = evt.IsActive;
+
+        // Ending screens (GameOver / Clear) and pause stop movement input.
+        private void OnGameStateChanged(GameStateChangedEvent evt) => _gameStateLock = evt.Current != GameState.Playing;
 
         private void Update()
         {
