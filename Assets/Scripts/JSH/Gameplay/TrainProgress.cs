@@ -94,7 +94,7 @@ namespace JSH.Gameplay
             }
 
             if (_player != null) _player.SetInputLocked(true);
-            if (_curtain != null && _curtain.isActiveAndEnabled) _curtain.Play();
+            if (_curtain != null && _curtain.isActiveAndEnabled) SubwayCurtainPlayer.Play(); // static since hty 96b4712
 
             if (_curtain != null && _curtain.IsPlaying)
             {
