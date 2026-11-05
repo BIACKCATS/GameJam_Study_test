@@ -1,3 +1,4 @@
+using System.Text;
 using JSH.Core;
 using JSH.Data;
 using JSH.Gameplay;
@@ -7,12 +8,15 @@ using UnityEngine.InputSystem;
 namespace JSH.Test
 {
     /// <summary>
-    /// TEST ONLY - placeholder dialogue view until the real UI exists. Auto-spawns on Play (no scene reference),
-    /// shows the current node top-left; keys 1..9 = Choose, Space/Enter = Advance, Esc = end.
-    /// Delete the JSH/Test folder to remove it.
+    /// TEST ONLY - placeholder view for dialogue + minigames + lives until the real UI exists.
+    /// Auto-spawns on Play (no scene reference). Dialogue: 1..9 choose, Space/Enter next, Esc end.
+    /// Minigames: Left Click = hit / stop. Delete the JSH/Test folder to remove it.
     /// </summary>
     public class TestDialogueDebug : MonoBehaviour
     {
+        private const int BarWidth = 41;
+
+        private readonly StringBuilder _bar = new StringBuilder(BarWidth + 2);
         private string _log = "";
 
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
@@ -27,31 +31,46 @@ namespace JSH.Test
         private void OnEnable()
         {
             EventBus<DialogueChoiceMadeEvent>.Subscribe(OnChoice);
+            EventBus<DialogueStateChangedEvent>.Subscribe(OnDialogueState);
             EventBus<VillainConvertedEvent>.Subscribe(OnConverted);
-            EventBus<DialogueStateChangedEvent>.Subscribe(OnState);
+            EventBus<VillainDefeatedEvent>.Subscribe(OnDefeated);
+            EventBus<MinigameStateChangedEvent>.Subscribe(OnMinigameState);
+            EventBus<MinigameFinishedEvent>.Subscribe(OnMinigameFinished);
+            EventBus<PassengerCounterattackEvent>.Subscribe(OnCounterattack);
+            EventBus<LivesChangedEvent>.Subscribe(OnLives);
+            EventBus<LivesDepletedEvent>.Subscribe(OnDepleted);
         }
 
         private void OnDisable()
         {
             EventBus<DialogueChoiceMadeEvent>.Unsubscribe(OnChoice);
+            EventBus<DialogueStateChangedEvent>.Unsubscribe(OnDialogueState);
             EventBus<VillainConvertedEvent>.Unsubscribe(OnConverted);
-            EventBus<DialogueStateChangedEvent>.Unsubscribe(OnState);
+            EventBus<VillainDefeatedEvent>.Unsubscribe(OnDefeated);
+            EventBus<MinigameStateChangedEvent>.Unsubscribe(OnMinigameState);
+            EventBus<MinigameFinishedEvent>.Unsubscribe(OnMinigameFinished);
+            EventBus<PassengerCounterattackEvent>.Unsubscribe(OnCounterattack);
+            EventBus<LivesChangedEvent>.Unsubscribe(OnLives);
+            EventBus<LivesDepletedEvent>.Unsubscribe(OnDepleted);
         }
 
-        private void OnState(DialogueStateChangedEvent e)
+        private void Log(string msg)
         {
-            string who = e.Target != null ? e.Target.DisplayName : "-";
-            _log = e.IsActive ? "Dialogue start: " + who : "Dialogue end: " + who;
-            Debug.Log("[TestDialogue] " + _log);
+            _log = msg;
+            Debug.Log("[TestDialogue] " + msg);
         }
 
-        private void OnChoice(DialogueChoiceMadeEvent e)
-        {
-            _log = $"Choice: node {e.NodeIndex} / choice {e.ChoiceIndex} / effect {e.Effect}";
-            Debug.Log($"[TestDialogue] {_log} (target {e.Target.DisplayName}, villain={e.Target.TryGetComponent(out Villain _)})");
-        }
+        private static string NameOf(Talkable t) => t != null ? t.DisplayName : "-";
 
-        private void OnConverted(VillainConvertedEvent e) => Debug.Log("[TestDialogue] Villain converted: " + e.Villain.name);
+        private void OnDialogueState(DialogueStateChangedEvent e) => Log((e.IsActive ? "Dialogue start: " : "Dialogue end: ") + NameOf(e.Target));
+        private void OnChoice(DialogueChoiceMadeEvent e) => Log($"Choice: node {e.NodeIndex} / choice {e.ChoiceIndex} / effect {e.Effect} (target {NameOf(e.Target)}, villain={e.Target.TryGetComponent(out Villain _)})");
+        private void OnConverted(VillainConvertedEvent e) => Log("Villain converted: " + e.Villain.name);
+        private void OnDefeated(VillainDefeatedEvent e) => Log("Villain defeated: " + e.Villain.name);
+        private void OnMinigameState(MinigameStateChangedEvent e) => Log($"Minigame {(e.IsActive ? "start" : "end")}: {e.Type} / {NameOf(e.Target)}");
+        private void OnMinigameFinished(MinigameFinishedEvent e) => Log($"Minigame finished: {e.Type} success={e.Success} reflex={e.ReflexResult} / {NameOf(e.Target)}");
+        private void OnCounterattack(PassengerCounterattackEvent e) => Log($"Passenger counterattack! {NameOf(e.Passenger)} (wasGuarding={e.WasGuarding})");
+        private void OnLives(LivesChangedEvent e) => Log($"Lives {e.Current}/{e.Max} (delta {e.Delta})");
+        private void OnDepleted(LivesDepletedEvent e) => Log("Lives depleted -> bad ending");
 
         private void Update()
         {
@@ -70,23 +89,65 @@ namespace JSH.Test
 
         private void OnGUI()
         {
-            GUILayout.BeginArea(new Rect(10, 10, 520, 320), GUI.skin.box);
-            GUILayout.Label("[TEST] Dialogue  (Shift+Click: talk / 1-9: choose / Space: next / Esc: end)");
-            DialogueNode node = DialogueRunner.HasInstance ? DialogueRunner.Instance.CurrentNode : null;
-            if (node != null)
-            {
-                GUILayout.Label($"#{DialogueRunner.Instance.CurrentNodeIndex}  {node.Speaker}: {node.Text}");
-                for (int i = 0; i < node.ChoiceCount; i++)
-                {
-                    DialogueChoice c = node.GetChoice(i);
-                    string next = c.NextNode < 0 ? "end" : c.NextNode.ToString();
-                    GUILayout.Label($"  {i + 1}) {c.Text}   -> {next}  [{c.Effect}]");
-                }
-                if (node.ChoiceCount == 0) GUILayout.Label("  (Space: next)");
-            }
-            else if (!DialogueRunner.HasInstance) GUILayout.Label("No DialogueRunner in scene");
+            GUILayout.BeginArea(new Rect(10, 10, 560, 360), GUI.skin.box);
+            GUILayout.Label("[TEST] Shift+Click: talk / 1-9: choose / Space: next / Esc: end / Click: minigame");
+            string lives = LifeSystem.HasInstance ? $"{LifeSystem.Instance.Lives}/{LifeSystem.Instance.MaxLives}" : "(no LifeSystem)";
+            GUILayout.Label("Lives: " + lives);
+
+            if (MinigameDirector.HasInstance && MinigameDirector.Instance.IsActive) DrawMinigame(MinigameDirector.Instance);
+            else DrawDialogue();
+
             GUILayout.Label(_log);
             GUILayout.EndArea();
         }
+
+        private void DrawDialogue()
+        {
+            DialogueNode node = DialogueRunner.HasInstance ? DialogueRunner.Instance.CurrentNode : null;
+            if (node == null)
+            {
+                if (!DialogueRunner.HasInstance) GUILayout.Label("No DialogueRunner in scene");
+                return;
+            }
+            GUILayout.Label($"#{DialogueRunner.Instance.CurrentNodeIndex}  {node.Speaker}: {node.Text}");
+            for (int i = 0; i < node.ChoiceCount; i++)
+            {
+                DialogueChoice c = node.GetChoice(i);
+                string next = c.NextNode < 0 ? "end" : c.NextNode.ToString();
+                GUILayout.Label($"  {i + 1}) {c.Text}   -> {next}  [{c.Effect}]");
+            }
+            if (node.ChoiceCount == 0) GUILayout.Label("  (Space: next)");
+        }
+
+        private void DrawMinigame(MinigameDirector d)
+        {
+            GUILayout.Label($"Minigame: {d.CurrentType} vs {NameOf(d.CurrentTarget)}");
+            if (d.ActiveReflex != null)
+            {
+                ReflexMinigame r = d.ActiveReflex;
+                GUILayout.Label(r.IsReady ? $"Time {r.TimeLeft:0.0}s   Click to HIT" : "Ready...");
+                GUILayout.Label(r.IsGuarding ? "   [ GUARD ]" : "   [ OPEN!! ]");
+            }
+            else if (d.ActiveTiming != null)
+            {
+                TimingMinigame t = d.ActiveTiming;
+                GUILayout.Label(t.IsReady ? $"Time {t.TimeLeft:0.0}s   Click to STOP inside ===" : "Ready...");
+                GUILayout.Label(BuildBar(t));
+            }
+        }
+
+        private string BuildBar(TimingMinigame t)
+        {
+            int line = ToCell(t.Position);
+            int min = ToCell(t.TargetMin);
+            int max = ToCell(t.TargetMax);
+            _bar.Clear();
+            _bar.Append('[');
+            for (int i = 0; i < BarWidth; i++) _bar.Append(i == line ? '|' : (i >= min && i <= max ? '=' : '-'));
+            _bar.Append(']');
+            return _bar.ToString();
+        }
+
+        private static int ToCell(float normalized) => Mathf.Clamp(Mathf.RoundToInt((normalized + 1f) * 0.5f * (BarWidth - 1)), 0, BarWidth - 1);
     }
 }

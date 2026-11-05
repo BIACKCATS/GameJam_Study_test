@@ -18,11 +18,13 @@ namespace JSH.Gameplay
 
         private Rigidbody2D _rb;
         private float _input = 0;
-        private bool _inputLocked;
+        private bool _manualLock;
+        private bool _dialogueLock;
+        private bool _minigameLock;
 
         /// <summary>-1 = left, 0 = idle, 1 = right.</summary>
         public float MoveInput => _input;
-        public bool InputLocked => _inputLocked;
+        public bool InputLocked => _manualLock || _dialogueLock || _minigameLock;
 
         private void Awake()
         {
@@ -32,19 +34,32 @@ namespace JSH.Gameplay
             if (_spriteRenderer == null) TryGetComponent(out _spriteRenderer);
         }
 
-        private void OnEnable() => EventBus<DialogueStateChangedEvent>.Subscribe(OnDialogueStateChanged);
+        private void OnEnable()
+        {
+            EventBus<DialogueStateChangedEvent>.Subscribe(OnDialogueStateChanged);
+            EventBus<MinigameStateChangedEvent>.Subscribe(OnMinigameStateChanged);
+        }
 
-        private void OnDisable() => EventBus<DialogueStateChangedEvent>.Unsubscribe(OnDialogueStateChanged);
+        private void OnDisable()
+        {
+            EventBus<DialogueStateChangedEvent>.Unsubscribe(OnDialogueStateChanged);
+            EventBus<MinigameStateChangedEvent>.Unsubscribe(OnMinigameStateChanged);
+        }
 
-        /// <summary>Locked = no movement input (actor decelerates to a stop). Dialogue locks/unlocks automatically.</summary>
-        public void SetInputLocked(bool locked) => _inputLocked = locked;
+        /// <summary>
+        /// Manual lock (cutscenes etc.). Locked = no movement input (actor decelerates to a stop).
+        /// Dialogue and minigames lock/unlock automatically and independently of this.
+        /// </summary>
+        public void SetInputLocked(bool locked) => _manualLock = locked;
 
-        private void OnDialogueStateChanged(DialogueStateChangedEvent evt) => _inputLocked = evt.IsActive;
+        private void OnDialogueStateChanged(DialogueStateChangedEvent evt) => _dialogueLock = evt.IsActive;
+
+        private void OnMinigameStateChanged(MinigameStateChangedEvent evt) => _minigameLock = evt.IsActive;
 
         private void Update()
         {
             _input = 0f;
-            if (_inputLocked) return;
+            if (InputLocked) return;
             Keyboard kb = Keyboard.current;
             if (kb == null) return;
 

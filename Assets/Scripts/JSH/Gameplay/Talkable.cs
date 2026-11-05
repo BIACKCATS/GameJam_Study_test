@@ -12,9 +12,14 @@ namespace JSH.Gameplay
     {
         [SerializeField] private string _displayName = "승객";
         [SerializeField] private DialogueData _dialogue;
+        [Header("Minigame overrides (empty = MinigameDirector defaults)")]
+        [SerializeField] private ReflexSettings _reflexOverride;
+        [SerializeField] private TimingSettings _timingOverride;
 
         public string DisplayName => _displayName;
         public DialogueData Dialogue => _dialogue;
+        public ReflexSettings ReflexOverride => _reflexOverride;
+        public TimingSettings TimingOverride => _timingOverride;
         public bool CanTalk => isActiveAndEnabled && _dialogue != null && _dialogue.NodeCount > 0;
     }
 }

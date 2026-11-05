@@ -31,6 +31,7 @@ namespace JSH.Gameplay
             if (!mouse.leftButton.wasPressedThisFrame) return;
             if (!kb.leftShiftKey.isPressed && !kb.rightShiftKey.isPressed) return;
             if (!DialogueRunner.HasInstance || DialogueRunner.Instance.IsActive) return;
+            if (MinigameDirector.HasInstance && MinigameDirector.Instance.IsActive) return;
 
             Vector2 screen = mouse.position.ReadValue();
             Vector3 world = _camera.ScreenToWorldPoint(new Vector3(screen.x, screen.y, -_camera.transform.position.z));
