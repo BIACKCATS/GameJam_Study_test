@@ -1,5 +1,6 @@
 using System;
 using JSH.Core;
+using JSH.Data;
 using UnityEngine;
 
 namespace JSH.Gameplay
@@ -8,14 +9,21 @@ namespace JSH.Gameplay
     /// Tracks which train car the player is in (put on [Managers]). Cars (TrainCar) are found on Start and
     /// ordered left to right. Moving forward out of a car judges it once: unresolved villains > 0 -> life -1
     /// (regardless of how many). Moving backward never judges.
+    /// Spawning: one car ahead. Start spawns the starting car + the next one; entering car N forward spawns N+1,
+    /// so the player never sees NPCs pop in. (Same setup whether the villain was missed or not.)
     /// </summary>
     public class TrainProgress : Singleton<TrainProgress>
     {
         [Tooltip("Player transform used to find the starting car. Empty = the object with SideViewMover.")]
         [SerializeField] private Transform _player;
+        [Tooltip("Default spawn rules for every car (TrainCar can override).")]
+        [SerializeField] private CarSpawnSettings _defaultSpawn;
+        [Tooltip("0 = random every run; any other value = same layout every run (testing).")]
+        [SerializeField] private int _randomSeed;
 
         private TrainCar[] _cars = Array.Empty<TrainCar>();
         private TrainCar _current;
+        private System.Random _rng;
 
         public TrainCar CurrentCar => _current;
         public int CarCount => _cars.Length;
@@ -37,6 +45,18 @@ namespace JSH.Gameplay
             }
             _current = _player != null ? FindCarAt(_player.position.x) : null;
             if (_current == null && _cars.Length > 0) _current = _cars[0];
+
+            _rng = new System.Random(_randomSeed != 0 ? _randomSeed : Environment.TickCount);
+            if (_current != null)
+            {
+                SpawnCar(_current.Index);
+                SpawnCar(_current.Index + 1);
+            }
+        }
+
+        private void SpawnCar(int index)
+        {
+            if (index >= 0 && index < _cars.Length) _cars[index].Spawn(_defaultSpawn, _rng);
         }
 
         /// <summary>
@@ -73,6 +93,11 @@ namespace JSH.Gameplay
             }
 
             _current = car;
+            if (forward)
+            {
+                SpawnCar(car.Index);     // safety (normally already spawned one car ahead)
+                SpawnCar(car.Index + 1); // look-ahead
+            }
             EventBus<CarChangedEvent>.Raise(new CarChangedEvent(from, car, forward, unresolved, lifeLost, cleared));
         }
 
