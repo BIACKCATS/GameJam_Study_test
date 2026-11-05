@@ -1,0 +1,19 @@
+{
+  "baseHash": "C5DC55E45BA8ADA7088F3859D020419B8F51508CFE10785B0E568EFD1501A10C",
+  "firstHash": "C5DC55E45BA8ADA7088F3859D020419B8F51508CFE10785B0E568EFD1501A10C",
+  "firstPNGByteIdentical": true,
+  "frames": 10,
+  "fps": 12,
+  "nonTransparentPixels": [
+    588,
+    588,
+    578,
+    524,
+    487,
+    487,
+    311,
+    124,
+    38,
+    0
+  ]
+}

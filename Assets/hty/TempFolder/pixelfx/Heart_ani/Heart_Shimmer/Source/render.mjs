@@ -1,0 +1,15 @@
+﻿import * as mod from './heart-shimmer.mjs';
+import {renderFrames,contactSheet,spriteSheet,save} from '../../MetalSparks/Source/pixelfx/tools/lib/fxlib.mjs';
+import {encodePNG} from '../../MetalSparks/Source/pixelfx/tools/lib/png.mjs';
+const fx={id:'ui/red-heart-shimmer',meta:{bg:'dark',...mod.meta},mod};const r=renderFrames(fx);const out=new URL('../Exports/',import.meta.url).pathname.replace(/^\/([A-Z]:)/,'$1');
+const sheet=spriteSheet(fx,r,'heart-shimmer');save(out+'heart-shimmer.png',sheet.png);save(out+'heart-shimmer.json',JSON.stringify(sheet.json,null,2));save(out+'contact.png',contactSheet(fx,r,{max:10,zoom:4}));
+save(out+'heart-base.png',encodePNG(r.w,r.h,r.frames[0].clear));
+let mismatch=0;for(const f of r.frames)for(let i=3;i<f.clear.length;i+=4)if(f.clear[i]!==r.frames[0].clear[i])mismatch++;
+const report={frames:r.n,size:[r.w,r.h],fps:r.fps,alphaMismatchAgainstBase:mismatch,nonTransparentPixels:r.frames.map(f=>Array.from(f.clear).filter((v,i)=>i%4===3&&v>0).length)};save(out+'validation.json',JSON.stringify(report,null,2));console.log(report);
+const next=renderFrames({...fx,mod:{...mod,draw:(p,t,o)=>mod.draw(p,t+1,o)}});
+const endpoint=renderFrames({...fx,mod:{...mod,draw:(p,t,o)=>mod.draw(p,1,o)}}).frames[0].clear;
+report.loopEndpointByteDifferences=endpoint.reduce((n,v,i)=>n+(v!==r.frames[0].clear[i]),0);
+report.frameColorChanges=r.frames.map(f=>f.clear.reduce((n,v,i)=>n+(v!==r.frames[0].clear[i]),0));
+report.periodicReplayMaxByteError=Math.max(...r.frames.map((f,k)=>f.clear.reduce((n,v,i)=>Math.max(n,Math.abs(v-next.frames[k].clear[i])),0)));
+for(let k=0;k<r.n;k++)save(out+`heart_${String(k).padStart(2,'0')}.png`,encodePNG(r.w,r.h,r.frames[k].clear));
+save(out+'validation.json',JSON.stringify(report,null,2));console.log(report);

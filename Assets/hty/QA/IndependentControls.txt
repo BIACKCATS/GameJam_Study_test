@@ -1,8 +1,0 @@
-PASS direction 0
-PASS direction 1
-PASS direction 2
-PASS direction 3
-PASS N OFF/ON with same Lit material
-PASS all6 forward steps and backward wrap
-PASS Space animation and O slow orbit toggles
-Temporary Input System keyboard events processed by actual runtime Update; not human physical input.

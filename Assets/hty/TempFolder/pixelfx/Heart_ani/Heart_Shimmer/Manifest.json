@@ -1,0 +1,78 @@
+﻿[
+    {
+        "path":  "D:\\orca\\workspaces\\GameJam_Study_test\\ai-technical-art\\Assets\\hty\\TechnicalArt\\HeartShimmer\\Preview.html",
+        "sha256":  "5347CC3B69B3A7D8CFDB769C674E09E1FC1929306BED42AF5B09B21402EBDFE5"
+    },
+    {
+        "path":  "D:\\orca\\workspaces\\GameJam_Study_test\\ai-technical-art\\Assets\\hty\\TechnicalArt\\HeartShimmer\\README_KO.md",
+        "sha256":  "24AA3589BBCAE1D3235EA86D72B982D50A0F60726D59AE9CDF46C2825623C6E0"
+    },
+    {
+        "path":  "D:\\orca\\workspaces\\GameJam_Study_test\\ai-technical-art\\Assets\\hty\\TechnicalArt\\HeartShimmer\\Exports\\contact.png",
+        "sha256":  "E8A984111A4021CF37D025F653137B38440D88482FE0AB9C0C48E6A82E241B35"
+    },
+    {
+        "path":  "D:\\orca\\workspaces\\GameJam_Study_test\\ai-technical-art\\Assets\\hty\\TechnicalArt\\HeartShimmer\\Exports\\heart-base.png",
+        "sha256":  "C5DC55E45BA8ADA7088F3859D020419B8F51508CFE10785B0E568EFD1501A10C"
+    },
+    {
+        "path":  "D:\\orca\\workspaces\\GameJam_Study_test\\ai-technical-art\\Assets\\hty\\TechnicalArt\\HeartShimmer\\Exports\\heart-shimmer.json",
+        "sha256":  "7E25732DB69C6FCEE9228B672088EE50F8296174534EFE52D5B88D3A65760964"
+    },
+    {
+        "path":  "D:\\orca\\workspaces\\GameJam_Study_test\\ai-technical-art\\Assets\\hty\\TechnicalArt\\HeartShimmer\\Exports\\heart-shimmer.png",
+        "sha256":  "D8D5B23F0D541D714DB91A0A1C0B16CAE666ED591DFB64FF6BFF0DA4B18B147E"
+    },
+    {
+        "path":  "D:\\orca\\workspaces\\GameJam_Study_test\\ai-technical-art\\Assets\\hty\\TechnicalArt\\HeartShimmer\\Exports\\heart_00.png",
+        "sha256":  "C5DC55E45BA8ADA7088F3859D020419B8F51508CFE10785B0E568EFD1501A10C"
+    },
+    {
+        "path":  "D:\\orca\\workspaces\\GameJam_Study_test\\ai-technical-art\\Assets\\hty\\TechnicalArt\\HeartShimmer\\Exports\\heart_01.png",
+        "sha256":  "C5DC55E45BA8ADA7088F3859D020419B8F51508CFE10785B0E568EFD1501A10C"
+    },
+    {
+        "path":  "D:\\orca\\workspaces\\GameJam_Study_test\\ai-technical-art\\Assets\\hty\\TechnicalArt\\HeartShimmer\\Exports\\heart_02.png",
+        "sha256":  "C302806F85B2482778CFE2DD8ECC19A9CB67ADAEE6823AD3715EDBFC7CD98A5D"
+    },
+    {
+        "path":  "D:\\orca\\workspaces\\GameJam_Study_test\\ai-technical-art\\Assets\\hty\\TechnicalArt\\HeartShimmer\\Exports\\heart_03.png",
+        "sha256":  "B4DA7468028B713C4C35D9BD39D9C6F3389E85CED55CE5CFFC44C35598318762"
+    },
+    {
+        "path":  "D:\\orca\\workspaces\\GameJam_Study_test\\ai-technical-art\\Assets\\hty\\TechnicalArt\\HeartShimmer\\Exports\\heart_04.png",
+        "sha256":  "39FAB96522CD63F2EAF79A4E57ECCB3CF9E3C96BF8317C39FFCF8A5B8968AFDE"
+    },
+    {
+        "path":  "D:\\orca\\workspaces\\GameJam_Study_test\\ai-technical-art\\Assets\\hty\\TechnicalArt\\HeartShimmer\\Exports\\heart_05.png",
+        "sha256":  "B054D6F0B9F08560F14B517C5B14FEF913F3CC4C973D5A76ABFC505E5D1B0299"
+    },
+    {
+        "path":  "D:\\orca\\workspaces\\GameJam_Study_test\\ai-technical-art\\Assets\\hty\\TechnicalArt\\HeartShimmer\\Exports\\heart_06.png",
+        "sha256":  "FBA21C8D89FFE8B9A7071805293751B0DC052B4FEC000484071AAAF35877381E"
+    },
+    {
+        "path":  "D:\\orca\\workspaces\\GameJam_Study_test\\ai-technical-art\\Assets\\hty\\TechnicalArt\\HeartShimmer\\Exports\\heart_07.png",
+        "sha256":  "8FF1E7C0707113499F52D5D7A86CD38A2DAE0C658F9481FDDD999214D8859F35"
+    },
+    {
+        "path":  "D:\\orca\\workspaces\\GameJam_Study_test\\ai-technical-art\\Assets\\hty\\TechnicalArt\\HeartShimmer\\Exports\\heart_08.png",
+        "sha256":  "736D5025134355D5B5FE869909007BA55F478F7380CAAEF15A4D7825CFF04E49"
+    },
+    {
+        "path":  "D:\\orca\\workspaces\\GameJam_Study_test\\ai-technical-art\\Assets\\hty\\TechnicalArt\\HeartShimmer\\Exports\\heart_09.png",
+        "sha256":  "9C01C870F3102B95368792241D9B75F5F35AE7A3AF904AC1B25AC6819F376A7B"
+    },
+    {
+        "path":  "D:\\orca\\workspaces\\GameJam_Study_test\\ai-technical-art\\Assets\\hty\\TechnicalArt\\HeartShimmer\\Exports\\validation.json",
+        "sha256":  "A8A7532501B07D24B2A9564C31420DEBC03F5E11E3A3356AA7915AFE5A07FFE9"
+    },
+    {
+        "path":  "D:\\orca\\workspaces\\GameJam_Study_test\\ai-technical-art\\Assets\\hty\\TechnicalArt\\HeartShimmer\\Source\\heart-shimmer.mjs",
+        "sha256":  "6815C2DA93FD318C79E0B771422FB842885D2F1344164BB8B17026D16141C661"
+    },
+    {
+        "path":  "D:\\orca\\workspaces\\GameJam_Study_test\\ai-technical-art\\Assets\\hty\\TechnicalArt\\HeartShimmer\\Source\\render.mjs",
+        "sha256":  "8E41672037BC18D7F513223FE9296F43444F7F007589378B36922373AB2BAD4D"
+    }
+]
