@@ -1,0 +1,624 @@
+fileFormatVersion: 2
+guid: 8632e8aab237d494fb4f12493c745924
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1640406992803326409
+    second: Crosshair_Dismiss_Spritesheet_0
+  - first:
+      213: -1487728822050505313
+    second: Crosshair_Dismiss_Spritesheet_1
+  - first:
+      213: -3665714861442111895
+    second: Crosshair_Dismiss_Spritesheet_2
+  - first:
+      213: 9076484802387147204
+    second: Crosshair_Dismiss_Spritesheet_3
+  - first:
+      213: 1062804603771810051
+    second: Crosshair_Dismiss_Spritesheet_4
+  - first:
+      213: 9179147389669236143
+    second: Crosshair_Dismiss_Spritesheet_5
+  - first:
+      213: 714351931530922889
+    second: Crosshair_Dismiss_Spritesheet_6
+  - first:
+      213: 3236521023639318609
+    second: Crosshair_Dismiss_Spritesheet_7
+  - first:
+      213: 4194459864172583798
+    second: Crosshair_Dismiss_Spritesheet_8
+  - first:
+      213: -5931594627265187350
+    second: Crosshair_Dismiss_Spritesheet_9
+  - first:
+      213: 7711155559845040946
+    second: Crosshair_Dismiss_Spritesheet_10
+  - first:
+      213: -8688098104456524620
+    second: Crosshair_Dismiss_Spritesheet_11
+  - first:
+      213: 8034683056234865166
+    second: Crosshair_Dismiss_Spritesheet_12
+  - first:
+      213: 5586397136669196161
+    second: Crosshair_Dismiss_Spritesheet_13
+  - first:
+      213: -8808053473751867412
+    second: Crosshair_Dismiss_Spritesheet_14
+  - first:
+      213: 2838022313973124048
+    second: Crosshair_Dismiss_Spritesheet_15
+  - first:
+      213: 2578790659912856470
+    second: Crosshair_Dismiss_Spritesheet_16
+  - first:
+      213: 4014161699105738613
+    second: Crosshair_Dismiss_Spritesheet_17
+  - first:
+      213: 3567170029197283617
+    second: Crosshair_Dismiss_Spritesheet_18
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Crosshair_Dismiss_Spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 548
+        width: 299
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73614e2088a1c39e0800000000000000
+      internalID: -1640406992803326409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crosshair_Dismiss_Spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 548
+        width: 299
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9db197c4868a5be0800000000000000
+      internalID: -1487728822050505313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crosshair_Dismiss_Spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 548
+        width: 299
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9666fdb51c3c02dc0800000000000000
+      internalID: -3665714861442111895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crosshair_Dismiss_Spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 368
+        width: 299
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c97487a6d626fd70800000000000000
+      internalID: 9076484802387147204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crosshair_Dismiss_Spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 368
+        width: 299
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 301f779f727dfbe00800000000000000
+      internalID: 1062804603771810051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crosshair_Dismiss_Spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 368
+        width: 245
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fad503eeae1e26f70800000000000000
+      internalID: 9179147389669236143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crosshair_Dismiss_Spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 188
+        width: 191
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98bc3830c43e9e900800000000000000
+      internalID: 714351931530922889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crosshair_Dismiss_Spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 199
+        width: 141
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 150fa1229be6aec20800000000000000
+      internalID: 3236521023639318609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crosshair_Dismiss_Spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 329
+        width: 29
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67bd3a4f507b53a30800000000000000
+      internalID: 4194459864172583798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crosshair_Dismiss_Spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 268
+        width: 13
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae13e3a0d1ebeada0800000000000000
+      internalID: -5931594627265187350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crosshair_Dismiss_Spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 229
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23397505027830b60800000000000000
+      internalID: 7711155559845040946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crosshair_Dismiss_Spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 242
+        width: 13
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bccf163eccad6780800000000000000
+      internalID: -8688098104456524620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crosshair_Dismiss_Spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 773
+        y: 197
+        width: 29
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e02aab98bade08f60800000000000000
+      internalID: 8034683056234865166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crosshair_Dismiss_Spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 152
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18f3d69099ed68d40800000000000000
+      internalID: 5586397136669196161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crosshair_Dismiss_Spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 88
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cefdf5e580283c580800000000000000
+      internalID: -8808053473751867412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crosshair_Dismiss_Spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 76
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0db0001124ea26720800000000000000
+      internalID: 2838022313973124048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crosshair_Dismiss_Spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 75
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69373323174b9c320800000000000000
+      internalID: 2578790659912856470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crosshair_Dismiss_Spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 85
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57f0d222cca25b730800000000000000
+      internalID: 4014161699105738613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crosshair_Dismiss_Spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 17
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12159bbed32218130800000000000000
+      internalID: 3567170029197283617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Crosshair_Dismiss_Spritesheet_0: -1640406992803326409
+      Crosshair_Dismiss_Spritesheet_1: -1487728822050505313
+      Crosshair_Dismiss_Spritesheet_10: 7711155559845040946
+      Crosshair_Dismiss_Spritesheet_11: -8688098104456524620
+      Crosshair_Dismiss_Spritesheet_12: 8034683056234865166
+      Crosshair_Dismiss_Spritesheet_13: 5586397136669196161
+      Crosshair_Dismiss_Spritesheet_14: -8808053473751867412
+      Crosshair_Dismiss_Spritesheet_15: 2838022313973124048
+      Crosshair_Dismiss_Spritesheet_16: 2578790659912856470
+      Crosshair_Dismiss_Spritesheet_17: 4014161699105738613
+      Crosshair_Dismiss_Spritesheet_18: 3567170029197283617
+      Crosshair_Dismiss_Spritesheet_2: -3665714861442111895
+      Crosshair_Dismiss_Spritesheet_3: 9076484802387147204
+      Crosshair_Dismiss_Spritesheet_4: 1062804603771810051
+      Crosshair_Dismiss_Spritesheet_5: 9179147389669236143
+      Crosshair_Dismiss_Spritesheet_6: 714351931530922889
+      Crosshair_Dismiss_Spritesheet_7: 3236521023639318609
+      Crosshair_Dismiss_Spritesheet_8: 4194459864172583798
+      Crosshair_Dismiss_Spritesheet_9: -5931594627265187350
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,303 @@
+{
+  "frames": [
+    {
+      "filename": "Crosshair_Dismiss_Spritesheet 0",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 320,
+        "h": 180
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 320,
+        "h": 180
+      },
+      "sourceSize": {
+        "w": 320,
+        "h": 180
+      },
+      "duration": 50
+    },
+    {
+      "filename": "Crosshair_Dismiss_Spritesheet 1",
+      "frame": {
+        "x": 320,
+        "y": 0,
+        "w": 320,
+        "h": 180
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 320,
+        "h": 180
+      },
+      "sourceSize": {
+        "w": 320,
+        "h": 180
+      },
+      "duration": 50
+    },
+    {
+      "filename": "Crosshair_Dismiss_Spritesheet 2",
+      "frame": {
+        "x": 640,
+        "y": 0,
+        "w": 320,
+        "h": 180
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 320,
+        "h": 180
+      },
+      "sourceSize": {
+        "w": 320,
+        "h": 180
+      },
+      "duration": 50
+    },
+    {
+      "filename": "Crosshair_Dismiss_Spritesheet 3",
+      "frame": {
+        "x": 0,
+        "y": 180,
+        "w": 320,
+        "h": 180
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 320,
+        "h": 180
+      },
+      "sourceSize": {
+        "w": 320,
+        "h": 180
+      },
+      "duration": 50
+    },
+    {
+      "filename": "Crosshair_Dismiss_Spritesheet 4",
+      "frame": {
+        "x": 320,
+        "y": 180,
+        "w": 320,
+        "h": 180
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 320,
+        "h": 180
+      },
+      "sourceSize": {
+        "w": 320,
+        "h": 180
+      },
+      "duration": 50
+    },
+    {
+      "filename": "Crosshair_Dismiss_Spritesheet 5",
+      "frame": {
+        "x": 640,
+        "y": 180,
+        "w": 320,
+        "h": 180
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 320,
+        "h": 180
+      },
+      "sourceSize": {
+        "w": 320,
+        "h": 180
+      },
+      "duration": 50
+    },
+    {
+      "filename": "Crosshair_Dismiss_Spritesheet 6",
+      "frame": {
+        "x": 0,
+        "y": 360,
+        "w": 320,
+        "h": 180
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 320,
+        "h": 180
+      },
+      "sourceSize": {
+        "w": 320,
+        "h": 180
+      },
+      "duration": 50
+    },
+    {
+      "filename": "Crosshair_Dismiss_Spritesheet 7",
+      "frame": {
+        "x": 320,
+        "y": 360,
+        "w": 320,
+        "h": 180
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 320,
+        "h": 180
+      },
+      "sourceSize": {
+        "w": 320,
+        "h": 180
+      },
+      "duration": 50
+    },
+    {
+      "filename": "Crosshair_Dismiss_Spritesheet 8",
+      "frame": {
+        "x": 640,
+        "y": 360,
+        "w": 320,
+        "h": 180
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 320,
+        "h": 180
+      },
+      "sourceSize": {
+        "w": 320,
+        "h": 180
+      },
+      "duration": 50
+    },
+    {
+      "filename": "Crosshair_Dismiss_Spritesheet 9",
+      "frame": {
+        "x": 0,
+        "y": 540,
+        "w": 320,
+        "h": 180
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 320,
+        "h": 180
+      },
+      "sourceSize": {
+        "w": 320,
+        "h": 180
+      },
+      "duration": 50
+    },
+    {
+      "filename": "Crosshair_Dismiss_Spritesheet 10",
+      "frame": {
+        "x": 320,
+        "y": 540,
+        "w": 320,
+        "h": 180
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 320,
+        "h": 180
+      },
+      "sourceSize": {
+        "w": 320,
+        "h": 180
+      },
+      "duration": 50
+    },
+    {
+      "filename": "Crosshair_Dismiss_Spritesheet 11",
+      "frame": {
+        "x": 640,
+        "y": 540,
+        "w": 320,
+        "h": 180
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 320,
+        "h": 180
+      },
+      "sourceSize": {
+        "w": 320,
+        "h": 180
+      },
+      "duration": 50
+    }
+  ],
+  "meta": {
+    "app": "https://github.com/patch-gg/pixelfx",
+    "version": "1",
+    "image": "Crosshair_Dismiss_Spritesheet.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 960,
+      "h": 720
+    },
+    "scale": "1",
+    "frameTags": [
+      {
+        "name": "Crosshair_Dismiss_Spritesheet",
+        "from": 0,
+        "to": 11,
+        "direction": "forward"
+      }
+    ],
+    "pixelfx": {
+      "id": "ui/crosshair-dismiss",
+      "name": "V1 crosshair dismiss",
+      "fps": 20,
+      "loop": false,
+      "frames": 12,
+      "frameSize": [
+        320,
+        180
+      ],
+      "pivot": [
+        160,
+        90
+      ],
+      "columns": 3
+    }
+  }
+}

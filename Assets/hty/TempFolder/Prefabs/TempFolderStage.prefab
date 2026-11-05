@@ -1110,6 +1110,8 @@ MonoBehaviour:
   testButton: {fileID: 4154645995579899053}
   animationSheet: {fileID: 2800000, guid: c52363aa679d89741a107a735abe3e77, type: 3}
   clickSheet: {fileID: 2800000, guid: cc356753efcca37468ef4a62119e180b, type: 3}
+  dismissSheet: {fileID: 2800000, guid: 8632e8aab237d494fb4f12493c745924, type: 3}
+  dismissFramesPerSecond: 20
   clickFramesPerSecond: 24
   framesPerSecond: 16
   sizeMultiplier: 1
