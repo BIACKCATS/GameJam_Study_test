@@ -26,6 +26,7 @@ namespace JSH.Gameplay
         private int _embraced;
         private int _notEmbraced;
         private int _mistakes;
+        private int _lastCountedCar = -1; // highest car index whose unresolved villains are already counted
 
         public EndingStats Current => Build();
 
@@ -34,6 +35,7 @@ namespace JSH.Gameplay
             _embraced = 0;
             _notEmbraced = 0;
             _mistakes = 0;
+            _lastCountedCar = -1;
             EmbracedVillains.Clear();
             Publish();
 
@@ -41,6 +43,7 @@ namespace JSH.Gameplay
             EventBus<VillainDefeatedEvent>.Subscribe(OnDefeated);
             EventBus<CarChangedEvent>.Subscribe(OnCarChanged);
             EventBus<TrainEndReachedEvent>.Subscribe(OnTrainEnd);
+            EventBus<LivesDepletedEvent>.Subscribe(OnLivesDepleted);
             EventBus<CounterattackEvent>.Subscribe(OnCounterattack);
         }
 
@@ -50,6 +53,7 @@ namespace JSH.Gameplay
             EventBus<VillainDefeatedEvent>.Unsubscribe(OnDefeated);
             EventBus<CarChangedEvent>.Unsubscribe(OnCarChanged);
             EventBus<TrainEndReachedEvent>.Unsubscribe(OnTrainEnd);
+            EventBus<LivesDepletedEvent>.Unsubscribe(OnLivesDepleted);
             EventBus<CounterattackEvent>.Unsubscribe(OnCounterattack);
         }
 
@@ -67,10 +71,38 @@ namespace JSH.Gameplay
             Publish();
         }
 
-        // Each car is judged exactly once: CarChangedEvent for every car but the last, TrainEndReachedEvent for the last.
-        private void OnCarChanged(CarChangedEvent evt) => AddUnresolved(evt.UnresolvedVillains);
+        // Each car's unresolved villains are counted once: CarChangedEvent (cars but the last), TrainEndReachedEvent
+        // (last car), or LivesDepletedEvent (the car where the run ended - it never raises CarChangedEvent).
+        private void OnCarChanged(CarChangedEvent evt) => AddUnresolvedForCar(evt.FromIndex, evt.UnresolvedVillains);
 
-        private void OnTrainEnd(TrainEndReachedEvent evt) => AddUnresolved(evt.UnresolvedVillains);
+        private void OnTrainEnd(TrainEndReachedEvent evt) =>
+            AddUnresolvedForCar(TrainProgress.HasInstance ? TrainProgress.Instance.CurrentIndex : -1, evt.UnresolvedVillains);
+
+        private void OnLivesDepleted(LivesDepletedEvent evt)
+        {
+            if (!TrainProgress.HasInstance || TrainProgress.Instance.CurrentCar == null)
+            {
+                return;
+            }
+
+            TrainProgress train = TrainProgress.Instance;
+            AddUnresolvedForCar(train.CurrentIndex, train.CurrentCar.CountUnresolvedVillains());
+        }
+
+        private void AddUnresolvedForCar(int carIndex, int count)
+        {
+            if (carIndex >= 0)
+            {
+                if (carIndex <= _lastCountedCar)
+                {
+                    return;
+                }
+
+                _lastCountedCar = carIndex;
+            }
+
+            AddUnresolved(count);
+        }
 
         private void OnCounterattack(CounterattackEvent evt)
         {
