@@ -16,7 +16,7 @@ namespace JSH.Gameplay
     {
         [SerializeField] private string _displayName = "승객";
         [SerializeField] private DialogueData _dialogue;
-        [Tooltip("Shown in the dialogue window's hexagon frame. Empty = DialogueView fallback portrait.")]
+        [Tooltip("Bust portrait shown in the dialogue window (Art/JSH/Sprites/Portrait). Empty = DialogueView fallback portrait.")]
         [SerializeField] private Sprite _portrait;
         [Header("Minigame override (empty = MinigameDirector default)")]
         [SerializeField] private TimingSettings _timingOverride;

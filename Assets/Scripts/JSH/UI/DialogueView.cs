@@ -10,7 +10,7 @@ using UnityEngine.UI;
 namespace JSH.UI
 {
     /// <summary>
-    /// JRPG-style dialogue screen: portrait in the center (hexagon), dialogue box at the bottom,
+    /// JRPG-style dialogue screen: bust portrait in the center (lower body hidden behind the dialogue box), dialogue box at the bottom,
     /// radial choices around the portrait. Listens to DialogueRunner; owns dialogue input:
     ///  - node with choices: Left Click confirms the choice selected by mouse direction (RadialChoiceSelector)
     ///  - node without choices: Left Click / Space / Enter = next
