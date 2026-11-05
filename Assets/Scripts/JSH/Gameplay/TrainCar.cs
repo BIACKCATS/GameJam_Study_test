@@ -8,7 +8,7 @@ namespace JSH.Gameplay
     /// <summary>
     /// The one on-screen train car. The game repeats it N times (TrainProgress owns the car number):
     /// each new car despawns the previous NPCs and spawns passengers/villains onto random free seats of the
-    /// SeatLayout. A passenger prefab appears at most once per car (villain prefabs may repeat).
+    /// SeatLayout. Passenger and villain prefabs each appear at most once per car.
     /// NPCs with a SeatFootprint are seated first, where their neighbouring seats are free, and keep those seats empty.
     /// NPCs are pooled per prefab (Villain resets its state on spawn via IPoolable).
     /// Select the car in the Scene view to see its seats (gizmos).
@@ -27,6 +27,7 @@ namespace JSH.Gameplay
         private readonly List<Talkable> _npcs = new List<Talkable>(8);
         private readonly List<int> _freeSeats = new List<int>(16);
         private readonly List<int> _unusedPassengerPrefabs = new List<int>(8); // passengers never repeat within a car
+        private readonly List<int> _unusedVillainPrefabs = new List<int>(8); // villains never repeat within a car
         private readonly List<GameObject> _villainPicks = new List<GameObject>(8);
         private readonly List<int> _seatCandidates = new List<int>(16);
         private readonly List<int> _seatsByX = new List<int>(16);
@@ -95,13 +96,20 @@ namespace JSH.Gameplay
             if (passengers > _unusedPassengerPrefabs.Count)
                 Debug.LogWarning($"[TrainCar] {name}: {passengers} passengers but {_unusedPassengerPrefabs.Count} passenger prefabs; passengers never repeat in a car, extra seats stay empty.", this);
 
+            _unusedVillainPrefabs.Clear();
+            for (int i = 0; i < settings.VillainPrefabCount; i++) _unusedVillainPrefabs.Add(i);
+            if (villains > _unusedVillainPrefabs.Count)
+                Debug.LogWarning($"[TrainCar] {name}: {villains} villains but {_unusedVillainPrefabs.Count} villain prefabs; villains never repeat in a car, extra seats stay empty.", this);
+
             BuildSeatOrder();
 
             // Pick villains first, then seat the wide ones (SeatFootprint) before the rest so their neighbours are free.
             _villainPicks.Clear();
-            if (settings.VillainPrefabCount > 0)
+            for (int i = 0; i < villains && _unusedVillainPrefabs.Count > 0; i++)
             {
-                for (int i = 0; i < villains; i++) _villainPicks.Add(settings.GetVillainPrefab(rng.Next(settings.VillainPrefabCount)));
+                int prefabPick = rng.Next(_unusedVillainPrefabs.Count);
+                _villainPicks.Add(settings.GetVillainPrefab(_unusedVillainPrefabs[prefabPick]));
+                _unusedVillainPrefabs.RemoveAt(prefabPick);
             }
             for (int i = 0; i < _villainPicks.Count; i++)
             {
