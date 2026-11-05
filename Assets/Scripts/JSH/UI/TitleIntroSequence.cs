@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using DG.Tweening;
 using UnityEngine;
 using UnityEngine.Events;
@@ -8,18 +9,33 @@ namespace JSH.UI
 {
     /// <summary>
     /// Title screen intro: UI elements fly in one after another (DOTween Sequence).
-    /// Place every element at its FINAL position in the Editor; each one starts at
-    /// final + fromOffset (optionally scaled / faded) and tweens into place.
+    /// Per entry, mode decides what the Editor position means:
+    ///  - FromOffset: Editor = FINAL, starts at final + fromOffset.
+    ///  - MoveBy / ToX / ToY / ToXY: Editor = START, moves to start + to / absolute x,y of "to".
+    /// Stagger elements with startTime (seconds from intro start).
     /// Uses unscaled time. Any click / key skips to the end.
     /// </summary>
     public sealed class TitleIntroSequence : MonoBehaviour
     {
+        private enum MoveMode
+        {
+            FromOffset, // Editor = final; start = final + fromOffset
+            MoveBy,     // Editor = start; final = start + to
+            ToX,        // Editor = start; final.x = to.x
+            ToY,        // Editor = start; final.y = to.y
+            ToXY,       // Editor = start; final = to
+        }
+
         [Serializable]
         private sealed class Entry
         {
             public RectTransform target;
-            [Tooltip("Start position = final anchoredPosition + this. e.g. (0, 1200) = from above, (-2200, 0) = from left.")]
+            [Tooltip("FromOffset: Editor pos = final. Others: Editor pos = start, moves using 'to'.")]
+            public MoveMode mode = MoveMode.FromOffset;
+            [Tooltip("FromOffset only. Start position = final anchoredPosition + this. e.g. (0, 1200) = from above.")]
             public Vector2 fromOffset = new Vector2(0f, 1200f);
+            [Tooltip("MoveBy: added to start. ToX/ToY/ToXY: absolute anchoredPosition (Inspector Pos X/Y).")]
+            public Vector2 to;
             [Tooltip("Start scale (1 = no scale animation).")]
             public float fromScale = 1f;
             [Tooltip("Fade alpha 0 -> 1 (adds a CanvasGroup if missing).")]
@@ -29,6 +45,7 @@ namespace JSH.UI
             [Min(0.01f)] public float duration = 0.6f;
             public Ease ease = Ease.OutBack;
 
+            [NonSerialized] public Vector2 startPos;
             [NonSerialized] public Vector2 finalPos;
             [NonSerialized] public Vector3 finalScale;
             [NonSerialized] public CanvasGroup group;
@@ -36,7 +53,9 @@ namespace JSH.UI
 
         [SerializeField] private Entry[] _entries = Array.Empty<Entry>();
         [SerializeField] private bool _playOnStart = true;
-        [SerializeField, Min(0f)] private float _initialDelay = 0.2f;
+        [SerializeField, Min(0f)] private float _initialDelay = 0.3f;
+        [Tooltip("Frames to wait after scene load before starting (avoids load-hitch fast-forward).")]
+        [SerializeField, Min(0)] private int _skipFrames = 2;
         [Tooltip("Click / any key completes the intro immediately.")]
         [SerializeField] private bool _skipOnInput = true;
         [Tooltip("Optional: buttons root. Not interactable until the intro finishes.")]
@@ -57,7 +76,31 @@ namespace JSH.UI
                     continue;
                 }
 
-                e.finalPos = e.target.anchoredPosition;
+                Vector2 editorPos = e.target.anchoredPosition;
+                switch (e.mode)
+                {
+                    case MoveMode.MoveBy:
+                        e.startPos = editorPos;
+                        e.finalPos = editorPos + e.to;
+                        break;
+                    case MoveMode.ToX:
+                        e.startPos = editorPos;
+                        e.finalPos = new Vector2(e.to.x, editorPos.y);
+                        break;
+                    case MoveMode.ToY:
+                        e.startPos = editorPos;
+                        e.finalPos = new Vector2(editorPos.x, e.to.y);
+                        break;
+                    case MoveMode.ToXY:
+                        e.startPos = editorPos;
+                        e.finalPos = e.to;
+                        break;
+                    default:
+                        e.finalPos = editorPos;
+                        e.startPos = editorPos + e.fromOffset;
+                        break;
+                }
+
                 e.finalScale = e.target.localScale;
                 if (e.fade && !e.target.TryGetComponent(out e.group))
                 {
@@ -72,12 +115,21 @@ namespace JSH.UI
             }
         }
 
-        private void Start()
+        private IEnumerator Start()
         {
-            if (_playOnStart)
+            if (!_playOnStart)
             {
-                Play();
+                yield break;
             }
+
+            // Skip the scene-load frames: their huge unscaled deltaTime would
+            // fast-forward the sequence so elements appear to pop in instantly.
+            for (int i = 0; i < _skipFrames; i++)
+            {
+                yield return null;
+            }
+
+            Play();
         }
 
         private void Update()
@@ -156,7 +208,7 @@ namespace JSH.UI
                     continue;
                 }
 
-                e.target.anchoredPosition = e.finalPos + e.fromOffset;
+                e.target.anchoredPosition = e.startPos;
                 e.target.localScale = e.finalScale * e.fromScale;
                 if (e.group != null)
                 {
