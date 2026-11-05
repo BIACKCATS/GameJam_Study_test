@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using JSH.Core;
 using JSH.Gameplay;
 using UnityEngine;
@@ -45,6 +46,16 @@ namespace JSH.Juice
             new KeyRule { NameContains = "HipHop", Key = "HipHop" },
         };
 
+        [Header("Hide actors during a presentation")]
+        [Tooltip("Hide the player and every NPC of the current car while a presentation plays; show them again " +
+                 "after it has fully finished (fade out / zoom back) and the event session closed.")]
+        [SerializeField] private bool _hideActors = true;
+        [Tooltip("Empty = found automatically.")]
+        [SerializeField] private PlayerController2D _player;
+
+        private readonly List<Renderer> _hiddenRenderers = new List<Renderer>(64);
+        private readonly List<Renderer> _rendererBuffer = new List<Renderer>(16);
+        private bool _actorsHidden;
         private Func<bool> _isPlaying;
 
         private void Awake() => _isPlaying = IsPresentationPlaying;
@@ -60,6 +71,7 @@ namespace JSH.Juice
         {
             // MinigameDirector may wake after this component.
             if (MinigameDirector.HasInstance) MinigameDirector.Instance.SetEventHold(_isPlaying);
+            if (_player == null) _player = FindAnyObjectByType<PlayerController2D>();
         }
 
         private void OnDisable()
@@ -67,6 +79,56 @@ namespace JSH.Juice
             EventBus<CounterattackEvent>.Unsubscribe(OnCounterattack);
             EventBus<VillainEjectStartedEvent>.Unsubscribe(OnEjectStarted);
             if (MinigameDirector.HasInstance) MinigameDirector.Instance.ClearEventHold(_isPlaying);
+            ShowActors();
+        }
+
+        // Wait for the session too: an ejected villain is removed when the session finishes, so showing earlier
+        // would flash it for a frame.
+        private void LateUpdate()
+        {
+            if (!_actorsHidden || IsPresentationPlaying()) return;
+            if (MinigameDirector.HasInstance && MinigameDirector.Instance.IsActive) return;
+            ShowActors();
+        }
+
+        private void HideActors()
+        {
+            if (!_hideActors || _actorsHidden) return;
+            _hiddenRenderers.Clear();
+            if (_player != null) HideUnder(_player.transform);
+            TrainCar car = TrainProgress.HasInstance ? TrainProgress.Instance.CurrentCar : null;
+            if (car != null)
+            {
+                IReadOnlyList<Talkable> npcs = car.Npcs;
+                for (int i = 0; i < npcs.Count; i++)
+                {
+                    if (npcs[i] != null) HideUnder(npcs[i].transform);
+                }
+            }
+            _actorsHidden = true;
+        }
+
+        private void HideUnder(Transform root)
+        {
+            _rendererBuffer.Clear();
+            root.GetComponentsInChildren(true, _rendererBuffer);
+            for (int i = 0; i < _rendererBuffer.Count; i++)
+            {
+                Renderer r = _rendererBuffer[i];
+                if (!r.enabled) continue; // keep renderers that were already off as they were
+                r.enabled = false;
+                _hiddenRenderers.Add(r);
+            }
+        }
+
+        private void ShowActors()
+        {
+            for (int i = 0; i < _hiddenRenderers.Count; i++)
+            {
+                if (_hiddenRenderers[i] != null) _hiddenRenderers[i].enabled = true;
+            }
+            _hiddenRenderers.Clear();
+            _actorsHidden = false;
         }
 
         private static bool IsPresentationPlaying() => PassengerAttackController.IsPlaying || GongikNagaController.IsPlaying;
@@ -80,7 +142,7 @@ namespace JSH.Juice
                 Debug.LogWarning($"[PassengerEventPresenter] No attack key for passenger '{evt.Target.name}'.", evt.Target);
                 return;
             }
-            PassengerAttackController.PlayAttack(key);
+            if (PassengerAttackController.PlayAttack(key)) HideActors();
         }
 
         private void OnEjectStarted(VillainEjectStartedEvent evt)
@@ -92,7 +154,7 @@ namespace JSH.Juice
                 Debug.LogWarning($"[PassengerEventPresenter] No naga key for villain '{evt.Villain.name}'.", evt.Villain);
                 return;
             }
-            GongikNagaController.Play(key);
+            if (GongikNagaController.Play(key)) HideActors();
         }
 
         private static string FindKey(KeyRule[] rules, string objectName)
