@@ -1,0 +1,98 @@
+﻿[
+    {
+        "sha256":  "CC511339AEEFAFEB3F55645B9D22916C9B6F70081B6EDBD67C2DD59DD06F7322",
+        "path":  "README_KO.md"
+    },
+    {
+        "sha256":  "8E66493BEB8C4562DDEEFD944B704EF78D9B60490FA075CB66242EA4074CD05D",
+        "path":  "Exports\\Contact.png"
+    },
+    {
+        "sha256":  "EC4A3FFD80DCE0B50B25C75ACFD971D8EF9BE37189AED15CEDCE9D5A9293A3D5",
+        "path":  "Exports\\GifValidation.json"
+    },
+    {
+        "sha256":  "0D3BFE45E129CF7945C80F9713ADD7D75C94FAE43D0475CC0A7843CEFEFB6C58",
+        "path":  "Exports\\Scene_Readability.png"
+    },
+    {
+        "sha256":  "1CF23486EF9B6D125483F428909CFFF9D23507FBB3D125CAB1557EB4CE74EE8F",
+        "path":  "Exports\\Targeting_Crosshair_01.png"
+    },
+    {
+        "sha256":  "3E7666789A6866587DFC0B513E7C361CF31E0DEB731E4F02847681154E4D73D1",
+        "path":  "Exports\\Targeting_Crosshair_02.png"
+    },
+    {
+        "sha256":  "E560C90353DA6CC6B1B885E753AFFBD2E98E9DEB932866C3D0961F4904E52745",
+        "path":  "Exports\\Targeting_Crosshair_03.png"
+    },
+    {
+        "sha256":  "39467FC645F441AF40502AA5AAAAB380477B37BF8A186E7C1568920692378E51",
+        "path":  "Exports\\Targeting_Crosshair_04.png"
+    },
+    {
+        "sha256":  "89E19AF8BB1C03CDE7D7876CCEBB40A015C9350E986F2F762C0D1EFA66AA11EC",
+        "path":  "Exports\\Targeting_Crosshair_05.png"
+    },
+    {
+        "sha256":  "ADC3CB8D68CA2556EA32DFC613B2C7515473F6380B36234D3051BD9DE8FD4E1C",
+        "path":  "Exports\\Targeting_Crosshair_06.png"
+    },
+    {
+        "sha256":  "8BA393CD8D80712ECA20BCE08A5F9D49B591FD667413A943FAFB1A8F85B226EC",
+        "path":  "Exports\\Targeting_Crosshair_07.png"
+    },
+    {
+        "sha256":  "067DA526B23998BDB8F41FFB73A65A9144952D57601B0D6ACF1D1D718A6EF913",
+        "path":  "Exports\\Targeting_Crosshair_08.png"
+    },
+    {
+        "sha256":  "7892CF5598A0DBB42D1F7DDC9159715E159C45D49D0D93C0DD54CC3B74E90AF0",
+        "path":  "Exports\\Targeting_Crosshair_09.png"
+    },
+    {
+        "sha256":  "3E297E317A53FFD7483208B1C7C04574C315D3FADC442149714A4A7682E81FB5",
+        "path":  "Exports\\Targeting_Crosshair_10.png"
+    },
+    {
+        "sha256":  "79B8CC61CF5C8085413AB453F43C17B8027323F58D5197ADAE58B51C06279F26",
+        "path":  "Exports\\Targeting_Crosshair_11.png"
+    },
+    {
+        "sha256":  "79B8CC61CF5C8085413AB453F43C17B8027323F58D5197ADAE58B51C06279F26",
+        "path":  "Exports\\Targeting_Crosshair_12.png"
+    },
+    {
+        "sha256":  "79B8CC61CF5C8085413AB453F43C17B8027323F58D5197ADAE58B51C06279F26",
+        "path":  "Exports\\Targeting_Crosshair_13.png"
+    },
+    {
+        "sha256":  "79B8CC61CF5C8085413AB453F43C17B8027323F58D5197ADAE58B51C06279F26",
+        "path":  "Exports\\Targeting_Crosshair_14.png"
+    },
+    {
+        "sha256":  "E40171F4775F376072887D6664CBAE9A9D33A2B90A8E158208D2CFFB811C0C09",
+        "path":  "Exports\\Targeting_Crosshair_Preview.gif"
+    },
+    {
+        "sha256":  "27F7BD6F16EF7E7285C22E5000FAA7BEA8541DAD3CA5CCE305E1FA29022C239C",
+        "path":  "Exports\\Targeting_Crosshair_Spritesheet.json"
+    },
+    {
+        "sha256":  "A4593B15D2067578B2F5975001592AEF987F4FBC4D416132ED3BB04EC1A5534B",
+        "path":  "Exports\\Targeting_Crosshair_Spritesheet.png"
+    },
+    {
+        "sha256":  "CB39F0A19CCFD5ED3616F59153B872A42950C3FA9328DA65C2BFE9F26CFD7F3B",
+        "path":  "Exports\\Validation.json"
+    },
+    {
+        "sha256":  "5058E99C12BE86257D52C395CF48430775FD9A48BEB3E596AA033BFD55D33AD1",
+        "path":  "Source\\render.mjs"
+    },
+    {
+        "sha256":  "BC04390A4F57805C2CF941E05218E1950FEA6CA51F3B3D81C044E5BAB462AF88",
+        "path":  "Source\\targeting-crosshair.mjs"
+    }
+]

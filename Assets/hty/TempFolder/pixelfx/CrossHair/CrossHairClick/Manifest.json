@@ -1,0 +1,74 @@
+﻿[
+    {
+        "sha256":  "23DB1603076CF745888F16E9ADF540FE3EC7E66D8A9E41C1700D30AAED393F6F",
+        "path":  "README_KO.md"
+    },
+    {
+        "sha256":  "8A258F64C9891D076CE906CCBC459F75A482712D53042C7386A805F3090795BD",
+        "path":  "Exports\\Contact.png"
+    },
+    {
+        "sha256":  "79B8CC61CF5C8085413AB453F43C17B8027323F58D5197ADAE58B51C06279F26",
+        "path":  "Exports\\Crosshair_Click_01.png"
+    },
+    {
+        "sha256":  "663FCFCBB1EA55F6DE2E848653795A4CA1DBE367C66004792589E21796C506D8",
+        "path":  "Exports\\Crosshair_Click_02.png"
+    },
+    {
+        "sha256":  "AAE7FD8A20AF1EBA89DE1A825EE60C0B3E36DF12A4BC6190EF43816D3CAA563A",
+        "path":  "Exports\\Crosshair_Click_03.png"
+    },
+    {
+        "sha256":  "28D8A6B87D155895DF66A349DF502D3816D9AB42B7FED280D00321C8C6BFC087",
+        "path":  "Exports\\Crosshair_Click_04.png"
+    },
+    {
+        "sha256":  "85C7563AFD4CB38FCF86CC2D0E9D6F8D58EDA9921B5272C05A352B2D33C9598B",
+        "path":  "Exports\\Crosshair_Click_05.png"
+    },
+    {
+        "sha256":  "6EC399FDF3F38691A2ED42FC5FDB937C4ED8570653329309DA0A41F1A6E9F417",
+        "path":  "Exports\\Crosshair_Click_06.png"
+    },
+    {
+        "sha256":  "79B8CC61CF5C8085413AB453F43C17B8027323F58D5197ADAE58B51C06279F26",
+        "path":  "Exports\\Crosshair_Click_07.png"
+    },
+    {
+        "sha256":  "79B8CC61CF5C8085413AB453F43C17B8027323F58D5197ADAE58B51C06279F26",
+        "path":  "Exports\\Crosshair_Click_08.png"
+    },
+    {
+        "sha256":  "76D0F6B47CC8821E0245BE954B92F6E5BF7D285605B79D0686D8D55035BD92C7",
+        "path":  "Exports\\Crosshair_Click_Preview.gif"
+    },
+    {
+        "sha256":  "0C0C4E7CB72C1586734E7CB03580D000FC86BDAB922C597CB55930562547C0DD",
+        "path":  "Exports\\Crosshair_Click_Spritesheet.json"
+    },
+    {
+        "sha256":  "5633020B5D099E52F4F1F3F587D831ED9E2477BB105E80E1683934A15C80762C",
+        "path":  "Exports\\Crosshair_Click_Spritesheet.png"
+    },
+    {
+        "sha256":  "D132222B58FC6C845B0B5D14ED28D2AED18FDA98A51FACB3E749C7A0C4AE50C0",
+        "path":  "Exports\\GifValidation.json"
+    },
+    {
+        "sha256":  "AD0603FB463DB1B3F82C09BDA3773A7D4D58708D4CE36DE2BE6A2F038193F9D7",
+        "path":  "Exports\\Scene_Click_Peak.png"
+    },
+    {
+        "sha256":  "FEDBD29E8CD04FE847CFA5B57670A5A0712C1726F1347C7EFB37EA8AFC8B78E8",
+        "path":  "Exports\\Validation.json"
+    },
+    {
+        "sha256":  "9ADC108593FBB052510868AA0AC0342A520D5387B659A43C2D5ECC07A0714C29",
+        "path":  "Source\\crosshair-click.mjs"
+    },
+    {
+        "sha256":  "59A5B3950157E683014B4C127A805BB2D2A91E8A2EE77708B865E47292CDAC4A",
+        "path":  "Source\\render.mjs"
+    }
+]

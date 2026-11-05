@@ -1,0 +1,65 @@
+{
+  "connectivity": 8,
+  "componentSizesByFrame": [
+    [
+      165,
+      165,
+      345,
+      165,
+      165
+    ],
+    [
+      247,
+      865,
+      247,
+      247,
+      247
+    ],
+    [
+      2565
+    ],
+    [
+      3201
+    ],
+    [
+      4321
+    ],
+    [
+      4909
+    ],
+    [
+      6333
+    ],
+    [
+      6589
+    ],
+    [
+      6949
+    ],
+    [
+      6969
+    ],
+    [
+      6969
+    ],
+    [
+      6969
+    ],
+    [
+      6969
+    ],
+    [
+      6969
+    ]
+  ],
+  "componentsOfThreePixelsOrLess": 0,
+  "finalConnectedComponents": 1,
+  "palette": {
+    "main": "#e94a65",
+    "secondary": "#43bfc6",
+    "joints": "#e6b84b",
+    "outline": "#272635"
+  },
+  "noBloom": true,
+  "noGradient": true
+}
