@@ -7,8 +7,8 @@ namespace JSH.Gameplay
     /// <summary>
     /// Marks a passenger/villain as talkable (Shift + Left Click). Needs a Collider2D on the same GameObject
     /// so TalkTargetSelector can hit it.
-    /// Dialogue progress lives here: each talk shows one step of the tree and the next talk resumes at
-    /// ResumeNode. Once the dialogue is finished (end reached / outcome event) the NPC can't be talked to again,
+    /// Dialogue progress lives here: one talk runs the whole tree from ResumeNode (the root; DialogueRunner no
+    /// longer moves it). Once the dialogue is finished (end reached / outcome event) the NPC can't be talked to again,
     /// except a failed passenger persuasion, which calls ResetDialogue(). Pooled: progress resets on spawn.
     /// </summary>
     [RequireComponent(typeof(Collider2D))]
@@ -32,7 +32,7 @@ namespace JSH.Gameplay
         public bool IsDialogueFinished => _isDialogueFinished;
         public bool CanTalk => isActiveAndEnabled && !_isDialogueFinished && _dialogue != null && _dialogue.IsValidNode(_resumeNode);
 
-        /// <summary>The next talk starts at this node (set by DialogueRunner after a choice).</summary>
+        /// <summary>The next talk starts at this node. Unused by DialogueRunner now (talks always run the whole tree); kept for API stability.</summary>
         public void SetResumeNode(int nodeIndex) => _resumeNode = nodeIndex;
 
         /// <summary>Disable further talks.</summary>

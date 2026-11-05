@@ -4,9 +4,9 @@ using UnityEngine;
 namespace JSH.Data
 {
     /// <summary>
-    /// One line of dialogue. With choices the player must pick one (that ends the current talk; the next talk
-    /// resumes at the chosen node). Without choices Advance() goes to NextNode in the same talk; when there is no
-    /// NextNode the dialogue is finished and Outcome (if any) is triggered.
+    /// One line of dialogue. With choices the player must pick one and the talk continues at the chosen node
+    /// in the same window. Without choices Advance() goes to NextNode; when there is no NextNode the dialogue
+    /// is finished and Outcome (if any) is triggered.
     /// </summary>
     [Serializable]
     public class DialogueNode

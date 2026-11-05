@@ -9,8 +9,9 @@ namespace JSH.Gameplay
     /// UI-agnostic dialogue state machine (one per scene). UI subscribes to the C# events and calls
     /// Choose(index) / Advance(). Gameplay systems listen to EventBus DialogueStateChangedEvent / DialogueChoiceMadeEvent /
     /// DialogueOutcomeReachedEvent.
-    /// Step-by-step trees: a talk starts at Talkable.ResumeNode and ends as soon as a choice is picked (the next talk
-    /// resumes at the chosen node). Reading the final line finishes the Talkable's dialogue and raises its Outcome.
+    /// One talk runs the whole tree: it starts at Talkable.ResumeNode (the root) and each picked choice continues in the
+    /// same window. Reading the final line finishes the Talkable's dialogue and raises its Outcome (minigame right away).
+    /// There is no way to close the window mid-dialogue (by design); only the ending force-closes it.
     /// </summary>
     public class DialogueRunner : Singleton<DialogueRunner>
     {
@@ -56,9 +57,13 @@ namespace JSH.Gameplay
             EventBus<DialogueChoiceMadeEvent>.Raise(new DialogueChoiceMadeEvent(target, nodeIndex, choiceIndex, choice.Effect));
             if (_target != target) return; // a listener ended/restarted the dialogue
 
-            // This talk ends here; the next talk continues from the chosen branch.
-            if (_data.IsValidNode(next)) target.SetResumeNode(next);
-            else target.FinishDialogue();
+            // The talk continues in the same window down the chosen branch until the final line (then Advance raises the Outcome).
+            if (_data.IsValidNode(next))
+            {
+                GoTo(next);
+                return;
+            }
+            target.FinishDialogue();
             EndDialogue();
         }
 
