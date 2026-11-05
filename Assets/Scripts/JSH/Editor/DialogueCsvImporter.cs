@@ -12,7 +12,9 @@ namespace JSH.Editor
     /// Converts a dialogue CSV (UTF-8) into one DialogueData asset per CharacterID:
     /// Assets/Prefabs/JSH/Data/Dialogue/Dialogue_&lt;CharacterID&gt;.asset (existing assets are overwritten in place,
     /// so Talkable references survive a re-import).
-    /// Columns (header names, any order, case-insensitive): CharacterID, Path, Speaker, Text, ChoiceA, ChoiceB, Outcome.
+    /// Columns (header names, any order, case-insensitive): CharacterID, Path, Text, ChoiceA, ChoiceB, Outcome.
+    ///  - No speaker column in the team format: the dialogue window shows the Talkable's display name.
+    ///    A legacy optional "Speaker" column is still read (non-empty cell overrides the name for that line).
     ///  - Path: "S" = start, then one letter per choice taken ("SA", "SAB", ...). Several rows with the same Path are
     ///    consecutive lines; only the last one may have choices / Outcome.
     ///  - Outcome (final lines only): Embrace/포용 or Defeat/퇴치. Empty = dialogue just ends.
@@ -181,7 +183,7 @@ namespace JSH.Editor
             int colId = Column(columns, "CharacterID"), colPath = Column(columns, "Path"), colText = Column(columns, "Text");
             if (colId < 0 || colPath < 0 || colText < 0)
             {
-                errors.Add("Header must contain CharacterID, Path and Text (optional: Speaker, ChoiceA, ChoiceB, Outcome).");
+                errors.Add("Header must contain CharacterID, Path and Text (optional: ChoiceA, ChoiceB, Outcome).");
                 return null;
             }
             int colSpeaker = Column(columns, "Speaker"), colA = Column(columns, "ChoiceA"), colB = Column(columns, "ChoiceB"), colOutcome = Column(columns, "Outcome");
