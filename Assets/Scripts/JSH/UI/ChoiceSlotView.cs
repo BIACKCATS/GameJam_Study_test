@@ -8,6 +8,8 @@ namespace JSH.UI
     /// <summary>
     /// One answer box of the radial choice ring (label + highlight). Driven by RadialChoiceSelector.
     /// Its RectTransform position (relative to the ring center) defines the direction that selects it.
+    /// Auto size: when a label does not fit the base box, the box first widens (up to Max Extra Width), then grows
+    /// in height - centered, so it grows left/right and up/down equally and the selection direction is unchanged.
     /// </summary>
     [RequireComponent(typeof(RectTransform))]
     public sealed class ChoiceSlotView : MonoBehaviour
@@ -22,9 +24,28 @@ namespace JSH.UI
         [SerializeField, Min(1f)] private float _highlightScale = 1.12f;
         [SerializeField, Min(0f)] private float _tweenDuration = 0.12f;
 
+        [Header("Auto size (long labels)")]
+        [SerializeField] private bool _autoResize = true;
+        [Tooltip("Rect that grows. Empty = the Background's RectTransform, or this object if there is no Background.")]
+        [SerializeField] private RectTransform _resizeTarget;
+        [Tooltip("How much wider than the base box it may get before it starts growing in height (pixels).")]
+        [SerializeField, Min(0f)] private float _maxExtraWidth = 120f;
+        [Tooltip("Width search step (pixels). Smaller = tighter fit.")]
+        [SerializeField, Min(1f)] private float _widthStep = 20f;
+        [SerializeField, Min(0f)] private float _resizeDuration = 0.15f;
+        [SerializeField] private Ease _resizeEase = Ease.OutBack;
+
         private RectTransform _rect;
         private Tween _scaleTween;
         private Tween _colorTween;
+        private Tween _sizeTween;
+        private RectTransform _target;
+        private RectTransform _labelRect;
+        private bool _labelFollowsTarget; // label stretches with the target on both axes -> only the target is resized
+        private Vector2 _baseSize;
+        private Vector2 _padding;         // target size - label size at base
+        private Vector2 _currentSize;
+        private bool _hasBase;
 
         public bool IsHighlighted { get; private set; }
         public RectTransform Rect => _rect != null ? _rect : _rect = (RectTransform)transform;
@@ -32,6 +53,7 @@ namespace JSH.UI
         private void Awake()
         {
             _rect = (RectTransform)transform;
+            CaptureBase();
             ApplyInstant(false);
         }
 
@@ -39,12 +61,67 @@ namespace JSH.UI
         {
             _scaleTween?.Kill();
             _colorTween?.Kill();
+            _sizeTween?.Kill();
             ApplyInstant(false);
         }
 
         public void SetText(string text)
         {
-            if (_label != null) _label.text = text;
+            if (_label == null) return;
+            _label.text = text;
+            if (_autoResize) ResizeToFit(text);
+        }
+
+        private void CaptureBase()
+        {
+            if (_hasBase || _label == null) return;
+            _target = _resizeTarget != null ? _resizeTarget
+                : _background != null ? _background.rectTransform
+                : Rect;
+            _labelRect = _label.rectTransform;
+            _labelFollowsTarget = _labelRect != _target && _labelRect.IsChildOf(_target)
+                                  && _labelRect.anchorMin.x != _labelRect.anchorMax.x
+                                  && _labelRect.anchorMin.y != _labelRect.anchorMax.y;
+            _baseSize = _target.rect.size;
+            _padding = _baseSize - _labelRect.rect.size;
+            _currentSize = _baseSize;
+            _hasBase = true;
+        }
+
+        private void ResizeToFit(string text)
+        {
+            CaptureBase();
+            if (!_hasBase) return;
+
+            // Widen first (up to the limit) until the text fits the base height, then grow in height.
+            float maxWidth = _baseSize.x + _maxExtraWidth;
+            Vector2 size = _baseSize;
+            for (float w = _baseSize.x; ; w = Mathf.Min(w + _widthStep, maxWidth))
+            {
+                float textHeight = _label.GetPreferredValues(text, w - _padding.x, 0f).y;
+                size = new Vector2(w, Mathf.Max(_baseSize.y, textHeight + _padding.y));
+                if (size.y <= _baseSize.y || w >= maxWidth) break;
+            }
+
+            _sizeTween?.Kill();
+            if (_resizeDuration <= 0f || !isActiveAndEnabled)
+            {
+                ApplySize(size);
+                return;
+            }
+            _sizeTween = DOTween.To(() => _currentSize, ApplySize, size, _resizeDuration)
+                .SetEase(_resizeEase).SetUpdate(true);
+        }
+
+        // Centered resize that works with any anchors (stretch or fixed).
+        private void ApplySize(Vector2 size)
+        {
+            _currentSize = size;
+            _target.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, size.x);
+            _target.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, size.y);
+            if (_labelFollowsTarget) return;
+            _labelRect.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, Mathf.Max(0f, size.x - _padding.x));
+            _labelRect.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, Mathf.Max(0f, size.y - _padding.y));
         }
 
         public void SetHighlighted(bool highlighted)
