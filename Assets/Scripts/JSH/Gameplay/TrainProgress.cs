@@ -39,8 +39,19 @@ namespace JSH.Gameplay
         [SerializeField] private SubwayCurtainPlayer _curtain;
         [Tooltip("Safety: set up the next car anyway if the curtain has not gone black after this many seconds (unscaled).")]
         [SerializeField, Min(0.5f)] private float _curtainTimeout = 5f;
+        [Tooltip("Root of everything inside the car (CarStage/NPCs, floor, walls, exit, player start), e.g. [Train]. " +
+                 "While the curtain slides the teammate's train picture (curtain Train Root), this root and the player " +
+                 "move by the same amount. Empty = no follow.")]
+        [SerializeField] private Transform _slideContents;
 
         private State _state = State.Playing;
+        private bool _sliding;
+        private Transform _trainRoot;
+        private Vector3 _trainRest;
+        private Vector3 _contentsRest;
+        private Vector3 _playerBase;
+        private RigidbodyType2D _playerBodyType;
+        private RigidbodyInterpolation2D _playerInterpolation;
         private int _index;
         private float _waitTime;
         private Rigidbody2D _playerBody;
@@ -94,10 +105,15 @@ namespace JSH.Gameplay
             }
 
             if (_player != null) _player.SetInputLocked(true);
-            if (_curtain != null && _curtain.isActiveAndEnabled) SubwayCurtainPlayer.Play(); // static since hty 96b4712
+            if (_curtain != null && _curtain.isActiveAndEnabled)
+            {
+                CaptureSlideRest(); // before Play: the curtain moves the train root from its first frame
+                SubwayCurtainPlayer.Play(); // static since hty 96b4712
+            }
 
             if (_curtain != null && _curtain.IsPlaying)
             {
+                BeginSlideFollow();
                 _state = State.WaitingForBlack;
                 _waitTime = 0f;
             }
@@ -134,6 +150,15 @@ namespace JSH.Gameplay
             if (_player != null && _playerStart != null)
             {
                 Vector3 p = _playerStart.position;
+                if (_sliding)
+                {
+                    // The start point may be shifted with the contents right now: remember its resting position and
+                    // place the player where the slide currently is (LateUpdate keeps following from here).
+                    _playerBase = _slideContents != null && _playerStart.IsChildOf(_slideContents)
+                        ? _contentsRest + (_playerStart.position - _slideContents.position)
+                        : _playerStart.position;
+                    p = _playerBase + SlideOffset();
+                }
                 if (_playerBody != null)
                 {
                     _playerBody.position = p;
@@ -148,8 +173,67 @@ namespace JSH.Gameplay
 
         private void FinishTransition()
         {
+            EndSlideFollow();
             _state = State.Playing;
             if (_player != null) _player.SetInputLocked(false);
+        }
+
+        // ---- Slide follow: car contents + player move with the teammate's train picture during the curtain ----
+
+        private void CaptureSlideRest()
+        {
+            _trainRoot = _curtain != null ? _curtain.trainRoot : null;
+            if (_trainRoot != null) _trainRest = _trainRoot.position;
+        }
+
+        private void BeginSlideFollow()
+        {
+            if (_slideContents == null || _trainRoot == null) return;
+            _sliding = true;
+            _contentsRest = _slideContents.position;
+            if (_player == null) return;
+
+            _playerBase = _player.transform.position;
+            if (_playerBody != null)
+            {
+                _playerBodyType = _playerBody.bodyType;
+                _playerInterpolation = _playerBody.interpolation;
+                _playerBody.linearVelocity = Vector2.zero;
+                _playerBody.bodyType = RigidbodyType2D.Kinematic; // floor moves too: no falling/sliding meanwhile
+                _playerBody.interpolation = RigidbodyInterpolation2D.None;
+            }
+        }
+
+        private Vector3 SlideOffset() => _trainRoot != null ? _trainRoot.position - _trainRest : Vector3.zero;
+
+        private void LateUpdate()
+        {
+            if (!_sliding) return;
+            Vector3 offset = SlideOffset();
+            _slideContents.position = _contentsRest + offset;
+            if (_player != null) MovePlayer(_playerBase + offset);
+        }
+
+        private void EndSlideFollow()
+        {
+            if (!_sliding) return;
+            _sliding = false;
+            _slideContents.position = _contentsRest;
+            if (_player == null) return;
+
+            MovePlayer(_playerBase);
+            if (_playerBody != null)
+            {
+                _playerBody.bodyType = _playerBodyType;
+                _playerBody.interpolation = _playerInterpolation;
+                _playerBody.linearVelocity = Vector2.zero;
+            }
+        }
+
+        private void MovePlayer(Vector3 position)
+        {
+            _player.transform.position = position;
+            if (_playerBody != null) _playerBody.position = position;
         }
     }
 }
