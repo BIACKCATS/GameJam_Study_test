@@ -11,10 +11,12 @@ namespace JSH.Test
     /// TEST ONLY - placeholder view for dialogue + minigames + lives until the real UI exists.
     /// Auto-spawns on Play (no scene reference). Dialogue: 1..9 choose, Space/Enter next, Esc end.
     /// Persuade minigame: Left Click = stop. Eject / Counterattack: shown as text. Delete the JSH/Test folder to remove it.
+    /// F11 = show/hide this overlay (stays hidden until pressed again, also across scene reloads in the same Play session).
     /// </summary>
     public class TestDialogueDebug : MonoBehaviour
     {
         private const int BarWidth = 41;
+        private static bool s_visible = true;
 
         private readonly StringBuilder _bar = new StringBuilder(BarWidth + 2);
         private string _log = "";
@@ -80,9 +82,11 @@ namespace JSH.Test
 
         private void Update()
         {
-            if (!DialogueRunner.HasInstance || !DialogueRunner.Instance.IsActive) return;
             Keyboard kb = Keyboard.current;
             if (kb == null) return;
+            if (kb.f11Key.wasPressedThisFrame) s_visible = !s_visible;
+
+            if (!DialogueRunner.HasInstance || !DialogueRunner.Instance.IsActive) return;
             DialogueRunner runner = DialogueRunner.Instance;
 
             for (int i = 0; i < 9; i++)
@@ -94,6 +98,7 @@ namespace JSH.Test
 
         private void OnGUI()
         {
+            if (!s_visible) return;
             GUILayout.BeginArea(new Rect(10, 10, 560, 360), GUI.skin.box);
             GUILayout.Label("[TEST] Shift+Click: talk / 1-9: choose (fallback) / Click: minigame");
             string lives = LifeSystem.HasInstance ? $"{LifeSystem.Instance.Lives}/{LifeSystem.Instance.MaxLives}" : "(no LifeSystem)";
