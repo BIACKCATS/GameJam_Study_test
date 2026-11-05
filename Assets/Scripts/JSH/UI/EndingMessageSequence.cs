@@ -117,6 +117,12 @@ namespace JSH.UI
             {
                 ApplyStartState();
             }
+
+            // The header's start state is an idle "..." bubble; keep it off until Play when started later.
+            if (!_playOnStart && _hideUntilPlay && _header != null)
+            {
+                _header.gameObject.SetActive(false);
+            }
         }
 
         private IEnumerator Start()
@@ -172,6 +178,11 @@ namespace JSH.UI
             KillTweens();
             _stats = stats;
             _finished = false;
+            if (_header != null)
+            {
+                _header.gameObject.SetActive(true);
+            }
+
             ApplyStartState();
             _routine = StartCoroutine(Run());
         }
