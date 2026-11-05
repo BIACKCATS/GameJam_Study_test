@@ -5,7 +5,7 @@ using UnityEngine;
 namespace JSH.Gameplay
 {
     /// <summary>
-    /// One-screen train car repeated N times (default 9). Put on [SceneManagers].
+    /// One-screen train car repeated N times (default 6). Put on [SceneManagers].
     /// The player reaching the right exit (CarExit) judges the current car once
     /// (unresolved villains > 0 -> life -1, none -> life +1), then:
     ///  - last car         -> TrainEndReachedEvent (no curtain; EndingController decides good/bad)
@@ -23,7 +23,7 @@ namespace JSH.Gameplay
         private const string CurtainBlackPhase = "Black";
 
         [SerializeField] private TrainCar _car;
-        [SerializeField, Min(1)] private int _carCount = 9;
+        [SerializeField, Min(1)] private int _carCount = 6;
         [SerializeField] private CarSpawnSettings _spawnSettings;
         [Tooltip("0 = random every run; any other value = same layout every run (testing).")]
         [SerializeField] private int _randomSeed;

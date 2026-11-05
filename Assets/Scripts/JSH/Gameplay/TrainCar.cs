@@ -75,8 +75,8 @@ namespace JSH.Gameplay
             _freeSeats.Clear();
             for (int i = 0; i < _seatLayout.SeatCount; i++) _freeSeats.Add(i);
 
-            int villains = settings.RollVillainCount(rng);
-            int passengers = settings.RollPassengerCount(rng);
+            int villains = settings.GetVillainCount(carIndex);
+            int passengers = settings.GetPassengerCount(carIndex);
             if (villains + passengers > _freeSeats.Count)
                 Debug.LogWarning($"[TrainCar] {name}: {villains + passengers} NPCs but {_freeSeats.Count} seats; extra NPCs skipped.", this);
 
