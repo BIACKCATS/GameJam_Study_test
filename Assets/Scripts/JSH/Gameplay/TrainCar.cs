@@ -141,17 +141,24 @@ namespace JSH.Gameplay
             for (int r = 0; r < count; r++) _seatRank[_seatsByX[r]] = r;
         }
 
-        // True if every seat within `extra` ranks of `seatIndex` is free (seats past the ends don't matter).
+        // True if `extra` seats exist on both sides of `seatIndex` (so wide NPCs never take the end seats)
+        // and every one of them is free.
         private bool NeighboursFree(int seatIndex, int extra)
         {
+            if (!AwayFromEnds(seatIndex, extra)) return false;
             int rank = _seatRank[seatIndex];
             for (int d = -extra; d <= extra; d++)
             {
-                int r = rank + d;
-                if (d == 0 || r < 0 || r >= _seatsByX.Count) continue;
-                if (!_freeSeats.Contains(_seatsByX[r])) return false;
+                if (d == 0) continue;
+                if (!_freeSeats.Contains(_seatsByX[rank + d])) return false;
             }
             return true;
+        }
+
+        private bool AwayFromEnds(int seatIndex, int extra)
+        {
+            int rank = _seatRank[seatIndex];
+            return rank - extra >= 0 && rank + extra < _seatsByX.Count;
         }
 
         private int TakeSeat(System.Random rng, int extra, GameObject prefab)
@@ -164,8 +171,15 @@ namespace JSH.Gameplay
                 {
                     if (NeighboursFree(_freeSeats[i], extra)) _seatCandidates.Add(_freeSeats[i]);
                 }
+                if (_seatCandidates.Count == 0)
+                {
+                    Debug.LogWarning($"[TrainCar] {name}: no seat with {extra} free seat(s) on each side for {prefab.name}; seated without spacing (still away from the ends if possible).", this);
+                    for (int i = 0; i < _freeSeats.Count; i++)
+                    {
+                        if (AwayFromEnds(_freeSeats[i], extra)) _seatCandidates.Add(_freeSeats[i]);
+                    }
+                }
                 if (_seatCandidates.Count > 0) pool = _seatCandidates;
-                else Debug.LogWarning($"[TrainCar] {name}: no seat with {extra} free seat(s) on each side for {prefab.name}; seated without spacing.", this);
             }
 
             int seatIndex = pool[rng.Next(pool.Count)];
