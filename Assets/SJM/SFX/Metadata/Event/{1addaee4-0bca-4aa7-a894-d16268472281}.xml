@@ -90,7 +90,7 @@
 	<object class="MixerBusPanner" id="{bca54d91-530d-423e-b8b3-0a1fa607047e}" />
 	<object class="SingleSound" id="{194a7f57-2d68-4299-ae8e-18ea06f8d246}">
 		<property name="length">
-			<value>5.8710204081632886</value>
+			<value>15.32816326530612</value>
 		</property>
 		<property name="timelockedOffset">
 			<value>6.7714285714285714</value>
@@ -170,7 +170,7 @@
 	</object>
 	<object class="AutomationPoint" id="{f3bcac36-66a0-4df7-90bc-f0936bd66f90}">
 		<property name="position">
-			<value>2.8995918367347175</value>
+			<value>12.356734693877549</value>
 		</property>
 		<property name="value">
 			<value>1</value>
@@ -181,7 +181,7 @@
 	</object>
 	<object class="AutomationPoint" id="{c4c6860e-8991-4cc9-b307-64c13a52bab4}">
 		<property name="position">
-			<value>5.8710204081632886</value>
+			<value>15.32816326530612</value>
 		</property>
 		<property name="value">
 			<value>0</value>

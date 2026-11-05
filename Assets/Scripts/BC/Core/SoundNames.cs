@@ -37,5 +37,11 @@ namespace BC.Core
         public const string TurnOnTheLight = "Turn_On_The_light";
         public const string Writing = "Writing";             // no MasterVolume parameter
         public const string LetterAdding = "Letter_adding";  // no MasterVolume parameter
+        public const string StartMusic = "StartMusic";
+        public const string FinalMusic = "FinalMusic";
+
+        // One-shot with an extra local parameter → SoundManager.PlaySound(name, volume, parameter, value)
+        public const string Firework = "Firework";
+        public const string FireworkParameter = "firework";  // 0..1
     }
 }
