@@ -168,3 +168,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b972d075dda42d418fdc82ca750b262, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::JSH.Gameplay.Villain
+  _id: 0

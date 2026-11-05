@@ -27,7 +27,7 @@ MonoBehaviour:
   - _speaker: 
     _text: "\uB108\uAC00 \uB204\uAD70\uB370? \uD6C4 \uC544 \uC720!"
     _choices:
-    - _text: "\uC9C0\uD558\uCCA0 \uACF5\uC775 \uC694\uC6D0 \uBC15\uD574\uCCA0\uC785\uB2C8\uB2E4."
+    - _text: "\uC9C0\uD558\uCCA0 \uACF5\uC775 \uC694\uC6D0 \uCD5C\uACF5\uC775\uC785\uB2C8\uB2E4."
       _nextNode: 3
       _effect: 0
     - _text: "\uC5B4... \uADF8, \uB2E8\uC18C\uB97C \uC5C4\uCCAD \uC798 \uBD80\uB974\uC2E4
