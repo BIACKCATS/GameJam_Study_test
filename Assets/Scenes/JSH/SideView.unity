@@ -271,6 +271,8 @@ MonoBehaviour:
   _playMessage: "\uD074\uB9AD\uC73C\uB85C \uBA48\uCD94\uAE30!"
   _successMessage: "\uC124\uB4DD \uC131\uACF5!"
   _missMessage: "\uC124\uB4DD \uC2E4\uD328..."
+  _defeatSuccessMessage: "\uD1F4\uCE58 \uC131\uACF5!"
+  _defeatMissMessage: "\uD1F4\uCE58 \uC2E4\uD328..."
   _timeoutMessage: "\uC2DC\uAC04 \uCD08\uACFC..."
   _resultHoldTime: 0.7
   _cursorBlinkInterval: 0.08
@@ -932,6 +934,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2730509250898535809, guid: 14adedc8114de5241afca47efe99d239, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3291714959261104592, guid: 14adedc8114de5241afca47efe99d239, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -1292,6 +1298,7 @@ MonoBehaviour:
   _talkableLayers:
     serializedVersion: 2
     m_Bits: 4294967295
+  _useCrosshair: 1
 --- !u!1 &468818788
 GameObject:
   m_ObjectHideFlags: 0
@@ -1861,7 +1868,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::JSH.Gameplay.TrainProgress
   _dontDestroyOnLoad: 0
   _car: {fileID: 2136624121}
-  _carCount: 9
+  _carCount: 6
   _spawnSettings: {fileID: 11400000, guid: a42cfd917f961154abeebce1ec0fc3ca, type: 2}
   _randomSeed: 0
   _player: {fileID: 332688238}
