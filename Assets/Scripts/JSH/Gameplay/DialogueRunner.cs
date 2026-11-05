@@ -7,7 +7,10 @@ namespace JSH.Gameplay
 {
     /// <summary>
     /// UI-agnostic dialogue state machine (one per scene). UI subscribes to the C# events and calls
-    /// Choose(index) / Advance(). Gameplay systems listen to EventBus DialogueStateChangedEvent / DialogueChoiceMadeEvent.
+    /// Choose(index) / Advance(). Gameplay systems listen to EventBus DialogueStateChangedEvent / DialogueChoiceMadeEvent /
+    /// DialogueOutcomeReachedEvent.
+    /// Step-by-step trees: a talk starts at Talkable.ResumeNode and ends as soon as a choice is picked (the next talk
+    /// resumes at the chosen node). Reading the final line finishes the Talkable's dialogue and raises its Outcome.
     /// </summary>
     public class DialogueRunner : Singleton<DialogueRunner>
     {
@@ -35,7 +38,7 @@ namespace JSH.Gameplay
             _data = target.Dialogue;
             Started?.Invoke(_target);
             EventBus<DialogueStateChangedEvent>.Raise(new DialogueStateChangedEvent(true, _target));
-            GoTo(DialogueData.StartNode);
+            GoTo(target.ResumeNode);
             return true;
         }
 
@@ -52,15 +55,30 @@ namespace JSH.Gameplay
 
             EventBus<DialogueChoiceMadeEvent>.Raise(new DialogueChoiceMadeEvent(target, nodeIndex, choiceIndex, choice.Effect));
             if (_target != target) return; // a listener ended/restarted the dialogue
-            GoTo(next);
+
+            // This talk ends here; the next talk continues from the chosen branch.
+            if (_data.IsValidNode(next)) target.SetResumeNode(next);
+            else target.FinishDialogue();
+            EndDialogue();
         }
 
-        /// <summary>Continue a node that has no choices.</summary>
+        /// <summary>Continue a node that has no choices (next line, or finish the dialogue on the final line).</summary>
         public void Advance()
         {
             DialogueNode node = CurrentNode;
             if (node == null || node.ChoiceCount > 0) return;
-            GoTo(node.NextNode);
+            if (_data.IsValidNode(node.NextNode))
+            {
+                GoTo(node.NextNode);
+                return;
+            }
+
+            Talkable target = _target;
+            DialogueOutcome outcome = node.Outcome;
+            target.FinishDialogue();
+            EndDialogue();
+            if (outcome != DialogueOutcome.None)
+                EventBus<DialogueOutcomeReachedEvent>.Raise(new DialogueOutcomeReachedEvent(target, outcome));
         }
 
         public void EndDialogue()

@@ -18,6 +18,9 @@ namespace JSH.Data
         public DialogueNode GetNode(int index) => _nodes[index];
 
 #if UNITY_EDITOR
+        /// <summary>Editor only (CSV importer). Replaces every node.</summary>
+        public void EditorSetNodes(DialogueNode[] nodes) => _nodes = nodes;
+
         private void OnValidate()
         {
             for (int i = 0; i < NodeCount; i++)

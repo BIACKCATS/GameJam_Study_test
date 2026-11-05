@@ -40,6 +40,9 @@ namespace JSH.UI
         [SerializeField] private string _playMessage = "클릭으로 멈추기!";
         [SerializeField] private string _successMessage = "설득 성공!";
         [SerializeField] private string _missMessage = "설득 실패...";
+        [Tooltip("Used when the Timing minigame decides a 퇴치 (MinigameDirector.CurrentGoal = Defeat).")]
+        [SerializeField] private string _defeatSuccessMessage = "퇴치 성공!";
+        [SerializeField] private string _defeatMissMessage = "퇴치 실패...";
         [SerializeField] private string _timeoutMessage = "시간 초과...";
 
         [Header("Result")]
@@ -116,7 +119,11 @@ namespace JSH.UI
 
             SetCursor(_current.Position);
             _resultSuccess = evt.Success;
-            if (_promptText != null) _promptText.text = evt.Success ? _successMessage : _current.TimedOut ? _timeoutMessage : _missMessage;
+            bool defeat = MinigameDirector.HasInstance && MinigameDirector.Instance.CurrentGoal == DialogueOutcome.Defeat;
+            if (_promptText != null)
+                _promptText.text = evt.Success ? (defeat ? _defeatSuccessMessage : _successMessage)
+                    : _current.TimedOut ? _timeoutMessage
+                    : defeat ? _defeatMissMessage : _missMessage;
             if (_cursorGraphic != null) _cursorGraphic.color = evt.Success ? _successColor : _failColor;
 
             if (_cursor != null && _cursor.gameObject.activeInHierarchy)

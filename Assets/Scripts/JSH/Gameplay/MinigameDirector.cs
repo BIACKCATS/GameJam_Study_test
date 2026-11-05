@@ -7,13 +7,16 @@ using UnityEngine.InputSystem;
 namespace JSH.Gameplay
 {
     /// <summary>
-    /// Runs what a dialogue choice leads to and applies the results (one per scene; everything stays in one Scene).
-    ///  - Accuse ("퇴치") on a villain   -> Eject event: VillainEjectStartedEvent, after the eject duration the
-    ///                                      villain is defeated and removed from the car. No life change.
-    ///  - Accuse on a passenger          -> Counterattack event (life -1).
-    ///  - Persuade ("설득")               -> Timing minigame. Villain success = converted + life +1,
-    ///                                      passenger success = no effect. Fail / timeout -> Counterattack (life -1),
-    ///                                      villain stays unresolved (can be talked to again).
+    /// Runs what a dialogue outcome (DialogueOutcomeReachedEvent) leads to and applies the results
+    /// (one per scene; everything stays in one Scene). The Talkable's dialogue is already finished (no more talks)
+    /// unless stated otherwise:
+    ///  - Embrace ("포용"/설득) -> Timing minigame (CurrentGoal = Embrace).
+    ///      villain:   success = converted + life +1. Fail / timeout = Counterattack (life -1), stays unresolved.
+    ///      passenger: success = no effect. Fail / timeout = no life change, dialogue restarts from the beginning.
+    ///  - Defeat ("퇴치") on a villain -> Timing minigame (CurrentGoal = Defeat). Success = Eject event
+    ///      (VillainEjectStartedEvent, then defeated + removed from the car). Fail = Counterattack (life -1), stays unresolved.
+    ///  - Defeat on a passenger -> Counterattack event (life -1), no minigame.
+    /// Legacy choice effects (DialogueEffect.Persuade / Accuse) map to Embrace / Defeat.
     /// Eject / Counterattack are timed placeholders until their presentation exists: the session (input lock)
     /// lasts the configured seconds, presentation listens to the start events.
     /// Input: Left Click = stop the Timing line. UI reads ActiveTiming each frame and listens to the events.
@@ -30,35 +33,60 @@ namespace JSH.Gameplay
         private Villain _villain;
         private TimingMinigame _timing;
         private MinigameType _eventType = MinigameType.None;
+        private DialogueOutcome _goal = DialogueOutcome.None;
         private float _eventTimer;
 
         public bool IsActive => _target != null;
         public Talkable CurrentTarget => _target;
         public MinigameType CurrentType => _timing != null ? MinigameType.Timing : _eventType;
         public TimingMinigame ActiveTiming => _timing;
+        /// <summary>What the current Timing minigame decides: Embrace (persuade) or Defeat (퇴치). None outside Timing sessions.</summary>
+        public DialogueOutcome CurrentGoal => _goal;
 
         /// <summary>A round started (Timing, Eject or Counterattack). Fired again when Timing fails into Counterattack.</summary>
         public event Action<MinigameType> RoundStarted;
 
-        private void OnEnable() => EventBus<DialogueChoiceMadeEvent>.Subscribe(OnChoiceMade);
+        private void OnEnable()
+        {
+            EventBus<DialogueOutcomeReachedEvent>.Subscribe(OnOutcomeReached);
+            EventBus<DialogueChoiceMadeEvent>.Subscribe(OnChoiceMade);
+        }
 
-        private void OnDisable() => EventBus<DialogueChoiceMadeEvent>.Unsubscribe(OnChoiceMade);
+        private void OnDisable()
+        {
+            EventBus<DialogueOutcomeReachedEvent>.Unsubscribe(OnOutcomeReached);
+            EventBus<DialogueChoiceMadeEvent>.Unsubscribe(OnChoiceMade);
+        }
 
+        private void OnOutcomeReached(DialogueOutcomeReachedEvent evt) => Resolve(evt.Target, evt.Outcome);
+
+        // Legacy: hand-made DialogueData whose choices carry Persuade / Accuse effects.
         private void OnChoiceMade(DialogueChoiceMadeEvent evt)
         {
-            if (evt.Effect != DialogueEffect.Accuse && evt.Effect != DialogueEffect.Persuade) return;
-            if (IsActive || evt.Target == null) return;
+            DialogueOutcome outcome = evt.Effect == DialogueEffect.Persuade ? DialogueOutcome.Embrace
+                : evt.Effect == DialogueEffect.Accuse ? DialogueOutcome.Defeat
+                : DialogueOutcome.None;
+            if (outcome == DialogueOutcome.None || IsActive || evt.Target == null) return;
 
             if (DialogueRunner.HasInstance) DialogueRunner.Instance.EndDialogue();
-            if (evt.Effect == DialogueEffect.Persuade) Begin(evt.Target, MinigameType.Timing);
-            else Begin(evt.Target, evt.Target.TryGetComponent(out Villain _) ? MinigameType.Eject : MinigameType.Counterattack);
+            evt.Target.FinishDialogue();
+            Resolve(evt.Target, outcome);
+        }
+
+        /// <summary>Start what a dialogue outcome leads to (see class summary).</summary>
+        public bool Resolve(Talkable target, DialogueOutcome outcome)
+        {
+            if (outcome == DialogueOutcome.None || target == null) return false;
+            if (outcome == DialogueOutcome.Defeat && !target.TryGetComponent(out Villain _))
+                return Begin(target, MinigameType.Counterattack);
+            return Begin(target, MinigameType.Timing, outcome);
         }
 
         /// <summary>
         /// Start a session directly (also used by the dialogue flow). Counterattack started here uses
-        /// CounterattackReason.AccusedPassenger.
+        /// CounterattackReason.AccusedPassenger. timingGoal only matters for Timing (Defeat needs a Villain).
         /// </summary>
-        public bool Begin(Talkable target, MinigameType type)
+        public bool Begin(Talkable target, MinigameType type, DialogueOutcome timingGoal = DialogueOutcome.Embrace)
         {
             if (IsActive || target == null || type == MinigameType.None) return false;
             target.TryGetComponent(out Villain villain);
@@ -67,14 +95,17 @@ namespace JSH.Gameplay
                 Debug.LogError("[MinigameDirector] Missing Timing settings (assign the default on the director).", this);
                 return false;
             }
-            if (type == MinigameType.Eject && villain == null)
+            bool needsVillain = type == MinigameType.Eject || (type == MinigameType.Timing && timingGoal == DialogueOutcome.Defeat);
+            if (needsVillain && villain == null)
             {
-                Debug.LogError($"[MinigameDirector] Eject needs a Villain: {target.name}.", target);
+                Debug.LogError($"[MinigameDirector] {type} ({timingGoal}) needs a Villain: {target.name}.", target);
                 return false;
             }
 
             _target = target;
             _villain = villain;
+            _goal = type == MinigameType.Timing ? (timingGoal == DialogueOutcome.Defeat ? DialogueOutcome.Defeat : DialogueOutcome.Embrace)
+                : DialogueOutcome.None;
             EventBus<MinigameStateChangedEvent>.Raise(new MinigameStateChangedEvent(true, type, _target));
 
             if (type == MinigameType.Timing) StartTiming();
@@ -131,7 +162,16 @@ namespace JSH.Gameplay
         private void FinishTiming()
         {
             bool success = _timing.Success;
-            // Only a villain persuasion pays off (converted + life +1). Passenger success = no effect.
+
+            if (_goal == DialogueOutcome.Defeat)
+            {
+                EventBus<MinigameFinishedEvent>.Raise(new MinigameFinishedEvent(_target, MinigameType.Timing, success));
+                if (success) StartEject(); // same session, no input-lock flicker
+                else StartCounterattack(CounterattackReason.DefeatFailed);
+                return;
+            }
+
+            // Embrace: only a villain persuasion pays off (converted + life +1). Passenger success = no effect.
             if (success && _villain != null)
             {
                 if (LifeSystem.HasInstance) LifeSystem.Instance.Heal(1);
@@ -141,7 +181,12 @@ namespace JSH.Gameplay
             EventBus<MinigameFinishedEvent>.Raise(new MinigameFinishedEvent(_target, MinigameType.Timing, success));
 
             if (success) EndSession();
-            else StartCounterattack(CounterattackReason.PersuadeFailed); // same session, no input-lock flicker
+            else if (_villain != null) StartCounterattack(CounterattackReason.PersuadeFailed);
+            else
+            {
+                _target.ResetDialogue(); // passenger: no penalty, talk again from the beginning
+                EndSession();
+            }
         }
 
         private void FinishEvent()
@@ -179,6 +224,7 @@ namespace JSH.Gameplay
             _villain = null;
             _timing = null;
             _eventType = MinigameType.None;
+            _goal = DialogueOutcome.None;
             EventBus<MinigameStateChangedEvent>.Raise(new MinigameStateChangedEvent(false, type, target));
         }
 
