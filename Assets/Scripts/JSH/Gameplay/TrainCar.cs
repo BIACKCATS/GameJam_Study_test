@@ -9,6 +9,7 @@ namespace JSH.Gameplay
     /// The one on-screen train car. The game repeats it N times (TrainProgress owns the car number):
     /// each new car despawns the previous NPCs and spawns passengers/villains onto random free seats of the
     /// SeatLayout. A passenger prefab appears at most once per car (villain prefabs may repeat).
+    /// NPCs with a SeatFootprint are seated first, where their neighbouring seats are free, and keep those seats empty.
     /// NPCs are pooled per prefab (Villain resets its state on spawn via IPoolable).
     /// Select the car in the Scene view to see its seats (gizmos).
     /// </summary>
@@ -26,6 +27,10 @@ namespace JSH.Gameplay
         private readonly List<Talkable> _npcs = new List<Talkable>(8);
         private readonly List<int> _freeSeats = new List<int>(16);
         private readonly List<int> _unusedPassengerPrefabs = new List<int>(8); // passengers never repeat within a car
+        private readonly List<GameObject> _villainPicks = new List<GameObject>(8);
+        private readonly List<int> _seatCandidates = new List<int>(16);
+        private readonly List<int> _seatsByX = new List<int>(16);
+        private int[] _seatRank = new int[0]; // seat index -> position in left-to-right order
         private readonly Dictionary<Talkable, ComponentPool<Talkable>> _pools = new Dictionary<Talkable, ComponentPool<Talkable>>();
 
         public IReadOnlyList<Villain> Villains => _villains;
@@ -90,31 +95,96 @@ namespace JSH.Gameplay
             if (passengers > _unusedPassengerPrefabs.Count)
                 Debug.LogWarning($"[TrainCar] {name}: {passengers} passengers but {_unusedPassengerPrefabs.Count} passenger prefabs; passengers never repeat in a car, extra seats stay empty.", this);
 
-            for (int i = 0; i < villains; i++) SpawnOne(settings, rng, true, carIndex);
-            for (int i = 0; i < passengers; i++) SpawnOne(settings, rng, false, carIndex);
+            BuildSeatOrder();
+
+            // Pick villains first, then seat the wide ones (SeatFootprint) before the rest so their neighbours are free.
+            _villainPicks.Clear();
+            if (settings.VillainPrefabCount > 0)
+            {
+                for (int i = 0; i < villains; i++) _villainPicks.Add(settings.GetVillainPrefab(rng.Next(settings.VillainPrefabCount)));
+            }
+            for (int i = 0; i < _villainPicks.Count; i++)
+            {
+                if (GetExtraSeats(_villainPicks[i]) > 0) SpawnPrefab(_villainPicks[i], rng, true, carIndex);
+            }
+            for (int i = 0; i < _villainPicks.Count; i++)
+            {
+                if (GetExtraSeats(_villainPicks[i]) == 0) SpawnPrefab(_villainPicks[i], rng, true, carIndex);
+            }
+
+            for (int i = 0; i < passengers; i++)
+            {
+                if (_unusedPassengerPrefabs.Count == 0) break;
+                int prefabPick = rng.Next(_unusedPassengerPrefabs.Count);
+                GameObject prefab = settings.GetPassengerPrefab(_unusedPassengerPrefabs[prefabPick]);
+                _unusedPassengerPrefabs.RemoveAt(prefabPick);
+                SpawnPrefab(prefab, rng, false, carIndex);
+            }
         }
 
-        private void SpawnOne(CarSpawnSettings settings, System.Random rng, bool villain, int carIndex)
+        private static int GetExtraSeats(GameObject prefab) =>
+            prefab != null && prefab.TryGetComponent(out SeatFootprint footprint) ? footprint.ExtraSeatsEachSide : 0;
+
+        // Seat indices sorted by x (SeatLayout order is not guaranteed to be left-to-right).
+        private void BuildSeatOrder()
         {
-            int prefabCount = villain ? settings.VillainPrefabCount : _unusedPassengerPrefabs.Count;
-            if (_freeSeats.Count == 0 || prefabCount == 0) return;
-
-            int pick = rng.Next(_freeSeats.Count);
-            int seatIndex = _freeSeats[pick];
-            _freeSeats.RemoveAt(pick);
-
-            GameObject prefab;
-            if (villain)
+            int count = _seatLayout.SeatCount;
+            _seatsByX.Clear();
+            for (int i = 0; i < count; i++)
             {
-                prefab = settings.GetVillainPrefab(rng.Next(prefabCount));
+                float x = _seatLayout.GetSeat(i).LocalPosition.x;
+                int at = _seatsByX.Count;
+                while (at > 0 && _seatLayout.GetSeat(_seatsByX[at - 1]).LocalPosition.x > x) at--;
+                _seatsByX.Insert(at, i);
             }
-            else
+            if (_seatRank.Length != count) _seatRank = new int[count];
+            for (int r = 0; r < count; r++) _seatRank[_seatsByX[r]] = r;
+        }
+
+        // True if every seat within `extra` ranks of `seatIndex` is free (seats past the ends don't matter).
+        private bool NeighboursFree(int seatIndex, int extra)
+        {
+            int rank = _seatRank[seatIndex];
+            for (int d = -extra; d <= extra; d++)
             {
-                int prefabPick = rng.Next(prefabCount);
-                prefab = settings.GetPassengerPrefab(_unusedPassengerPrefabs[prefabPick]);
-                _unusedPassengerPrefabs.RemoveAt(prefabPick);
+                int r = rank + d;
+                if (d == 0 || r < 0 || r >= _seatsByX.Count) continue;
+                if (!_freeSeats.Contains(_seatsByX[r])) return false;
             }
-            if (prefab == null) return;
+            return true;
+        }
+
+        private int TakeSeat(System.Random rng, int extra, GameObject prefab)
+        {
+            List<int> pool = _freeSeats;
+            if (extra > 0)
+            {
+                _seatCandidates.Clear();
+                for (int i = 0; i < _freeSeats.Count; i++)
+                {
+                    if (NeighboursFree(_freeSeats[i], extra)) _seatCandidates.Add(_freeSeats[i]);
+                }
+                if (_seatCandidates.Count > 0) pool = _seatCandidates;
+                else Debug.LogWarning($"[TrainCar] {name}: no seat with {extra} free seat(s) on each side for {prefab.name}; seated without spacing.", this);
+            }
+
+            int seatIndex = pool[rng.Next(pool.Count)];
+            _freeSeats.Remove(seatIndex);
+            if (extra > 0)
+            {
+                int rank = _seatRank[seatIndex];
+                for (int d = -extra; d <= extra; d++)
+                {
+                    int r = rank + d;
+                    if (d != 0 && r >= 0 && r < _seatsByX.Count) _freeSeats.Remove(_seatsByX[r]); // keep neighbours empty
+                }
+            }
+            return seatIndex;
+        }
+
+        private void SpawnPrefab(GameObject prefab, System.Random rng, bool villain, int carIndex)
+        {
+            if (_freeSeats.Count == 0 || prefab == null) return;
             if (!prefab.TryGetComponent(out Talkable prefabTalkable))
             {
                 Debug.LogWarning($"[TrainCar] {prefab.name} has no Talkable; skipped.", prefab);
@@ -127,6 +197,7 @@ namespace JSH.Gameplay
                 _pools.Add(prefabTalkable, pool);
             }
 
+            int seatIndex = TakeSeat(rng, GetExtraSeats(prefab), prefab);
             SeatPoint seat = _seatLayout.GetSeat(seatIndex);
             Vector3 seatPosition = transform.TransformPoint(seat.LocalPosition);
             Talkable npc = pool.Get(seatPosition);
