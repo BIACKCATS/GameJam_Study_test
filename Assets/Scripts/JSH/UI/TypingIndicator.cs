@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using DG.Tweening;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
@@ -9,12 +10,19 @@ namespace JSH.UI
 {
     /// <summary>
     /// Messenger "typing..." indicator: the dots wave softly for a while, then disappear and the content
-    /// (e.g. the chat title) pops in at once. Unscaled time.
+    /// (e.g. the chat title) pops in at once. With a Bubble assigned, the bubble stays, grows to fit the
+    /// content, and the content pops inside it. Unscaled time.
     /// Use alone (Play / playOnStart) or from EndingMessageSequence (PlayRoutine).
     /// </summary>
     public sealed class TypingIndicator : MonoBehaviour
     {
-        [Tooltip("Parent of the dots (its own small bubble). Hidden when typing ends.")]
+        [Tooltip("Optional: bubble that stays and grows to fit the content. Dots Root and Content are its children.")]
+        [SerializeField] private RectTransform _bubble;
+        [Tooltip("Bubble size = content preferred size + this.")]
+        [SerializeField] private Vector2 _bubblePadding = new Vector2(70f, 40f);
+        [SerializeField, Min(0.01f)] private float _resizeDuration = 0.25f;
+        [SerializeField] private Ease _resizeEase = Ease.OutBack;
+        [Tooltip("Parent of the dots. Hidden when typing ends.")]
         [SerializeField] private RectTransform _dotsRoot;
         [SerializeField] private RectTransform[] _dots = Array.Empty<RectTransform>();
         [Tooltip("Shown with a pop after typing (the message itself).")]
@@ -42,6 +50,7 @@ namespace JSH.UI
         [SerializeField] private UnityEvent _onFinished;
 
         private Vector2[] _dotBasePos = Array.Empty<Vector2>();
+        private Vector2 _bubbleStartSize;
         private Graphic[] _dotGraphics = Array.Empty<Graphic>();
         private Coroutine _routine;
         private bool _initialized;
@@ -107,6 +116,12 @@ namespace JSH.UI
                 _dotsRoot.gameObject.SetActive(false);
             }
 
+            if (_bubble != null)
+            {
+                _bubble.DOSizeDelta(GetBubbleTargetSize(), _resizeDuration).SetEase(_resizeEase).SetUpdate(true);
+                yield return WaitUnscaled(_resizeDuration);
+            }
+
             if (_content != null)
             {
                 _content.gameObject.SetActive(true);
@@ -149,6 +164,11 @@ namespace JSH.UI
             }
 
             _initialized = true;
+            if (_bubble != null)
+            {
+                _bubbleStartSize = _bubble.sizeDelta;
+            }
+
             _dotBasePos = new Vector2[_dots.Length];
             _dotGraphics = new Graphic[_dots.Length];
             for (int i = 0; i < _dots.Length; i++)
@@ -170,6 +190,12 @@ namespace JSH.UI
 
         private void ApplyStartState()
         {
+            if (_bubble != null)
+            {
+                _bubble.gameObject.SetActive(true);
+                _bubble.sizeDelta = _bubbleStartSize;
+            }
+
             if (_dotsRoot != null)
             {
                 _dotsRoot.gameObject.SetActive(true);
@@ -186,6 +212,11 @@ namespace JSH.UI
         private void ApplyFinalState()
         {
             ResetDots(1f);
+            if (_bubble != null)
+            {
+                _bubble.sizeDelta = GetBubbleTargetSize();
+            }
+
             if (_dotsRoot != null)
             {
                 _dotsRoot.gameObject.SetActive(false);
@@ -243,10 +274,26 @@ namespace JSH.UI
                 _dotsRoot.DOKill();
             }
 
+            if (_bubble != null)
+            {
+                _bubble.DOKill();
+            }
+
             if (_content != null)
             {
                 _content.DOKill();
             }
+        }
+
+        private Vector2 GetBubbleTargetSize()
+        {
+            if (_content == null || !_content.TryGetComponent(out TMP_Text text))
+            {
+                return _bubbleStartSize;
+            }
+
+            Vector2 size = text.GetPreferredValues(text.text) + _bubblePadding;
+            return Vector2.Max(size, _bubbleStartSize);
         }
 
         private void StopRoutine()
