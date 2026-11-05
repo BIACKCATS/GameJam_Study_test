@@ -91,6 +91,15 @@ namespace JSH.Gameplay
             Publish();
         }
 
+        /// <summary>Inspector context menu (Play Mode): print the current numbers to the Console.</summary>
+        [ContextMenu("Log Current Stats")]
+        private void LogCurrent()
+        {
+            EndingStats s = Build();
+            Debug.Log($"[EndingStatsTracker] reports={s.ReportCount} embraced={s.EmbracedCount} " +
+                      $"notEmbraced={s.NotEmbracedCount} mistakes={s.MistakeCount} grade={s.Grade}", this);
+        }
+
         private void Publish() => EndingStats.SetLast(Build());
 
         private EndingStats Build()
