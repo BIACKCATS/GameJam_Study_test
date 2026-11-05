@@ -1,3 +1,4 @@
+using JSH.Core;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -16,10 +17,12 @@ namespace JSH.Gameplay
         [SerializeField] private SpriteRenderer _spriteRenderer;
 
         private Rigidbody2D _rb;
-        private float _input;
+        private float _input = 0;
+        private bool _inputLocked;
 
         /// <summary>-1 = left, 0 = idle, 1 = right.</summary>
         public float MoveInput => _input;
+        public bool InputLocked => _inputLocked;
 
         private void Awake()
         {
@@ -29,9 +32,19 @@ namespace JSH.Gameplay
             if (_spriteRenderer == null) TryGetComponent(out _spriteRenderer);
         }
 
+        private void OnEnable() => EventBus<DialogueStateChangedEvent>.Subscribe(OnDialogueStateChanged);
+
+        private void OnDisable() => EventBus<DialogueStateChangedEvent>.Unsubscribe(OnDialogueStateChanged);
+
+        /// <summary>Locked = no movement input (actor decelerates to a stop). Dialogue locks/unlocks automatically.</summary>
+        public void SetInputLocked(bool locked) => _inputLocked = locked;
+
+        private void OnDialogueStateChanged(DialogueStateChangedEvent evt) => _inputLocked = evt.IsActive;
+
         private void Update()
         {
             _input = 0f;
+            if (_inputLocked) return;
             Keyboard kb = Keyboard.current;
             if (kb == null) return;
 
