@@ -13,7 +13,7 @@ namespace JSH.UI
     /// Screen for the Timing (설득) minigame, Undertale attack-bar style: a wide box, the target zone,
     /// and a vertical line sweeping left/right. Reads MinigameDirector.ActiveTiming every frame (no logic here;
     /// input stays in MinigameDirector). On finish the line freezes and flashes the result, then the panel hides
-    /// (on fail the Reflex round starts underneath at the same time).
+    /// (on fail the Counterattack event starts underneath at the same time).
     /// Put on an always-active object of the gameplay Canvas (not on the panel it shows/hides).
     /// Result feedback (screen shake / flash) = optional MMF_Players.
     /// </summary>

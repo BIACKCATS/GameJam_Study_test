@@ -10,7 +10,7 @@ namespace JSH.Test
     /// <summary>
     /// TEST ONLY - placeholder view for dialogue + minigames + lives until the real UI exists.
     /// Auto-spawns on Play (no scene reference). Dialogue: 1..9 choose, Space/Enter next, Esc end.
-    /// Minigames: Left Click = hit / stop. Delete the JSH/Test folder to remove it.
+    /// Persuade minigame: Left Click = stop. Eject / Counterattack: shown as text. Delete the JSH/Test folder to remove it.
     /// </summary>
     public class TestDialogueDebug : MonoBehaviour
     {
@@ -36,8 +36,8 @@ namespace JSH.Test
             EventBus<VillainDefeatedEvent>.Subscribe(OnDefeated);
             EventBus<MinigameStateChangedEvent>.Subscribe(OnMinigameState);
             EventBus<MinigameFinishedEvent>.Subscribe(OnMinigameFinished);
-            EventBus<PassengerCounterattackEvent>.Subscribe(OnCounterattack);
-            EventBus<VillainCounterattackEvent>.Subscribe(OnVillainCounterattack);
+            EventBus<CounterattackEvent>.Subscribe(OnCounterattack);
+            EventBus<VillainEjectStartedEvent>.Subscribe(OnEject);
             EventBus<CarChangedEvent>.Subscribe(OnCarChanged);
             EventBus<LivesChangedEvent>.Subscribe(OnLives);
             EventBus<LivesDepletedEvent>.Subscribe(OnDepleted);
@@ -51,8 +51,8 @@ namespace JSH.Test
             EventBus<VillainDefeatedEvent>.Unsubscribe(OnDefeated);
             EventBus<MinigameStateChangedEvent>.Unsubscribe(OnMinigameState);
             EventBus<MinigameFinishedEvent>.Unsubscribe(OnMinigameFinished);
-            EventBus<PassengerCounterattackEvent>.Unsubscribe(OnCounterattack);
-            EventBus<VillainCounterattackEvent>.Unsubscribe(OnVillainCounterattack);
+            EventBus<CounterattackEvent>.Unsubscribe(OnCounterattack);
+            EventBus<VillainEjectStartedEvent>.Unsubscribe(OnEject);
             EventBus<CarChangedEvent>.Unsubscribe(OnCarChanged);
             EventBus<LivesChangedEvent>.Unsubscribe(OnLives);
             EventBus<LivesDepletedEvent>.Unsubscribe(OnDepleted);
@@ -71,9 +71,9 @@ namespace JSH.Test
         private void OnConverted(VillainConvertedEvent e) => Log("Villain converted: " + e.Villain.name);
         private void OnDefeated(VillainDefeatedEvent e) => Log("Villain defeated: " + e.Villain.name);
         private void OnMinigameState(MinigameStateChangedEvent e) => Log($"Minigame {(e.IsActive ? "start" : "end")}: {e.Type} / {NameOf(e.Target)}");
-        private void OnMinigameFinished(MinigameFinishedEvent e) => Log($"Minigame finished: {e.Type} success={e.Success} reflex={e.ReflexResult} / {NameOf(e.Target)}");
-        private void OnCounterattack(PassengerCounterattackEvent e) => Log($"Passenger counterattack! {NameOf(e.Passenger)} (wasGuarding={e.WasGuarding})");
-        private void OnVillainCounterattack(VillainCounterattackEvent e) => Log("Villain counterattack! " + e.Villain.name);
+        private void OnMinigameFinished(MinigameFinishedEvent e) => Log($"Minigame finished: {e.Type} success={e.Success} / {NameOf(e.Target)}");
+        private void OnCounterattack(CounterattackEvent e) => Log($"Counterattack! {NameOf(e.Target)} (villain={e.IsVillain}, reason={e.Reason})");
+        private void OnEject(VillainEjectStartedEvent e) => Log("Eject event: " + e.Villain.name);
         private void OnCarChanged(CarChangedEvent e) => Log($"Car {e.FromIndex} -> {e.ToIndex} unresolvedVillains={e.UnresolvedVillains} lifeLost={e.LifeLost} cleared={e.Cleared}");
         private void OnLives(LivesChangedEvent e) => Log($"Lives {e.Current}/{e.Max} (delta {e.Delta})");
         private void OnDepleted(LivesDepletedEvent e) => Log("Lives depleted -> bad ending");
@@ -127,12 +127,8 @@ namespace JSH.Test
         private void DrawMinigame(MinigameDirector d)
         {
             GUILayout.Label($"Minigame: {d.CurrentType} vs {NameOf(d.CurrentTarget)}");
-            if (d.ActiveReflex != null)
-            {
-                ReflexMinigame r = d.ActiveReflex;
-                GUILayout.Label(r.IsReady ? "Click to HIT (no time limit)" : "Ready...");
-                GUILayout.Label(r.IsGuarding ? "   [ GUARD ]" : "   [ OPEN!! ]");
-            }
+            if (d.CurrentType == MinigameType.Eject) GUILayout.Label("   >> Thrown off the train! (placeholder)");
+            else if (d.CurrentType == MinigameType.Counterattack) GUILayout.Label("   >> COUNTERATTACK! life -1 (placeholder)");
             else if (d.ActiveTiming != null)
             {
                 TimingMinigame t = d.ActiveTiming;

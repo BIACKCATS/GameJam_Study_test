@@ -1,6 +1,6 @@
 namespace JSH.Gameplay
 {
-    /// <summary>Raised once when a villain is defeated in the Reflex minigame.</summary>
+    /// <summary>Raised once when an accused villain is defeated (end of the eject event, just before it leaves the car).</summary>
     public readonly struct VillainDefeatedEvent
     {
         public readonly Villain Villain;

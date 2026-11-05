@@ -14,14 +14,12 @@ namespace JSH.Gameplay
         [SerializeField] private DialogueData _dialogue;
         [Tooltip("Shown in the dialogue window's hexagon frame. Empty = DialogueView fallback portrait.")]
         [SerializeField] private Sprite _portrait;
-        [Header("Minigame overrides (empty = MinigameDirector defaults)")]
-        [SerializeField] private ReflexSettings _reflexOverride;
+        [Header("Minigame override (empty = MinigameDirector default)")]
         [SerializeField] private TimingSettings _timingOverride;
 
         public string DisplayName => _displayName;
         public DialogueData Dialogue => _dialogue;
         public Sprite Portrait => _portrait;
-        public ReflexSettings ReflexOverride => _reflexOverride;
         public TimingSettings TimingOverride => _timingOverride;
         public bool CanTalk => isActiveAndEnabled && _dialogue != null && _dialogue.NodeCount > 0;
     }

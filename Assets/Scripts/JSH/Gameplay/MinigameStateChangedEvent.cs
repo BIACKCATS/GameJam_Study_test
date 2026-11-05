@@ -4,7 +4,7 @@ namespace JSH.Gameplay
 {
     /// <summary>
     /// Raised when a minigame session starts (IsActive = true) or fully ends (false).
-    /// Timing-fail -> Reflex stays inside one session (no false/true flicker). Player input locks on this.
+    /// Timing-fail -> Counterattack stays inside one session (no false/true flicker). Player input locks on this.
     /// </summary>
     public readonly struct MinigameStateChangedEvent
     {

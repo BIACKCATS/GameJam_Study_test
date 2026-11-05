@@ -53,6 +53,15 @@ namespace JSH.Gameplay
             _villains.Clear();
         }
 
+        /// <summary>Return one NPC of this car to its pool (e.g. an ejected villain). False = not in this car.</summary>
+        public bool RemoveNpc(Talkable npc)
+        {
+            if (npc == null || !_npcs.Remove(npc)) return false;
+            if (npc.TryGetComponent(out Villain v)) _villains.Remove(v);
+            PoolReturn.ReleaseOrDestroy(npc.gameObject);
+            return true;
+        }
+
         /// <summary>Despawn the previous car's NPCs, then seat new ones (villains first so they always fit).</summary>
         public void Spawn(CarSpawnSettings settings, System.Random rng, int carIndex)
         {

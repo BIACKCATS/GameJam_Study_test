@@ -3,22 +3,21 @@ using JSH.Data;
 namespace JSH.Gameplay
 {
     /// <summary>
-    /// Raised when one minigame round ends (after its effects were applied).
-    /// Reflex: see ReflexResult. Timing: Success true/false (false is followed by a Reflex round).
+    /// Raised when one round ends (after its effects were applied).
+    /// Timing: Success true/false (false is followed by a Counterattack round in the same session).
+    /// Eject: Success = true (villain defeated). Counterattack: Success = false.
     /// </summary>
     public readonly struct MinigameFinishedEvent
     {
         public readonly Talkable Target;
         public readonly MinigameType Type;
         public readonly bool Success;
-        public readonly ReflexResult ReflexResult;
 
-        public MinigameFinishedEvent(Talkable target, MinigameType type, bool success, ReflexResult reflexResult)
+        public MinigameFinishedEvent(Talkable target, MinigameType type, bool success)
         {
             Target = target;
             Type = type;
             Success = success;
-            ReflexResult = reflexResult;
         }
     }
 }
