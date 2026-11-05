@@ -18,5 +18,9 @@ MonoBehaviour:
   - {fileID: 3548912700902324448, guid: b5b93d39dbbd793419d6d4d292b9cf6e, type: 3}
   - {fileID: 2658118904794576125, guid: 84a6642465ecf3d47bc3c26e00a11b9c, type: 3}
   _villainPrefabs:
-  - {fileID: 7158102606219403747, guid: 3013025c5c75aa44899d6cafb50e6146, type: 3}
+  - {fileID: 1052768623154940295, guid: cbd6b8c715b73bb4393368363e3f3a2d, type: 3}
+  - {fileID: 2554620616802262958, guid: 2764a5ee361794a4d8bd1002b68b5e63, type: 3}
+  - {fileID: 6341531025326226593, guid: 341198bd0d0259f4a9f9a38dd4dbb88f, type: 3}
+  - {fileID: 4340375658649672223, guid: fd19d49fd41663a459ea9acb5256a570, type: 3}
+  - {fileID: 1451604343141443061, guid: 474d4eb33e7ec7242a5d82cbd787a624, type: 3}
   _maxNpcPerCar: 5
