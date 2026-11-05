@@ -13,9 +13,10 @@ namespace JSH.Gameplay
     ///  - Embrace ("포용"/설득) -> Timing minigame (CurrentGoal = Embrace).
     ///      villain:   success = converted + life +1. Fail / timeout = Counterattack (life -1), stays unresolved.
     ///      passenger: success = no effect. Fail / timeout = no life change, dialogue restarts from the beginning.
-    ///  - Defeat ("퇴치") on a villain -> Timing minigame (CurrentGoal = Defeat). Success = Eject event
-    ///      (VillainEjectStartedEvent, then defeated + removed from the car). Fail = Counterattack (life -1), stays unresolved.
-    ///  - Defeat on a passenger -> Counterattack event (life -1), no minigame.
+    ///  - Defeat ("퇴치") -> Timing minigame (CurrentGoal = Defeat).
+    ///      villain:   success = Eject event (VillainEjectStartedEvent, then defeated + removed from the car).
+    ///                 Fail / timeout = Counterattack (life -1), stays unresolved.
+    ///      passenger: success or fail = Counterattack (life -1) - accusing an innocent always backfires.
     /// Legacy choice effects (DialogueEffect.Persuade / Accuse) map to Embrace / Defeat.
     /// Eject / Counterattack are timed placeholders until their presentation exists: the session (input lock)
     /// lasts the configured seconds, presentation listens to the start events.
@@ -77,14 +78,12 @@ namespace JSH.Gameplay
         public bool Resolve(Talkable target, DialogueOutcome outcome)
         {
             if (outcome == DialogueOutcome.None || target == null) return false;
-            if (outcome == DialogueOutcome.Defeat && !target.TryGetComponent(out Villain _))
-                return Begin(target, MinigameType.Counterattack);
             return Begin(target, MinigameType.Timing, outcome);
         }
 
         /// <summary>
         /// Start a session directly (also used by the dialogue flow). Counterattack started here uses
-        /// CounterattackReason.AccusedPassenger. timingGoal only matters for Timing (Defeat needs a Villain).
+        /// CounterattackReason.AccusedPassenger. timingGoal only matters for Timing.
         /// </summary>
         public bool Begin(Talkable target, MinigameType type, DialogueOutcome timingGoal = DialogueOutcome.Embrace)
         {
@@ -95,10 +94,9 @@ namespace JSH.Gameplay
                 Debug.LogError("[MinigameDirector] Missing Timing settings (assign the default on the director).", this);
                 return false;
             }
-            bool needsVillain = type == MinigameType.Eject || (type == MinigameType.Timing && timingGoal == DialogueOutcome.Defeat);
-            if (needsVillain && villain == null)
+            if (type == MinigameType.Eject && villain == null)
             {
-                Debug.LogError($"[MinigameDirector] {type} ({timingGoal}) needs a Villain: {target.name}.", target);
+                Debug.LogError($"[MinigameDirector] Eject needs a Villain: {target.name}.", target);
                 return false;
             }
 
@@ -166,7 +164,8 @@ namespace JSH.Gameplay
             if (_goal == DialogueOutcome.Defeat)
             {
                 EventBus<MinigameFinishedEvent>.Raise(new MinigameFinishedEvent(_target, MinigameType.Timing, success));
-                if (success) StartEject(); // same session, no input-lock flicker
+                if (_villain == null) StartCounterattack(CounterattackReason.AccusedPassenger); // passenger: always backfires
+                else if (success) StartEject(); // same session, no input-lock flicker
                 else StartCounterattack(CounterattackReason.DefeatFailed);
                 return;
             }

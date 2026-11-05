@@ -5,6 +5,6 @@ namespace JSH.Data
     {
         None = 0,    // dialogue just ends, no event
         Embrace = 1, // 포용: Timing minigame (persuade)
-        Defeat = 2,  // 퇴치: villain -> Timing minigame (success = eject), passenger -> counterattack (life -1)
+        Defeat = 2,  // 퇴치: Timing minigame. Villain success = eject; passenger = counterattack (life -1) either way
     }
 }
