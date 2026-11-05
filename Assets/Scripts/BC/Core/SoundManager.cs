@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using FMOD.Studio;
 using FMODUnity;
 using UnityEngine;
@@ -7,8 +8,9 @@ namespace BC.Core
     /// <summary>
     /// Plays FMOD events from SFX.fspro.
     /// - MasterVolume (local, 0..1, initial 0): automated on every event's volume, so it must be set on each instance.
-    /// - Attack (local, 0..1): crossfades the "train" (0 = 100%) and "Attack" (1 = 100%) music loops.
+    /// - Attack (local, 0..1): crossfades the "Train" (0 = 100%) and "Attack" (1 = 100%) music loops.
     /// Usage: SoundManager.Instance.PlayTrain(SoundNames.Train, 0.8f);
+    ///        SoundManager.Instance.PlaySound(SoundNames.UI, 0.8f);
     /// </summary>
     public class SoundManager : Singleton<SoundManager>
     {
@@ -26,6 +28,9 @@ namespace BC.Core
         private float _attackTarget;
         private float _attackFadeSpeed;
         private bool _isFadingAttack;
+
+        // Looping SFX started by PlaySound, keyed by event name, so StopSound can end them.
+        private readonly Dictionary<string, EventInstance> _loopingSounds = new Dictionary<string, EventInstance>();
 
         public float MasterVolume => _masterVolume;
         public bool IsAttackPlaying => _attackInstance.isValid();
@@ -85,25 +90,72 @@ namespace BC.Core
             FadeAttackTo(0f, fadeOutSeconds);
         }
 
-        /// <summary>Plays a one-shot (UI, NAGA, Metro_door_open, ...). It releases itself when finished.</summary>
+        /// <summary>
+        /// Plays any sound effect from <see cref="SoundNames"/>.
+        /// One-shots release themselves when finished. Looping events (Turn_On_The_light, Writing, Letter_adding)
+        /// keep playing until <see cref="StopSound"/>; calling PlaySound again for a loop that is already playing
+        /// only updates its volume instead of stacking a second copy.
+        /// </summary>
         public void PlaySound(string soundName, float masterVolume)
         {
+            float volume = Mathf.Clamp01(masterVolume);
+
+            if (_loopingSounds.TryGetValue(soundName, out EventInstance playing) && playing.isValid())
+            {
+                SetParameter(playing, MasterVolumeParameter, volume);
+                return;
+            }
+
             if (!TryCreate(soundName, out EventInstance instance))
             {
                 return;
             }
 
-            instance.setParameterByName(MasterVolumeParameter, Mathf.Clamp01(masterVolume));
+            SetParameter(instance, MasterVolumeParameter, volume);
             instance.start();
-            instance.release();
+
+            if (IsLooping(instance))
+            {
+                _loopingSounds[soundName] = instance;
+            }
+            else
+            {
+                instance.release();
+            }
         }
 
-        /// <summary>Changes the master volume of the music loops that are playing now and of every later call.</summary>
+        /// <summary>Stops a looping sound started with <see cref="PlaySound"/>. Fades out if the event has an AHDSR release.</summary>
+        public void StopSound(string soundName)
+        {
+            if (!_loopingSounds.TryGetValue(soundName, out EventInstance instance))
+            {
+                return;
+            }
+
+            _loopingSounds.Remove(soundName);
+            if (instance.isValid())
+            {
+                instance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+                instance.release();
+            }
+        }
+
+        public bool IsSoundPlaying(string soundName)
+        {
+            return _loopingSounds.TryGetValue(soundName, out EventInstance instance) && instance.isValid();
+        }
+
+        /// <summary>Changes the master volume of the music and looping sounds playing now, and of every later music call.</summary>
         public void SetMasterVolume(float masterVolume)
         {
             _masterVolume = Mathf.Clamp01(masterVolume);
             SetParameter(_trainInstance, MasterVolumeParameter, _masterVolume);
             SetParameter(_attackInstance, MasterVolumeParameter, _masterVolume);
+
+            foreach (EventInstance instance in _loopingSounds.Values)
+            {
+                SetParameter(instance, MasterVolumeParameter, _masterVolume);
+            }
         }
 
         public void StopAllMusic()
@@ -158,7 +210,22 @@ namespace BC.Core
         protected override void OnDestroy()
         {
             StopAllMusic();
+
+            foreach (EventInstance instance in _loopingSounds.Values)
+            {
+                EventInstance toStop = instance;
+                StopAndRelease(ref toStop);
+            }
+
+            _loopingSounds.Clear();
             base.OnDestroy();
+        }
+
+        private static bool IsLooping(EventInstance instance)
+        {
+            return instance.getDescription(out EventDescription description) == FMOD.RESULT.OK
+                && description.isOneshot(out bool isOneshot) == FMOD.RESULT.OK
+                && !isOneshot;
         }
 
         private void SetAttackValue(float value)
