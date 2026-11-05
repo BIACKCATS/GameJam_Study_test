@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ee1ec36b7eed2e4f88355f8a97215e1, type: 3}
+  m_Name: TimingSettings_Default
+  m_EditorClassIdentifier: Assembly-CSharp::JSH.Data.TimingSettings
+  _readyDelay: 0.5
+  _timeLimit: 5
+  _sweepsPerSecond: 1.2
+  _targetCenter: 0
+  _targetHalfWidth: 0.15
