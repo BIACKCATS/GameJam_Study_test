@@ -89,14 +89,13 @@ namespace JSH.Test
             {
                 if (kb[Key.Digit1 + i].wasPressedThisFrame) { runner.Choose(i); return; }
             }
-            if (kb.spaceKey.wasPressedThisFrame || kb.enterKey.wasPressedThisFrame) runner.Advance();
-            if (kb.escapeKey.wasPressedThisFrame) runner.EndDialogue();
+            // Space/Enter (next) and mouse choices are handled by JSH.UI.DialogueView; Esc is the pause key.
         }
 
         private void OnGUI()
         {
             GUILayout.BeginArea(new Rect(10, 10, 560, 360), GUI.skin.box);
-            GUILayout.Label("[TEST] Shift+Click: talk / 1-9: choose / Space: next / Esc: end / Click: minigame");
+            GUILayout.Label("[TEST] Shift+Click: talk / 1-9: choose (fallback) / Click: minigame");
             string lives = LifeSystem.HasInstance ? $"{LifeSystem.Instance.Lives}/{LifeSystem.Instance.MaxLives}" : "(no LifeSystem)";
             GUILayout.Label("Lives: " + lives);
 
