@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9b3c7e1dcfd374478fd6e325a0903b1, type: 3}
+  m_Name: CarSpawnSettings_Default
+  m_EditorClassIdentifier: Assembly-CSharp::JSH.Data.CarSpawnSettings
+  _passengerPrefabs:
+  - {fileID: 3712236887215296066, guid: 81e92822498bc714c8c665b2d4148504, type: 3}
+  - {fileID: 6914813235361567076, guid: b3c1070bce7867845b6bc986b76684a5, type: 3}
+  - {fileID: 3548912700902324448, guid: b5b93d39dbbd793419d6d4d292b9cf6e, type: 3}
+  - {fileID: 2658118904794576125, guid: 84a6642465ecf3d47bc3c26e00a11b9c, type: 3}
+  _villainPrefabs:
+  - {fileID: 1052768623154940295, guid: cbd6b8c715b73bb4393368363e3f3a2d, type: 3}
+  - {fileID: 2554620616802262958, guid: 2764a5ee361794a4d8bd1002b68b5e63, type: 3}
+  - {fileID: 6341531025326226593, guid: 341198bd0d0259f4a9f9a38dd4dbb88f, type: 3}
+  - {fileID: 4340375658649672223, guid: fd19d49fd41663a459ea9acb5256a570, type: 3}
+  - {fileID: 1451604343141443061, guid: 474d4eb33e7ec7242a5d82cbd787a624, type: 3}
+  _maxNpcPerCar: 5

@@ -529,12 +529,12 @@ MonoBehaviour:
     height: 3.4
     kickPoint: {x: 0.10204082, y: 0.38341543}
   - key: student
-    sprite: {fileID: -187471690781893554, guid: b3def657f06a45a46bbc0709d6319c79, type: 3}
+    sprite: {fileID: 8331834189666635772, guid: 320c1b97b9764de4aaa157e1f89cc9be, type: 3}
     objectionTexture: {fileID: 2800000, guid: 3c7a3b183cbde2d4887a89f438f1dbd4, type: 3}
     height: 3.4
     kickPoint: {x: 0.16194332, y: 0.3764321}
   - key: Worker
-    sprite: {fileID: 8331834189666635772, guid: 320c1b97b9764de4aaa157e1f89cc9be, type: 3}
+    sprite: {fileID: -187471690781893554, guid: b3def657f06a45a46bbc0709d6319c79, type: 3}
     objectionTexture: {fileID: 2800000, guid: ec029611c44c8ab4081f2ea4d4a5d970, type: 3}
     height: 3.4
     kickPoint: {x: 0.091603056, y: 0.37675184}

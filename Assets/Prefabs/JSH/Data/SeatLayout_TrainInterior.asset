@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb136af9358100a49bcdcd95df6d5c53, type: 3}
+  m_Name: SeatLayout_TrainInterior
+  m_EditorClassIdentifier: Assembly-CSharp::JSH.Data.SeatLayout
+  _seats:
+  - LocalPosition: {x: -8.994, y: 0.04}
+    FlipX: 0
+  - LocalPosition: {x: -6.794, y: 0.04}
+    FlipX: 0
+  - LocalPosition: {x: -4.594, y: 0.04}
+    FlipX: 0
+  - LocalPosition: {x: -2.394, y: 0.04}
+    FlipX: 0
+  - LocalPosition: {x: -0.194, y: 0.04}
+    FlipX: 1
+  - LocalPosition: {x: 2.006, y: 0.04}
+    FlipX: 1
+  - LocalPosition: {x: 4.2060003, y: 0.04}
+    FlipX: 1
+  - LocalPosition: {x: 6.406, y: 0.04}
+    FlipX: 1
+  - LocalPosition: {x: 8.606, y: 0.04}
+    FlipX: 1
