@@ -1,0 +1,24 @@
+{
+  "frames": 10,
+  "fps": 15,
+  "playSeconds": 0.6666666666666666,
+  "size": [
+    48,
+    48
+  ],
+  "baseHash": "C5DC55E45BA8ADA7088F3859D020419B8F51508CFE10785B0E568EFD1501A10C",
+  "finalHash": "C5DC55E45BA8ADA7088F3859D020419B8F51508CFE10785B0E568EFD1501A10C",
+  "PNGBytesIdentical": true,
+  "opaquePixels": [
+    588,
+    589,
+    588,
+    588,
+    588,
+    588,
+    588,
+    588,
+    588,
+    588
+  ]
+}

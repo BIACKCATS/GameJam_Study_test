@@ -1,0 +1,22 @@
+﻿{
+    "nonTransparentBorderPixels":  0,
+    "source":  "C5DC55E45BA8ADA7088F3859D020419B8F51508CFE10785B0E568EFD1501A10C",
+    "resolutionMatches":  true,
+    "decodedFinalPixelDifferences":  0,
+    "gifDelayCentiseconds":  [
+                                 7,
+                                 6,
+                                 7,
+                                 7,
+                                 6,
+                                 7,
+                                 7,
+                                 6,
+                                 7,
+                                 7
+                             ],
+    "gifSeconds":  0.67,
+    "invalidAlphaPixels":  0,
+    "final":  "C5DC55E45BA8ADA7088F3859D020419B8F51508CFE10785B0E568EFD1501A10C",
+    "gifFrames":  10
+}
