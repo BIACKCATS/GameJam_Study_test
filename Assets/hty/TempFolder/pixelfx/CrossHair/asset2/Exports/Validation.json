@@ -1,0 +1,16 @@
+{
+  "frames": 14,
+  "fps": 16,
+  "seconds": 0.875,
+  "resolution": [
+    320,
+    180
+  ],
+  "mainRingDiameter": 112,
+  "accentDiameter": 128,
+  "horizontalSpan": 297,
+  "verticalSpan": 161,
+  "binaryAlpha": true,
+  "finalFourIdentical": true,
+  "holdSeconds": 0.25
+}

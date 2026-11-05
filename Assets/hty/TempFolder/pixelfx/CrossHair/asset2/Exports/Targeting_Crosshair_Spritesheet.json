@@ -1,0 +1,347 @@
+{
+  "frames": [
+    {
+      "filename": "Targeting_Crosshair_Spritesheet 0",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 320,
+        "h": 180
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 320,
+        "h": 180
+      },
+      "sourceSize": {
+        "w": 320,
+        "h": 180
+      },
+      "duration": 63
+    },
+    {
+      "filename": "Targeting_Crosshair_Spritesheet 1",
+      "frame": {
+        "x": 320,
+        "y": 0,
+        "w": 320,
+        "h": 180
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 320,
+        "h": 180
+      },
+      "sourceSize": {
+        "w": 320,
+        "h": 180
+      },
+      "duration": 63
+    },
+    {
+      "filename": "Targeting_Crosshair_Spritesheet 2",
+      "frame": {
+        "x": 640,
+        "y": 0,
+        "w": 320,
+        "h": 180
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 320,
+        "h": 180
+      },
+      "sourceSize": {
+        "w": 320,
+        "h": 180
+      },
+      "duration": 63
+    },
+    {
+      "filename": "Targeting_Crosshair_Spritesheet 3",
+      "frame": {
+        "x": 0,
+        "y": 180,
+        "w": 320,
+        "h": 180
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 320,
+        "h": 180
+      },
+      "sourceSize": {
+        "w": 320,
+        "h": 180
+      },
+      "duration": 63
+    },
+    {
+      "filename": "Targeting_Crosshair_Spritesheet 4",
+      "frame": {
+        "x": 320,
+        "y": 180,
+        "w": 320,
+        "h": 180
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 320,
+        "h": 180
+      },
+      "sourceSize": {
+        "w": 320,
+        "h": 180
+      },
+      "duration": 63
+    },
+    {
+      "filename": "Targeting_Crosshair_Spritesheet 5",
+      "frame": {
+        "x": 640,
+        "y": 180,
+        "w": 320,
+        "h": 180
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 320,
+        "h": 180
+      },
+      "sourceSize": {
+        "w": 320,
+        "h": 180
+      },
+      "duration": 63
+    },
+    {
+      "filename": "Targeting_Crosshair_Spritesheet 6",
+      "frame": {
+        "x": 0,
+        "y": 360,
+        "w": 320,
+        "h": 180
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 320,
+        "h": 180
+      },
+      "sourceSize": {
+        "w": 320,
+        "h": 180
+      },
+      "duration": 63
+    },
+    {
+      "filename": "Targeting_Crosshair_Spritesheet 7",
+      "frame": {
+        "x": 320,
+        "y": 360,
+        "w": 320,
+        "h": 180
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 320,
+        "h": 180
+      },
+      "sourceSize": {
+        "w": 320,
+        "h": 180
+      },
+      "duration": 63
+    },
+    {
+      "filename": "Targeting_Crosshair_Spritesheet 8",
+      "frame": {
+        "x": 640,
+        "y": 360,
+        "w": 320,
+        "h": 180
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 320,
+        "h": 180
+      },
+      "sourceSize": {
+        "w": 320,
+        "h": 180
+      },
+      "duration": 63
+    },
+    {
+      "filename": "Targeting_Crosshair_Spritesheet 9",
+      "frame": {
+        "x": 0,
+        "y": 540,
+        "w": 320,
+        "h": 180
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 320,
+        "h": 180
+      },
+      "sourceSize": {
+        "w": 320,
+        "h": 180
+      },
+      "duration": 63
+    },
+    {
+      "filename": "Targeting_Crosshair_Spritesheet 10",
+      "frame": {
+        "x": 320,
+        "y": 540,
+        "w": 320,
+        "h": 180
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 320,
+        "h": 180
+      },
+      "sourceSize": {
+        "w": 320,
+        "h": 180
+      },
+      "duration": 63
+    },
+    {
+      "filename": "Targeting_Crosshair_Spritesheet 11",
+      "frame": {
+        "x": 640,
+        "y": 540,
+        "w": 320,
+        "h": 180
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 320,
+        "h": 180
+      },
+      "sourceSize": {
+        "w": 320,
+        "h": 180
+      },
+      "duration": 63
+    },
+    {
+      "filename": "Targeting_Crosshair_Spritesheet 12",
+      "frame": {
+        "x": 0,
+        "y": 720,
+        "w": 320,
+        "h": 180
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 320,
+        "h": 180
+      },
+      "sourceSize": {
+        "w": 320,
+        "h": 180
+      },
+      "duration": 63
+    },
+    {
+      "filename": "Targeting_Crosshair_Spritesheet 13",
+      "frame": {
+        "x": 320,
+        "y": 720,
+        "w": 320,
+        "h": 180
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 320,
+        "h": 180
+      },
+      "sourceSize": {
+        "w": 320,
+        "h": 180
+      },
+      "duration": 63
+    }
+  ],
+  "meta": {
+    "app": "https://github.com/patch-gg/pixelfx",
+    "version": "1",
+    "image": "Targeting_Crosshair_Spritesheet.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 960,
+      "h": 900
+    },
+    "scale": "1",
+    "frameTags": [
+      {
+        "name": "Targeting_Crosshair_Spritesheet",
+        "from": 0,
+        "to": 13,
+        "direction": "forward"
+      }
+    ],
+    "pixelfx": {
+      "id": "ui/targeting-crosshair",
+      "name": "Layered targeting crosshair V2",
+      "fps": 16,
+      "loop": false,
+      "frames": 14,
+      "frameSize": [
+        320,
+        180
+      ],
+      "pivot": [
+        160,
+        90
+      ],
+      "columns": 3
+    }
+  }
+}
