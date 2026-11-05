@@ -6,6 +6,7 @@ public sealed class GameOverSequenceController : MonoBehaviour
     public GameObject presentation;
     public UnityEngine.UI.RawImage character, lightOverlay, rightTyping, leftTyping, rightBubble, leftBubble;
     public UnityEngine.UI.Text rightText, leftText;
+    [Min(0)] public float characterFadeDuration = 0.8f;
     [TextArea] public string rightMessage = "";
     [TextArea] public string leftMessage = "";
     [Header("Light flicker (seconds)")]
@@ -34,6 +35,10 @@ public sealed class GameOverSequenceController : MonoBehaviour
     float elapsed, flickerTimer;
     int stage, flickerPhase;
     bool doubleFlicker;
+    float previousTimeScale;
+    bool worldPaused, previousCursorVisible;
+    CursorLockMode previousCursorLock;
+    System.Collections.Generic.List<DG.Tweening.Tween> pausedTweens;
 
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
     static void ResetStatic(){instance=null;}
@@ -63,6 +68,7 @@ public sealed class GameOverSequenceController : MonoBehaviour
         {Debug.LogError("GameOverSequenceController: Missing presentation/image/texture reference.",this);return false;}
         ResetPresentation();
         running=true;elapsed=0;stage=0;flickerPhase=0;flickerTimer=NextInterval();
+        PauseWorld();
         presentation.SetActive(true);
         SetLight(true);
         rightBubble.color=rightBubbleColor;leftBubble.color=leftBubbleColor;
@@ -81,6 +87,9 @@ public sealed class GameOverSequenceController : MonoBehaviour
     }
     void RenderTimeline()
     {
+        var characterColor=character.color;
+        characterColor.a=characterFadeDuration<=0?1:Mathf.SmoothStep(0,1,Mathf.Clamp01(elapsed/characterFadeDuration));
+        character.color=characterColor;
         float rightStart=Mathf.Max(0,rightTypingDelay);
         float rightEnd=rightStart+Mathf.Max(0,rightBubbleDelay);
         float leftStart=rightEnd+Mathf.Max(0,leftTypingDelay);
@@ -114,9 +123,34 @@ public sealed class GameOverSequenceController : MonoBehaviour
     void ResetPresentation()
     {
         running=false;
+        ResumeWorld();
         if(presentation)presentation.SetActive(false);
         if(rightTyping)rightTyping.enabled=false;if(leftTyping)leftTyping.enabled=false;
         if(rightBubble)rightBubble.gameObject.SetActive(false);if(leftBubble)leftBubble.gameObject.SetActive(false);
+    }
+    void PauseWorld()
+    {
+        if(worldPaused)return;
+        previousTimeScale=Time.timeScale;
+        previousCursorVisible=Cursor.visible;previousCursorLock=Cursor.lockState;
+        worldPaused=true;
+        pausedTweens=DG.Tweening.DOTween.PlayingTweens();
+        if(pausedTweens!=null)foreach(var tween in pausedTweens)DG.Tweening.TweenExtensions.Pause(tween);
+        Time.timeScale=0;
+        Cursor.lockState=CursorLockMode.None;Cursor.visible=true;
+    }
+    void ResumeWorld()
+    {
+        if(!worldPaused)return;
+        Time.timeScale=previousTimeScale;
+        if(pausedTweens!=null)
+        {
+            foreach(var tween in pausedTweens)
+                if(DG.Tweening.TweenExtensions.IsActive(tween)&&!DG.Tweening.TweenExtensions.IsComplete(tween))DG.Tweening.TweenExtensions.Play(tween);
+            pausedTweens=null;
+        }
+        Cursor.lockState=previousCursorLock;Cursor.visible=previousCursorVisible;
+        worldPaused=false;
     }
     void InvokeSafely(UnityEvent callback)
     {

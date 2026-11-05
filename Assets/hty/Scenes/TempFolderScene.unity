@@ -603,6 +603,10 @@ PrefabInstance:
       propertyPath: frequency
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 6106572771488958144, guid: 14adedc8114de5241afca47efe99d239, type: 3}
+      propertyPath: shakeHeight
+      value: 0.068
+      objectReference: {fileID: 0}
     - target: {fileID: 6148260923076279825, guid: 14adedc8114de5241afca47efe99d239, type: 3}
       propertyPath: m_Name
       value: TempFolderStage

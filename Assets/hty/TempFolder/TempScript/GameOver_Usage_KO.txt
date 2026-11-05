@@ -7,9 +7,9 @@ GameOverSequenceController.IsPlaying; // 화면 표시 중인지 확인
 
 시간 순서(실제 시간 기준, Time.timeScale=0에서도 작동)
 0.0초: 중앙 캐릭터와 조명, 오른쪽 위 입력 애니메이션
-1.2초: 오른쪽 초록 말풍선
-1.7초: 왼쪽 중앙 입력 애니메이션
-2.2초: 왼쪽 회색 말풍선, On Sequence Completed 호출
+2.0초: 오른쪽 초록 말풍선
+2.5초: 왼쪽 중앙 입력 애니메이션
+4.0초: 왼쪽 회색 말풍선, On Sequence Completed 호출
 마지막 화면과 조명 깜빡임은 StopGameOver를 호출할 때까지 유지됩니다.
 
 추가 구현 연결
@@ -18,7 +18,10 @@ On Sequence Completed / On Stopped에 다른 컴포넌트의 public void 함수�
 코드에서도 controller.onSequenceCompleted.AddListener(MyNextStep)으로 연결할 수 있습니다.
 해제 시 RemoveListener(MyNextStep)을 호출하세요.
 이벤트에서 다음 씬 전환, 재시작 UI 등을 추가할 수 있습니다.
-현재 게임 로직 정지, 사망 판정 및 씬 전환은 자동으로 실행하지 않습니다.
+시작 시 Time.timeScale을 0으로 설정하고 진행 중인 DOTween 연출을 일시정지합니다.
+장막과 크로스헤어도 멈추고, 게임 오버 조명/메시지는 실제 시간으로 계속 진행합니다.
+StopGameOver 또는 컨트롤러 비활성화 시 이전 시간 배율과 트윈 재생 상태를 복구합니다.
+사망 판정 및 씬 전환은 외부 게임 로직에서 연결하세요.
 
 Right Message / Left Message에 문구를 입력할 수 있습니다.
 한글 표시가 필요하면 Message 오브젝트의 Text에 프로젝트의 한글 지원 Font를 연결하세요.
@@ -26,3 +29,7 @@ Right Message / Left Message에 문구를 입력할 수 있습니다.
 
 테스트: 플레이 모드에서 GameOverSequenceController 컴포넌트 메뉴의
 Test > Play Game Over / Stop Game Over를 실행하세요.
+
+캐릭터 페이드: GameOverSequenceController의 Character Fade Duration (기본 0.8초).
+빛 Bloom: BadEndLight의 GameOverLightBloom에서 Light Emission, Bloom Intensity, Threshold, Scatter 조절.
+빛만 별도 HDR RenderTexture와 URP Bloom을 거쳐 합성하며 기존 Main Camera 설정은 변경하지 않습니다.
