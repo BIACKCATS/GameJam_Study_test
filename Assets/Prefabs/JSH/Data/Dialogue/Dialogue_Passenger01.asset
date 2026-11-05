@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Dialogue_Passenger01
   m_EditorClassIdentifier: Assembly-CSharp::JSH.Data.DialogueData
   _nodes:
-  - _speaker: "\uD560\uBA38\uB2C8"
+  - _speaker: 
     _text: "\uC544\uC774\uACE0 \uC80A\uC740\uC774..."
     _choices:
     - _text: "\uC790\uB9AC \uBE44\uCF1C\uB4DC\uB9B4\uAC8C\uC694"

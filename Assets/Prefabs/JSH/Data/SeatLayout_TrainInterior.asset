@@ -13,21 +13,21 @@ MonoBehaviour:
   m_Name: SeatLayout_TrainInterior
   m_EditorClassIdentifier: Assembly-CSharp::JSH.Data.SeatLayout
   _seats:
-  - LocalPosition: {x: -6.47, y: 0.04}
+  - LocalPosition: {x: -8.994, y: 0.04}
     FlipX: 0
-  - LocalPosition: {x: -5.32, y: 0.04}
+  - LocalPosition: {x: -6.794, y: 0.04}
     FlipX: 0
-  - LocalPosition: {x: -4.16, y: 0.04}
+  - LocalPosition: {x: -4.594, y: 0.04}
     FlipX: 0
-  - LocalPosition: {x: -3.01, y: 0.04}
+  - LocalPosition: {x: -2.394, y: 0.04}
     FlipX: 0
-  - LocalPosition: {x: 2.64, y: 0.04}
+  - LocalPosition: {x: -0.194, y: 0.04}
     FlipX: 1
-  - LocalPosition: {x: 3.8, y: 0.04}
+  - LocalPosition: {x: 2.006, y: 0.04}
     FlipX: 1
-  - LocalPosition: {x: 4.96, y: 0.04}
+  - LocalPosition: {x: 4.2060003, y: 0.04}
     FlipX: 1
-  - LocalPosition: {x: 6.13, y: 0.04}
+  - LocalPosition: {x: 6.406, y: 0.04}
     FlipX: 1
-  - LocalPosition: {x: 7.3, y: 0.04}
+  - LocalPosition: {x: 8.606, y: 0.04}
     FlipX: 1

@@ -1,0 +1,98 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4077a66a6a6c7d34186db62317c0cd8a, type: 3}
+  m_Name: Dialogue_Villain_knight_01
+  m_EditorClassIdentifier: Assembly-CSharp::JSH.Data.DialogueData
+  _nodes:
+  - _speaker: 
+    _text: "\uC548\uB155\uD558\uC2E0\uAC00. \uB204\uAD6C\uB0D0\uACE0 \uBB3C\uC5B4\uBCF8\uB2E4\uBA74
+      \uB0B4 \uC774\uB984\uC740 \uC648\uB3C4."
+    _choices:
+    - _text: "\uC120\uC0DD\uB2D8... \uB300\uCCB4 \uC65C...\uC5B4\uCA4C\uB2E4"
+      _nextNode: 1
+      _effect: 0
+    - _text: "\uD798\uC384\uACE0 \uAC15\uD55C \uC544\uCE68. \uB204\uAD6C\uB0D0\uACE0
+        \uBB3C\uC5B4\uBCF8\uB2E4\uBA74 \uB0B4 \uC774\uB984\uC740 \uC288\uD37C \uC194\uC838."
+      _nextNode: 2
+      _effect: 0
+    _nextNode: -1
+    _outcome: 0
+  - _speaker: 
+    _text: "....\uAE30\uC0AC\uC758 \uC785\uC73C\uB85C \uC65C\uC778\uC9C0 \uC124\uBA85\uD558\uB294
+      \uAC83\uBCF4\uB2E4, \uAE30\uC0AC\uC758 \uAE0D\uC9C0\uB85C \uC124\uBA85\uD558\uB294
+      \uAC83\uC774 \uC633\uC9C0."
+    _choices:
+    - _text: "...\uC138\uC0C1\uC5D0 \uB9D9\uC18C\uC0AC."
+      _nextNode: 3
+      _effect: 0
+    - _text: "\uCEE8\uC149\uC5D0 \uC7A1\uC544 \uBA39\uD788\uB2E4\uB2C8, \uB0B4\uB9AC\uC2DC\uAE38
+        \uBC14\uB78D\uB2C8\uB2E4."
+      _nextNode: 4
+      _effect: 0
+    _nextNode: -1
+    _outcome: 0
+  - _speaker: 
+    _text: "\uC790\uB124\uB3C4 \uAE30\uC0AC\uC778\uAC00! \uADF8\uB807\uB2E4\uBA74
+      \uC99D\uBA85\uD558\uB77C!"
+    _choices:
+    - _text: "\uD0DC\uC591 \uB9CC\uC138!!!!!"
+      _nextNode: 5
+      _effect: 0
+    - _text: "\uADF8\uB9CC\uD558\uC2ED\uC2DC\uC624."
+      _nextNode: 6
+      _effect: 0
+    _nextNode: -1
+    _outcome: 0
+  - _speaker: 
+    _text: "\uC774 \uBE5B\uC744 \uBCF4\uB77C! \uC774 \uCC2C\uB780\uD558\uAC8C \uBE5B\uB098\uB294
+      \uBE5B\uC744!"
+    _choices:
+    - _text: "\uC800, \uCF54\uC2A4\uD504\uB808 \uD589\uC0AC\uB294 \uC5ED\uC744 \uD55C\uBC88
+        \uC9C0\uB098\uCCE4\uC2B5\uB2C8\uB2E4\uB9CC."
+      _nextNode: 7
+      _effect: 0
+    - _text: "\uBE5B\uC774\uACE0 \uC790\uC2DC\uACE0, \uC2DC\uB044\uB7FD\uAC8C \uD558\uC9C0
+        \uB9D0\uACE0 \uB0B4\uB824\uC8FC\uC138\uC694."
+      _nextNode: 8
+      _effect: 0
+    _nextNode: -1
+    _outcome: 0
+  - _speaker: 
+    _text: "\uB098\uC758 \uBAB8\uC740 \uAE30\uC0AC\uC655\uC744 \uC704\uD574 \uC874\uC7AC\uD55C\uB2E4.
+      \uB098\uB294 \uD328\uBC30\uD560 \uC218 \uC5C6\uC5B4!"
+    _choices: []
+    _nextNode: -1
+    _outcome: 2
+  - _speaker: 
+    _text: "\uB9CC\uC871\uC2A4\uB7FD\uAD70. \uC790\uB124\uB294 \uC644\uBCBD\uD55C
+      \uAE30\uC0AC\uC778\uAC00?"
+    _choices: []
+    _nextNode: -1
+    _outcome: 1
+  - _speaker: 
+    _text: "\uBB50....\uBB63? \uD55C\uB0B1 \uACF5\uC775\uC774 \uC774 \uAE30\uC0AC\uC5D0\uAC8C
+      \uBAA8\uC695\uC744?"
+    _choices: []
+    _nextNode: -1
+    _outcome: 2
+  - _speaker: 
+    _text: "\uC5B4... \uC608? \uC804 \uC5ED\uC774\uC5C8\uC2B5\uB2C8\uAE4C? \uD558
+      \uC528...\uC870\uC6A9\uD788 \uAC08\uAC8C\uC694."
+    _choices: []
+    _nextNode: -1
+    _outcome: 1
+  - _speaker: 
+    _text: "\uD0DC\uC591\uC774 \uB0B4\uB9AC\uB294 \uBE5B\uC744 \uBAA8\uC695\uD558\uB2E4\uB2C8!
+      \uC804\uD22C\uB2E4!"
+    _choices: []
+    _nextNode: -1
+    _outcome: 2

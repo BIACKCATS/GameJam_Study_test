@@ -152,8 +152,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b90c39d740088694ea6b98e074717548, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::JSH.Gameplay.Talkable
-  _displayName: "\uBE4C\uB7F0"
-  _dialogue: {fileID: 11400000, guid: 6c38cb48ef5e9564f8540412f8b0f2c8, type: 2}
+  _displayName: "\uB2E8\uC18C \uC544\uC800\uC528"
+  _dialogue: {fileID: 11400000, guid: 2614c928787362c47841ae1ed38dcfef, type: 2}
   _portrait: {fileID: 0}
   _timingOverride: {fileID: 0}
 --- !u!114 &3279780906915174035

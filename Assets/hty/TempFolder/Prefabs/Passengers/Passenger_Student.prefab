@@ -175,6 +175,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::JSH.Gameplay.Talkable
   _displayName: "\uD559\uC0DD"
-  _dialogue: {fileID: 11400000, guid: e4fb0bf2d3f86884caf773de90b1841d, type: 2}
+  _dialogue: {fileID: 11400000, guid: a0251610796352348855254f776d5eb3, type: 2}
   _portrait: {fileID: 0}
   _timingOverride: {fileID: 0}
