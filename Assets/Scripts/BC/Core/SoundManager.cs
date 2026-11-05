@@ -92,17 +92,33 @@ namespace BC.Core
 
         /// <summary>
         /// Plays any sound effect from <see cref="SoundNames"/>.
-        /// One-shots release themselves when finished. Looping events (Turn_On_The_light, Writing, Letter_adding)
+        /// One-shots release themselves when finished. Looping events (Turn_On_The_light, Writing, Letter_adding, StartMusic, FinalMusic)
         /// keep playing until <see cref="StopSound"/>; calling PlaySound again for a loop that is already playing
         /// only updates its volume instead of stacking a second copy.
         /// </summary>
         public void PlaySound(string soundName, float masterVolume)
         {
+            PlaySound(soundName, masterVolume, null, 0f);
+        }
+
+        /// <summary>
+        /// Same as above, also setting one extra local parameter before the sound starts
+        /// (e.g. PlaySound(SoundNames.Firework, 0.8f, SoundNames.FireworkParameter, 1f)).
+        /// For a loop that is already playing, the parameter is updated live.
+        /// </summary>
+        public void PlaySound(string soundName, float masterVolume, string parameterName, float parameterValue)
+        {
             float volume = Mathf.Clamp01(masterVolume);
+            bool hasParameter = !string.IsNullOrEmpty(parameterName);
 
             if (_loopingSounds.TryGetValue(soundName, out EventInstance playing) && playing.isValid())
             {
                 SetParameter(playing, MasterVolumeParameter, volume);
+                if (hasParameter)
+                {
+                    SetParameter(playing, parameterName, parameterValue);
+                }
+
                 return;
             }
 
@@ -112,6 +128,11 @@ namespace BC.Core
             }
 
             SetParameter(instance, MasterVolumeParameter, volume);
+            if (hasParameter)
+            {
+                SetParameter(instance, parameterName, parameterValue);
+            }
+
             instance.start();
 
             if (IsLooping(instance))

@@ -54,7 +54,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 5871
+  Length: 15328
 --- !u!114 &-8490083920618273799
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -126,10 +126,62 @@ MonoBehaviour:
   Path: Assets/SJM/SFX/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639295380922495965
+  lastModified: 639295491547508154
   FileSizes:
   - Name: Desktop
-    Value: 7392736
+    Value: 11098304
+  Exists: 1
+--- !u!114 &-6547397912676227397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/FinalMusic
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/FinalMusic
+  Guid:
+    Data1: 647582402
+    Data2: 1144594937
+    Data3: 307957401
+    Data4: -1075161635
+  Banks:
+  - {fileID: -6901945915543662025}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -5984154971678560160}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 132840
+--- !u!114 &-5984154971678560160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/FinalMusic/MasterVolume
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorParamRef
+  Name: MasterVolume
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 77835844
+    data2: 1883175618
+  Type: 0
+  IsGlobal: 0
+  Labels: []
   Exists: 1
 --- !u!114 &-5525619972882395770
 MonoBehaviour:
@@ -198,10 +250,10 @@ MonoBehaviour:
   Path: Assets/SJM/SFX/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639295380922521057
+  lastModified: 639295491547528166
   FileSizes:
   - Name: Desktop
-    Value: 1950
+    Value: 2130
   Exists: 1
 --- !u!114 &-4562327427253414294
 MonoBehaviour:
@@ -410,7 +462,7 @@ MonoBehaviour:
   - {fileID: 5507661879576740520}
   MinDistance: 1
   MaxDistance: 20
-  Length: 992
+  Length: 958
 --- !u!114 &-1082885132406420493
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -450,6 +502,30 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
   m_Name: parameter:/Turn_Off_The_light/MasterVolume
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorParamRef
+  Name: MasterVolume
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 77835844
+    data2: 1883175618
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-435342716094233169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/StartMusic/MasterVolume
   m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorParamRef
   Name: MasterVolume
   StudioPath: 
@@ -555,13 +631,16 @@ MonoBehaviour:
   - {fileID: -8812600894357531720}
   - {fileID: 9191273185287664927}
   - {fileID: 1899285127226114881}
+  - {fileID: 4637795737543185516}
+  - {fileID: 5923203319373076473}
+  - {fileID: -6547397912676227397}
   EditorParameters: []
   MasterBanks:
   - {fileID: -6901945915543662025}
   StringsBanks:
   - {fileID: -5416950850475863660}
   cacheVersion: 131861
-  cacheTime: 639295380922521057
+  cacheTime: 639295491547528166
   SerializableEventsDict:
   - key: event:/Attack
     index: 0
@@ -626,6 +705,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 181410
+--- !u!114 &417719493954044829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Firework/firework
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorParamRef
+  Name: firework
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 941268985
+    data2: 4092971723
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &1086165005695537062
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -665,6 +768,30 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
   m_Name: parameter:/Stopping_Train/MasterVolume
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorParamRef
+  Name: MasterVolume
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 77835844
+    data2: 1883175618
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &1420667207802803513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Firework/MasterVolume
   m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorParamRef
   Name: MasterVolume
   StudioPath: 
@@ -1011,6 +1138,35 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &4637795737543185516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Firework
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Firework
+  Guid:
+    Data1: 1260457007
+    Data2: 1152605751
+    Data3: 158380211
+    Data4: 1660648045
+  Banks:
+  - {fileID: -6901945915543662025}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 1420667207802803513}
+  - {fileID: 417719493954044829}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4727
 --- !u!114 &5153878838744778946
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1087,6 +1243,34 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &5923203319373076473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/StartMusic
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/StartMusic
+  Guid:
+    Data1: 673406869
+    Data2: 1288669402
+    Data3: -643077205
+    Data4: -116756266
+  Banks:
+  - {fileID: -6901945915543662025}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -435342716094233169}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 215040
 --- !u!114 &6081784509037442938
 MonoBehaviour:
   m_ObjectHideFlags: 0
