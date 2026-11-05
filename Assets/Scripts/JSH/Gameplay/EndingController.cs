@@ -1,4 +1,5 @@
 using JSH.Core;
+using JSH.Data;
 using UnityEngine;
 
 namespace JSH.Gameplay
@@ -17,6 +18,8 @@ namespace JSH.Gameplay
         [Tooltip("Seconds between the trigger and the ending screen (scaled time; pausing delays it).")]
         [SerializeField, Min(0f)] private float _badEndingDelay = 1f;
         [SerializeField, Min(0f)] private float _goodEndingDelay = 0.5f;
+        [Tooltip("Play the game-over / true-ending presentations (TempFolderStage) after the state change.")]
+        [SerializeField] private bool _playPresentations = true;
 
         private Ending _pending = Ending.None;
         private float _timer;
@@ -76,6 +79,26 @@ namespace JSH.Gameplay
             }
             if (ending == Ending.Bad) GameManager.Instance.GameOver();
             else GameManager.Instance.Clear();
+
+            if (_playPresentations) PlayPresentation(ending);
+        }
+
+        // Teammate presentations (hty TempFolderStage: GameOverPresentation / TrueEndingPresentation).
+        // Their "Re" buttons return to the title scene. If a presentation is missing, GameFlowUI's panel stays the fallback.
+        private static void PlayPresentation(Ending ending)
+        {
+            if (ending == Ending.Bad)
+            {
+                GameOverSequenceController.PlayGameOver();
+                return;
+            }
+
+            TrueEndingController.PlayTrueEnding(
+                EmbracedVillains.IsEmbraced(VillainId.Danso),
+                EmbracedVillains.IsEmbraced(VillainId.SleepyMan),
+                EmbracedVillains.IsEmbraced(VillainId.HipHop),
+                EmbracedVillains.IsEmbraced(VillainId.Jarvan),
+                EmbracedVillains.IsEmbraced(VillainId.Knight));
         }
     }
 }

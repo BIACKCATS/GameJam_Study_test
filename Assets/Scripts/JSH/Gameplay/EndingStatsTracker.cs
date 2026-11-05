@@ -34,6 +34,7 @@ namespace JSH.Gameplay
             _embraced = 0;
             _notEmbraced = 0;
             _mistakes = 0;
+            EmbracedVillains.Clear();
             Publish();
 
             EventBus<VillainConvertedEvent>.Subscribe(OnConverted);
@@ -55,6 +56,7 @@ namespace JSH.Gameplay
         private void OnConverted(VillainConvertedEvent evt)
         {
             _embraced++;
+            if (evt.Villain != null) EmbracedVillains.Mark(evt.Villain.Id);
             Publish();
         }
 
@@ -97,7 +99,12 @@ namespace JSH.Gameplay
         {
             EndingStats s = Build();
             Debug.Log($"[EndingStatsTracker] reports={s.ReportCount} embraced={s.EmbracedCount} " +
-                      $"notEmbraced={s.NotEmbracedCount} mistakes={s.MistakeCount} grade={s.Grade}", this);
+                      $"notEmbraced={s.NotEmbracedCount} mistakes={s.MistakeCount} grade={s.Grade} " +
+                      $"embracedVillains: danso={EmbracedVillains.IsEmbraced(VillainId.Danso)} " +
+                      $"sleepyMan={EmbracedVillains.IsEmbraced(VillainId.SleepyMan)} " +
+                      $"hipHop={EmbracedVillains.IsEmbraced(VillainId.HipHop)} " +
+                      $"jarvan={EmbracedVillains.IsEmbraced(VillainId.Jarvan)} " +
+                      $"knight={EmbracedVillains.IsEmbraced(VillainId.Knight)}", this);
         }
 
         private void Publish() => EndingStats.SetLast(Build());

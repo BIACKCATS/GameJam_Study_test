@@ -14,10 +14,14 @@ namespace JSH.Gameplay
     [RequireComponent(typeof(Talkable))]
     public class Villain : MonoBehaviour, IPoolable
     {
+        [Tooltip("Named villain for the true ending lineup. None = generic (never shown).")]
+        [SerializeField] private VillainId _id = VillainId.None;
+
         private Talkable _talkable;
         private bool _isConverted;
         private bool _isDefeated;
 
+        public VillainId Id => _id;
         public bool IsConverted => _isConverted;
         public bool IsDefeated => _isDefeated;
         public bool IsResolved => _isConverted || _isDefeated;
