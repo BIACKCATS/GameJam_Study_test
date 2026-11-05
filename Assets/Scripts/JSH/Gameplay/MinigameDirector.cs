@@ -37,6 +37,7 @@ namespace JSH.Gameplay
         private MinigameType _eventType = MinigameType.None;
         private DialogueOutcome _goal = DialogueOutcome.None;
         private float _eventTimer;
+        private Func<bool> _eventHold;
 
         public bool IsActive => _target != null;
         public Talkable CurrentTarget => _target;
@@ -128,7 +129,7 @@ namespace JSH.Gameplay
             else if (_eventType != MinigameType.None)
             {
                 _eventTimer -= dt;
-                if (_eventTimer <= 0f) FinishEvent();
+                if (_eventTimer <= 0f && (_eventHold == null || !_eventHold())) FinishEvent();
             }
         }
 
@@ -218,6 +219,18 @@ namespace JSH.Gameplay
             bool removed = TrainProgress.HasInstance && TrainProgress.Instance.CurrentCar != null
                            && TrainProgress.Instance.CurrentCar.RemoveNpc(npc);
             if (!removed) npc.gameObject.SetActive(false); // hand-placed NPC outside the car's pool
+        }
+
+        /// <summary>
+        /// Eject / Counterattack sessions stay open past their duration while hold() returns true
+        /// (e.g. a presentation is still playing). One hold at a time; null clears it.
+        /// </summary>
+        public void SetEventHold(Func<bool> hold) => _eventHold = hold;
+
+        /// <summary>Clear the hold only if it is still the given one.</summary>
+        public void ClearEventHold(Func<bool> hold)
+        {
+            if (_eventHold == hold) _eventHold = null;
         }
 
         /// <summary>Abort without applying results (e.g. ending screen).</summary>
