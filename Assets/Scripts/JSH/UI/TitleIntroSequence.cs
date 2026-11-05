@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using DG.Tweening;
 using UnityEngine;
 using UnityEngine.Events;
@@ -52,7 +53,9 @@ namespace JSH.UI
 
         [SerializeField] private Entry[] _entries = Array.Empty<Entry>();
         [SerializeField] private bool _playOnStart = true;
-        [SerializeField, Min(0f)] private float _initialDelay = 0.2f;
+        [SerializeField, Min(0f)] private float _initialDelay = 0.3f;
+        [Tooltip("Frames to wait after scene load before starting (avoids load-hitch fast-forward).")]
+        [SerializeField, Min(0)] private int _skipFrames = 2;
         [Tooltip("Click / any key completes the intro immediately.")]
         [SerializeField] private bool _skipOnInput = true;
         [Tooltip("Optional: buttons root. Not interactable until the intro finishes.")]
@@ -112,12 +115,21 @@ namespace JSH.UI
             }
         }
 
-        private void Start()
+        private IEnumerator Start()
         {
-            if (_playOnStart)
+            if (!_playOnStart)
             {
-                Play();
+                yield break;
             }
+
+            // Skip the scene-load frames: their huge unscaled deltaTime would
+            // fast-forward the sequence so elements appear to pop in instantly.
+            for (int i = 0; i < _skipFrames; i++)
+            {
+                yield return null;
+            }
+
+            Play();
         }
 
         private void Update()
