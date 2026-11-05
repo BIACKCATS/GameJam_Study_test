@@ -51,6 +51,7 @@ public sealed class GongikNagaController : MonoBehaviour
     /// Returns false and logs an error if input/references are invalid or another event is busy.</summary>
     public static bool Play(string villainKey)
     {
+        if(TrueEndingController.IsPlaying)return false;
         if (!instance || !instance.isActiveAndEnabled) { Debug.LogError("GongikNagaController: Place an active GongikNaga prefab in the scene."); return false; }
         return instance.Begin(villainKey);
     }

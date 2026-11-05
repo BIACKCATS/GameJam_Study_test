@@ -1,0 +1,2236 @@
+fileFormatVersion: 2
+guid: d29579ad81c778f4ab14679b62aa7f7d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2026570867694395669
+    second: Firework_RedGreen_Spritesheet_0
+  - first:
+      213: 2073737679295173443
+    second: Firework_RedGreen_Spritesheet_1
+  - first:
+      213: -6290831803983734202
+    second: Firework_RedGreen_Spritesheet_2
+  - first:
+      213: 8303774783004948160
+    second: Firework_RedGreen_Spritesheet_3
+  - first:
+      213: 2011807121298795191
+    second: Firework_RedGreen_Spritesheet_4
+  - first:
+      213: -6003572845090522150
+    second: Firework_RedGreen_Spritesheet_5
+  - first:
+      213: -556749653009982854
+    second: Firework_RedGreen_Spritesheet_6
+  - first:
+      213: -3836873172819533471
+    second: Firework_RedGreen_Spritesheet_7
+  - first:
+      213: -4333730953780178075
+    second: Firework_RedGreen_Spritesheet_8
+  - first:
+      213: 4631028490742686368
+    second: Firework_RedGreen_Spritesheet_9
+  - first:
+      213: 4730822670195533200
+    second: Firework_RedGreen_Spritesheet_10
+  - first:
+      213: 6406549761721844805
+    second: Firework_RedGreen_Spritesheet_11
+  - first:
+      213: -2759472597806308624
+    second: Firework_RedGreen_Spritesheet_12
+  - first:
+      213: -9138607789225741913
+    second: Firework_RedGreen_Spritesheet_13
+  - first:
+      213: -625195998802809135
+    second: Firework_RedGreen_Spritesheet_14
+  - first:
+      213: -540278792600442522
+    second: Firework_RedGreen_Spritesheet_15
+  - first:
+      213: 2299919826359636854
+    second: Firework_RedGreen_Spritesheet_16
+  - first:
+      213: -6418818493771524321
+    second: Firework_RedGreen_Spritesheet_17
+  - first:
+      213: -1063468727686494055
+    second: Firework_RedGreen_Spritesheet_18
+  - first:
+      213: -6601896537397439758
+    second: Firework_RedGreen_Spritesheet_19
+  - first:
+      213: 5049958530784378057
+    second: Firework_RedGreen_Spritesheet_20
+  - first:
+      213: -6655573383819187891
+    second: Firework_RedGreen_Spritesheet_21
+  - first:
+      213: 7401928574836515006
+    second: Firework_RedGreen_Spritesheet_22
+  - first:
+      213: -4553136778233619735
+    second: Firework_RedGreen_Spritesheet_23
+  - first:
+      213: 4514735352335606794
+    second: Firework_RedGreen_Spritesheet_24
+  - first:
+      213: -4604299048829235370
+    second: Firework_RedGreen_Spritesheet_25
+  - first:
+      213: 4887489177232604227
+    second: Firework_RedGreen_Spritesheet_26
+  - first:
+      213: 808677586036287417
+    second: Firework_RedGreen_Spritesheet_27
+  - first:
+      213: -8173451563410141628
+    second: Firework_RedGreen_Spritesheet_28
+  - first:
+      213: -8039987426607378498
+    second: Firework_RedGreen_Spritesheet_29
+  - first:
+      213: -9037940424292032851
+    second: Firework_RedGreen_Spritesheet_30
+  - first:
+      213: 1867125150512666041
+    second: Firework_RedGreen_Spritesheet_31
+  - first:
+      213: -7984272124807138849
+    second: Firework_RedGreen_Spritesheet_32
+  - first:
+      213: 7048580319198152885
+    second: Firework_RedGreen_Spritesheet_33
+  - first:
+      213: -1350824512495681265
+    second: Firework_RedGreen_Spritesheet_34
+  - first:
+      213: -4329643226753157264
+    second: Firework_RedGreen_Spritesheet_35
+  - first:
+      213: 6926358943788042265
+    second: Firework_RedGreen_Spritesheet_36
+  - first:
+      213: 3393356169184460959
+    second: Firework_RedGreen_Spritesheet_37
+  - first:
+      213: -6129340511960701078
+    second: Firework_RedGreen_Spritesheet_38
+  - first:
+      213: -6225290713110616022
+    second: Firework_RedGreen_Spritesheet_39
+  - first:
+      213: -594355503559560660
+    second: Firework_RedGreen_Spritesheet_40
+  - first:
+      213: 622210364072662041
+    second: Firework_RedGreen_Spritesheet_41
+  - first:
+      213: 873351285752655734
+    second: Firework_RedGreen_Spritesheet_42
+  - first:
+      213: -3587875598212289977
+    second: Firework_RedGreen_Spritesheet_43
+  - first:
+      213: 6921322957977247914
+    second: Firework_RedGreen_Spritesheet_44
+  - first:
+      213: 1116233416068760960
+    second: Firework_RedGreen_Spritesheet_45
+  - first:
+      213: -133167721459212775
+    second: Firework_RedGreen_Spritesheet_46
+  - first:
+      213: 3342725394281269848
+    second: Firework_RedGreen_Spritesheet_47
+  - first:
+      213: 3454703901653777799
+    second: Firework_RedGreen_Spritesheet_48
+  - first:
+      213: -6186119690957109087
+    second: Firework_RedGreen_Spritesheet_49
+  - first:
+      213: 5645851573959893296
+    second: Firework_RedGreen_Spritesheet_50
+  - first:
+      213: 2486346483560480431
+    second: Firework_RedGreen_Spritesheet_51
+  - first:
+      213: -6762851727704156598
+    second: Firework_RedGreen_Spritesheet_52
+  - first:
+      213: -1373530440290777943
+    second: Firework_RedGreen_Spritesheet_53
+  - first:
+      213: 7526885648448944358
+    second: Firework_RedGreen_Spritesheet_54
+  - first:
+      213: -8907783915562850588
+    second: Firework_RedGreen_Spritesheet_55
+  - first:
+      213: 890363195060983517
+    second: Firework_RedGreen_Spritesheet_56
+  - first:
+      213: 7317241574621095764
+    second: Firework_RedGreen_Spritesheet_57
+  - first:
+      213: 8555212373439578281
+    second: Firework_RedGreen_Spritesheet_58
+  - first:
+      213: 7989854201888505320
+    second: Firework_RedGreen_Spritesheet_59
+  - first:
+      213: -8809311269584437737
+    second: Firework_RedGreen_Spritesheet_60
+  - first:
+      213: -6230714878931299755
+    second: Firework_RedGreen_Spritesheet_61
+  - first:
+      213: 5634162967374535263
+    second: Firework_RedGreen_Spritesheet_62
+  - first:
+      213: -7053386961616897094
+    second: Firework_RedGreen_Spritesheet_63
+  - first:
+      213: -3519645040054696776
+    second: Firework_RedGreen_Spritesheet_64
+  - first:
+      213: 7423043290644498480
+    second: Firework_RedGreen_Spritesheet_65
+  - first:
+      213: 7804443419205497566
+    second: Firework_RedGreen_Spritesheet_66
+  - first:
+      213: 5026941302498817565
+    second: Firework_RedGreen_Spritesheet_67
+  - first:
+      213: 6619455929024583527
+    second: Firework_RedGreen_Spritesheet_68
+  - first:
+      213: -4730903710361887095
+    second: Firework_RedGreen_Spritesheet_69
+  - first:
+      213: 4281540707162655595
+    second: Firework_RedGreen_Spritesheet_70
+  - first:
+      213: 682215839196440427
+    second: Firework_RedGreen_Spritesheet_71
+  - first:
+      213: -768519542016428403
+    second: Firework_RedGreen_Spritesheet_72
+  - first:
+      213: 4511395979600808155
+    second: Firework_RedGreen_Spritesheet_73
+  - first:
+      213: -5562780014473428672
+    second: Firework_RedGreen_Spritesheet_74
+  - first:
+      213: -1438355325695657506
+    second: Firework_RedGreen_Spritesheet_75
+  - first:
+      213: -1836392892594824097
+    second: Firework_RedGreen_Spritesheet_76
+  - first:
+      213: 7228767809267653432
+    second: Firework_RedGreen_Spritesheet_77
+  - first:
+      213: 4656453438598105354
+    second: Firework_RedGreen_Spritesheet_78
+  - first:
+      213: -6400774835129465728
+    second: Firework_RedGreen_Spritesheet_79
+  - first:
+      213: 8414346462917235869
+    second: Firework_RedGreen_Spritesheet_80
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Firework_RedGreen_Spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 555
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51164198773df1c10800000000000000
+      internalID: 2026570867694395669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_RedGreen_Spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 530
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3435bb3ae6567cc10800000000000000
+      internalID: 2073737679295173443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_RedGreen_Spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 544
+        width: 35
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64ad1d5fdc972b8a0800000000000000
+      internalID: -6290831803983734202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_RedGreen_Spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 536
+        width: 53
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c63bdb7b2fec3370800000000000000
+      internalID: 8303774783004948160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_RedGreen_Spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 410
+        width: 17
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7baad95faef5beb10800000000000000
+      internalID: 2011807121298795191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_RedGreen_Spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 408
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adbb2314e460faca0800000000000000
+      internalID: -6003572845090522150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_RedGreen_Spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 419
+        width: 13
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7a948fe3270648f0800000000000000
+      internalID: -556749653009982854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_RedGreen_Spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 413
+        width: 19
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 161addd8d20b0cac0800000000000000
+      internalID: -3836873172819533471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_RedGreen_Spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 427
+        width: 12
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56351db98ae7bd3c0800000000000000
+      internalID: -4333730953780178075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_RedGreen_Spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 411
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a26e6740e7b44040800000000000000
+      internalID: 4631028490742686368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_RedGreen_Spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 418
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 095ae50572247a140800000000000000
+      internalID: 4730822670195533200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_RedGreen_Spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 433
+        width: 13
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5444b4f9013a8e850800000000000000
+      internalID: 6406549761721844805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_RedGreen_Spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 415
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f2a458ea4264b9d0800000000000000
+      internalID: -2759472597806308624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_RedGreen_Spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 403
+        width: 27
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a1f49552a42d2180800000000000000
+      internalID: -9138607789225741913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_RedGreen_Spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 401
+        width: 18
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1deec503d8bd257f0800000000000000
+      internalID: -625195998802809135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_RedGreen_Spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 401
+        width: 20
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 669af57fc4b8088f0800000000000000
+      internalID: -540278792600442522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_RedGreen_Spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 397
+        width: 27
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6735b0685e4faef10800000000000000
+      internalID: 2299919826359636854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_RedGreen_Spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 406
+        width: 26
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f175a099696cbe6a0800000000000000
+      internalID: -6418818493771524321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_RedGreen_Spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 406
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9988280a3dccd31f0800000000000000
+      internalID: -1063468727686494055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_RedGreen_Spritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 402
+        width: 28
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f25b8cd31a5164a0800000000000000
+      internalID: -6601896537397439758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_RedGreen_Spritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 409
+        width: 26
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cc3bd5278e051640800000000000000
+      internalID: 5049958530784378057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_RedGreen_Spritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 404
+        width: 27
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d49a9e82547a2a3a0800000000000000
+      internalID: -6655573383819187891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_RedGreen_Spritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 412
+        width: 26
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb0a1fb52dee8b660800000000000000
+      internalID: 7401928574836515006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_RedGreen_Spritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 405
+        width: 26
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ea5e97493200d0c0800000000000000
+      internalID: -4553136778233619735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_RedGreen_Spritesheet_24
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 387
+        width: 27
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a04acd202ef87ae30800000000000000
+      internalID: 4514735352335606794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_RedGreen_Spritesheet_25
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 370
+        width: 21
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65f4dd2e86e3a10c0800000000000000
+      internalID: -4604299048829235370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_RedGreen_Spritesheet_26
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 369
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34cf38cf289d3d340800000000000000
+      internalID: 4887489177232604227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_RedGreen_Spritesheet_27
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 383
+        width: 27
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b7638ddafff83b00800000000000000
+      internalID: 808677586036287417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_RedGreen_Spritesheet_28
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 367
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44ec31e9b11129e80800000000000000
+      internalID: -8173451563410141628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_RedGreen_Spritesheet_29
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 387
+        width: 27
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebfc57e780a3c6090800000000000000
+      internalID: -8039987426607378498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_RedGreen_Spritesheet_30
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 362
+        width: 13
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dae1ee4b119c29280800000000000000
+      internalID: -9037940424292032851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_RedGreen_Spritesheet_31
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 382
+        width: 26
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b551839e6c59e910800000000000000
+      internalID: 1867125150512666041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_RedGreen_Spritesheet_32
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 385
+        width: 27
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd131d21eca223190800000000000000
+      internalID: -7984272124807138849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_RedGreen_Spritesheet_33
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 378
+        width: 27
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b88d90947691d160800000000000000
+      internalID: 7048580319198152885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_RedGreen_Spritesheet_34
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 382
+        width: 27
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f010eca4348e04de0800000000000000
+      internalID: -1350824512495681265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_RedGreen_Spritesheet_35
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 373
+        width: 26
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 077b339bc640ae3c0800000000000000
+      internalID: -4329643226753157264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_RedGreen_Spritesheet_36
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 362
+        width: 21
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 918065f03ce5f1060800000000000000
+      internalID: 6926358943788042265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_RedGreen_Spritesheet_37
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 358
+        width: 19
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f90ce94057f971f20800000000000000
+      internalID: 3393356169184460959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_RedGreen_Spritesheet_38
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 101
+        width: 164
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a67eb2d674530faa0800000000000000
+      internalID: -6129340511960701078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_RedGreen_Spritesheet_39
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 355
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a28e08554135b99a0800000000000000
+      internalID: -6225290713110616022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_RedGreen_Spritesheet_40
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 356
+        width: 11
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c22b80c81dc60c7f0800000000000000
+      internalID: -594355503559560660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_RedGreen_Spritesheet_41
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 168
+        width: 148
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9141e1e870982a800800000000000000
+      internalID: 622210364072662041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_RedGreen_Spritesheet_42
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 350
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67fea6ffd54ce1c00800000000000000
+      internalID: 873351285752655734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_RedGreen_Spritesheet_43
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 350
+        width: 14
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74aa34e172e453ec0800000000000000
+      internalID: -3587875598212289977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_RedGreen_Spritesheet_44
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 297
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa06dfd3f8a7d0060800000000000000
+      internalID: 6921322957977247914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_RedGreen_Spritesheet_45
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 278
+        width: 12
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 085033bb068ad7f00800000000000000
+      internalID: 1116233416068760960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_RedGreen_Spritesheet_46
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 301
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91e10e2b9a4e62ef0800000000000000
+      internalID: -133167721459212775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_RedGreen_Spritesheet_47
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 283
+        width: 14
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85a00db190fb36e20800000000000000
+      internalID: 3342725394281269848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_RedGreen_Spritesheet_48
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 263
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78dba3e05e291ff20800000000000000
+      internalID: 3454703901653777799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_RedGreen_Spritesheet_49
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 261
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a8c372aaec762aa0800000000000000
+      internalID: -6186119690957109087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_RedGreen_Spritesheet_50
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 258
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 031a570f7181a5e40800000000000000
+      internalID: 5645851573959893296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_RedGreen_Spritesheet_51
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 255
+        width: 26
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: faef92d14f6418220800000000000000
+      internalID: 2486346483560480431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_RedGreen_Spritesheet_52
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 264
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a469e8d4f268522a0800000000000000
+      internalID: -6762851727704156598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_RedGreen_Spritesheet_53
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 261
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a44842875d30fce0800000000000000
+      internalID: -1373530440290777943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_RedGreen_Spritesheet_54
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 254
+        width: 13
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e8f8cc3e9ed47860800000000000000
+      internalID: 7526885648448944358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_RedGreen_Spritesheet_55
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 256
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e620f869b1316480800000000000000
+      internalID: -8907783915562850588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_RedGreen_Spritesheet_56
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 254
+        width: 17
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd611bacb943b5c00800000000000000
+      internalID: 890363195060983517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_RedGreen_Spritesheet_57
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 252
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 457a20791701c8560800000000000000
+      internalID: 7317241574621095764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_RedGreen_Spritesheet_58
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 255
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a084e083583ab670800000000000000
+      internalID: 8555212373439578281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_RedGreen_Spritesheet_59
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 246
+        width: 20
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8edf9b6801aa1ee60800000000000000
+      internalID: 7989854201888505320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_RedGreen_Spritesheet_60
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 243
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71ef294f21a0fb580800000000000000
+      internalID: -8809311269584437737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_RedGreen_Spritesheet_61
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 247
+        width: 17
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5521f8054dd0889a0800000000000000
+      internalID: -6230714878931299755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_RedGreen_Spritesheet_62
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 243
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5a15052e51903e40800000000000000
+      internalID: 5634162967374535263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_RedGreen_Spritesheet_63
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 229
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abbf379cde55d1e90800000000000000
+      internalID: -7053386961616897094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_RedGreen_Spritesheet_64
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 227
+        width: 19
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b40314eb75b72fc0800000000000000
+      internalID: -3519645040054696776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_RedGreen_Spritesheet_65
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 230
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 038463b3b82f30760800000000000000
+      internalID: 7423043290644498480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_RedGreen_Spritesheet_66
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 217
+        width: 22
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed2f067a0f3fe4c60800000000000000
+      internalID: 7804443419205497566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_RedGreen_Spritesheet_67
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 219
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d167e221b7843c540800000000000000
+      internalID: 5026941302498817565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_RedGreen_Spritesheet_68
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 211
+        width: 26
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7671dd798180ddb50800000000000000
+      internalID: 6619455929024583527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_RedGreen_Spritesheet_69
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 208
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98e5d4d0424785eb0800000000000000
+      internalID: -4730903710361887095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_RedGreen_Spritesheet_70
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 221
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6b0ecda6961b6b30800000000000000
+      internalID: 4281540707162655595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_RedGreen_Spritesheet_71
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 4
+        width: 254
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b67e273f0b7b77900800000000000000
+      internalID: 682215839196440427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_RedGreen_Spritesheet_72
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 185
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d863a2f5c8ba555f0800000000000000
+      internalID: -768519542016428403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_RedGreen_Spritesheet_73
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 193
+        width: 6
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd84b35bdb2bb9e30800000000000000
+      internalID: 4511395979600808155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_RedGreen_Spritesheet_74
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 187
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0414ba9bc090dc2b0800000000000000
+      internalID: -5562780014473428672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_RedGreen_Spritesheet_75
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 179
+        width: 21
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed97e17b37fe90ce0800000000000000
+      internalID: -1438355325695657506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_RedGreen_Spritesheet_76
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 103
+        width: 84
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5c55d0d462d386e0800000000000000
+      internalID: -1836392892594824097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_RedGreen_Spritesheet_77
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 184
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83b5d2bd50eb15460800000000000000
+      internalID: 7228767809267653432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_RedGreen_Spritesheet_78
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 150
+        width: 10
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0949c04bbb0f9040800000000000000
+      internalID: 4656453438598105354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_RedGreen_Spritesheet_79
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 174
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08449d04331eb27a0800000000000000
+      internalID: -6400774835129465728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firework_RedGreen_Spritesheet_80
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 179
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d941f33e683c5c470800000000000000
+      internalID: 8414346462917235869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Firework_RedGreen_Spritesheet_0: 2026570867694395669
+      Firework_RedGreen_Spritesheet_1: 2073737679295173443
+      Firework_RedGreen_Spritesheet_10: 4730822670195533200
+      Firework_RedGreen_Spritesheet_11: 6406549761721844805
+      Firework_RedGreen_Spritesheet_12: -2759472597806308624
+      Firework_RedGreen_Spritesheet_13: -9138607789225741913
+      Firework_RedGreen_Spritesheet_14: -625195998802809135
+      Firework_RedGreen_Spritesheet_15: -540278792600442522
+      Firework_RedGreen_Spritesheet_16: 2299919826359636854
+      Firework_RedGreen_Spritesheet_17: -6418818493771524321
+      Firework_RedGreen_Spritesheet_18: -1063468727686494055
+      Firework_RedGreen_Spritesheet_19: -6601896537397439758
+      Firework_RedGreen_Spritesheet_2: -6290831803983734202
+      Firework_RedGreen_Spritesheet_20: 5049958530784378057
+      Firework_RedGreen_Spritesheet_21: -6655573383819187891
+      Firework_RedGreen_Spritesheet_22: 7401928574836515006
+      Firework_RedGreen_Spritesheet_23: -4553136778233619735
+      Firework_RedGreen_Spritesheet_24: 4514735352335606794
+      Firework_RedGreen_Spritesheet_25: -4604299048829235370
+      Firework_RedGreen_Spritesheet_26: 4887489177232604227
+      Firework_RedGreen_Spritesheet_27: 808677586036287417
+      Firework_RedGreen_Spritesheet_28: -8173451563410141628
+      Firework_RedGreen_Spritesheet_29: -8039987426607378498
+      Firework_RedGreen_Spritesheet_3: 8303774783004948160
+      Firework_RedGreen_Spritesheet_30: -9037940424292032851
+      Firework_RedGreen_Spritesheet_31: 1867125150512666041
+      Firework_RedGreen_Spritesheet_32: -7984272124807138849
+      Firework_RedGreen_Spritesheet_33: 7048580319198152885
+      Firework_RedGreen_Spritesheet_34: -1350824512495681265
+      Firework_RedGreen_Spritesheet_35: -4329643226753157264
+      Firework_RedGreen_Spritesheet_36: 6926358943788042265
+      Firework_RedGreen_Spritesheet_37: 3393356169184460959
+      Firework_RedGreen_Spritesheet_38: -6129340511960701078
+      Firework_RedGreen_Spritesheet_39: -6225290713110616022
+      Firework_RedGreen_Spritesheet_4: 2011807121298795191
+      Firework_RedGreen_Spritesheet_40: -594355503559560660
+      Firework_RedGreen_Spritesheet_41: 622210364072662041
+      Firework_RedGreen_Spritesheet_42: 873351285752655734
+      Firework_RedGreen_Spritesheet_43: -3587875598212289977
+      Firework_RedGreen_Spritesheet_44: 6921322957977247914
+      Firework_RedGreen_Spritesheet_45: 1116233416068760960
+      Firework_RedGreen_Spritesheet_46: -133167721459212775
+      Firework_RedGreen_Spritesheet_47: 3342725394281269848
+      Firework_RedGreen_Spritesheet_48: 3454703901653777799
+      Firework_RedGreen_Spritesheet_49: -6186119690957109087
+      Firework_RedGreen_Spritesheet_5: -6003572845090522150
+      Firework_RedGreen_Spritesheet_50: 5645851573959893296
+      Firework_RedGreen_Spritesheet_51: 2486346483560480431
+      Firework_RedGreen_Spritesheet_52: -6762851727704156598
+      Firework_RedGreen_Spritesheet_53: -1373530440290777943
+      Firework_RedGreen_Spritesheet_54: 7526885648448944358
+      Firework_RedGreen_Spritesheet_55: -8907783915562850588
+      Firework_RedGreen_Spritesheet_56: 890363195060983517
+      Firework_RedGreen_Spritesheet_57: 7317241574621095764
+      Firework_RedGreen_Spritesheet_58: 8555212373439578281
+      Firework_RedGreen_Spritesheet_59: 7989854201888505320
+      Firework_RedGreen_Spritesheet_6: -556749653009982854
+      Firework_RedGreen_Spritesheet_60: -8809311269584437737
+      Firework_RedGreen_Spritesheet_61: -6230714878931299755
+      Firework_RedGreen_Spritesheet_62: 5634162967374535263
+      Firework_RedGreen_Spritesheet_63: -7053386961616897094
+      Firework_RedGreen_Spritesheet_64: -3519645040054696776
+      Firework_RedGreen_Spritesheet_65: 7423043290644498480
+      Firework_RedGreen_Spritesheet_66: 7804443419205497566
+      Firework_RedGreen_Spritesheet_67: 5026941302498817565
+      Firework_RedGreen_Spritesheet_68: 6619455929024583527
+      Firework_RedGreen_Spritesheet_69: -4730903710361887095
+      Firework_RedGreen_Spritesheet_7: -3836873172819533471
+      Firework_RedGreen_Spritesheet_70: 4281540707162655595
+      Firework_RedGreen_Spritesheet_71: 682215839196440427
+      Firework_RedGreen_Spritesheet_72: -768519542016428403
+      Firework_RedGreen_Spritesheet_73: 4511395979600808155
+      Firework_RedGreen_Spritesheet_74: -5562780014473428672
+      Firework_RedGreen_Spritesheet_75: -1438355325695657506
+      Firework_RedGreen_Spritesheet_76: -1836392892594824097
+      Firework_RedGreen_Spritesheet_77: 7228767809267653432
+      Firework_RedGreen_Spritesheet_78: 4656453438598105354
+      Firework_RedGreen_Spritesheet_79: -6400774835129465728
+      Firework_RedGreen_Spritesheet_8: -4333730953780178075
+      Firework_RedGreen_Spritesheet_80: 8414346462917235869
+      Firework_RedGreen_Spritesheet_9: 4631028490742686368
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -33,3 +33,10 @@ Test > Play Game Over / Stop Game Over를 실행하세요.
 캐릭터 페이드: GameOverSequenceController의 Character Fade Duration (기본 0.8초).
 빛 Bloom: BadEndLight의 GameOverLightBloom에서 Light Emission, Bloom Intensity, Threshold, Scatter 조절.
 빛만 별도 HDR RenderTexture와 URP Bloom을 거쳐 합성하며 기존 Main Camera 설정은 변경하지 않습니다.
+
+EndingMessageCanvas 연결
+원본 Assets/Prefabs/JSH/UI/EndingMessageCanvas.prefab은 수정하지 않습니다.
+TempFolder/Prefabs/GameOverEndingMessages.prefab 파생 프리팹에서 위치·색상·문구를 수정하세요.
+현재 원본의 Header 제목과 Bubble 통계 연출을 사용하며 Right Message/Left Message 대신 파생 프리팹의 TMP 문구를 편집합니다.
+통계는 EndingStats.Last를 사용하고, 없으면 원본 컴포넌트의 테스트 수치를 사용합니다.
+기존 Game Over PLAY/STOP과 외부 호출 함수는 그대로 사용합니다.

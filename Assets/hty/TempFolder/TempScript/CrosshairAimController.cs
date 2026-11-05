@@ -48,7 +48,7 @@ public sealed class CrosshairAimController : MonoBehaviour
     void ToggleAim() { if(IsAiming) StopAim(); else StartAim(); }
     void Begin()
     {
-        if(GameOverSequenceController.IsPlaying)return;
+        if((GameOverSequenceController.IsPlaying || TrueEndingController.IsPlaying))return;
         if(aiming && !closing) return;
         if(!crosshair || !animationSheet) { Debug.LogError("CrosshairAimController: Assign crosshair and animation sheet.",this); return; }
         if(!aiming) { previousVisible=Cursor.visible; previousLock=Cursor.lockState; }
@@ -59,7 +59,7 @@ public sealed class CrosshairAimController : MonoBehaviour
     }
     void Update()
     {
-        if(GameOverSequenceController.IsPlaying)return;
+        if((GameOverSequenceController.IsPlaying || TrueEndingController.IsPlaying))return;
         if(!aiming) return;
         if(closing)
         {
@@ -103,7 +103,7 @@ public sealed class CrosshairAimController : MonoBehaviour
     }
     public static void PlayClick()
     {
-        if(GameOverSequenceController.IsPlaying)return;
+        if((GameOverSequenceController.IsPlaying || TrueEndingController.IsPlaying))return;
         if(!instance || !instance.aiming || instance.closing) return;
         if(!instance.clickSheet) { Debug.LogError("CrosshairAimController: Assign Click Sheet.",instance); return; }
         instance.clicking=true; instance.clickFrame=0; instance.UpdateVisual();

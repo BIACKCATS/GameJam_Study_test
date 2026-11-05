@@ -1,0 +1,1742 @@
+fileFormatVersion: 2
+guid: 4613a6e6bd447db47878ff4ce77a9a4c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3048342227074776653
+    second: Fireworks_Comparison_0
+  - first:
+      213: 3939317669223655252
+    second: Fireworks_Comparison_1
+  - first:
+      213: 8625626769445153326
+    second: Fireworks_Comparison_2
+  - first:
+      213: -1100214868295994438
+    second: Fireworks_Comparison_3
+  - first:
+      213: 2919574707048324433
+    second: Fireworks_Comparison_4
+  - first:
+      213: 7299696902428516417
+    second: Fireworks_Comparison_5
+  - first:
+      213: 4802696904477532442
+    second: Fireworks_Comparison_6
+  - first:
+      213: 8393475159227486105
+    second: Fireworks_Comparison_7
+  - first:
+      213: 1099654663245731721
+    second: Fireworks_Comparison_8
+  - first:
+      213: -1093802181213634330
+    second: Fireworks_Comparison_9
+  - first:
+      213: 2573832161880893700
+    second: Fireworks_Comparison_10
+  - first:
+      213: 7356056192544791112
+    second: Fireworks_Comparison_11
+  - first:
+      213: 1825148254595056173
+    second: Fireworks_Comparison_12
+  - first:
+      213: -2069449881620821722
+    second: Fireworks_Comparison_13
+  - first:
+      213: -8255112670936702052
+    second: Fireworks_Comparison_14
+  - first:
+      213: -7546235896301859346
+    second: Fireworks_Comparison_15
+  - first:
+      213: 3564613949067149515
+    second: Fireworks_Comparison_16
+  - first:
+      213: -3471701847078921758
+    second: Fireworks_Comparison_17
+  - first:
+      213: -2957693851779917142
+    second: Fireworks_Comparison_18
+  - first:
+      213: -1578319883714150681
+    second: Fireworks_Comparison_19
+  - first:
+      213: -2435153320948042534
+    second: Fireworks_Comparison_20
+  - first:
+      213: 5717358810115335459
+    second: Fireworks_Comparison_21
+  - first:
+      213: 47913289004734838
+    second: Fireworks_Comparison_22
+  - first:
+      213: -2464339861248216638
+    second: Fireworks_Comparison_23
+  - first:
+      213: -5670618185165128353
+    second: Fireworks_Comparison_24
+  - first:
+      213: 5267083385592629820
+    second: Fireworks_Comparison_25
+  - first:
+      213: -7448523046705451613
+    second: Fireworks_Comparison_26
+  - first:
+      213: -4138219972263796722
+    second: Fireworks_Comparison_27
+  - first:
+      213: -5519270381688780881
+    second: Fireworks_Comparison_28
+  - first:
+      213: 3343933577918550203
+    second: Fireworks_Comparison_29
+  - first:
+      213: 5799054400362771350
+    second: Fireworks_Comparison_30
+  - first:
+      213: -613953579259323661
+    second: Fireworks_Comparison_31
+  - first:
+      213: 5734069863403240581
+    second: Fireworks_Comparison_32
+  - first:
+      213: -2447339722759145192
+    second: Fireworks_Comparison_33
+  - first:
+      213: -1327305307339396877
+    second: Fireworks_Comparison_34
+  - first:
+      213: 4768738142231173993
+    second: Fireworks_Comparison_35
+  - first:
+      213: 2007776383455885690
+    second: Fireworks_Comparison_36
+  - first:
+      213: -4240952335727373567
+    second: Fireworks_Comparison_37
+  - first:
+      213: -5347572779737995065
+    second: Fireworks_Comparison_38
+  - first:
+      213: -8426332160999138959
+    second: Fireworks_Comparison_39
+  - first:
+      213: 5074230094347232005
+    second: Fireworks_Comparison_40
+  - first:
+      213: 5978252067064349525
+    second: Fireworks_Comparison_41
+  - first:
+      213: 3914750135159220586
+    second: Fireworks_Comparison_42
+  - first:
+      213: -7606131592209723700
+    second: Fireworks_Comparison_43
+  - first:
+      213: 5283965126748912526
+    second: Fireworks_Comparison_44
+  - first:
+      213: -842283081432035390
+    second: Fireworks_Comparison_45
+  - first:
+      213: 7600052418742564693
+    second: Fireworks_Comparison_46
+  - first:
+      213: -5281281267911128251
+    second: Fireworks_Comparison_47
+  - first:
+      213: 216083068665500234
+    second: Fireworks_Comparison_48
+  - first:
+      213: 6661513266444678086
+    second: Fireworks_Comparison_49
+  - first:
+      213: 3110251596615733621
+    second: Fireworks_Comparison_50
+  - first:
+      213: -2298975188056102347
+    second: Fireworks_Comparison_51
+  - first:
+      213: -2732314922997800823
+    second: Fireworks_Comparison_52
+  - first:
+      213: -3114408012029770164
+    second: Fireworks_Comparison_53
+  - first:
+      213: 6889819701892519131
+    second: Fireworks_Comparison_54
+  - first:
+      213: -7327585174583946153
+    second: Fireworks_Comparison_55
+  - first:
+      213: -961248808600970881
+    second: Fireworks_Comparison_56
+  - first:
+      213: -7906950039942638342
+    second: Fireworks_Comparison_57
+  - first:
+      213: -1301619463854545137
+    second: Fireworks_Comparison_58
+  - first:
+      213: -1520921660562121436
+    second: Fireworks_Comparison_59
+  - first:
+      213: -1385538855858353535
+    second: Fireworks_Comparison_60
+  - first:
+      213: -4320315858698911148
+    second: Fireworks_Comparison_61
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Fireworks_Comparison_0
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 105
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4e7d9eca13ed4a20800000000000000
+      internalID: 3048342227074776653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fireworks_Comparison_1
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 109
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 457ee7b7c844ba630800000000000000
+      internalID: 3939317669223655252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fireworks_Comparison_2
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 113
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2ae0e5a8d164b770800000000000000
+      internalID: 8625626769445153326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fireworks_Comparison_3
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 99
+        width: 14
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab33d9e08604bb0f0800000000000000
+      internalID: -1100214868295994438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fireworks_Comparison_4
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 111
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15d94dc3ab9648820800000000000000
+      internalID: 2919574707048324433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fireworks_Comparison_5
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 105
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 140654548abbd4560800000000000000
+      internalID: 7299696902428516417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fireworks_Comparison_6
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 88
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a11604b836b96a240800000000000000
+      internalID: 4802696904477532442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fireworks_Comparison_7
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 99
+        width: 13
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99fc1d0df2d9b7470800000000000000
+      internalID: 8393475159227486105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fireworks_Comparison_8
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 97
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9871d5a0712c24f00800000000000000
+      internalID: 1099654663245731721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fireworks_Comparison_9
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 103
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e0c63e16b802d0f0800000000000000
+      internalID: -1093802181213634330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fireworks_Comparison_10
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 99
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 409e268e6b618b320800000000000000
+      internalID: 2573832161880893700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fireworks_Comparison_11
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 99
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84ad1701226f51660800000000000000
+      internalID: 7356056192544791112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fireworks_Comparison_12
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 97
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d220091eaaa345910800000000000000
+      internalID: 1825148254595056173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fireworks_Comparison_13
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 102
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 629448d0c46d743e0800000000000000
+      internalID: -2069449881620821722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fireworks_Comparison_14
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 98
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c93edf363c2ff6d80800000000000000
+      internalID: -8255112670936702052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fireworks_Comparison_15
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 86
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eed40a91f62664790800000000000000
+      internalID: -7546235896301859346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fireworks_Comparison_16
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 84
+        width: 23
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc0cc83208d087130800000000000000
+      internalID: 3564613949067149515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fireworks_Comparison_17
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 89
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e91bce509902dfc0800000000000000
+      internalID: -3471701847078921758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fireworks_Comparison_18
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 96
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aaa1d42cc1924f6d0800000000000000
+      internalID: -2957693851779917142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fireworks_Comparison_19
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 89
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ee38459d6ea81ae0800000000000000
+      internalID: -1578319883714150681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fireworks_Comparison_20
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 89
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad47743e4f8943ed0800000000000000
+      internalID: -2435153320948042534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fireworks_Comparison_21
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 92
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 325ef52cb83285f40800000000000000
+      internalID: 5717358810115335459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fireworks_Comparison_22
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 90
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 679d52be1e83aa000800000000000000
+      internalID: 47913289004734838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fireworks_Comparison_23
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 86
+        width: 26
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c1f67ce3f7eccdd0800000000000000
+      internalID: -2464339861248216638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fireworks_Comparison_24
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 83
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5dbc580ecaed41b0800000000000000
+      internalID: -5670618185165128353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fireworks_Comparison_25
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 87
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3a4c98de60781940800000000000000
+      internalID: 5267083385592629820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fireworks_Comparison_26
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 85
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3adafc3c0c781a890800000000000000
+      internalID: -7448523046705451613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fireworks_Comparison_27
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 89
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e002ac64cd61296c0800000000000000
+      internalID: -4138219972263796722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fireworks_Comparison_28
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 69
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa70b1884dc9763b0800000000000000
+      internalID: -5519270381688780881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fireworks_Comparison_29
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 84
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb016584fd9086e20800000000000000
+      internalID: 3343933577918550203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fireworks_Comparison_30
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 82
+        width: 28
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 693f9ce90416a7050800000000000000
+      internalID: 5799054400362771350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fireworks_Comparison_31
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 69
+        width: 22
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fa1ba7f87cca77f0800000000000000
+      internalID: -613953579259323661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fireworks_Comparison_32
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 71
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58c3c6d0922839f40800000000000000
+      internalID: 5734069863403240581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fireworks_Comparison_33
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 81
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 819fc3c1d7d490ed0800000000000000
+      internalID: -2447339722759145192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fireworks_Comparison_34
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 68
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f86b87fad6749de0800000000000000
+      internalID: -1327305307339396877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fireworks_Comparison_35
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 64
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96b9b821316fd2240800000000000000
+      internalID: 4768738142231173993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fireworks_Comparison_36
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 63
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a797e4cabfd0ddb10800000000000000
+      internalID: 2007776383455885690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fireworks_Comparison_37
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 60
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1035b97f15c1525c0800000000000000
+      internalID: -4240952335727373567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fireworks_Comparison_38
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 65
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c82b25b3ea99c5b0800000000000000
+      internalID: -5347572779737995065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fireworks_Comparison_39
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 69
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17952305b87af0b80800000000000000
+      internalID: -8426332160999138959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fireworks_Comparison_40
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 64
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 503e92ae2694b6640800000000000000
+      internalID: 5074230094347232005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fireworks_Comparison_41
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 67
+        width: 27
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5538d13b49407f250800000000000000
+      internalID: 5978252067064349525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fireworks_Comparison_42
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 42
+        width: 13
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a69e396b18cf35630800000000000000
+      internalID: 3914750135159220586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fireworks_Comparison_43
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 62
+        width: 26
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cce867bad97917690800000000000000
+      internalID: -7606131592209723700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fireworks_Comparison_44
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 61
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8bbb61894a645940800000000000000
+      internalID: 5283965126748912526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fireworks_Comparison_45
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 54
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cf0ce2000c9f44f0800000000000000
+      internalID: -842283081432035390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fireworks_Comparison_46
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 59
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 557bf75786fc87960800000000000000
+      internalID: 7600052418742564693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fireworks_Comparison_47
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 39
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54b8b331bae15b6b0800000000000000
+      internalID: -5281281267911128251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fireworks_Comparison_48
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 50
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4298c5f76eaff200800000000000000
+      internalID: 216083068665500234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fireworks_Comparison_49
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 58
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c3bcf88503727c50800000000000000
+      internalID: 6661513266444678086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fireworks_Comparison_50
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 54
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5715f5a2955d92b20800000000000000
+      internalID: 3110251596615733621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fireworks_Comparison_51
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 61
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53aaa783f366810e0800000000000000
+      internalID: -2298975188056102347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fireworks_Comparison_52
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 42
+        width: 21
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 980a730dd0ed41ad0800000000000000
+      internalID: -2732314922997800823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fireworks_Comparison_53
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 38
+        width: 19
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c46c555f96667c4d0800000000000000
+      internalID: -3114408012029770164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fireworks_Comparison_54
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 49
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd49ac9d38e8d9f50800000000000000
+      internalID: 6889819701892519131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fireworks_Comparison_55
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 40
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 754518f5b103f4a90800000000000000
+      internalID: -7327585174583946153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fireworks_Comparison_56
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 39
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f79529e2d45f8a2f0800000000000000
+      internalID: -961248808600970881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fireworks_Comparison_57
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 49
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af4557cd4ded44290800000000000000
+      internalID: -7906950039942638342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fireworks_Comparison_58
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 41
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0727307ef7bfede0800000000000000
+      internalID: -1301619463854545137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fireworks_Comparison_59
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 42
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42d5ff2dec994eae0800000000000000
+      internalID: -1520921660562121436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fireworks_Comparison_60
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 48
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18acf0260c395cce0800000000000000
+      internalID: -1385538855858353535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fireworks_Comparison_61
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 34
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 452c3c4dd972b04c0800000000000000
+      internalID: -4320315858698911148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Fireworks_Comparison_0: 3048342227074776653
+      Fireworks_Comparison_1: 3939317669223655252
+      Fireworks_Comparison_10: 2573832161880893700
+      Fireworks_Comparison_11: 7356056192544791112
+      Fireworks_Comparison_12: 1825148254595056173
+      Fireworks_Comparison_13: -2069449881620821722
+      Fireworks_Comparison_14: -8255112670936702052
+      Fireworks_Comparison_15: -7546235896301859346
+      Fireworks_Comparison_16: 3564613949067149515
+      Fireworks_Comparison_17: -3471701847078921758
+      Fireworks_Comparison_18: -2957693851779917142
+      Fireworks_Comparison_19: -1578319883714150681
+      Fireworks_Comparison_2: 8625626769445153326
+      Fireworks_Comparison_20: -2435153320948042534
+      Fireworks_Comparison_21: 5717358810115335459
+      Fireworks_Comparison_22: 47913289004734838
+      Fireworks_Comparison_23: -2464339861248216638
+      Fireworks_Comparison_24: -5670618185165128353
+      Fireworks_Comparison_25: 5267083385592629820
+      Fireworks_Comparison_26: -7448523046705451613
+      Fireworks_Comparison_27: -4138219972263796722
+      Fireworks_Comparison_28: -5519270381688780881
+      Fireworks_Comparison_29: 3343933577918550203
+      Fireworks_Comparison_3: -1100214868295994438
+      Fireworks_Comparison_30: 5799054400362771350
+      Fireworks_Comparison_31: -613953579259323661
+      Fireworks_Comparison_32: 5734069863403240581
+      Fireworks_Comparison_33: -2447339722759145192
+      Fireworks_Comparison_34: -1327305307339396877
+      Fireworks_Comparison_35: 4768738142231173993
+      Fireworks_Comparison_36: 2007776383455885690
+      Fireworks_Comparison_37: -4240952335727373567
+      Fireworks_Comparison_38: -5347572779737995065
+      Fireworks_Comparison_39: -8426332160999138959
+      Fireworks_Comparison_4: 2919574707048324433
+      Fireworks_Comparison_40: 5074230094347232005
+      Fireworks_Comparison_41: 5978252067064349525
+      Fireworks_Comparison_42: 3914750135159220586
+      Fireworks_Comparison_43: -7606131592209723700
+      Fireworks_Comparison_44: 5283965126748912526
+      Fireworks_Comparison_45: -842283081432035390
+      Fireworks_Comparison_46: 7600052418742564693
+      Fireworks_Comparison_47: -5281281267911128251
+      Fireworks_Comparison_48: 216083068665500234
+      Fireworks_Comparison_49: 6661513266444678086
+      Fireworks_Comparison_5: 7299696902428516417
+      Fireworks_Comparison_50: 3110251596615733621
+      Fireworks_Comparison_51: -2298975188056102347
+      Fireworks_Comparison_52: -2732314922997800823
+      Fireworks_Comparison_53: -3114408012029770164
+      Fireworks_Comparison_54: 6889819701892519131
+      Fireworks_Comparison_55: -7327585174583946153
+      Fireworks_Comparison_56: -961248808600970881
+      Fireworks_Comparison_57: -7906950039942638342
+      Fireworks_Comparison_58: -1301619463854545137
+      Fireworks_Comparison_59: -1520921660562121436
+      Fireworks_Comparison_6: 4802696904477532442
+      Fireworks_Comparison_60: -1385538855858353535
+      Fireworks_Comparison_61: -4320315858698911148
+      Fireworks_Comparison_7: 8393475159227486105
+      Fireworks_Comparison_8: 1099654663245731721
+      Fireworks_Comparison_9: -1093802181213634330
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

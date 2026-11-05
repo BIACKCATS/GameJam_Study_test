@@ -1,0 +1,70 @@
+[
+  {
+    "kind": "PurpleBlue",
+    "frames": 16,
+    "size": [
+      160,
+      160
+    ],
+    "fps": 16,
+    "playbackSeconds": 1,
+    "center": [
+      80,
+      80
+    ],
+    "transparentBorder": true,
+    "finalFrameEmpty": true,
+    "visiblePixelCounts": [
+      14,
+      150,
+      617,
+      753,
+      713,
+      740,
+      712,
+      669,
+      619,
+      586,
+      309,
+      242,
+      188,
+      78,
+      39,
+      0
+    ]
+  },
+  {
+    "kind": "RedGreen",
+    "frames": 16,
+    "size": [
+      160,
+      160
+    ],
+    "fps": 16,
+    "playbackSeconds": 1,
+    "center": [
+      80,
+      80
+    ],
+    "transparentBorder": true,
+    "finalFrameEmpty": true,
+    "visiblePixelCounts": [
+      14,
+      406,
+      243,
+      341,
+      571,
+      518,
+      455,
+      405,
+      388,
+      338,
+      93,
+      51,
+      26,
+      9,
+      0,
+      0
+    ]
+  }
+]
