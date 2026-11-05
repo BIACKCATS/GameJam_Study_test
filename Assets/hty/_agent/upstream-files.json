@@ -1,0 +1,532 @@
+﻿[
+    {
+        "skill":  "unity-cli",
+        "path":  "Assets/hty/_agent/skills~/unity-cli/CHANGELOG.md",
+        "sha256":  "df03f5f807a33f781a0df47a934d4b95155faf8c090e1c926faf393f4ef09522"
+    },
+    {
+        "skill":  "unity-cli",
+        "path":  "Assets/hty/_agent/skills~/unity-cli/SECURITY.md",
+        "sha256":  "add93917beee72ab80b080a0dee5140c6604fd7d7983be307a881a2ac1ff7185"
+    },
+    {
+        "skill":  "unity-cli",
+        "path":  "Assets/hty/_agent/skills~/unity-cli/SKILL.md",
+        "sha256":  "7ac16da0d234b18d2ef9911536bd00a93883c34a54ad52970eac8b2f86fc1d24"
+    },
+    {
+        "skill":  "unity-cli",
+        "path":  "Assets/hty/_agent/skills~/unity-cli/references/auth-license-cloud.md",
+        "sha256":  "462606f1b7e4fff5b9acfe7f4053fcaa74173d6ee7646781eebe4207dc377cd3"
+    },
+    {
+        "skill":  "unity-cli",
+        "path":  "Assets/hty/_agent/skills~/unity-cli/references/build-run-test.md",
+        "sha256":  "d556980d60bc54495224f99d79cb74b7c5ced22777d170c21d9772498371bafa"
+    },
+    {
+        "skill":  "unity-cli",
+        "path":  "Assets/hty/_agent/skills~/unity-cli/references/cloud-automation.md",
+        "sha256":  "baf2c0bc5fbb7323a33c2f3520e3a2fbad1ab44ec8262623da22940bc82fca19"
+    },
+    {
+        "skill":  "unity-cli",
+        "path":  "Assets/hty/_agent/skills~/unity-cli/references/collaboration.md",
+        "sha256":  "dcf5142d5ecec3ac80ca50a4e68ff204592c6de3d42c3ceedbd2e2aed2010003"
+    },
+    {
+        "skill":  "unity-cli",
+        "path":  "Assets/hty/_agent/skills~/unity-cli/references/config-hub.md",
+        "sha256":  "a249f7158af79d588164bf44a708d2491d4f1422b631990e2bf168a6721e0889"
+    },
+    {
+        "skill":  "unity-cli",
+        "path":  "Assets/hty/_agent/skills~/unity-cli/references/diagnostics-maintenance.md",
+        "sha256":  "6f59cee8b2e5a8fe680c1acfea1c59477d0d6a93679b33ce9af8b14e0b4a3abf"
+    },
+    {
+        "skill":  "unity-cli",
+        "path":  "Assets/hty/_agent/skills~/unity-cli/references/docs-workflow.md",
+        "sha256":  "1b3d2606dc64aa5cb2ca5ba2d1e4ff6339834f0d5a27222eb63cccfa728d8049"
+    },
+    {
+        "skill":  "unity-cli",
+        "path":  "Assets/hty/_agent/skills~/unity-cli/references/editors-install.md",
+        "sha256":  "7d8edfa876a4eba06ce6129c2bea7878c01a466a7fc9b217add808bb6990982d"
+    },
+    {
+        "skill":  "unity-cli",
+        "path":  "Assets/hty/_agent/skills~/unity-cli/references/integration-advanced.md",
+        "sha256":  "4d0ee263e867128b25065e099b5bc548aa40767533d2eb6c5ba4c4b75edc56f3"
+    },
+    {
+        "skill":  "unity-cli",
+        "path":  "Assets/hty/_agent/skills~/unity-cli/references/playmode-verification-loop.md",
+        "sha256":  "25a6517048f4d8a94974b5f5c7b0b27a4beb5f377b089c966d0f89912769e0fe"
+    },
+    {
+        "skill":  "unity-cli",
+        "path":  "Assets/hty/_agent/skills~/unity-cli/references/projects-templates.md",
+        "sha256":  "6f8f5bc1c0ac8c396fa6fb8da4777cbba88116aff46581565219c12c6295ddc0"
+    },
+    {
+        "skill":  "unity-cli",
+        "path":  "Assets/hty/_agent/skills~/unity-cli/references/version-control.md",
+        "sha256":  "78763e39251d0b424cac1253dcb0f09ef3636257d827c96bc80c855a792ca7e3"
+    },
+    {
+        "skill":  "2d-pixel-perfect",
+        "path":  "Assets/hty/_agent/skills~/2d-pixel-perfect/SKILL.md",
+        "sha256":  "7bfae98a2cfa3081c91be42c69fd163f5b43bccea352fb96fb7a1eef53e11946"
+    },
+    {
+        "skill":  "2d-pixel-perfect",
+        "path":  "Assets/hty/_agent/skills~/2d-pixel-perfect/references/api-reference.md",
+        "sha256":  "e14bc117f648741fa308770932685beacaf177123e2be971c3b4647d106978c6"
+    },
+    {
+        "skill":  "2d-pixel-perfect",
+        "path":  "Assets/hty/_agent/skills~/2d-pixel-perfect/references/camera-setup-builtin.cs",
+        "sha256":  "fba5a16bce31a9753799493fe4ca5a3ba2fb3308ade6381c07692a4f09e9cab8"
+    },
+    {
+        "skill":  "2d-pixel-perfect",
+        "path":  "Assets/hty/_agent/skills~/2d-pixel-perfect/references/camera-setup-urp.cs",
+        "sha256":  "ece0edc4314308f1e5fe295aa8aac2eff1db91e3a5a54fa7ac3c9ab0f0221d0c"
+    },
+    {
+        "skill":  "2d-pixel-perfect",
+        "path":  "Assets/hty/_agent/skills~/2d-pixel-perfect/references/pipeline-detection.cs",
+        "sha256":  "5b7c1ccbbbbd046294be3a7dad67a252522fe2ad3c8bc8ebfdecfaa411957458"
+    },
+    {
+        "skill":  "2d-pixel-perfect",
+        "path":  "Assets/hty/_agent/skills~/2d-pixel-perfect/references/sprite-settings.cs",
+        "sha256":  "6e154662f004b39bcf88bf1991b276305a8c55d50ab0883cf8b4ca1e4fb0d594"
+    },
+    {
+        "skill":  "sprite-editor",
+        "path":  "Assets/hty/_agent/skills~/sprite-editor/SECURITY.md",
+        "sha256":  "96cac5254169a7f1f906d7dac40246c10c42e2a34c9ac71c77242e13831c56a6"
+    },
+    {
+        "skill":  "sprite-editor",
+        "path":  "Assets/hty/_agent/skills~/sprite-editor/SKILL.md",
+        "sha256":  "93d0878dc2ef770d968cb7b0c391e65d316eede7073698a12aafe07f3c29f741"
+    },
+    {
+        "skill":  "sprite-editor",
+        "path":  "Assets/hty/_agent/skills~/sprite-editor/references/api_reference.md",
+        "sha256":  "3e8491dd8d5dbf3df9c77eca5a16b8b278cb25c3a88460fbc5d6bfc1b31edc20"
+    },
+    {
+        "skill":  "sprite-editor",
+        "path":  "Assets/hty/_agent/skills~/sprite-editor/references/background.md",
+        "sha256":  "c3433c455de83705092e81a8e878f1762923957ad423a446a57018818a8e79c8"
+    },
+    {
+        "skill":  "sprite-editor",
+        "path":  "Assets/hty/_agent/skills~/sprite-editor/references/templates.md",
+        "sha256":  "adbacb07763c36af232a069fc6a475c855824f55f7814482b5d667cee2f282c6"
+    },
+    {
+        "skill":  "sprite-editor",
+        "path":  "Assets/hty/_agent/skills~/sprite-editor/scripts/AutomaticSliceTexture.cs",
+        "sha256":  "d6d9339b2c8360761390e822dfbf859ea9f9df113bf1c060a12613e90fd54583"
+    },
+    {
+        "skill":  "sprite-editor",
+        "path":  "Assets/hty/_agent/skills~/sprite-editor/scripts/GenerateNewSpriteRects.cs",
+        "sha256":  "2f575abd7aace6ebd2b6507b17f5553006c6966f7d1ed86d15c1e05bb4495e64"
+    },
+    {
+        "skill":  "sprite-editor",
+        "path":  "Assets/hty/_agent/skills~/sprite-editor/scripts/GetTextureSourceImageSize.cs",
+        "sha256":  "ae43201540dc294a03bc5689e701ea8a2dccc4392556fd749762b0248e31ad95"
+    },
+    {
+        "skill":  "sprite-editor",
+        "path":  "Assets/hty/_agent/skills~/sprite-editor/scripts/GetTextureToSlice.cs",
+        "sha256":  "bf738f184df9409406bcbea9ae4a155e7a0150456e1b165d5c9eba7af4a5f4f8"
+    },
+    {
+        "skill":  "sprite-editor",
+        "path":  "Assets/hty/_agent/skills~/sprite-editor/scripts/GridSliceTexture.cs",
+        "sha256":  "51adb2ca240a4adc0b8b211a87581c86241c04cfe90d7d18eeaefc0f33609733"
+    },
+    {
+        "skill":  "sprite-editor",
+        "path":  "Assets/hty/_agent/skills~/sprite-editor/scripts/IsometricSliceTexture.cs",
+        "sha256":  "4c129b2d2fcd17fdfbe760a8f0e2dd501fa0ab6642bd9ff1ae17a3d29e59824b"
+    },
+    {
+        "skill":  "sprite-editor",
+        "path":  "Assets/hty/_agent/skills~/sprite-editor/scripts/README.md",
+        "sha256":  "18add5e698b039f864a1290f35718978e1b98bf89107447401c80dec3e2f6f29"
+    },
+    {
+        "skill":  "sprite-editor",
+        "path":  "Assets/hty/_agent/skills~/sprite-editor/scripts/SetPivotExample.cs",
+        "sha256":  "04d9d686492619362aac464ecca81b41e00d448046d449d7baa1dcefa56e4ca6"
+    },
+    {
+        "skill":  "sprite-editor",
+        "path":  "Assets/hty/_agent/skills~/sprite-editor/scripts/SpriteToPng.cs",
+        "sha256":  "c6b6e3d31aeabc8140f9192f71bb7d310e40793da70fea07dffaa324454b7d37"
+    },
+    {
+        "skill":  "ui",
+        "path":  "Assets/hty/_agent/skills~/ui/SKILL.md",
+        "sha256":  "5dbdf432ca8beebf90a9bd2ce22958aac9b2622984f52292ebcccacb383e537b"
+    },
+    {
+        "skill":  "ui-uitk",
+        "path":  "Assets/hty/_agent/skills~/ui-uitk/SKILL.md",
+        "sha256":  "23acfcdf652e9d364dd844910d3f98458af653eb64c0a401ef6a0954645c819d"
+    },
+    {
+        "skill":  "ui-uitk",
+        "path":  "Assets/hty/_agent/skills~/ui-uitk/references/common-issues.md",
+        "sha256":  "76a9a47dc56f675382d94ef9cfcd9b89546a8bfe6a53d594770368b75656b8d0"
+    },
+    {
+        "skill":  "ui-uitk",
+        "path":  "Assets/hty/_agent/skills~/ui-uitk/references/custom-elements.md",
+        "sha256":  "0fe481c17bda4293bd5adb6e98583d00b50fbda6c4dbab5481cb8efb1077fbd0"
+    },
+    {
+        "skill":  "ui-uitk",
+        "path":  "Assets/hty/_agent/skills~/ui-uitk/references/painter2d.md",
+        "sha256":  "8090626a558ddccf64092c82c85dfd3eec6791cedcedd45c21d42aa29f8fef08"
+    },
+    {
+        "skill":  "ui-uitk",
+        "path":  "Assets/hty/_agent/skills~/ui-uitk/references/pointermanipulator-guide.md",
+        "sha256":  "4efd2867cfe559b3c548b4e7f79d638ec2a94ebd27cdc249a29e05293c791dcd"
+    },
+    {
+        "skill":  "ui-uitk",
+        "path":  "Assets/hty/_agent/skills~/ui-uitk/references/svg-icons.md",
+        "sha256":  "bad01637e9ad0f20324af345ed49320f05b5f7ae6f6110a86f154287d3210fe3"
+    },
+    {
+        "skill":  "ui-uitk",
+        "path":  "Assets/hty/_agent/skills~/ui-uitk/references/ui-runtime-binding.md",
+        "sha256":  "81c0f5a1dd2261330fb738ec9b0859df6d72bd8382fd70b877087122bcada727"
+    },
+    {
+        "skill":  "ui-uitk",
+        "path":  "Assets/hty/_agent/skills~/ui-uitk/references/uss-guide.md",
+        "sha256":  "d50efbc200c78b5317e14e0ad9ed0286cd0096869d57c6310e3aefebcac0bd8f"
+    },
+    {
+        "skill":  "ui-ugui",
+        "path":  "Assets/hty/_agent/skills~/ui-ugui/SKILL.md",
+        "sha256":  "dad98d97ecc224c65c9a38eec65e7a7be7018084a505f8d68470ff1a42ab950d"
+    },
+    {
+        "skill":  "ui-ugui",
+        "path":  "Assets/hty/_agent/skills~/ui-ugui/references/scrollview-setup.md",
+        "sha256":  "41d6a37cb5e78b632baea633583129e27b3bed353904ab6425cc954944873eaf"
+    },
+    {
+        "skill":  "ui-imgui",
+        "path":  "Assets/hty/_agent/skills~/ui-imgui/SKILL.md",
+        "sha256":  "4cef7d81598408cf53f87ba22af9a80723c017670c5e978bc30c93fdda55b18a"
+    },
+    {
+        "skill":  "ui-imgui",
+        "path":  "Assets/hty/_agent/skills~/ui-imgui/references/gui-elements.md",
+        "sha256":  "a6f2bfc30823fced91e165f184207979995d978a405235a11929bf32f4ea0f49"
+    },
+    {
+        "skill":  "ui-imgui",
+        "path":  "Assets/hty/_agent/skills~/ui-imgui/references/templates.md",
+        "sha256":  "5651e13ff1531a19e9142a7c92c1423cbab2c4f8d5eb2ce02e242d51073e52b3"
+    },
+    {
+        "skill":  "urp-postprocessing",
+        "path":  "Assets/hty/_agent/skills~/urp-postprocessing/SECURITY.md",
+        "sha256":  "85c1642d2fe08d8601933fbed9967bddafcadcf75f7dc6750c2c5d195da9d21d"
+    },
+    {
+        "skill":  "urp-postprocessing",
+        "path":  "Assets/hty/_agent/skills~/urp-postprocessing/SKILL.md",
+        "sha256":  "71e3f65d95dac1e619b4cda8964b8c4bd97add8a0e12dfb1da19669c074798eb"
+    },
+    {
+        "skill":  "urp-postprocessing",
+        "path":  "Assets/hty/_agent/skills~/urp-postprocessing/references/code-templates.md",
+        "sha256":  "27e0ca4d360cfa5d7c1d752ca28477f92bc7b621afb04cd54f9a75ad9be9060f"
+    },
+    {
+        "skill":  "urp-postprocessing",
+        "path":  "Assets/hty/_agent/skills~/urp-postprocessing/references/effect-reference.md",
+        "sha256":  "63ffdb38717dec67f0a474d65dfc979fab703eecc305080b00197a41c7a88282"
+    },
+    {
+        "skill":  "manage-sprite-atlas",
+        "path":  "Assets/hty/_agent/skills~/manage-sprite-atlas/SKILL.md",
+        "sha256":  "fdd7ca9b5b7d5b5d67246219a06779d3affba7c5cb2f2855e912379802d87f66"
+    },
+    {
+        "skill":  "manage-sprite-atlas",
+        "path":  "Assets/hty/_agent/skills~/manage-sprite-atlas/references/addressables-delivery.md",
+        "sha256":  "aa110e8d39676d70c654a2e942430466d7c5b045feb1f0f469eabd54e1dba4eb"
+    },
+    {
+        "skill":  "manage-sprite-atlas",
+        "path":  "Assets/hty/_agent/skills~/manage-sprite-atlas/references/api.md",
+        "sha256":  "b06f6f5db194ddbbae00b4b1dda673ca73c7289d990176861e2901a75f6b0056"
+    },
+    {
+        "skill":  "manage-sprite-atlas",
+        "path":  "Assets/hty/_agent/skills~/manage-sprite-atlas/references/best-practices.md",
+        "sha256":  "b8b1905e57c1e657f30781dd0aec9b6c3175c0fd3f68bd3c47d4cb4229d5a2db"
+    },
+    {
+        "skill":  "manage-sprite-atlas",
+        "path":  "Assets/hty/_agent/skills~/manage-sprite-atlas/references/common-errors.md",
+        "sha256":  "9db4f03e8da5ccec3f04aabc427e2d6694cbded18a37fce0a3129615e0fd7ae7"
+    },
+    {
+        "skill":  "manage-sprite-atlas",
+        "path":  "Assets/hty/_agent/skills~/manage-sprite-atlas/references/custom-packing.md",
+        "sha256":  "a1e7535eb89f1f2a693a9d59cfe94782abcdc1568fc7fee09e6a7bf8d3614b6b"
+    },
+    {
+        "skill":  "manage-sprite-atlas",
+        "path":  "Assets/hty/_agent/skills~/manage-sprite-atlas/references/manual-authoring.md",
+        "sha256":  "cf82144b77a64ff6567d4c66f2a774f9afb3af43a623eb75f8e2c434685f772d"
+    },
+    {
+        "skill":  "manage-sprite-atlas",
+        "path":  "Assets/hty/_agent/skills~/manage-sprite-atlas/resources/authoringvsruntime.cs",
+        "sha256":  "28178e3f284ffb48d0be79b4c7fc02cc4c94dab8de0fe0f46353c82c6ddb1bf1"
+    },
+    {
+        "skill":  "manage-sprite-atlas",
+        "path":  "Assets/hty/_agent/skills~/manage-sprite-atlas/resources/buildaddressablespostprocess.cs",
+        "sha256":  "238fc19975e30043fb8c10d15f4b4e69b87f6ac229dca8e45b93e455c3a6f5b1"
+    },
+    {
+        "skill":  "manage-sprite-atlas",
+        "path":  "Assets/hty/_agent/skills~/manage-sprite-atlas/resources/cacheloadedatlases.cs",
+        "sha256":  "d52bebc945e829fb0f33c6f0eae94e6f6c0a286159d4ab3fa9cfeda40b69edc5"
+    },
+    {
+        "skill":  "manage-sprite-atlas",
+        "path":  "Assets/hty/_agent/skills~/manage-sprite-atlas/resources/cleanupbatchoperations.cs",
+        "sha256":  "cc7dec78a2a0f50d7101366a511ce19dda19ecb7c723646390b3e87cfd1483d6"
+    },
+    {
+        "skill":  "manage-sprite-atlas",
+        "path":  "Assets/hty/_agent/skills~/manage-sprite-atlas/resources/createandconfiguremasteratlas.cs",
+        "sha256":  "a5521d75fee0c4461388ca565b8565520b9c4c3af3f5b2c8c36b02de43aa8b82"
+    },
+    {
+        "skill":  "manage-sprite-atlas",
+        "path":  "Assets/hty/_agent/skills~/manage-sprite-atlas/resources/custompackersetup.cs",
+        "sha256":  "70b2b81cfafd37a8f198cbfb9d561d1d271ff25ca8407cb867eaffc28050ff53"
+    },
+    {
+        "skill":  "manage-sprite-atlas",
+        "path":  "Assets/hty/_agent/skills~/manage-sprite-atlas/resources/deprecatedmethods.cs",
+        "sha256":  "542c744d96e88d49fcd27392e8c9341ed871080604d49ab915dad10839709363"
+    },
+    {
+        "skill":  "manage-sprite-atlas",
+        "path":  "Assets/hty/_agent/skills~/manage-sprite-atlas/resources/dontmodifywithoutsaving.cs",
+        "sha256":  "acd59553f26a2df8c37eb9fb40321ac6b3bfd8fb33eeb1d2d481c112dbd3aeb2"
+    },
+    {
+        "skill":  "manage-sprite-atlas",
+        "path":  "Assets/hty/_agent/skills~/manage-sprite-atlas/resources/dontpackinruntimebuilds.cs",
+        "sha256":  "cb82fa37c4e80ee90cef20e0f32b56bd59acf5bbcd6bfad802ddcabfd4bd3d6d"
+    },
+    {
+        "skill":  "manage-sprite-atlas",
+        "path":  "Assets/hty/_agent/skills~/manage-sprite-atlas/resources/dontscriptspriteatlasineditor.cs",
+        "sha256":  "1fcc804b2e119350402f2f101bff5f9dab4d5830ef6d48f921e119eadee55576"
+    },
+    {
+        "skill":  "manage-sprite-atlas",
+        "path":  "Assets/hty/_agent/skills~/manage-sprite-atlas/resources/editorconfiguration.cs",
+        "sha256":  "6ea6914ed31f185d903c11696e6beaf486960c82d4e73a0bb87666e6325e0d4b"
+    },
+    {
+        "skill":  "manage-sprite-atlas",
+        "path":  "Assets/hty/_agent/skills~/manage-sprite-atlas/resources/enablespritepacking.cs",
+        "sha256":  "3d8b3d648110a5a17405fe8df597ae8bcc77baffff1a66ea9334d315852202e1"
+    },
+    {
+        "skill":  "manage-sprite-atlas",
+        "path":  "Assets/hty/_agent/skills~/manage-sprite-atlas/resources/gridspritepacker.cs",
+        "sha256":  "e57c4d99da4df9d7b27edc12ab36cc11e76e5213ce67d77b28dfcc2e73ee8a7e"
+    },
+    {
+        "skill":  "manage-sprite-atlas",
+        "path":  "Assets/hty/_agent/skills~/manage-sprite-atlas/resources/handlelatebinding.cs",
+        "sha256":  "9b2aadc27708e53588086987a333f196eb9596a3d4688e43df236ff2ddf710f6"
+    },
+    {
+        "skill":  "manage-sprite-atlas",
+        "path":  "Assets/hty/_agent/skills~/manage-sprite-atlas/resources/handlenullcases.cs",
+        "sha256":  "8ec57be81d4beebfee7d980e4b698009b8cfe4c613dc32e76b9cda4f4adbe7a0"
+    },
+    {
+        "skill":  "manage-sprite-atlas",
+        "path":  "Assets/hty/_agent/skills~/manage-sprite-atlas/resources/migratev1tov2.cs",
+        "sha256":  "3daa60acc1929796d5369bb3132cc2a5151693fc6298d1cdf6e9a61900663a66"
+    },
+    {
+        "skill":  "manage-sprite-atlas",
+        "path":  "Assets/hty/_agent/skills~/manage-sprite-atlas/resources/multipagepacker.cs",
+        "sha256":  "0abb2d4751bce464b7f1b063563f2ec890ccde578df72322ed77929a7c77220e"
+    },
+    {
+        "skill":  "manage-sprite-atlas",
+        "path":  "Assets/hty/_agent/skills~/manage-sprite-atlas/resources/optimizetexturesettings.cs",
+        "sha256":  "c232e2ebb21958b4a6e4b27f30c6a4fb5b0a030966a619f9ddba205ce25c0f7c"
+    },
+    {
+        "skill":  "manage-sprite-atlas",
+        "path":  "Assets/hty/_agent/skills~/manage-sprite-atlas/resources/packerdebugging.cs",
+        "sha256":  "9d953b7a2e16c6f881a08c86b43a8d65794e10cea54251078e10e80a176b5a9d"
+    },
+    {
+        "skill":  "manage-sprite-atlas",
+        "path":  "Assets/hty/_agent/skills~/manage-sprite-atlas/resources/packtransform.cs",
+        "sha256":  "a541bbb988867994da609431829da264bd05626fc5e25f5c10fe352a8ccbb398"
+    },
+    {
+        "skill":  "manage-sprite-atlas",
+        "path":  "Assets/hty/_agent/skills~/manage-sprite-atlas/resources/platformnames.cs",
+        "sha256":  "0697d1f171561ea6308f66dfe0b01f272cadd3a3b44aa23149deadd6db85dadf"
+    },
+    {
+        "skill":  "manage-sprite-atlas",
+        "path":  "Assets/hty/_agent/skills~/manage-sprite-atlas/resources/queryspritesefficiently.cs",
+        "sha256":  "faa0b3cb5c65b84c6842cb5ee75e04ee064d47ff57180514b22f95eaa56142d3"
+    },
+    {
+        "skill":  "manage-sprite-atlas",
+        "path":  "Assets/hty/_agent/skills~/manage-sprite-atlas/resources/registercallbacks.cs",
+        "sha256":  "ee784af93539437ab9f445a2e61242922161d1401094bbff27d686cc9f6bfa31"
+    },
+    {
+        "skill":  "manage-sprite-atlas",
+        "path":  "Assets/hty/_agent/skills~/manage-sprite-atlas/resources/runtimeatlasloader.cs",
+        "sha256":  "98955163f4d440ffe47f12c530f83560ec519341d267efd741c5fa645a8e1fa1"
+    },
+    {
+        "skill":  "manage-sprite-atlas",
+        "path":  "Assets/hty/_agent/skills~/manage-sprite-atlas/resources/runtimespriteaccess.cs",
+        "sha256":  "f8075b13fdf8d9b4474f7f307adce2ba91ecb9ff14161d7e87d4b6e92f782216"
+    },
+    {
+        "skill":  "manage-sprite-atlas",
+        "path":  "Assets/hty/_agent/skills~/manage-sprite-atlas/resources/savespriteatlasasset.cs",
+        "sha256":  "e40b9688d7e1dfca5ac1205af66c7664eb654d7f461754e8dce240ab93fd8bf1"
+    },
+    {
+        "skill":  "manage-sprite-atlas",
+        "path":  "Assets/hty/_agent/skills~/manage-sprite-atlas/resources/scriptablepacker.cs",
+        "sha256":  "d3c44544938f49d1f0e4d44b2da74867d50ab50125b09253f380315239113f77"
+    },
+    {
+        "skill":  "manage-sprite-atlas",
+        "path":  "Assets/hty/_agent/skills~/manage-sprite-atlas/resources/setincludeinbuild.cs",
+        "sha256":  "1fbce249345f2ec9a718204f47203485cc24c553519e3ea71e0eb409ab4cb4d1"
+    },
+    {
+        "skill":  "manage-sprite-atlas",
+        "path":  "Assets/hty/_agent/skills~/manage-sprite-atlas/resources/sizeoptimizedpacker.cs",
+        "sha256":  "ce09001c8ff1f596322fe609a54142fff67cda600f861ecaf0d36555659ca99e"
+    },
+    {
+        "skill":  "manage-sprite-atlas",
+        "path":  "Assets/hty/_agent/skills~/manage-sprite-atlas/resources/spriteatlaslatebinding.cs",
+        "sha256":  "643854f2c289488ba6dfad395e220858460dc113b65130503bbab3df9f1e1245"
+    },
+    {
+        "skill":  "manage-sprite-atlas",
+        "path":  "Assets/hty/_agent/skills~/manage-sprite-atlas/resources/spriteatlasprebuildgenerator.cs",
+        "sha256":  "c590f3d8ff89da10030233a4c769ccea049f9bcf271337decd600de4c69edeeb"
+    },
+    {
+        "skill":  "manage-sprite-atlas",
+        "path":  "Assets/hty/_agent/skills~/manage-sprite-atlas/resources/spritedata.cs",
+        "sha256":  "13166add5dd24065a3690ee0f23c9cfaf06f61321cebb44777053edaefe4175e"
+    },
+    {
+        "skill":  "manage-sprite-atlas",
+        "path":  "Assets/hty/_agent/skills~/manage-sprite-atlas/resources/spritepack.cs",
+        "sha256":  "6a39deca737a3960b75c72dcaa4386802ed44657891b15faaa7e09224a0ffc60"
+    },
+    {
+        "skill":  "manage-sprite-atlas",
+        "path":  "Assets/hty/_agent/skills~/manage-sprite-atlas/resources/texturedata.cs",
+        "sha256":  "fb23f9804d46c63301366a0f92a14a3bdcb06b8631ce20b39186c141331d4a08"
+    },
+    {
+        "skill":  "manage-sprite-atlas",
+        "path":  "Assets/hty/_agent/skills~/manage-sprite-atlas/resources/updatebuildscripts.cs",
+        "sha256":  "dda02af27384dd743812db6ef5c3ea2536f2b977f21e90b5adc705ca9b61ab02"
+    },
+    {
+        "skill":  "manage-sprite-atlas",
+        "path":  "Assets/hty/_agent/skills~/manage-sprite-atlas/resources/updatesettingsconfiguration.cs",
+        "sha256":  "f7619ad5771f215c1cf74854a24f2c220f8f89112affb4b578760bd9a9f2099f"
+    },
+    {
+        "skill":  "manage-sprite-atlas",
+        "path":  "Assets/hty/_agent/skills~/manage-sprite-atlas/resources/usevariantswisely.cs",
+        "sha256":  "5c521cf4dd1786a3fae11d1401bb05e8e584eb2c40a83fed624d8fc042563068"
+    },
+    {
+        "skill":  "manage-sprite-atlas",
+        "path":  "Assets/hty/_agent/skills~/manage-sprite-atlas/resources/variantatlas.cs",
+        "sha256":  "2c0cac488c6ee4c805d9f88884f5aa476104c787e6c6e7853d1514cfda57cc86"
+    },
+    {
+        "skill":  "generate-editor-search-query",
+        "path":  "Assets/hty/_agent/skills~/generate-editor-search-query/SECURITY.md",
+        "sha256":  "971b8f1d6cad992164073608cd77b84b1aac53e1523606928decc96ad127a6b5"
+    },
+    {
+        "skill":  "generate-editor-search-query",
+        "path":  "Assets/hty/_agent/skills~/generate-editor-search-query/SKILL.md",
+        "sha256":  "ab8476c69091e565693af9ebd2bae9e39c17a8b147b040410bdfbe92e17c6b23"
+    },
+    {
+        "skill":  "generate-editor-search-query",
+        "path":  "Assets/hty/_agent/skills~/generate-editor-search-query/references/open-search-window.md",
+        "sha256":  "90ca6ec2c21b0ca8199d7b0cc5e535c5547d98936e3a152fd1a55c4fb313ced0"
+    },
+    {
+        "skill":  "generate-editor-search-query",
+        "path":  "Assets/hty/_agent/skills~/generate-editor-search-query/references/query-patterns.md",
+        "sha256":  "c3445d7c86e0d395d5e586731332e471563def20d7efcfaf7205523dd9168c2f"
+    },
+    {
+        "skill":  "unity-package-management",
+        "path":  "Assets/hty/_agent/skills~/unity-package-management/SKILL.md",
+        "sha256":  "4c8b428463c432f9d35731a06a11c4fa0b6f37ca4d518bea0f7d4f16ebdf3958"
+    },
+    {
+        "skill":  "unity-package-management",
+        "path":  "Assets/hty/_agent/skills~/unity-package-management/references/select-packages.md",
+        "sha256":  "152dda502a38c421b1ec38337179b9c1c59795f31c65d27cf80708183858e233"
+    },
+    {
+        "skill":  "shader-graph-create-custom-node",
+        "path":  "Assets/hty/_agent/skills~/shader-graph-create-custom-node/SKILL.md",
+        "sha256":  "927d3d95345410d56b94fa08f9f74f42389b2d03eb80774e5f9b85b7ff01ac11"
+    },
+    {
+        "skill":  "shader-graph-create-custom-node",
+        "path":  "Assets/hty/_agent/skills~/shader-graph-create-custom-node/resources/all_hints.hlsl",
+        "sha256":  "31952ec9470c39df41de3d47450922017a3290e3facfa5f0495e4845a4ff8a5a"
+    }
+]

@@ -1,0 +1,35 @@
+{
+  "frames": 10,
+  "size": [
+    48,
+    48
+  ],
+  "fps": 10,
+  "alphaMismatchAgainstBase": 0,
+  "nonTransparentPixels": [
+    588,
+    588,
+    588,
+    588,
+    588,
+    588,
+    588,
+    588,
+    588,
+    588
+  ],
+  "loopEndpointByteDifferences": 0,
+  "frameColorChanges": [
+    0,
+    0,
+    59,
+    241,
+    276,
+    289,
+    380,
+    432,
+    288,
+    23
+  ],
+  "periodicReplayMaxByteError": 0
+}

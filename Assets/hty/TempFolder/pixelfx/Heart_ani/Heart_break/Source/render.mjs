@@ -1,0 +1,11 @@
+﻿import * as mod from './heart-break.mjs';
+import {renderFrames,contactSheet,spriteSheet,save} from '../../MetalSparks/Source/pixelfx/tools/lib/fxlib.mjs';
+import {encodePNG} from '../../MetalSparks/Source/pixelfx/tools/lib/png.mjs';
+import {readFileSync} from 'node:fs';import {createHash} from 'node:crypto';
+const baseHash=createHash('sha256').update(readFileSync(new URL('../../HeartShimmer/Exports/heart-base.png',import.meta.url))).digest('hex').toUpperCase();
+if(baseHash!=='C5DC55E45BA8ADA7088F3859D020419B8F51508CFE10785B0E568EFD1501A10C')throw Error('Canonical source hash changed');
+const fx={id:'ui/heart-break',meta:{bg:'dark',...mod.meta},mod},r=renderFrames(fx),out=new URL('../Exports/',import.meta.url).pathname.replace(/^\/([A-Z]:)/,'$1');
+const sheet=spriteSheet(fx,r,'heart-break');save(out+'heart-break.png',sheet.png);save(out+'heart-break.json',JSON.stringify(sheet.json,null,2));save(out+'contact.png',contactSheet(fx,r,{max:10,zoom:4}));
+for(let k=0;k<r.n;k++)save(out+`heart_break_${String(k).padStart(2,'0')}.png`,encodePNG(r.w,r.h,r.frames[k].clear));
+const firstHash=createHash('sha256').update(encodePNG(r.w,r.h,r.frames[0].clear)).digest('hex').toUpperCase();
+const report={baseHash,firstHash,firstPNGByteIdentical:firstHash===baseHash,frames:r.n,fps:r.fps,nonTransparentPixels:r.frames.map(f=>Array.from(f.clear).filter((v,i)=>i%4===3&&v>0).length)};save(out+'validation.json',JSON.stringify(report,null,2));console.log(report);
