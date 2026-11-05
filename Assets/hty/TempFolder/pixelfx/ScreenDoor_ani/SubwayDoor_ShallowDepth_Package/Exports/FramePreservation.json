@@ -1,0 +1,9 @@
+{
+  "testedFrames": 36,
+  "fixedFrameRGBADifferences": 0,
+  "openingStartSeconds": 0,
+  "fullyOpenStartSeconds": 0.75,
+  "closingStartSeconds": 2.25,
+  "clipEndSeconds": 3,
+  "referenceUnmodified": true
+}

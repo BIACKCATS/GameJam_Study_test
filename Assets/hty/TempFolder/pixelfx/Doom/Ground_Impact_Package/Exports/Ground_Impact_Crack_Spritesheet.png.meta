@@ -1,0 +1,624 @@
+fileFormatVersion: 2
+guid: 9a964dd57d1c9fd468d01e9a23d42461
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2314439002082241447
+    second: Ground_Impact_Crack_Spritesheet_0
+  - first:
+      213: 5559666868936116686
+    second: Ground_Impact_Crack_Spritesheet_1
+  - first:
+      213: 6896888206679523246
+    second: Ground_Impact_Crack_Spritesheet_2
+  - first:
+      213: -6800900522565556818
+    second: Ground_Impact_Crack_Spritesheet_3
+  - first:
+      213: 3177321161757016899
+    second: Ground_Impact_Crack_Spritesheet_4
+  - first:
+      213: -4851806948185113891
+    second: Ground_Impact_Crack_Spritesheet_5
+  - first:
+      213: -7955186590237481031
+    second: Ground_Impact_Crack_Spritesheet_6
+  - first:
+      213: -5899344743248072515
+    second: Ground_Impact_Crack_Spritesheet_7
+  - first:
+      213: -1060350500113786176
+    second: Ground_Impact_Crack_Spritesheet_8
+  - first:
+      213: 3607447857939329525
+    second: Ground_Impact_Crack_Spritesheet_9
+  - first:
+      213: 9203871437411993917
+    second: Ground_Impact_Crack_Spritesheet_10
+  - first:
+      213: -3268731337136852804
+    second: Ground_Impact_Crack_Spritesheet_11
+  - first:
+      213: -8575344207704993383
+    second: Ground_Impact_Crack_Spritesheet_12
+  - first:
+      213: 9135778905733234245
+    second: Ground_Impact_Crack_Spritesheet_13
+  - first:
+      213: 8391979981207134937
+    second: Ground_Impact_Crack_Spritesheet_14
+  - first:
+      213: 3584220553552619401
+    second: Ground_Impact_Crack_Spritesheet_15
+  - first:
+      213: -2422375987145704339
+    second: Ground_Impact_Crack_Spritesheet_16
+  - first:
+      213: 4064908759937380823
+    second: Ground_Impact_Crack_Spritesheet_17
+  - first:
+      213: 8636585379471577684
+    second: Ground_Impact_Crack_Spritesheet_18
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Ground_Impact_Crack_Spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 306
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95414927df571efd0800000000000000
+      internalID: -2314439002082241447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_Impact_Crack_Spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 309
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec902789f87e72d40800000000000000
+      internalID: 5559666868936116686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_Impact_Crack_Spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 297
+        width: 24
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eafb6be584ba6bf50800000000000000
+      internalID: 6896888206679523246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_Impact_Crack_Spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 311
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea526b7e1095e91a0800000000000000
+      internalID: -6800900522565556818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_Impact_Crack_Spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 305
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 343cbdf23cc181c20800000000000000
+      internalID: 3177321161757016899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_Impact_Crack_Spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 279
+        width: 77
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dda77ae594beaacb0800000000000000
+      internalID: -4851806948185113891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_Impact_Crack_Spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 272
+        width: 106
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b7a1fec1ff799190800000000000000
+      internalID: -7955186590237481031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_Impact_Crack_Spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 289
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db0712b4631512ea0800000000000000
+      internalID: -5899344743248072515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_Impact_Crack_Spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 284
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ca5f4f86d0e841f0800000000000000
+      internalID: -1060350500113786176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_Impact_Crack_Spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 286
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f1b736b6ba301230800000000000000
+      internalID: 3607447857939329525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_Impact_Crack_Spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 292
+        width: 15
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d394e41ee48babf70800000000000000
+      internalID: 9203871437411993917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_Impact_Crack_Spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 142
+        width: 130
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb035c7da2223a2d0800000000000000
+      internalID: -3268731337136852804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_Impact_Crack_Spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 142
+        width: 130
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9915a0190e14ef880800000000000000
+      internalID: -8575344207704993383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_Impact_Crack_Spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 142
+        width: 130
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54e7cb6e28ec8ce70800000000000000
+      internalID: 9135778905733234245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_Impact_Crack_Spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 142
+        width: 130
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d26a0e845d467470800000000000000
+      internalID: 8391979981207134937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_Impact_Crack_Spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 14
+        width: 130
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 987682b7a95bdb130800000000000000
+      internalID: 3584220553552619401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_Impact_Crack_Spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 14
+        width: 130
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6c7ebdbfddf16ed0800000000000000
+      internalID: -2422375987145704339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_Impact_Crack_Spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 14
+        width: 130
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d1f078faf4796830800000000000000
+      internalID: 4064908759937380823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_Impact_Crack_Spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 14
+        width: 130
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4525cbfd4a05bd770800000000000000
+      internalID: 8636585379471577684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Ground_Impact_Crack_Spritesheet_0: -2314439002082241447
+      Ground_Impact_Crack_Spritesheet_1: 5559666868936116686
+      Ground_Impact_Crack_Spritesheet_10: 9203871437411993917
+      Ground_Impact_Crack_Spritesheet_11: -3268731337136852804
+      Ground_Impact_Crack_Spritesheet_12: -8575344207704993383
+      Ground_Impact_Crack_Spritesheet_13: 9135778905733234245
+      Ground_Impact_Crack_Spritesheet_14: 8391979981207134937
+      Ground_Impact_Crack_Spritesheet_15: 3584220553552619401
+      Ground_Impact_Crack_Spritesheet_16: -2422375987145704339
+      Ground_Impact_Crack_Spritesheet_17: 4064908759937380823
+      Ground_Impact_Crack_Spritesheet_18: 8636585379471577684
+      Ground_Impact_Crack_Spritesheet_2: 6896888206679523246
+      Ground_Impact_Crack_Spritesheet_3: -6800900522565556818
+      Ground_Impact_Crack_Spritesheet_4: 3177321161757016899
+      Ground_Impact_Crack_Spritesheet_5: -4851806948185113891
+      Ground_Impact_Crack_Spritesheet_6: -7955186590237481031
+      Ground_Impact_Crack_Spritesheet_7: -5899344743248072515
+      Ground_Impact_Crack_Spritesheet_8: -1060350500113786176
+      Ground_Impact_Crack_Spritesheet_9: 3607447857939329525
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,110 @@
+﻿[
+    {
+        "sha256":  "BB5D11DD04427D99AF0C3F0796F1C42CD91B837666B2FF2CA602CDF3E6536FF0",
+        "path":  "README_KO.md"
+    },
+    {
+        "sha256":  "56C8ECA4401E17F815EE6182212C0FAF18BE407FCF1854E5CA4896E0BBD6C8B9",
+        "path":  "Exports\\Contact.png"
+    },
+    {
+        "sha256":  "7D74B7E6CE411CACECF7E2ACC34097B1253E193A9D1A3CAF8695DE517AF188DD",
+        "path":  "Exports\\DecodedValidation.json"
+    },
+    {
+        "sha256":  "1D6A930EE230DBC5F196495F55E6BBE5F556E59A2913EA5F65F53961FE40E3BA",
+        "path":  "Exports\\KickImpact_01.png"
+    },
+    {
+        "sha256":  "387AE55414DFD42805EEB51350D4B31B0E0709F90A2BBF04F9ACE0E34F783F76",
+        "path":  "Exports\\KickImpact_02.png"
+    },
+    {
+        "sha256":  "F21A00FCA2C7AB85AFD5E1E58FF8EC30A6FBB3163D8D41E838ABBF926622CC61",
+        "path":  "Exports\\KickImpact_03.png"
+    },
+    {
+        "sha256":  "38FBECA44C055CA274B32FE1BD5C2C9BB6963FD77CEFB4D6B189F12F6D44CC15",
+        "path":  "Exports\\KickImpact_04.png"
+    },
+    {
+        "sha256":  "1D0EAB6A4632850E70088D31202BD85E6EA74BA64F38EBB4FD6E2B4B1DDB8598",
+        "path":  "Exports\\KickImpact_05.png"
+    },
+    {
+        "sha256":  "B72BB251E3A6EEFC94805827A7902EB81845ED34C6AF1BB377055743F6C51CF2",
+        "path":  "Exports\\KickImpact_06.png"
+    },
+    {
+        "sha256":  "8266A8D804537BFA006C427DE658A7E1B781939F0F66EFFE927B72E890FE4D47",
+        "path":  "Exports\\KickImpact_07.png"
+    },
+    {
+        "sha256":  "4F2B4CE6481C8F6C0C658C50EF07E6083B9C5691AAA3670AF633695E0296F7D7",
+        "path":  "Exports\\KickImpact_08.png"
+    },
+    {
+        "sha256":  "336DC36B42328F62CFD3D3B1E27F3D85FDCE06A5CB4DEE0C8220F98A14CA94C7",
+        "path":  "Exports\\KickImpact_09.png"
+    },
+    {
+        "sha256":  "16D626B5402EB83EB2224000F67E4DDE05B9500278AC07FB821E5DB77C6C08B1",
+        "path":  "Exports\\KickImpact_10.png"
+    },
+    {
+        "sha256":  "93D1D692C51F56CF4F55819377E31D5A56EE6908C6708E7A13455E64AF3F4D90",
+        "path":  "Exports\\KickImpact_11.png"
+    },
+    {
+        "sha256":  "088CDBC6E32A995726FA6D1A0F20E91430A0C5465413CC0410B2DB3182B2F8DA",
+        "path":  "Exports\\KickImpact_12.png"
+    },
+    {
+        "sha256":  "8F17935FE03B853277D76078B7D21CFB7367E1846D39619B787D60F0E1882877",
+        "path":  "Exports\\KickImpact_Burst_Spritesheet.json"
+    },
+    {
+        "sha256":  "FA8171EC2D7FD58E9F061324624A593947A2F4C9DBA4F88CEA2329A2D0E8D0A6",
+        "path":  "Exports\\KickImpact_Burst_Spritesheet.png"
+    },
+    {
+        "sha256":  "55EE9C280CD0F17E6BBE65991319EDD21A45051805C1E277774F6EE64308B9E9",
+        "path":  "Exports\\KickImpact_Preview.gif"
+    },
+    {
+        "sha256":  "4B8C8FD8D7B5D2004E2AC3C65E568CD275D26D8D2AE68331E66627C3D9F8E1D6",
+        "path":  "Exports\\KickImpact_Spritesheet.json"
+    },
+    {
+        "sha256":  "B320F69DEE40884316E486A296EA25AC065D03E6452309469BABE08F0E073F15",
+        "path":  "Exports\\KickImpact_Spritesheet.png"
+    },
+    {
+        "sha256":  "F5967B3861EB11B4015AC5FD550EBD24508198B02A5460E919EC5573805C0289",
+        "path":  "Exports\\KickImpact_Stars_Spritesheet.json"
+    },
+    {
+        "sha256":  "53C9FA13A4C5810949495850320F66B0048632EBDDEF1B9C5A8118268C752831",
+        "path":  "Exports\\KickImpact_Stars_Spritesheet.png"
+    },
+    {
+        "sha256":  "1FE6C8ACCB61A6A4602EEB3E02DE89DC4755EA6C8CD63533E74258924D3055B5",
+        "path":  "Exports\\LayerValidation.json"
+    },
+    {
+        "sha256":  "040636FB99954B2DFE57F3AD594921D81A6AFDA11FAB01AF86367DD7772DD25B",
+        "path":  "Exports\\Stars_Contact.png"
+    },
+    {
+        "sha256":  "07992025D2D7A56A020EC3A16C426FAC4C8F49C532CA3E5B6F4ABEAB9CAEFD70",
+        "path":  "Exports\\Validation.json"
+    },
+    {
+        "sha256":  "6F49425FB31BB09659C3B7307A2FC698593DA82F6CEC821B93451E26429EEC96",
+        "path":  "Source\\kick-impact.mjs"
+    },
+    {
+        "sha256":  "4E56576245E06FEC9A9486F2FDD946DC9573511A90A5DDFCD48C15C6FCA94CBB",
+        "path":  "Source\\render.mjs"
+    }
+]

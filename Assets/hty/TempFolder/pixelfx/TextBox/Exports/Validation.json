@@ -1,0 +1,18 @@
+{
+  "frames": 36,
+  "width": 64,
+  "height": 40,
+  "fps": 24,
+  "durationSeconds": 1.5,
+  "periodicPixelMatch": true,
+  "stableColumnSilhouetteAfterLocalMotionCompensation": true,
+  "transparentBorder": true,
+  "uniqueFrames": 24,
+  "dotPeakFrames": [
+    10,
+    22,
+    34
+  ],
+  "sheetColumns": 5,
+  "sheetRows": 8
+}

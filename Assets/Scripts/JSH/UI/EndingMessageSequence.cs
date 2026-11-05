@@ -84,6 +84,8 @@ namespace JSH.UI
 
         [Header("Flow")]
         [SerializeField] private bool _playOnStart = true;
+        [Tooltip("Hide everything on Awake even when Play On Start is off (Play is called later, e.g. after an intro).")]
+        [SerializeField] private bool _hideUntilPlay = true;
         [Tooltip("Used only when there is no header.")]
         [SerializeField, Min(0f)] private float _initialDelay = 0.3f;
         [SerializeField] private bool _skipOnInput = true;
@@ -111,9 +113,15 @@ namespace JSH.UI
         private void Awake()
         {
             Initialize();
-            if (_playOnStart)
+            if (_playOnStart || _hideUntilPlay)
             {
                 ApplyStartState();
+            }
+
+            // The header's start state is an idle "..." bubble; keep it off until Play when started later.
+            if (!_playOnStart && _hideUntilPlay && _header != null)
+            {
+                _header.gameObject.SetActive(false);
             }
         }
 
@@ -170,6 +178,11 @@ namespace JSH.UI
             KillTweens();
             _stats = stats;
             _finished = false;
+            if (_header != null)
+            {
+                _header.gameObject.SetActive(true);
+            }
+
             ApplyStartState();
             _routine = StartCoroutine(Run());
         }

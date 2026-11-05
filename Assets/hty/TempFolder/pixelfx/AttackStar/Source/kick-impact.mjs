@@ -1,0 +1,13 @@
+﻿import {hex} from '../../MetalSparks/Source/pixelfx/src/core/index.js';
+export const meta={name:'Flying kick impact and twinkling stars',desc:'A sharp directional hit launches seven rapidly pulsing gold stars.',size:[128,128],origin:[64,64],duration:11/24,fps:24,loop:false,options:{layer:'combined',seed:1}};
+const gold=hex('#da8d21'),yellow=hex('#ffd638'),light=hex('#fff5c2');
+// Return deterministic star position, pulse and lifetime for a frame; inputs index/frame; return star state or null.
+export function starState(i,f){const age=f-2,ends=[9,10,8,10,9,8,10];if(age<0||f>ends[i]||f===11)return null;const angles=[-2.65,-1.82,-.96,-.14,.67,1.48,2.46],speeds=[2.8,3.7,4.3,4.8,4.1,3.2,2.3],a=angles[i],r=11+age*speeds[i],pulse=[1,.4,1.3,.5,.95,.35,1.15,.4,1][(age+i*2)%9],fade=f>=8?(ends[i]-f+1)/3:1,size=Math.max(f<8?2:1,Math.round((4+(i%3))*pulse*Math.min(1,fade)));return {x:Math.round(Math.cos(a)*r+age*.55),y:Math.round(Math.sin(a)*r+age*age*.055),size,bright:pulse>.8};}
+// Draw a concave four-point sparkle, retaining a white center only on bright beats; inputs painter/star; returns void.
+function star(p,s){const {x,y,size:r}=s,c=s.bright?yellow:gold;if(r<=1){p.rect(x,y,1,1,c);return;}const k=Math.max(1,Math.floor(r*.3));p.poly([[x,y-r],[x+k,y-k],[x+r,y],[x+k,y+k],[x,y+r],[x-k,y+k],[x-r,y],[x-k,y-k]],c);if(s.bright){p.rect(x,y-r+1,1,r*2-1,hex('#ffe783'));p.rect(x,y,1,1,light);if(r>=6){p.rect(x-1,y,3,1,light);p.rect(x,y-1,1,3,light);}}}
+// Draw the sharp hit core and asymmetrical outward spikes; inputs painter/frame; returns void.
+function burst(p,f){if(f>4)return;if(f===0){p.poly([[0,-5],[2,-1],[9,0],[2,2],[0,5],[-2,1],[-5,0],[-2,-1]],yellow);p.rect(-1,-1,3,3,light);return;}const angles=[-.08,.55,1.22,1.9,2.65,3.25,3.9,4.65,5.35],lengths=[39,30,24,27,19,23,22,32,35],scale=[0,.82,1,1.1,1.16][f],root=[0,1,5,20,29][f],width=[0,5,3,1.5,.7][f];for(let i=0;i<angles.length;i++){const a=angles[i],L=lengths[i]*scale;if(L<=root)continue;const nx=-Math.sin(a)*width,ny=Math.cos(a)*width,rx=Math.cos(a)*root,ry=Math.sin(a)*root,tx=Math.cos(a)*L,ty=Math.sin(a)*L;p.tri(rx+nx,ry+ny,tx,ty,rx-nx,ry-ny,gold);p.tri(rx+nx*.55,ry+ny*.55,tx,ty,rx-nx*.55,ry-ny*.55,yellow);}if(f<=2){const r=f===1?10:6;p.poly([[0,-r],[3,-3],[r+5,0],[3,3],[0,r],[-3,3],[-r,0],[-3,-3]],light);}}
+// Compose synchronized independent burst/star layers, with an empty terminal frame; inputs painter,time,options; returns void.
+export function draw(p,t,o){const f=Math.min(11,Math.floor(t*24+1e-7));if(f===11)return;if(o.layer!=='stars')burst(p,f);if(o.layer!=='burst')for(let i=0;i<7;i++){const s=starState(i,f);if(s)star(p,s);}}
+
+

@@ -1,0 +1,58 @@
+{
+  "frames": 12,
+  "fps": 20,
+  "seconds": 0.6,
+  "resolution": [
+    160,
+    128
+  ],
+  "origin": [
+    80,
+    80
+  ],
+  "borderPixels": 0,
+  "persistentFinalDamage": true,
+  "lastFourFramesIdentical": true,
+  "combinedPixels": [
+    0,
+    581,
+    1089,
+    1609,
+    1940,
+    1891,
+    1896,
+    1830,
+    1805,
+    1805,
+    1805,
+    1805
+  ],
+  "crackPixels": [
+    0,
+    386,
+    986,
+    1516,
+    1805,
+    1805,
+    1805,
+    1805,
+    1805,
+    1805,
+    1805,
+    1805
+  ],
+  "debrisPixels": [
+    0,
+    386,
+    331,
+    103,
+    161,
+    93,
+    95,
+    29,
+    0,
+    0,
+    0,
+    0
+  ]
+}

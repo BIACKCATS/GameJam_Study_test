@@ -1,0 +1,118 @@
+﻿[
+    {
+        "sha256":  "FD4EC61F3A8E8337EF069E3FE275F8ECCA495775D7A60D14A3752210096C61A5",
+        "path":  "README_KO.md"
+    },
+    {
+        "sha256":  "C7449C7184D32F6EC258B0C5C2FDB64AEC3DDA0B3AC123DE71D78A2DEF37275D",
+        "path":  "Exports\\Contact.png"
+    },
+    {
+        "sha256":  "AB52C783B79AF7AD99E24989FA254352823339D4641F2217D570014E779F1B39",
+        "path":  "Exports\\DecodedValidation.json"
+    },
+    {
+        "sha256":  "E9384A12E7E42D1E7CEA4E2244DA6A4F3A9C4A86FDD876E34B92E7A6C7CB6DDF",
+        "path":  "Exports\\Ground_Impact_01.png"
+    },
+    {
+        "sha256":  "084FE9C2F3642261DF398F88A0C526C58EBA4376CCF54A5F2825F6AD3DE6B459",
+        "path":  "Exports\\Ground_Impact_02.png"
+    },
+    {
+        "sha256":  "0DF1AE11776DADB550606EF6E05F06097A63DDB28EDA1E15C7CBD76B9A518EE3",
+        "path":  "Exports\\Ground_Impact_03.png"
+    },
+    {
+        "sha256":  "B23D372837DD22E10A4C3F04CDC15712468657D0B4BE31B5D9EFF4429E0E2716",
+        "path":  "Exports\\Ground_Impact_04.png"
+    },
+    {
+        "sha256":  "BA9AF2704323390E502C524CFD7751818AC4CCAA93F2F65CDD5A999717574945",
+        "path":  "Exports\\Ground_Impact_05.png"
+    },
+    {
+        "sha256":  "4219B3D8C43324F3FE3BAA9322CE447BAEA9CF81F77B4B1005D4D681C0995226",
+        "path":  "Exports\\Ground_Impact_06.png"
+    },
+    {
+        "sha256":  "3E340BA6009272452845CBDB0F486624C1B8C0C0F20866CAE70BECC9E0289924",
+        "path":  "Exports\\Ground_Impact_07.png"
+    },
+    {
+        "sha256":  "349F2DC0B05195CD9E495E2FE945AC1F5D1527A45393751E9A497EE8DA94A855",
+        "path":  "Exports\\Ground_Impact_08.png"
+    },
+    {
+        "sha256":  "D1C3C3039C8FC0A693E7394567A1911A78776327CB952C8452F66AEC7E6440B0",
+        "path":  "Exports\\Ground_Impact_09.png"
+    },
+    {
+        "sha256":  "D1C3C3039C8FC0A693E7394567A1911A78776327CB952C8452F66AEC7E6440B0",
+        "path":  "Exports\\Ground_Impact_10.png"
+    },
+    {
+        "sha256":  "D1C3C3039C8FC0A693E7394567A1911A78776327CB952C8452F66AEC7E6440B0",
+        "path":  "Exports\\Ground_Impact_11.png"
+    },
+    {
+        "sha256":  "D1C3C3039C8FC0A693E7394567A1911A78776327CB952C8452F66AEC7E6440B0",
+        "path":  "Exports\\Ground_Impact_12.png"
+    },
+    {
+        "sha256":  "B247916025FE205181CB09CAB2523C42CDB04B8C1F895947C3AD99B87AEE5C05",
+        "path":  "Exports\\Ground_Impact_Crack_Spritesheet.json"
+    },
+    {
+        "sha256":  "C966EC34BB2B66BEB48EEE2FC1870BB2139C99BD6EDD6ACC5DA96F7267486E1C",
+        "path":  "Exports\\Ground_Impact_Crack_Spritesheet.png"
+    },
+    {
+        "sha256":  "B48521DF6254685BEB896EC21946C92D2C2477CC9F36101BB817EC389BC4CE6E",
+        "path":  "Exports\\Ground_Impact_Debris.png"
+    },
+    {
+        "sha256":  "EE0A9FDAF3EF482E0B3DDD29B0E242C8F1FD925099E4AA3AED0DB8E74B0E83CC",
+        "path":  "Exports\\Ground_Impact_Debris_Spritesheet.json"
+    },
+    {
+        "sha256":  "C27284EFD9E39877D5EF7C7A94DBC8BB09A2F3ED5E1355372A5D43507DB4349E",
+        "path":  "Exports\\Ground_Impact_Debris_Spritesheet.png"
+    },
+    {
+        "sha256":  "D1C3C3039C8FC0A693E7394567A1911A78776327CB952C8452F66AEC7E6440B0",
+        "path":  "Exports\\Ground_Impact_FinalCrack.png"
+    },
+    {
+        "sha256":  "5550C89EAE45D379A99158767AEF391E32CE625295661FEDA8D7A9F9312BACA1",
+        "path":  "Exports\\Ground_Impact_FloorPreview.png"
+    },
+    {
+        "sha256":  "57B47F423F56945FFBE22F8D27AEC77FE14AE2AA79F2B3CA9D166288DAFDD0FA",
+        "path":  "Exports\\Ground_Impact_Preview.gif"
+    },
+    {
+        "sha256":  "12275A206E52E9EFC9D038D23A07794B496EBF29DD435956250C58D3BF005BDF",
+        "path":  "Exports\\Ground_Impact_Spritesheet.json"
+    },
+    {
+        "sha256":  "9FD882E7A3266E3171A2426EE94A2AA93EDD018C66868A719074A0DFDF16EA1E",
+        "path":  "Exports\\Ground_Impact_Spritesheet.png"
+    },
+    {
+        "sha256":  "EFA34CF77E605F5343A7EDC5513B3A22C3F3E59180020E6F118940794C47FE3D",
+        "path":  "Exports\\LayerValidation.json"
+    },
+    {
+        "sha256":  "7A1775B2068F43CBFDCAE6C77B8CF3F1E0C26192DC9CD37FE7742339947F2776",
+        "path":  "Exports\\Validation.json"
+    },
+    {
+        "sha256":  "238B95EE28286C9A0EB933B22A73D9C05AB861E2D35FA52A89111844EE12EC6C",
+        "path":  "Source\\ground-impact.mjs"
+    },
+    {
+        "sha256":  "C3512838B9A0FF9CAEC9FE9585BB8C026AD8A3F8D8EE188E5411D9BB1EC5B416",
+        "path":  "Source\\render.mjs"
+    }
+]

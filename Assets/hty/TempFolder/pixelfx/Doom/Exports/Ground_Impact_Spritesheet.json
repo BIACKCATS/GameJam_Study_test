@@ -1,0 +1,303 @@
+{
+  "frames": [
+    {
+      "filename": "Ground_Impact_Spritesheet 0",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 160,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 160,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 160,
+        "h": 128
+      },
+      "duration": 50
+    },
+    {
+      "filename": "Ground_Impact_Spritesheet 1",
+      "frame": {
+        "x": 160,
+        "y": 0,
+        "w": 160,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 160,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 160,
+        "h": 128
+      },
+      "duration": 50
+    },
+    {
+      "filename": "Ground_Impact_Spritesheet 2",
+      "frame": {
+        "x": 320,
+        "y": 0,
+        "w": 160,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 160,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 160,
+        "h": 128
+      },
+      "duration": 50
+    },
+    {
+      "filename": "Ground_Impact_Spritesheet 3",
+      "frame": {
+        "x": 480,
+        "y": 0,
+        "w": 160,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 160,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 160,
+        "h": 128
+      },
+      "duration": 50
+    },
+    {
+      "filename": "Ground_Impact_Spritesheet 4",
+      "frame": {
+        "x": 0,
+        "y": 128,
+        "w": 160,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 160,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 160,
+        "h": 128
+      },
+      "duration": 50
+    },
+    {
+      "filename": "Ground_Impact_Spritesheet 5",
+      "frame": {
+        "x": 160,
+        "y": 128,
+        "w": 160,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 160,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 160,
+        "h": 128
+      },
+      "duration": 50
+    },
+    {
+      "filename": "Ground_Impact_Spritesheet 6",
+      "frame": {
+        "x": 320,
+        "y": 128,
+        "w": 160,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 160,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 160,
+        "h": 128
+      },
+      "duration": 50
+    },
+    {
+      "filename": "Ground_Impact_Spritesheet 7",
+      "frame": {
+        "x": 480,
+        "y": 128,
+        "w": 160,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 160,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 160,
+        "h": 128
+      },
+      "duration": 50
+    },
+    {
+      "filename": "Ground_Impact_Spritesheet 8",
+      "frame": {
+        "x": 0,
+        "y": 256,
+        "w": 160,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 160,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 160,
+        "h": 128
+      },
+      "duration": 50
+    },
+    {
+      "filename": "Ground_Impact_Spritesheet 9",
+      "frame": {
+        "x": 160,
+        "y": 256,
+        "w": 160,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 160,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 160,
+        "h": 128
+      },
+      "duration": 50
+    },
+    {
+      "filename": "Ground_Impact_Spritesheet 10",
+      "frame": {
+        "x": 320,
+        "y": 256,
+        "w": 160,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 160,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 160,
+        "h": 128
+      },
+      "duration": 50
+    },
+    {
+      "filename": "Ground_Impact_Spritesheet 11",
+      "frame": {
+        "x": 480,
+        "y": 256,
+        "w": 160,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 160,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 160,
+        "h": 128
+      },
+      "duration": 50
+    }
+  ],
+  "meta": {
+    "app": "https://github.com/patch-gg/pixelfx",
+    "version": "1",
+    "image": "Ground_Impact_Spritesheet.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 640,
+      "h": 384
+    },
+    "scale": "1",
+    "frameTags": [
+      {
+        "name": "Ground_Impact_Spritesheet",
+        "from": 0,
+        "to": 11,
+        "direction": "forward"
+      }
+    ],
+    "pixelfx": {
+      "id": "impacts/ground-crater",
+      "name": "Cold stone ground impact",
+      "fps": 20,
+      "loop": false,
+      "frames": 12,
+      "frameSize": [
+        160,
+        128
+      ],
+      "pivot": [
+        80,
+        80
+      ],
+      "columns": 4
+    }
+  }
+}
