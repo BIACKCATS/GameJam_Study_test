@@ -1,0 +1,25 @@
+{
+  "frames": 24,
+  "size": [
+    128,
+    128
+  ],
+  "fps": 16,
+  "loopSeconds": 1.5,
+  "sheet": [
+    768,
+    512
+  ],
+  "grid": [
+    6,
+    4
+  ],
+  "rightButtonAndRightBodyFixed": true,
+  "bodySilhouetteFixed": true,
+  "transparentBorder": true,
+  "cyclePixelExact": true,
+  "firstLastPixelExact": true,
+  "returnedByFrame12": true,
+  "pressedDiffers": true,
+  "partialAlphaPresent": true
+}

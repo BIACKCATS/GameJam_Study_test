@@ -12,7 +12,7 @@ namespace JSH.UI
     /// <summary>
     /// JRPG-style dialogue screen: bust portrait in the center (lower body hidden behind the dialogue box), dialogue box at the bottom,
     /// radial choices around the portrait. Listens to DialogueRunner; owns dialogue input:
-    ///  - node with choices: Left Click confirms the choice selected by mouse direction (RadialChoiceSelector)
+    ///  - node with choices: Left Click confirms the hovered choice (RadialChoiceSelector)
     ///  - node without choices: Left Click / Space / Enter = next
     ///  - while text is still being typed (Text Animator typewriter): the same input reveals it all instead
     /// Choices and the "next" marker appear only after the body text is fully shown.
@@ -30,6 +30,7 @@ namespace JSH.UI
         [Tooltip("Text Animator typewriter on the Body text (optional). Empty = text appears instantly.")]
         [SerializeField] private TypewriterComponent _bodyTypewriter;
         [SerializeField] private Image _portraitImage;
+        [SerializeField, Min(0.1f)] private float _passengerPortraitScale = 1.5f;
         [Tooltip("Used when the Talkable has no portrait.")]
         [SerializeField] private Sprite _fallbackPortrait;
         [Tooltip("\"Next\" marker shown on nodes without choices (optional).")]
@@ -37,6 +38,8 @@ namespace JSH.UI
         [SerializeField] private RadialChoiceSelector _choices;
 
         private DialogueRunner _runner;
+        private Vector3 _portraitBaseScale;
+        private bool _portraitScaleCaptured;
         private Talkable _target;
         private int _openedFrame = -1;
         private bool _started;
@@ -88,6 +91,13 @@ namespace JSH.UI
 
             if (_portraitImage != null)
             {
+                if (!_portraitScaleCaptured)
+                {
+                    _portraitBaseScale = _portraitImage.rectTransform.localScale;
+                    _portraitScaleCaptured = true;
+                }
+                bool passenger = target != null && !target.TryGetComponent<Villain>(out _);
+                _portraitImage.rectTransform.localScale = _portraitBaseScale * (passenger ? _passengerPortraitScale : 1f);
                 Sprite portrait = target != null && target.Portrait != null ? target.Portrait : _fallbackPortrait;
                 _portraitImage.sprite = portrait;
                 _portraitImage.enabled = portrait != null;
@@ -186,7 +196,11 @@ namespace JSH.UI
                     if (click || key) _choices.SkipTyping();
                     return;
                 }
-                if (click && _choices.SelectedIndex >= 0) _runner.Choose(_choices.SelectedIndex);
+                if (click)
+                {
+                    _choices.UpdateSelection();
+                    if (_choices.SelectedIndex >= 0) _runner.Choose(_choices.SelectedIndex);
+                }
                 return;
             }
 

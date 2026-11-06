@@ -6,8 +6,8 @@ namespace JSH.UI
 {
     /// <summary>
     /// Persona-style radial choice ring. Answer boxes (ChoiceSlotView) sit around a center (the portrait);
-    /// the mouse direction from the center picks the box whose direction is closest (no need to hover the box).
-    /// Inside the dead zone nothing is selected. DialogueView reads SelectedIndex and confirms on click.
+    /// the mouse must be inside the visible answer box plus a small margin to select it.
+    /// DialogueView refreshes SelectedIndex before confirming on click.
     /// Works with any slot count; the design uses 2 (lower-left / upper-right).
     /// </summary>
     public sealed class RadialChoiceSelector : MonoBehaviour
@@ -18,8 +18,8 @@ namespace JSH.UI
         [SerializeField] private ChoiceSlotView[] _slots = new ChoiceSlotView[0];
         [Tooltip("Shown/hidden with the choices. Empty = this GameObject's children are left as they are.")]
         [SerializeField] private GameObject _root;
-        [Tooltip("Radius around the center (canvas units) where no choice is selected.")]
-        [SerializeField, Min(0f)] private float _deadZoneRadius = 80f;
+        [Tooltip("Extra click margin outside each visible choice box (UI units per edge).")]
+        [SerializeField, Min(0f)] private float _hitPadding = 10f;
         [Tooltip("Optional arrow/needle rotated toward the mouse (its right side = 0 degrees).")]
         [SerializeField] private RectTransform _pointer;
 
@@ -96,37 +96,33 @@ namespace JSH.UI
             if (IsShown) UpdateSelection();
         }
 
-        private void UpdateSelection()
+        public void UpdateSelection()
         {
             Mouse mouse = Mouse.current;
-            if (mouse == null || _center == null || _canvas == null) return;
-
-            Camera cam = _canvas.renderMode == RenderMode.ScreenSpaceOverlay ? null : _canvas.worldCamera;
-            Vector2 center = RectTransformUtility.WorldToScreenPoint(cam, _center.position);
-            Vector2 toMouse = mouse.position.ReadValue() - center;
-
-            if (_pointer != null && toMouse.sqrMagnitude > 0.01f)
-                _pointer.localRotation = Quaternion.Euler(0f, 0f, Mathf.Atan2(toMouse.y, toMouse.x) * Mathf.Rad2Deg);
-
-            float deadZone = _deadZoneRadius * _canvas.scaleFactor;
-            if (toMouse.sqrMagnitude < deadZone * deadZone)
+            if (!IsShown || mouse == null || _canvas == null)
             {
                 Select(-1);
                 return;
             }
 
-            Vector2 mouseDir = toMouse.normalized;
+            Camera cam = _canvas.renderMode == RenderMode.ScreenSpaceOverlay ? null : _canvas.worldCamera;
+            Vector2 position = mouse.position.ReadValue();
+            Vector2 center = _center != null ? RectTransformUtility.WorldToScreenPoint(cam, _center.position) : position;
+            Vector2 toMouse = position - center;
+
+            if (_pointer != null && toMouse.sqrMagnitude > 0.01f)
+                _pointer.localRotation = Quaternion.Euler(0f, 0f, Mathf.Atan2(toMouse.y, toMouse.x) * Mathf.Rad2Deg);
+
             int best = -1;
-            float bestDot = float.NegativeInfinity;
+            float bestDistance = float.PositiveInfinity;
             for (int i = 0; i < _activeCount; i++)
             {
-                if (_slots[i] == null) continue;
-                Vector2 slotDir = RectTransformUtility.WorldToScreenPoint(cam, _slots[i].Rect.position) - center;
-                if (slotDir.sqrMagnitude < 0.01f) continue;
-                float dot = Vector2.Dot(mouseDir, slotDir.normalized);
-                if (dot > bestDot)
+                if (_slots[i] == null || !_slots[i].gameObject.activeInHierarchy
+                    || !_slots[i].ContainsScreenPoint(position, cam, _hitPadding)) continue;
+                float distance = (RectTransformUtility.WorldToScreenPoint(cam, _slots[i].Rect.position) - position).sqrMagnitude;
+                if (distance < bestDistance)
                 {
-                    bestDot = dot;
+                    bestDistance = distance;
                     best = i;
                 }
             }
