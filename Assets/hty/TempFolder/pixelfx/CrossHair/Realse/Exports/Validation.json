@@ -1,0 +1,38 @@
+{
+  "frames": 12,
+  "fps": 20,
+  "seconds": 0.6,
+  "baseSHA256": "79B8CC61CF5C8085413AB453F43C17B8027323F58D5197ADAE58B51C06279F26",
+  "firstSHA256": "79B8CC61CF5C8085413AB453F43C17B8027323F58D5197ADAE58B51C06279F26",
+  "firstPNGByteIdentical": true,
+  "lastCompletelyTransparent": true,
+  "binaryAlpha": true,
+  "nonTransparentPixels": [
+    4009,
+    3737,
+    3661,
+    3385,
+    3021,
+    2635,
+    2201,
+    1713,
+    1121,
+    473,
+    15,
+    0
+  ],
+  "sourceFrames": [
+    13,
+    8,
+    7,
+    6,
+    5,
+    4,
+    3,
+    2,
+    1,
+    0,
+    -2,
+    -1
+  ]
+}

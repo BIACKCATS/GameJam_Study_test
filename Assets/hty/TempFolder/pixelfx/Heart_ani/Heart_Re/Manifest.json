@@ -1,0 +1,86 @@
+﻿[
+    {
+        "sha256":  "95571D1D6F6D13EF3BB9E8E71659EC052F7F12694DE5127EDB7B673CB01A3FE3",
+        "path":  "README_KO.md"
+    },
+    {
+        "sha256":  "1FF7A6A3BD115DF3AFA477C379446C589DF23FC1A22D419BE635567D20502DD8",
+        "path":  "Exports\\Contact.png"
+    },
+    {
+        "sha256":  "913888C39B6691F607236A8129ED8DC2A465E01C5C61E86B44ACFFF64A39E6DD",
+        "path":  "Exports\\DecodedValidation.json"
+    },
+    {
+        "sha256":  "C5DC55E45BA8ADA7088F3859D020419B8F51508CFE10785B0E568EFD1501A10C",
+        "path":  "Exports\\Heart_Base.png"
+    },
+    {
+        "sha256":  "EE524E9185D6EE1A80B3FE1C8157DD436E83624F2E978209A50699902743A706",
+        "path":  "Exports\\Heart_Heal_01.png"
+    },
+    {
+        "sha256":  "B5BDB04EA5FC560091AE6CC06A93C7099E8C33937EA62BCBB543C73FFF7B966B",
+        "path":  "Exports\\Heart_Heal_02.png"
+    },
+    {
+        "sha256":  "65F14272BE342F102702185FEA34B8E30768BD0F0B79B7B3894A8E3D4CBAFB14",
+        "path":  "Exports\\Heart_Heal_03.png"
+    },
+    {
+        "sha256":  "2517293E5C609361D45CC1D4048B311D53F066E001EBC707822384DAA8330FAB",
+        "path":  "Exports\\Heart_Heal_04.png"
+    },
+    {
+        "sha256":  "3037A1F56024F01A7A1EEEB5A701BE14D7B72F055BB05F23B022245782DD2C6D",
+        "path":  "Exports\\Heart_Heal_05.png"
+    },
+    {
+        "sha256":  "93A70BD20CC5F78225B18DD43E07176F27F27C4B1B619FD52CD5CC53E18D90CF",
+        "path":  "Exports\\Heart_Heal_06.png"
+    },
+    {
+        "sha256":  "7FA553DED176B101ECED08D844B3384BF4185900811415B648941CD1A11A9988",
+        "path":  "Exports\\Heart_Heal_07.png"
+    },
+    {
+        "sha256":  "70E38A3F0AD493E61B8AC6BD710DEE40C4741F971BEBB462DB7B723FCED3891E",
+        "path":  "Exports\\Heart_Heal_08.png"
+    },
+    {
+        "sha256":  "1F628575F02BE4068BEE0D77762E78A12843A6AED00A9DFA87361F9488869AE2",
+        "path":  "Exports\\Heart_Heal_09.png"
+    },
+    {
+        "sha256":  "C5DC55E45BA8ADA7088F3859D020419B8F51508CFE10785B0E568EFD1501A10C",
+        "path":  "Exports\\Heart_Heal_10.png"
+    },
+    {
+        "sha256":  "3ED8BD785F86AB98F4DFBC1194AC1E0BAD264A0BDFA71117DB94876FC06265C3",
+        "path":  "Exports\\Heart_Heal_Preview.gif"
+    },
+    {
+        "sha256":  "C319DD4B5A4B4CCF5C8554BB71F7A39B3E1C2D4BF0504AFFC51DDB8D8E3ECAEA",
+        "path":  "Exports\\Heart_Heal_Spritesheet.json"
+    },
+    {
+        "sha256":  "2028153B85D41B3AD6A9E41376FDFE098274DEF105A38E75B0CA2BD96378A3BC",
+        "path":  "Exports\\Heart_Heal_Spritesheet.png"
+    },
+    {
+        "sha256":  "A38DB30683AF1A2A3EB63A15578766C7C545E0BF8389B29E1FE98080D4E3ACF1",
+        "path":  "Exports\\Validation.json"
+    },
+    {
+        "sha256":  "582B752B97803B82CF466CF0C7F4A0618C13E38D2AC9C4D580A096ABA9AF8A72",
+        "path":  "Source\\canonical-pixels.json"
+    },
+    {
+        "sha256":  "3D41AD32305B679A9DE77C6DAF4B416F5EFDA6321C321BEE87E72C1E0A78F820",
+        "path":  "Source\\heart-heal.mjs"
+    },
+    {
+        "sha256":  "4187986A4094BCF0EE019090E8DF81523A84CC177E8507481BCF327674B5A222",
+        "path":  "Source\\render.mjs"
+    }
+]

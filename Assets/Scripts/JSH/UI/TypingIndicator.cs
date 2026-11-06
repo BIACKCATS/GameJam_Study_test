@@ -1,0 +1,336 @@
+using System;
+using System.Collections;
+using DG.Tweening;
+using TMPro;
+using UnityEngine;
+using BC.Core;
+using UnityEngine.Events;
+using UnityEngine.UI;
+
+namespace JSH.UI
+{
+    /// <summary>
+    /// Messenger "typing..." indicator: the dots wave softly for a while, then disappear and the content
+    /// (e.g. the chat title) pops in at once. With a Bubble assigned, the bubble stays, grows to fit the
+    /// content, and the content pops inside it. Unscaled time.
+    /// Use alone (Play / playOnStart) or from EndingMessageSequence (PlayRoutine).
+    /// </summary>
+    public sealed class TypingIndicator : MonoBehaviour
+    {
+        [Tooltip("Optional: bubble that stays and grows to fit the content. Dots Root and Content are its children.")]
+        [SerializeField] private RectTransform _bubble;
+        [Tooltip("Bubble size = content preferred size + this.")]
+        [SerializeField] private Vector2 _bubblePadding = new Vector2(70f, 40f);
+        [SerializeField, Min(0.01f)] private float _resizeDuration = 0.25f;
+        [SerializeField] private Ease _resizeEase = Ease.OutBack;
+        [Tooltip("Parent of the dots. Hidden when typing ends.")]
+        [SerializeField] private RectTransform _dotsRoot;
+        [SerializeField] private RectTransform[] _dots = Array.Empty<RectTransform>();
+        [Tooltip("Shown with a pop after typing (the message itself).")]
+        [SerializeField] private RectTransform _content;
+
+        [Header("Typing")]
+        [SerializeField, Min(0f)] private float _typingDuration = 1.6f;
+        [Tooltip("How high each dot rises (UI units).")]
+        [SerializeField] private float _waveHeight = 6f;
+        [Tooltip("Seconds for one rise (and again for the fall).")]
+        [SerializeField, Min(0.05f)] private float _waveHalfPeriod = 0.3f;
+        [Tooltip("Delay between dots, makes the wave travel left to right.")]
+        [SerializeField, Min(0f)] private float _dotPhase = 0.15f;
+        [Tooltip("Dot alpha at the bottom of the wave (1 at the top).")]
+        [SerializeField, Range(0f, 1f)] private float _dotMinAlpha = 0.35f;
+
+        [Header("Pop")]
+        [SerializeField, Min(0.01f)] private float _dotsHideDuration = 0.1f;
+        [SerializeField, Min(0.01f)] private float _popDuration = 0.35f;
+        [SerializeField] private Ease _popEase = Ease.OutBack;
+        [SerializeField] private AudioSource _sfx;
+        [SerializeField] private AudioClip _popClip;
+
+        [SerializeField] private bool _playOnStart;
+        [SerializeField] private UnityEvent _onFinished;
+
+        private Vector2[] _dotBasePos = Array.Empty<Vector2>();
+        private Vector2 _bubbleStartSize;
+        private Graphic[] _dotGraphics = Array.Empty<Graphic>();
+        private Coroutine _routine;
+        private bool _initialized;
+        private bool _writingSound;
+
+        public bool IsPlaying => _routine != null;
+        public bool IsDone { get; private set; }
+
+        private void Awake() => Initialize();
+
+        private void Start()
+        {
+            if (_playOnStart)
+            {
+                Play();
+            }
+        }
+
+        private void OnDisable()
+        {
+            StopRoutine();
+            KillTweens();
+        }
+
+        public void Play()
+        {
+            StopRoutine();
+            _routine = StartCoroutine(PlayAndClear());
+        }
+
+        /// <summary>Yield this from another coroutine. Complete() can still finish it early.</summary>
+        public IEnumerator PlayRoutine()
+        {
+            Initialize();
+            IsDone = false;
+            KillTweens();
+            ApplyStartState();
+
+            for (int i = 0; i < _dots.Length; i++)
+            {
+                RectTransform dot = _dots[i];
+                if (dot == null)
+                {
+                    continue;
+                }
+
+                float delay = i * _dotPhase;
+                dot.DOAnchorPosY(_dotBasePos[i].y + _waveHeight, _waveHalfPeriod)
+                    .SetEase(Ease.InOutSine).SetLoops(-1, LoopType.Yoyo).SetDelay(delay).SetUpdate(true);
+                if (_dotGraphics[i] != null)
+                {
+                    _dotGraphics[i].DOFade(1f, _waveHalfPeriod)
+                        .SetEase(Ease.InOutSine).SetLoops(-1, LoopType.Yoyo).SetDelay(delay).SetUpdate(true);
+                }
+            }
+
+            if(SoundManager.Instance){_writingSound=true;SoundManager.Instance.PlaySound(SoundNames.Writing,0.8f);}
+            yield return WaitUnscaled(_typingDuration);
+            StopWritingSound();
+
+            KillTweens();
+            if (_dotsRoot != null)
+            {
+                _dotsRoot.DOScale(0f, _dotsHideDuration).SetEase(Ease.InBack).SetUpdate(true);
+                yield return WaitUnscaled(_dotsHideDuration);
+                _dotsRoot.gameObject.SetActive(false);
+            }
+
+            if (_bubble != null)
+            {
+                _bubble.DOSizeDelta(GetBubbleTargetSize(), _resizeDuration).SetEase(_resizeEase).SetUpdate(true);
+                yield return WaitUnscaled(_resizeDuration);
+            }
+
+            if (_content != null)
+            {
+                _content.gameObject.SetActive(true);
+                _content.localScale = Vector3.zero;
+                _content.DOScale(1f, _popDuration).SetEase(_popEase).SetUpdate(true);
+            }
+
+            if(SoundManager.Instance)SoundManager.Instance.PlaySound(SoundNames.MessageSendingAlarm,0.8f);
+            yield return WaitUnscaled(_popDuration);
+            ApplyFinalState();
+        }
+
+        /// <summary>Jump to the end state (dots gone, content shown).</summary>
+        public void Complete()
+        {
+            Initialize();
+            StopRoutine();
+            KillTweens();
+            ApplyFinalState();
+        }
+
+        /// <summary>Hide the content and show idle dots (call before PlayRoutine to avoid a visible flash).</summary>
+        public void PrepareHidden()
+        {
+            Initialize();
+            ApplyStartState();
+        }
+
+        private IEnumerator PlayAndClear()
+        {
+            yield return PlayRoutine();
+            _routine = null;
+        }
+
+        private void Initialize()
+        {
+            if (_initialized)
+            {
+                return;
+            }
+
+            _initialized = true;
+            if (_bubble != null)
+            {
+                _bubbleStartSize = _bubble.sizeDelta;
+            }
+
+            _dotBasePos = new Vector2[_dots.Length];
+            _dotGraphics = new Graphic[_dots.Length];
+            for (int i = 0; i < _dots.Length; i++)
+            {
+                if (_dots[i] == null)
+                {
+                    continue;
+                }
+
+                _dotBasePos[i] = _dots[i].anchoredPosition;
+                _dots[i].TryGetComponent(out _dotGraphics[i]);
+            }
+
+            if (_playOnStart)
+            {
+                ApplyStartState();
+            }
+        }
+
+        private void ApplyStartState()
+        {
+            if (_bubble != null)
+            {
+                _bubble.gameObject.SetActive(true);
+                _bubble.sizeDelta = _bubbleStartSize;
+            }
+
+            if (_dotsRoot != null)
+            {
+                _dotsRoot.gameObject.SetActive(true);
+                _dotsRoot.localScale = Vector3.one;
+            }
+
+            ResetDots(_dotMinAlpha);
+            if (_content != null)
+            {
+                _content.gameObject.SetActive(false);
+            }
+        }
+
+        private void ApplyFinalState()
+        {
+            ResetDots(1f);
+            if (_bubble != null)
+            {
+                _bubble.sizeDelta = GetBubbleTargetSize();
+            }
+
+            if (_dotsRoot != null)
+            {
+                _dotsRoot.gameObject.SetActive(false);
+            }
+
+            if (_content != null)
+            {
+                _content.gameObject.SetActive(true);
+                _content.localScale = Vector3.one;
+            }
+
+            if (!IsDone)
+            {
+                IsDone = true;
+                _onFinished?.Invoke();
+            }
+        }
+
+        private void ResetDots(float alpha)
+        {
+            for (int i = 0; i < _dots.Length; i++)
+            {
+                if (_dots[i] == null)
+                {
+                    continue;
+                }
+
+                _dots[i].anchoredPosition = _dotBasePos[i];
+                if (_dotGraphics[i] != null)
+                {
+                    Color c = _dotGraphics[i].color;
+                    c.a = alpha;
+                    _dotGraphics[i].color = c;
+                }
+            }
+        }
+
+        private void KillTweens()
+        {
+            for (int i = 0; i < _dots.Length; i++)
+            {
+                if (_dots[i] != null)
+                {
+                    _dots[i].DOKill();
+                }
+
+                if (i < _dotGraphics.Length && _dotGraphics[i] != null)
+                {
+                    _dotGraphics[i].DOKill();
+                }
+            }
+
+            if (_dotsRoot != null)
+            {
+                _dotsRoot.DOKill();
+            }
+
+            if (_bubble != null)
+            {
+                _bubble.DOKill();
+            }
+
+            if (_content != null)
+            {
+                _content.DOKill();
+            }
+        }
+
+        private Vector2 GetBubbleTargetSize()
+        {
+            if (_content == null || !_content.TryGetComponent(out TMP_Text text))
+            {
+                return _bubbleStartSize;
+            }
+
+            Vector2 size = text.GetPreferredValues(text.text) + _bubblePadding;
+            return Vector2.Max(size, _bubbleStartSize);
+        }
+
+        private void StopRoutine()
+        {
+            StopWritingSound();
+            if (_routine != null)
+            {
+                StopCoroutine(_routine);
+                _routine = null;
+            }
+        }
+
+        private void PlayClip(AudioClip clip)
+        {
+            if (_sfx != null && clip != null)
+            {
+                _sfx.PlayOneShot(clip);
+            }
+        }
+        private void StopWritingSound()
+        {
+            if(!_writingSound)return;
+            _writingSound=false;
+            if(SoundManager.Instance)SoundManager.Instance.StopSound(SoundNames.Writing);
+        }
+
+        private static IEnumerator WaitUnscaled(float seconds)
+        {
+            while (seconds > 0f)
+            {
+                seconds -= Time.unscaledDeltaTime;
+                yield return null;
+            }
+        }
+    }
+}

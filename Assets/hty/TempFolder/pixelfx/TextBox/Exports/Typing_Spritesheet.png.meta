@@ -1,0 +1,1066 @@
+fileFormatVersion: 2
+guid: 94d5cf7327898df4dad2d6c6a3007697
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3654991088162359433
+    second: Typing_Spritesheet_0
+  - first:
+      213: 6040159116727069868
+    second: Typing_Spritesheet_1
+  - first:
+      213: -3141723804870543568
+    second: Typing_Spritesheet_2
+  - first:
+      213: -2651139656361426737
+    second: Typing_Spritesheet_3
+  - first:
+      213: 6187724789701553631
+    second: Typing_Spritesheet_4
+  - first:
+      213: -5335593169889273448
+    second: Typing_Spritesheet_5
+  - first:
+      213: -1674909792594507351
+    second: Typing_Spritesheet_6
+  - first:
+      213: -4457098625115151569
+    second: Typing_Spritesheet_7
+  - first:
+      213: 5577554802007313807
+    second: Typing_Spritesheet_8
+  - first:
+      213: -4429033354024848994
+    second: Typing_Spritesheet_9
+  - first:
+      213: -8809595832873836760
+    second: Typing_Spritesheet_10
+  - first:
+      213: -3217584019636434774
+    second: Typing_Spritesheet_11
+  - first:
+      213: -214842607252404410
+    second: Typing_Spritesheet_12
+  - first:
+      213: -6616516511223253743
+    second: Typing_Spritesheet_13
+  - first:
+      213: -705032065101299431
+    second: Typing_Spritesheet_14
+  - first:
+      213: -5750801916605229154
+    second: Typing_Spritesheet_15
+  - first:
+      213: -6447770101450227638
+    second: Typing_Spritesheet_16
+  - first:
+      213: -7838164295213187085
+    second: Typing_Spritesheet_17
+  - first:
+      213: 2046007393865938228
+    second: Typing_Spritesheet_18
+  - first:
+      213: 4631488261199274631
+    second: Typing_Spritesheet_19
+  - first:
+      213: -7400514090284213750
+    second: Typing_Spritesheet_20
+  - first:
+      213: 2188805210830858834
+    second: Typing_Spritesheet_21
+  - first:
+      213: 3745948272809810102
+    second: Typing_Spritesheet_22
+  - first:
+      213: -1838265602542522013
+    second: Typing_Spritesheet_23
+  - first:
+      213: -7751117774018764940
+    second: Typing_Spritesheet_24
+  - first:
+      213: -8757131741967056221
+    second: Typing_Spritesheet_25
+  - first:
+      213: -2422886653435238521
+    second: Typing_Spritesheet_26
+  - first:
+      213: 3701067589520468076
+    second: Typing_Spritesheet_27
+  - first:
+      213: -4415731546375406025
+    second: Typing_Spritesheet_28
+  - first:
+      213: 7124701887248161394
+    second: Typing_Spritesheet_29
+  - first:
+      213: 134239914204010469
+    second: Typing_Spritesheet_30
+  - first:
+      213: 6949205216557334185
+    second: Typing_Spritesheet_31
+  - first:
+      213: 6750538044421733302
+    second: Typing_Spritesheet_32
+  - first:
+      213: 6716908134390757481
+    second: Typing_Spritesheet_33
+  - first:
+      213: 369967427598219751
+    second: Typing_Spritesheet_34
+  - first:
+      213: -6236857351429317858
+    second: Typing_Spritesheet_35
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Typing_Spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 283
+        width: 58
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 988c22b970329b230800000000000000
+      internalID: 3654991088162359433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Typing_Spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 283
+        width: 58
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cacaa5be6b4f2d350800000000000000
+      internalID: 6040159116727069868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Typing_Spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 283
+        width: 58
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0377d4458da5664d0800000000000000
+      internalID: -3141723804870543568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Typing_Spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 284
+        width: 58
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc040a46782453bd0800000000000000
+      internalID: -2651139656361426737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Typing_Spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 285
+        width: 58
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdd2a0a89e63fd550800000000000000
+      internalID: 6187724789701553631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Typing_Spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 245
+        width: 58
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 899dfbaf74a24f5b0800000000000000
+      internalID: -5335593169889273448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Typing_Spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 246
+        width: 58
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a9c49dea6681c8e0800000000000000
+      internalID: -1674909792594507351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Typing_Spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 247
+        width: 58
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2321294a643522c0800000000000000
+      internalID: -4457098625115151569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Typing_Spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 247
+        width: 58
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8d8be09a84776d40800000000000000
+      internalID: 5577554802007313807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Typing_Spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 247
+        width: 58
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e91fdfa61a9e882c0800000000000000
+      internalID: -4429033354024848994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Typing_Spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 207
+        width: 58
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82f1bc6e3470eb580800000000000000
+      internalID: -8809595832873836760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Typing_Spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 207
+        width: 58
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa8c892b168d853d0800000000000000
+      internalID: -3217584019636434774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Typing_Spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 206
+        width: 58
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6470a1879c9b40df0800000000000000
+      internalID: -214842607252404410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Typing_Spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 205
+        width: 58
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 115f702f9496d24a0800000000000000
+      internalID: -6616516511223253743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Typing_Spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 205
+        width: 58
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 911806c72193736f0800000000000000
+      internalID: -705032065101299431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Typing_Spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 164
+        width: 58
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e971c1b302c0130b0800000000000000
+      internalID: -5750801916605229154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Typing_Spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 163
+        width: 58
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a40cca5214be486a0800000000000000
+      internalID: -6447770101450227638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Typing_Spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 163
+        width: 58
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fffaa41a1f393390800000000000000
+      internalID: -7838164295213187085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Typing_Spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 163
+        width: 58
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 435b33f62e0e46c10800000000000000
+      internalID: 2046007393865938228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Typing_Spritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 163
+        width: 58
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 782ac2ee80a564040800000000000000
+      internalID: 4631488261199274631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Typing_Spritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 123
+        width: 58
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0a165df4a71c4990800000000000000
+      internalID: -7400514090284213750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Typing_Spritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 123
+        width: 58
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25ae8121eb2306e10800000000000000
+      internalID: 2188805210830858834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Typing_Spritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 123
+        width: 58
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b811d37b184cf330800000000000000
+      internalID: 3745948272809810102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Typing_Spritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 123
+        width: 58
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36132ad8c2b2d76e0800000000000000
+      internalID: -1838265602542522013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Typing_Spritesheet_24
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 123
+        width: 58
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47f1563a37f7e6490800000000000000
+      internalID: -7751117774018764940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Typing_Spritesheet_25
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 83
+        width: 58
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a281c4f31b687680800000000000000
+      internalID: -8757131741967056221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Typing_Spritesheet_26
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 83
+        width: 58
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78725fafc6d206ed0800000000000000
+      internalID: -2422886653435238521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Typing_Spritesheet_27
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 83
+        width: 58
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6824131d55dc5330800000000000000
+      internalID: 3701067589520468076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Typing_Spritesheet_28
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 83
+        width: 58
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73ebecadd8b28b2c0800000000000000
+      internalID: -4415731546375406025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Typing_Spritesheet_29
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 83
+        width: 58
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27a5bff3e9600e260800000000000000
+      internalID: 7124701887248161394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Typing_Spritesheet_30
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 43
+        width: 58
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e71fc0ad7aecd100800000000000000
+      internalID: 134239914204010469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Typing_Spritesheet_31
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 43
+        width: 58
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9aef0347359807060800000000000000
+      internalID: 6949205216557334185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Typing_Spritesheet_32
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 43
+        width: 58
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bb7484e59abead50800000000000000
+      internalID: 6750538044421733302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Typing_Spritesheet_33
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 43
+        width: 58
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 968fa4b4c50473d50800000000000000
+      internalID: 6716908134390757481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Typing_Spritesheet_34
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 43
+        width: 58
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e9f47c4a63622500800000000000000
+      internalID: 369967427598219751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Typing_Spritesheet_35
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 3
+        width: 58
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1b954d784b3279a0800000000000000
+      internalID: -6236857351429317858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Typing_Spritesheet_0: 3654991088162359433
+      Typing_Spritesheet_1: 6040159116727069868
+      Typing_Spritesheet_10: -8809595832873836760
+      Typing_Spritesheet_11: -3217584019636434774
+      Typing_Spritesheet_12: -214842607252404410
+      Typing_Spritesheet_13: -6616516511223253743
+      Typing_Spritesheet_14: -705032065101299431
+      Typing_Spritesheet_15: -5750801916605229154
+      Typing_Spritesheet_16: -6447770101450227638
+      Typing_Spritesheet_17: -7838164295213187085
+      Typing_Spritesheet_18: 2046007393865938228
+      Typing_Spritesheet_19: 4631488261199274631
+      Typing_Spritesheet_2: -3141723804870543568
+      Typing_Spritesheet_20: -7400514090284213750
+      Typing_Spritesheet_21: 2188805210830858834
+      Typing_Spritesheet_22: 3745948272809810102
+      Typing_Spritesheet_23: -1838265602542522013
+      Typing_Spritesheet_24: -7751117774018764940
+      Typing_Spritesheet_25: -8757131741967056221
+      Typing_Spritesheet_26: -2422886653435238521
+      Typing_Spritesheet_27: 3701067589520468076
+      Typing_Spritesheet_28: -4415731546375406025
+      Typing_Spritesheet_29: 7124701887248161394
+      Typing_Spritesheet_3: -2651139656361426737
+      Typing_Spritesheet_30: 134239914204010469
+      Typing_Spritesheet_31: 6949205216557334185
+      Typing_Spritesheet_32: 6750538044421733302
+      Typing_Spritesheet_33: 6716908134390757481
+      Typing_Spritesheet_34: 369967427598219751
+      Typing_Spritesheet_35: -6236857351429317858
+      Typing_Spritesheet_4: 6187724789701553631
+      Typing_Spritesheet_5: -5335593169889273448
+      Typing_Spritesheet_6: -1674909792594507351
+      Typing_Spritesheet_7: -4457098625115151569
+      Typing_Spritesheet_8: 5577554802007313807
+      Typing_Spritesheet_9: -4429033354024848994
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

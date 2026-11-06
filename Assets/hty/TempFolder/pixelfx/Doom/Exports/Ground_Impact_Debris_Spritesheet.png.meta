@@ -1,0 +1,468 @@
+fileFormatVersion: 2
+guid: 70dd044f511ee314eba0504cb9f3cc0f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7473613384799939
+    second: Ground_Impact_Debris_Spritesheet_0
+  - first:
+      213: 8718879283832206485
+    second: Ground_Impact_Debris_Spritesheet_1
+  - first:
+      213: 3838606141227265045
+    second: Ground_Impact_Debris_Spritesheet_2
+  - first:
+      213: -3656050920999098750
+    second: Ground_Impact_Debris_Spritesheet_3
+  - first:
+      213: -4209345694227138376
+    second: Ground_Impact_Debris_Spritesheet_4
+  - first:
+      213: -642620889127362787
+    second: Ground_Impact_Debris_Spritesheet_5
+  - first:
+      213: -6798909652411080626
+    second: Ground_Impact_Debris_Spritesheet_6
+  - first:
+      213: -1211892743678156517
+    second: Ground_Impact_Debris_Spritesheet_7
+  - first:
+      213: -3743431008604005300
+    second: Ground_Impact_Debris_Spritesheet_8
+  - first:
+      213: -397794154640841469
+    second: Ground_Impact_Debris_Spritesheet_9
+  - first:
+      213: -154731903317556290
+    second: Ground_Impact_Debris_Spritesheet_10
+  - first:
+      213: 8109825838087686141
+    second: Ground_Impact_Debris_Spritesheet_11
+  - first:
+      213: 2548320454932272061
+    second: Ground_Impact_Debris_Spritesheet_12
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Ground_Impact_Debris_Spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 189
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d39a209c9c275eff0800000000000000
+      internalID: -7473613384799939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_Impact_Debris_Spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 189
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 594b458938eaff870800000000000000
+      internalID: 8718879283832206485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_Impact_Debris_Spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 191
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51ceb7892f7754530800000000000000
+      internalID: 3838606141227265045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_Impact_Debris_Spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 189
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 286eb15de09134dc0800000000000000
+      internalID: -3656050920999098750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_Impact_Debris_Spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 191
+        width: 65
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b875c6a4666595c0800000000000000
+      internalID: -4209345694227138376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_Impact_Debris_Spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 291
+        width: 50
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1f5152c4b3f417f0800000000000000
+      internalID: -642620889127362787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_Impact_Debris_Spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 190
+        width: 75
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e40201c71bb65a1a0800000000000000
+      internalID: -6798909652411080626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_Impact_Debris_Spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 304
+        width: 24
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b11a03378fd7e2fe0800000000000000
+      internalID: -1211892743678156517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_Impact_Debris_Spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 306
+        width: 6
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4cd9fac459ac0cc0800000000000000
+      internalID: -3743431008604005300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_Impact_Debris_Spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 292
+        width: 27
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 305e7eee250ca7af0800000000000000
+      internalID: -397794154640841469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_Impact_Debris_Spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 304
+        width: 23
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb3465b57284addf0800000000000000
+      internalID: -154731903317556290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_Impact_Debris_Spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 188
+        width: 84
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df7408dc1a3eb8070800000000000000
+      internalID: 8109825838087686141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_Impact_Debris_Spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 314
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db39912c3f37d5320800000000000000
+      internalID: 2548320454932272061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Ground_Impact_Debris_Spritesheet_0: -7473613384799939
+      Ground_Impact_Debris_Spritesheet_1: 8718879283832206485
+      Ground_Impact_Debris_Spritesheet_10: -154731903317556290
+      Ground_Impact_Debris_Spritesheet_11: 8109825838087686141
+      Ground_Impact_Debris_Spritesheet_12: 2548320454932272061
+      Ground_Impact_Debris_Spritesheet_2: 3838606141227265045
+      Ground_Impact_Debris_Spritesheet_3: -3656050920999098750
+      Ground_Impact_Debris_Spritesheet_4: -4209345694227138376
+      Ground_Impact_Debris_Spritesheet_5: -642620889127362787
+      Ground_Impact_Debris_Spritesheet_6: -6798909652411080626
+      Ground_Impact_Debris_Spritesheet_7: -1211892743678156517
+      Ground_Impact_Debris_Spritesheet_8: -3743431008604005300
+      Ground_Impact_Debris_Spritesheet_9: -397794154640841469
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

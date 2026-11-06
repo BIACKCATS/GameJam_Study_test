@@ -1,0 +1,12 @@
+{
+  "nonBinaryAlphaPixels": 0,
+  "combinedVsLayerRGBADifferences": 0,
+  "layerOrder": [
+    "crack",
+    "debris"
+  ],
+  "unityPivot": [
+    0.5,
+    0.375
+  ]
+}

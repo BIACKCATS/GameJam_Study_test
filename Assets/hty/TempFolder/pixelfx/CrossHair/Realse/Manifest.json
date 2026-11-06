@@ -1,0 +1,86 @@
+﻿[
+    {
+        "sha256":  "6EDDBADDB145C0FA392C206811B73C09B56F67B736A3B6A618D50DF2105A2925",
+        "path":  "README_KO.md"
+    },
+    {
+        "sha256":  "670587DEB2D748554D2201C52F0B23C82910B8561792015E8F5A61F73CC15FF1",
+        "path":  "Exports\\Contact.png"
+    },
+    {
+        "sha256":  "79B8CC61CF5C8085413AB453F43C17B8027323F58D5197ADAE58B51C06279F26",
+        "path":  "Exports\\Crosshair_Dismiss_01.png"
+    },
+    {
+        "sha256":  "7892CF5598A0DBB42D1F7DDC9159715E159C45D49D0D93C0DD54CC3B74E90AF0",
+        "path":  "Exports\\Crosshair_Dismiss_02.png"
+    },
+    {
+        "sha256":  "067DA526B23998BDB8F41FFB73A65A9144952D57601B0D6ACF1D1D718A6EF913",
+        "path":  "Exports\\Crosshair_Dismiss_03.png"
+    },
+    {
+        "sha256":  "8BA393CD8D80712ECA20BCE08A5F9D49B591FD667413A943FAFB1A8F85B226EC",
+        "path":  "Exports\\Crosshair_Dismiss_04.png"
+    },
+    {
+        "sha256":  "ADC3CB8D68CA2556EA32DFC613B2C7515473F6380B36234D3051BD9DE8FD4E1C",
+        "path":  "Exports\\Crosshair_Dismiss_05.png"
+    },
+    {
+        "sha256":  "89E19AF8BB1C03CDE7D7876CCEBB40A015C9350E986F2F762C0D1EFA66AA11EC",
+        "path":  "Exports\\Crosshair_Dismiss_06.png"
+    },
+    {
+        "sha256":  "39467FC645F441AF40502AA5AAAAB380477B37BF8A186E7C1568920692378E51",
+        "path":  "Exports\\Crosshair_Dismiss_07.png"
+    },
+    {
+        "sha256":  "E560C90353DA6CC6B1B885E753AFFBD2E98E9DEB932866C3D0961F4904E52745",
+        "path":  "Exports\\Crosshair_Dismiss_08.png"
+    },
+    {
+        "sha256":  "3E7666789A6866587DFC0B513E7C361CF31E0DEB731E4F02847681154E4D73D1",
+        "path":  "Exports\\Crosshair_Dismiss_09.png"
+    },
+    {
+        "sha256":  "1CF23486EF9B6D125483F428909CFFF9D23507FBB3D125CAB1557EB4CE74EE8F",
+        "path":  "Exports\\Crosshair_Dismiss_10.png"
+    },
+    {
+        "sha256":  "9781C4BBC79B00C83168BB8F1B3693B8081EE66A13A5372067B15652F11373D9",
+        "path":  "Exports\\Crosshair_Dismiss_11.png"
+    },
+    {
+        "sha256":  "6462F5FAB206E8AC557B217F9D28D46919BE1C54942705F6B56BBD8DCFD1F8F8",
+        "path":  "Exports\\Crosshair_Dismiss_12.png"
+    },
+    {
+        "sha256":  "BA034C46839B752D96614D698D84BA430DACBFCAE027A09ED698BB6A4418490E",
+        "path":  "Exports\\Crosshair_Dismiss_Preview.gif"
+    },
+    {
+        "sha256":  "BF4E390763D49F14464DB38B8FE3A5F61AF2B4A878D6E62920ED9228D809E0E1",
+        "path":  "Exports\\Crosshair_Dismiss_Spritesheet.json"
+    },
+    {
+        "sha256":  "7B4EDDC5DBDDEE646988D509ECC3578E818AF00253A4AAB71645E8F4444D1027",
+        "path":  "Exports\\Crosshair_Dismiss_Spritesheet.png"
+    },
+    {
+        "sha256":  "B361954A960F1F407FF389FB4F5C79B51E37FE84F674472A53FB101D88DD8189",
+        "path":  "Exports\\DecodedValidation.json"
+    },
+    {
+        "sha256":  "D0AFE7BCEB5F7BDE8CF0FC59DB4C86288A8EDC4FE0EA2D35549F2A4B16B70FCC",
+        "path":  "Exports\\Validation.json"
+    },
+    {
+        "sha256":  "8852C7E1FE313EEE176B8B5021DA5B025C17DA3193E9539CA84AF4C9C3833573",
+        "path":  "Source\\crosshair-dismiss.mjs"
+    },
+    {
+        "sha256":  "83C684409033ED1276D5D52B19B2D327F0B1D69AC6E9F522A4A0FBE0D71D9038",
+        "path":  "Source\\render.mjs"
+    }
+]

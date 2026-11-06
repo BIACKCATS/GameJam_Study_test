@@ -1,0 +1,16 @@
+{
+  "rgbaDifferences": 0,
+  "layerOrder": [
+    "burst",
+    "stars"
+  ],
+  "sharedSize": [
+    128,
+    128
+  ],
+  "sharedPivot": [
+    64,
+    64
+  ],
+  "sharedFPS": 24
+}

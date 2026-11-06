@@ -1,0 +1,21 @@
+﻿{
+    "repository":  "https://github.com/Unity-Technologies/skills",
+    "commit":  "46118a9f3743950846ad921fcce3ba382008aa88",
+    "archiveSha256":  "e53e2b82e277c97112c9986933f37a481e5601ee57f554d7096218d8e3da1e2f",
+    "skills":  [
+                   "unity-cli",
+                   "2d-pixel-perfect",
+                   "sprite-editor",
+                   "ui",
+                   "ui-uitk",
+                   "ui-ugui",
+                   "ui-imgui",
+                   "urp-postprocessing",
+                   "manage-sprite-atlas",
+                   "generate-editor-search-query",
+                   "unity-package-management",
+                   "shader-graph-create-custom-node"
+               ],
+    "copiedFiles":  106,
+    "retrievedUtc":  "2026-11-04T13:47:19.6262556Z"
+}

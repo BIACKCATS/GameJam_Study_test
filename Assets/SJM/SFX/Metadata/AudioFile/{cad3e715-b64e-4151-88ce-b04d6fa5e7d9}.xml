@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{cad3e715-b64e-4151-88ce-b04d6fa5e7d9}">
+		<property name="assetPath">
+			<value>Writing Message.mp3</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>8.0979591836734688</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{15ec7c24-2643-4d4c-9016-72c7f0866f4f}</destination>
+		</relationship>
+	</object>
+</objects>

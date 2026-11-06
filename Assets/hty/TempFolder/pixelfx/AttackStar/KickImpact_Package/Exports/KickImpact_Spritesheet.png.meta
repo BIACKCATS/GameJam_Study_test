@@ -1,0 +1,1014 @@
+fileFormatVersion: 2
+guid: 9a969b1e04f41f54bbbe02bd2173c125
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1582363157298230600
+    second: KickImpact_Spritesheet_0
+  - first:
+      213: 2418322556687901682
+    second: KickImpact_Spritesheet_1
+  - first:
+      213: -3921310220384500514
+    second: KickImpact_Spritesheet_2
+  - first:
+      213: 40818282734936092
+    second: KickImpact_Spritesheet_3
+  - first:
+      213: 5044248057637152261
+    second: KickImpact_Spritesheet_4
+  - first:
+      213: -8867338269145155781
+    second: KickImpact_Spritesheet_5
+  - first:
+      213: -1361933606935016415
+    second: KickImpact_Spritesheet_6
+  - first:
+      213: -2011119819939837638
+    second: KickImpact_Spritesheet_7
+  - first:
+      213: 2218120920426981772
+    second: KickImpact_Spritesheet_8
+  - first:
+      213: -4735435157564678483
+    second: KickImpact_Spritesheet_9
+  - first:
+      213: 1508220660518601794
+    second: KickImpact_Spritesheet_10
+  - first:
+      213: -7435033352507736386
+    second: KickImpact_Spritesheet_11
+  - first:
+      213: 5512793294328658959
+    second: KickImpact_Spritesheet_12
+  - first:
+      213: -5095396825667523875
+    second: KickImpact_Spritesheet_13
+  - first:
+      213: -7515521965089884962
+    second: KickImpact_Spritesheet_14
+  - first:
+      213: -7691438901146170837
+    second: KickImpact_Spritesheet_15
+  - first:
+      213: 6220478643844895258
+    second: KickImpact_Spritesheet_16
+  - first:
+      213: -6574104297023929746
+    second: KickImpact_Spritesheet_17
+  - first:
+      213: -4776113433098177748
+    second: KickImpact_Spritesheet_18
+  - first:
+      213: -4335585967520027054
+    second: KickImpact_Spritesheet_19
+  - first:
+      213: 1171858367121402015
+    second: KickImpact_Spritesheet_20
+  - first:
+      213: -2777487782016959866
+    second: KickImpact_Spritesheet_21
+  - first:
+      213: 5307581999567662342
+    second: KickImpact_Spritesheet_22
+  - first:
+      213: -2780433155219132523
+    second: KickImpact_Spritesheet_23
+  - first:
+      213: -2430531153835281384
+    second: KickImpact_Spritesheet_24
+  - first:
+      213: -8266090037165074685
+    second: KickImpact_Spritesheet_25
+  - first:
+      213: 3690301810310024295
+    second: KickImpact_Spritesheet_26
+  - first:
+      213: 4109244979284443554
+    second: KickImpact_Spritesheet_27
+  - first:
+      213: -6493907587703177297
+    second: KickImpact_Spritesheet_28
+  - first:
+      213: 372389025385063331
+    second: KickImpact_Spritesheet_29
+  - first:
+      213: -1396945856871496757
+    second: KickImpact_Spritesheet_30
+  - first:
+      213: -2384931110489686852
+    second: KickImpact_Spritesheet_31
+  - first:
+      213: -5900574881227952543
+    second: KickImpact_Spritesheet_32
+  - first:
+      213: 7185313891318934612
+    second: KickImpact_Spritesheet_33
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: KickImpact_Spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 315
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8453d6868eea5f510800000000000000
+      internalID: 1582363157298230600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KickImpact_Spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 299
+        width: 51
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f362bf6d8b9f8120800000000000000
+      internalID: 2418322556687901682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KickImpact_Spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 294
+        width: 60
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed48fdb6125b499c0800000000000000
+      internalID: -3921310220384500514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KickImpact_Spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 320
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c10e1ca0304019000800000000000000
+      internalID: 40818282734936092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KickImpact_Spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 319
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 506aa6202e4c00640800000000000000
+      internalID: 5044248057637152261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KickImpact_Spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 307
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b37306c43d2e0f480800000000000000
+      internalID: -8867338269145155781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KickImpact_Spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 295
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12cc8fea990791de0800000000000000
+      internalID: -1361933606935016415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KickImpact_Spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 305
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a390dbbdd211714e0800000000000000
+      internalID: -2011119819939837638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KickImpact_Spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 303
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c89a9ea993958ce10800000000000000
+      internalID: 2218120920426981772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KickImpact_Spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 293
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dae167840da584eb0800000000000000
+      internalID: -4735435157564678483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KickImpact_Spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 204
+        width: 8
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 244cd1923b64ee410800000000000000
+      internalID: 1508220660518601794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KickImpact_Spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 200
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebe3892fe8471d890800000000000000
+      internalID: -7435033352507736386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KickImpact_Spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 214
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0c7d9c0b40618c40800000000000000
+      internalID: 5512793294328658959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KickImpact_Spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 174
+        width: 16
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dda2f6865938949b0800000000000000
+      internalID: -5095396825667523875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KickImpact_Spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 190
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed4fb29779083b790800000000000000
+      internalID: -7515521965089884962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KickImpact_Spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 209
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2acf850215824590800000000000000
+      internalID: -7691438901146170837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KickImpact_Spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 192
+        width: 21
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a12574b7e54935650800000000000000
+      internalID: 6220478643844895258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KickImpact_Spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 199
+        width: 47
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e62058319f614c4a0800000000000000
+      internalID: -6574104297023929746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KickImpact_Spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 71
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2336353326d7bdb0800000000000000
+      internalID: -4776113433098177748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KickImpact_Spritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 41
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25eecc09887e4d3c0800000000000000
+      internalID: -4335585967520027054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KickImpact_Spritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 179
+        width: 9
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f982753e9f6434010800000000000000
+      internalID: 1171858367121402015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KickImpact_Spritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 162
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68a34e8f3916479d0800000000000000
+      internalID: -2777487782016959866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KickImpact_Spritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 30
+        width: 54
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60dec7435b158a940800000000000000
+      internalID: 5307581999567662342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KickImpact_Spritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 173
+        width: 32
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59fe175d6cae969d0800000000000000
+      internalID: -2780433155219132523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KickImpact_Spritesheet_24
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 42
+        width: 22
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 814b0280bc4054ed0800000000000000
+      internalID: -2430531153835281384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KickImpact_Spritesheet_25
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 164
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 307516528e2f84d80800000000000000
+      internalID: -8266090037165074685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KickImpact_Spritesheet_26
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 169
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76c8285c1f5963330800000000000000
+      internalID: 3690301810310024295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KickImpact_Spritesheet_27
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 34
+        width: 19
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a18e457988f60930800000000000000
+      internalID: 4109244979284443554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KickImpact_Spritesheet_28
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 39
+        width: 76
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: faffcb6847101e5a0800000000000000
+      internalID: -6493907587703177297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KickImpact_Spritesheet_29
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 171
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a3a45878ddfa2500800000000000000
+      internalID: 372389025385063331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KickImpact_Spritesheet_30
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 171
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc388bef42d0d9ce0800000000000000
+      internalID: -1396945856871496757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KickImpact_Spritesheet_31
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 156
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbcfb797ac507eed0800000000000000
+      internalID: -2384931110489686852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KickImpact_Spritesheet_32
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 165
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16ea0d97862fc1ea0800000000000000
+      internalID: -5900574881227952543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KickImpact_Spritesheet_33
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 190
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45caebb2aec57b360800000000000000
+      internalID: 7185313891318934612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      KickImpact_Spritesheet_0: 1582363157298230600
+      KickImpact_Spritesheet_1: 2418322556687901682
+      KickImpact_Spritesheet_10: 1508220660518601794
+      KickImpact_Spritesheet_11: -7435033352507736386
+      KickImpact_Spritesheet_12: 5512793294328658959
+      KickImpact_Spritesheet_13: -5095396825667523875
+      KickImpact_Spritesheet_14: -7515521965089884962
+      KickImpact_Spritesheet_15: -7691438901146170837
+      KickImpact_Spritesheet_16: 6220478643844895258
+      KickImpact_Spritesheet_17: -6574104297023929746
+      KickImpact_Spritesheet_18: -4776113433098177748
+      KickImpact_Spritesheet_19: -4335585967520027054
+      KickImpact_Spritesheet_2: -3921310220384500514
+      KickImpact_Spritesheet_20: 1171858367121402015
+      KickImpact_Spritesheet_21: -2777487782016959866
+      KickImpact_Spritesheet_22: 5307581999567662342
+      KickImpact_Spritesheet_23: -2780433155219132523
+      KickImpact_Spritesheet_24: -2430531153835281384
+      KickImpact_Spritesheet_25: -8266090037165074685
+      KickImpact_Spritesheet_26: 3690301810310024295
+      KickImpact_Spritesheet_27: 4109244979284443554
+      KickImpact_Spritesheet_28: -6493907587703177297
+      KickImpact_Spritesheet_29: 372389025385063331
+      KickImpact_Spritesheet_3: 40818282734936092
+      KickImpact_Spritesheet_30: -1396945856871496757
+      KickImpact_Spritesheet_31: -2384931110489686852
+      KickImpact_Spritesheet_32: -5900574881227952543
+      KickImpact_Spritesheet_33: 7185313891318934612
+      KickImpact_Spritesheet_4: 5044248057637152261
+      KickImpact_Spritesheet_5: -8867338269145155781
+      KickImpact_Spritesheet_6: -1361933606935016415
+      KickImpact_Spritesheet_7: -2011119819939837638
+      KickImpact_Spritesheet_8: 2218120920426981772
+      KickImpact_Spritesheet_9: -4735435157564678483
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

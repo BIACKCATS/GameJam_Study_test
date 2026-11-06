@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{baff6377-88ff-4426-a423-2d7a60e92bdd}">
+		<property name="assetPath">
+			<value>Spark.mp3</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.99265306122448982</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{15ec7c24-2643-4d4c-9016-72c7f0866f4f}</destination>
+		</relationship>
+	</object>
+</objects>

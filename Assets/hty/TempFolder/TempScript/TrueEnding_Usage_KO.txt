@@ -1,0 +1,23 @@
+﻿진엔딩 호출
+씬에 TrueEndingPresentation 프리팹이 하나 필요합니다. TempFolderStage에는 이미 포함되어 있습니다.
+
+TrueEndingController.PlayTrueEnding(true, false, true, false, true);
+순서: 단소, 오래된 남자, 힙합 소년, 자르반84세, 기사.
+true인 캐릭터만 등장하며 주인공은 항상 나옵니다. 위 예시는 주인공 + 단소 + 힙합 + 기사입니다.
+모두 false여도 주인공은 나옵니다. 재호출하면 새 선택으로 다시 시작합니다.
+성공 시 true, 잘못된 참조/컨트롤러 누락 시 Debug.LogError와 false를 반환합니다.
+
+TrueEndingController.StopTrueEnding(); // 연출 종료 및 기존 시간/커서/트윈 상태 복원
+TrueEndingController.IsPlaying // 재생 여부
+
+플레이 모드에서 TrueEndingPresentation의 TrueEndingController 컴포넌트 우측 메뉴:
+Test/All Characters, Test/Selected Characters, Test/Protagonist Only, Test/Stop.
+우측 하단 타이틀 버튼은 Title 씬으로 돌아갑니다.
+
+인스펙터: Character Spacing, Floor Y, Jump Height/Period/Duration, Firework Interval(기본 0.7~1초), Flight Duration, Burst Size, Target X/Y, Frames Per Second.
+폭죽 시트는 4x4, 16프레임을 16FPS로 재생합니다. 발사 후 두 종류의 폭발과 무지개 불꽃을 조합하며 최대 12개 풀을 재사용합니다.
+주인공/단소/노인/힙합/자르반/기사 순으로 Characters를 연결합니다.
+노인 원본은 누운 포즈이므로 Sprite 자식에 -90도 회전을 적용했습니다. PNG는 수정하지 않았습니다.
+폭죽은 0.7~1초 간격마다 서로 독립적인 랜덤 위치로 2개씩 동시에 발사합니다.
+진엔딩 중 게임오버·승객공격·NAGA·하트변경·조준·장막 진입은 차단됩니다. 기존 시간, 트윈, Animator, AudioListener 상태는 종료 시 복원됩니다. 기차 Interior/BG는 진엔딩 전용 정지 이미지이며 HipHop/Zaruban/Knight Sprite는 좌우 반전되어 있습니다.
+Firework Size Multiplier: 기존 크기 기준 0.5~2.5배(로켓·꼬리·폭발·불꽃 전체). Flight Distance Multiplier: 기존 발사점→목표점 거리 기준 0.8~1.6배. 각 폭죽마다 독립적으로 추첨하며 인스펙터에서 범위를 변경할 수 있습니다.

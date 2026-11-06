@@ -1,0 +1,1170 @@
+fileFormatVersion: 2
+guid: 88538e358884bcb4eacb761e14882f65
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 363753109669906053
+    second: rail-metal-radial_0
+  - first:
+      213: 6676544042773178494
+    second: rail-metal-radial_1
+  - first:
+      213: 8230626713716805740
+    second: rail-metal-radial_2
+  - first:
+      213: 5035158457638311277
+    second: rail-metal-radial_3
+  - first:
+      213: 7555191925261396090
+    second: rail-metal-radial_4
+  - first:
+      213: -1086337089078532991
+    second: rail-metal-radial_5
+  - first:
+      213: 7336299732230837579
+    second: rail-metal-radial_6
+  - first:
+      213: -6046486122839660110
+    second: rail-metal-radial_7
+  - first:
+      213: -8932512494875295761
+    second: rail-metal-radial_8
+  - first:
+      213: -2111143243322158657
+    second: rail-metal-radial_9
+  - first:
+      213: -3586844149138567711
+    second: rail-metal-radial_10
+  - first:
+      213: -3094365116893898049
+    second: rail-metal-radial_11
+  - first:
+      213: 1493570627748899968
+    second: rail-metal-radial_12
+  - first:
+      213: -1882359199846897434
+    second: rail-metal-radial_13
+  - first:
+      213: 8049404368286162930
+    second: rail-metal-radial_14
+  - first:
+      213: 6334393486698425743
+    second: rail-metal-radial_15
+  - first:
+      213: -4464229356280161735
+    second: rail-metal-radial_16
+  - first:
+      213: -636062750519821561
+    second: rail-metal-radial_17
+  - first:
+      213: 7731040214146733488
+    second: rail-metal-radial_18
+  - first:
+      213: -927018418255956758
+    second: rail-metal-radial_19
+  - first:
+      213: -8709998476003420026
+    second: rail-metal-radial_20
+  - first:
+      213: 5384109046554735842
+    second: rail-metal-radial_21
+  - first:
+      213: 6742075183897173079
+    second: rail-metal-radial_22
+  - first:
+      213: -3410608511231066655
+    second: rail-metal-radial_23
+  - first:
+      213: -6951980473856271608
+    second: rail-metal-radial_24
+  - first:
+      213: -7618293551231411458
+    second: rail-metal-radial_25
+  - first:
+      213: -4943783822993555819
+    second: rail-metal-radial_26
+  - first:
+      213: 3350819454690848092
+    second: rail-metal-radial_27
+  - first:
+      213: 7594386984920521631
+    second: rail-metal-radial_28
+  - first:
+      213: 4702696611114727582
+    second: rail-metal-radial_29
+  - first:
+      213: -8374791613753978703
+    second: rail-metal-radial_30
+  - first:
+      213: -7360508527753955717
+    second: rail-metal-radial_31
+  - first:
+      213: -3425104163577013411
+    second: rail-metal-radial_32
+  - first:
+      213: -1040858478835088403
+    second: rail-metal-radial_33
+  - first:
+      213: -4095045236857423718
+    second: rail-metal-radial_34
+  - first:
+      213: 5710953678362069500
+    second: rail-metal-radial_35
+  - first:
+      213: -7296432617580545424
+    second: rail-metal-radial_36
+  - first:
+      213: -5793683357210644565
+    second: rail-metal-radial_37
+  - first:
+      213: -224717786824301847
+    second: rail-metal-radial_38
+  - first:
+      213: -7065362253788255703
+    second: rail-metal-radial_39
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: rail-metal-radial_0
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 305
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58681d7a68f4c0500800000000000000
+      internalID: 363753109669906053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rail-metal-radial_1
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 321
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e78eebcde69d7ac50800000000000000
+      internalID: 6676544042773178494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rail-metal-radial_2
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 295
+        width: 42
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c605eed636f093270800000000000000
+      internalID: 8230626713716805740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rail-metal-radial_3
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 327
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d65d55790f970e540800000000000000
+      internalID: 5035158457638311277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rail-metal-radial_4
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 328
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a78ea13e60f69d860800000000000000
+      internalID: 7555191925261396090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rail-metal-radial_5
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 313
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18464235c2e8ce0f0800000000000000
+      internalID: -1086337089078532991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rail-metal-radial_6
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 335
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b459961bcb5cfc560800000000000000
+      internalID: 7336299732230837579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rail-metal-radial_7
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 331
+        width: 17
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b920dc28e0961ca0800000000000000
+      internalID: -6046486122839660110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rail-metal-radial_8
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 322
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fef383f5637590480800000000000000
+      internalID: -8932512494875295761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rail-metal-radial_9
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 327
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb111dfc766b3b2e0800000000000000
+      internalID: -2111143243322158657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rail-metal-radial_10
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 324
+        width: 22
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ed48e11048f83ec0800000000000000
+      internalID: -3586844149138567711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rail-metal-radial_11
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 311
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbadd22225b9e05d0800000000000000
+      internalID: -3094365116893898049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rail-metal-radial_12
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 305
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08c2ee9929a3ab410800000000000000
+      internalID: 1493570627748899968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rail-metal-radial_13
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 307
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e8ef69e74480e5e0800000000000000
+      internalID: -1882359199846897434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rail-metal-radial_14
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 301
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ff9c2910aa35bf60800000000000000
+      internalID: 8049404368286162930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rail-metal-radial_15
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 288
+        width: 8
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8d253aa05948e750800000000000000
+      internalID: 6334393486698425743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rail-metal-radial_16
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 302
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93adc0f8d0fdb02c0800000000000000
+      internalID: -4464229356280161735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rail-metal-radial_17
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 307
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70b78646c404c27f0800000000000000
+      internalID: -636062750519821561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rail-metal-radial_18
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 309
+        width: 19
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b5d97c2d1c2a4b60800000000000000
+      internalID: 7731040214146733488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rail-metal-radial_19
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 296
+        width: 6
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae4fb9ff8a19223f0800000000000000
+      internalID: -927018418255956758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rail-metal-radial_20
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 141
+        width: 91
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6885f9b988edf1780800000000000000
+      internalID: -8709998476003420026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rail-metal-radial_21
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 301
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e4bcdfc6a238ba40800000000000000
+      internalID: 5384109046554735842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rail-metal-radial_22
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 302
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75cda21a8a9a09d50800000000000000
+      internalID: 6742075183897173079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rail-metal-radial_23
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 296
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1edf52411a51ba0d0800000000000000
+      internalID: -3410608511231066655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rail-metal-radial_24
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 184
+        width: 25
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80b585a979a958f90800000000000000
+      internalID: -6951980473856271608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rail-metal-radial_25
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 209
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efad33ce062664690800000000000000
+      internalID: -7618293551231411458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rail-metal-radial_26
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 205
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59e75286ec6246bb0800000000000000
+      internalID: -4943783822993555819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rail-metal-radial_27
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 162
+        width: 25
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5de0576a80808e20800000000000000
+      internalID: 3350819454690848092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rail-metal-radial_28
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 209
+        width: 40
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9b990bd9bea46960800000000000000
+      internalID: 7594386984920521631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rail-metal-radial_29
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 143
+        width: 92
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e983defd6a5534140800000000000000
+      internalID: 4702696611114727582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rail-metal-radial_30
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 28
+        width: 93
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b0164a1663c6cb80800000000000000
+      internalID: -8374791613753978703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rail-metal-radial_31
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 170
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b76fdfcdd783ad990800000000000000
+      internalID: -7360508527753955717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rail-metal-radial_32
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 171
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5bd74309e59770d0800000000000000
+      internalID: -3425104163577013411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rail-metal-radial_33
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 164
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de3c49b6ab02e81f0800000000000000
+      internalID: -1040858478835088403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rail-metal-radial_34
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 152
+        width: 15
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9835f5bd0a7b27c0800000000000000
+      internalID: -4095045236857423718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rail-metal-radial_35
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 197
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf94b7fcc12614f40800000000000000
+      internalID: 5710953678362069500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rail-metal-radial_36
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 177
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07ab985413dddba90800000000000000
+      internalID: -7296432617580545424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rail-metal-radial_37
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 151
+        width: 11
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bafed50dea3b89fa0800000000000000
+      internalID: -5793683357210644565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rail-metal-radial_38
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 168
+        width: 38
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e220ad0d54a1ecf0800000000000000
+      internalID: -224717786824301847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rail-metal-radial_39
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 147
+        width: 12
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92a6f7dc67ac2fd90800000000000000
+      internalID: -7065362253788255703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      rail-metal-radial_0: 363753109669906053
+      rail-metal-radial_1: 6676544042773178494
+      rail-metal-radial_10: -3586844149138567711
+      rail-metal-radial_11: -3094365116893898049
+      rail-metal-radial_12: 1493570627748899968
+      rail-metal-radial_13: -1882359199846897434
+      rail-metal-radial_14: 8049404368286162930
+      rail-metal-radial_15: 6334393486698425743
+      rail-metal-radial_16: -4464229356280161735
+      rail-metal-radial_17: -636062750519821561
+      rail-metal-radial_18: 7731040214146733488
+      rail-metal-radial_19: -927018418255956758
+      rail-metal-radial_2: 8230626713716805740
+      rail-metal-radial_20: -8709998476003420026
+      rail-metal-radial_21: 5384109046554735842
+      rail-metal-radial_22: 6742075183897173079
+      rail-metal-radial_23: -3410608511231066655
+      rail-metal-radial_24: -6951980473856271608
+      rail-metal-radial_25: -7618293551231411458
+      rail-metal-radial_26: -4943783822993555819
+      rail-metal-radial_27: 3350819454690848092
+      rail-metal-radial_28: 7594386984920521631
+      rail-metal-radial_29: 4702696611114727582
+      rail-metal-radial_3: 5035158457638311277
+      rail-metal-radial_30: -8374791613753978703
+      rail-metal-radial_31: -7360508527753955717
+      rail-metal-radial_32: -3425104163577013411
+      rail-metal-radial_33: -1040858478835088403
+      rail-metal-radial_34: -4095045236857423718
+      rail-metal-radial_35: 5710953678362069500
+      rail-metal-radial_36: -7296432617580545424
+      rail-metal-radial_37: -5793683357210644565
+      rail-metal-radial_38: -224717786824301847
+      rail-metal-radial_39: -7065362253788255703
+      rail-metal-radial_4: 7555191925261396090
+      rail-metal-radial_5: -1086337089078532991
+      rail-metal-radial_6: 7336299732230837579
+      rail-metal-radial_7: -6046486122839660110
+      rail-metal-radial_8: -8932512494875295761
+      rail-metal-radial_9: -2111143243322158657
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
