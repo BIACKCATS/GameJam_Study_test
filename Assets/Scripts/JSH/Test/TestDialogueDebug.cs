@@ -16,7 +16,7 @@ namespace JSH.Test
     public class TestDialogueDebug : MonoBehaviour
     {
         private const int BarWidth = 41;
-        private static bool s_visible = true;
+        private static bool s_visible = false;
 
         private readonly StringBuilder _bar = new StringBuilder(BarWidth + 2);
         private string _log = "";
@@ -24,6 +24,7 @@ namespace JSH.Test
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
         private static void Spawn()
         {
+            s_visible = false;
             GameObject go = new GameObject("[TestDialogueDebug]");
             go.hideFlags = HideFlags.DontSave;
             DontDestroyOnLoad(go);

@@ -11,7 +11,7 @@ namespace JSH.DebugTools
     /// </summary>
     public sealed class DebugCheats : MonoBehaviour
     {
-        [SerializeField] private bool _showOverlay = true;
+        [SerializeField] private bool _showOverlay = false;
         [SerializeField] private float[] _timeScales = { 1f, 2f, 4f, 0.25f };
         [SerializeField, Min(0.1f)] private float _fpsRefreshInterval = 0.5f;
 

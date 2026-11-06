@@ -7,7 +7,7 @@ public sealed class TrainLampFlicker : MonoBehaviour
     public Vector2 offDurationSeconds = new Vector2(0.06f, 0.14f);
     [Range(0f, 1f)] public float dimBrightness = 0.12f;
     [Range(0f, 1f)] public float doubleFlickerChance = 0.3f;
-    [Min(0.01f)] public float doubleFlickerGap = 0.1f;
+    [Min(0.01f)] public float doubleFlickerGap = 0.05f;
     int phase;
     float remaining;
     bool doubleFlicker;
