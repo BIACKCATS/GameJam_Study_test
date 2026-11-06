@@ -55,6 +55,18 @@ namespace JSH.UI
         public bool IsTyping => _typewriter != null && _typewriter.IsShowingText;
         public RectTransform Rect => _rect != null ? _rect : _rect = (RectTransform)transform;
 
+        public bool ContainsScreenPoint(Vector2 position, Camera camera, float padding)
+        {
+            RectTransform bounds = _background != null ? _background.rectTransform
+                : _resizeTarget != null ? _resizeTarget : Rect;
+            if (!RectTransformUtility.ScreenPointToLocalPointInRectangle(bounds, position, camera, out Vector2 local))
+                return false;
+            Rect hitRect = bounds.rect;
+            hitRect.min -= Vector2.one * padding;
+            hitRect.max += Vector2.one * padding;
+            return hitRect.Contains(local);
+        }
+
         private void Awake()
         {
             _rect = (RectTransform)transform;

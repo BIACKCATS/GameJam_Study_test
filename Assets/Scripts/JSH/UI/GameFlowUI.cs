@@ -92,6 +92,12 @@ namespace JSH.UI
         {
             if (_pausePanel == null) return;
             var panel = (RectTransform)_pausePanel.transform;
+            panel.anchorMin = Vector2.zero;
+            panel.anchorMax = Vector2.one;
+            panel.pivot = new Vector2(0.5f, 0.5f);
+            panel.offsetMin = panel.offsetMax = Vector2.zero;
+            panel.localScale = Vector3.one;
+            panel.localRotation = Quaternion.identity;
             panel.SetAsLastSibling();
             var canvas = _pausePanel.GetComponent<Canvas>();
             if (canvas == null) canvas = _pausePanel.gameObject.AddComponent<Canvas>();
@@ -114,12 +120,14 @@ namespace JSH.UI
             card.transform.SetParent(panel, false);
             card.transform.SetAsFirstSibling();
             var cardRect = (RectTransform)card.transform;
-            Place(cardRect, Vector2.zero, new Vector2(420f, 380f));
+            Place(cardRect, Vector2.zero, new Vector2(420f, 360f));
             card.GetComponent<UnityEngine.UI.Image>().color = new Color(0.08f, 0.10f, 0.14f, 0.98f);
             var backdrop = panel.GetComponent<UnityEngine.UI.Image>();
             if (backdrop != null) backdrop.color = new Color(0f, 0f, 0f, 0.65f);
+            resume.transform.SetParent(cardRect, false);
+            quit.transform.SetParent(cardRect, false);
             Place((RectTransform)resume.transform, new Vector2(0f, 20f), new Vector2(320f, 64f));
-            Place((RectTransform)quit.transform, new Vector2(0f, -120f), new Vector2(320f, 64f));
+            Place((RectTransform)quit.transform, new Vector2(0f, -110f), new Vector2(320f, 64f));
             resume.GetComponentInChildren<TMPro.TMP_Text>(true).text = "돌아가기";
             quit.GetComponentInChildren<TMPro.TMP_Text>(true).text = "종료하기";
             var appearance = Resources.Load<PauseMenuAppearance>("PauseMenuAppearance");
@@ -131,8 +139,10 @@ namespace JSH.UI
             var title = panel.Find("Title")?.GetComponent<TMPro.TMP_Text>();
             if (title != null)
             {
+                title.transform.SetParent(cardRect, false);
+                title.alignment = TMPro.TextAlignmentOptions.Center;
                 title.text = "일시정지";
-                Place(title.rectTransform, new Vector2(0f, 140f), new Vector2(360f, 50f));
+                Place(title.rectTransform, new Vector2(0f, 130f), new Vector2(360f, 50f));
             }
         }
 
@@ -141,6 +151,8 @@ namespace JSH.UI
             rect.anchorMin = rect.anchorMax = rect.pivot = new Vector2(0.5f, 0.5f);
             rect.anchoredPosition = position;
             rect.sizeDelta = size;
+            rect.localScale = Vector3.one;
+            rect.localRotation = Quaternion.identity;
         }
 
         private static void ApplyButtonSprites(UnityEngine.UI.Button button, Sprite normal, Sprite pressed)

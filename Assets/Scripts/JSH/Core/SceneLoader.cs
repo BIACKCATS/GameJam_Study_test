@@ -16,6 +16,14 @@ namespace JSH.Core
         public bool IsLoading { get; private set; }
         public float FadeDuration { get => _fadeDuration; set => _fadeDuration = Mathf.Max(0f, value); }
 
+        protected override void OnDuplicateInstance()
+        {
+            // Title's fade loader persists into SideView. Its duplicate lives on
+            // [Managers] alongside GameManager and EndingStatsTracker: keep those alive.
+            enabled = false;
+            Destroy(this);
+        }
+
         protected override void OnSingletonAwake()
         {
             EnsureFadeOverlay();

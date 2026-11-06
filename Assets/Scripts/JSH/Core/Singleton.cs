@@ -18,7 +18,7 @@ namespace JSH.Core
         {
             if (Instance != null && Instance != this)
             {
-                Destroy(gameObject);
+                OnDuplicateInstance();
                 return;
             }
 
@@ -33,6 +33,10 @@ namespace JSH.Core
         }
 
         protected virtual void OnSingletonAwake() { }
+
+        // Standalone services can override this when a duplicate shares an object
+        // with other, non-duplicate managers.
+        protected virtual void OnDuplicateInstance() => Destroy(gameObject);
 
         protected virtual void OnDestroy()
         {

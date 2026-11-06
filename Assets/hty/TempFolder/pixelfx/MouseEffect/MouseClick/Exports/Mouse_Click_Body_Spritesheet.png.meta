@@ -1,0 +1,754 @@
+fileFormatVersion: 2
+guid: 46ebbe3ae3f20de4194013e4a9978490
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7592149436279887841
+    second: Mouse_Click_Body_Spritesheet_0
+  - first:
+      213: -3959373013628119507
+    second: Mouse_Click_Body_Spritesheet_1
+  - first:
+      213: -6802098760260403586
+    second: Mouse_Click_Body_Spritesheet_2
+  - first:
+      213: -6159269981578890594
+    second: Mouse_Click_Body_Spritesheet_3
+  - first:
+      213: 2107438801196776463
+    second: Mouse_Click_Body_Spritesheet_4
+  - first:
+      213: -3318952818508826951
+    second: Mouse_Click_Body_Spritesheet_5
+  - first:
+      213: -6936153171236934274
+    second: Mouse_Click_Body_Spritesheet_6
+  - first:
+      213: 3934709965342700687
+    second: Mouse_Click_Body_Spritesheet_7
+  - first:
+      213: 3910333683879783429
+    second: Mouse_Click_Body_Spritesheet_8
+  - first:
+      213: -5878151423252806025
+    second: Mouse_Click_Body_Spritesheet_9
+  - first:
+      213: 112974450472847302
+    second: Mouse_Click_Body_Spritesheet_10
+  - first:
+      213: -2386969850537225670
+    second: Mouse_Click_Body_Spritesheet_11
+  - first:
+      213: -1172011575689204766
+    second: Mouse_Click_Body_Spritesheet_12
+  - first:
+      213: -5957336985463569749
+    second: Mouse_Click_Body_Spritesheet_13
+  - first:
+      213: 2802015788073777737
+    second: Mouse_Click_Body_Spritesheet_14
+  - first:
+      213: -721440084669303988
+    second: Mouse_Click_Body_Spritesheet_15
+  - first:
+      213: 1280026419782858701
+    second: Mouse_Click_Body_Spritesheet_16
+  - first:
+      213: 4657365579720964
+    second: Mouse_Click_Body_Spritesheet_17
+  - first:
+      213: 4869740043832686992
+    second: Mouse_Click_Body_Spritesheet_18
+  - first:
+      213: 3688838630391885395
+    second: Mouse_Click_Body_Spritesheet_19
+  - first:
+      213: -3083599871614708355
+    second: Mouse_Click_Body_Spritesheet_20
+  - first:
+      213: 638724108857218372
+    second: Mouse_Click_Body_Spritesheet_21
+  - first:
+      213: 7550217369512154093
+    second: Mouse_Click_Body_Spritesheet_22
+  - first:
+      213: -2062781718907800628
+    second: Mouse_Click_Body_Spritesheet_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Mouse_Click_Body_Spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 407
+        width: 51
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f18ead8005443a690800000000000000
+      internalID: -7592149436279887841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mouse_Click_Body_Spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 407
+        width: 51
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d269d65c83b7d09c0800000000000000
+      internalID: -3959373013628119507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mouse_Click_Body_Spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 407
+        width: 51
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7ebd8377371a91a0800000000000000
+      internalID: -6802098760260403586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mouse_Click_Body_Spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 407
+        width: 51
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e927340c590e58aa0800000000000000
+      internalID: -6159269981578890594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mouse_Click_Body_Spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 407
+        width: 51
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0c753b8c602f3d10800000000000000
+      internalID: 2107438801196776463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mouse_Click_Body_Spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 407
+        width: 51
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b6ff720ff5b0f1d0800000000000000
+      internalID: -3318952818508826951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mouse_Click_Body_Spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 279
+        width: 51
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7d29b8a075ddbf90800000000000000
+      internalID: -6936153171236934274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mouse_Click_Body_Spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 279
+        width: 51
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f84f072ddd5ea9630800000000000000
+      internalID: 3934709965342700687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mouse_Click_Body_Spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 279
+        width: 51
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50c26e484cb444630800000000000000
+      internalID: 3910333683879783429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mouse_Click_Body_Spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 279
+        width: 51
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7764f01ac6c9c6ea0800000000000000
+      internalID: -5878151423252806025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mouse_Click_Body_Spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 279
+        width: 51
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c701250aad519100800000000000000
+      internalID: 112974450472847302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mouse_Click_Body_Spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 279
+        width: 51
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3259215197cfded0800000000000000
+      internalID: -2386969850537225670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mouse_Click_Body_Spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 151
+        width: 51
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2eb26667ead2cbfe0800000000000000
+      internalID: -1172011575689204766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mouse_Click_Body_Spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 151
+        width: 51
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba2c5263399435da0800000000000000
+      internalID: -5957336985463569749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mouse_Click_Body_Spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 151
+        width: 51
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94a7c277382c2e620800000000000000
+      internalID: 2802015788073777737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mouse_Click_Body_Spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 151
+        width: 51
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c43fe8ab01eecf5f0800000000000000
+      internalID: -721440084669303988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mouse_Click_Body_Spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 151
+        width: 51
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc7b5463f3193c110800000000000000
+      internalID: 1280026419782858701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mouse_Click_Body_Spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 151
+        width: 51
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 409e7fc69db801000800000000000000
+      internalID: 4657365579720964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mouse_Click_Body_Spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 23
+        width: 51
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0997425d4cac49340800000000000000
+      internalID: 4869740043832686992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mouse_Click_Body_Spritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 23
+        width: 51
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35e2f36a033613330800000000000000
+      internalID: 3688838630391885395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mouse_Click_Body_Spritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 23
+        width: 51
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7517fe114ad435d0800000000000000
+      internalID: -3083599871614708355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mouse_Click_Body_Spritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 23
+        width: 51
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44599e161343dd800800000000000000
+      internalID: 638724108857218372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mouse_Click_Body_Spritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 23
+        width: 51
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de391ced1b2c7c860800000000000000
+      internalID: 7550217369512154093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mouse_Click_Body_Spritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 23
+        width: 51
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc3b45ba4f68f53e0800000000000000
+      internalID: -2062781718907800628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Mouse_Click_Body_Spritesheet_0: -7592149436279887841
+      Mouse_Click_Body_Spritesheet_1: -3959373013628119507
+      Mouse_Click_Body_Spritesheet_10: 112974450472847302
+      Mouse_Click_Body_Spritesheet_11: -2386969850537225670
+      Mouse_Click_Body_Spritesheet_12: -1172011575689204766
+      Mouse_Click_Body_Spritesheet_13: -5957336985463569749
+      Mouse_Click_Body_Spritesheet_14: 2802015788073777737
+      Mouse_Click_Body_Spritesheet_15: -721440084669303988
+      Mouse_Click_Body_Spritesheet_16: 1280026419782858701
+      Mouse_Click_Body_Spritesheet_17: 4657365579720964
+      Mouse_Click_Body_Spritesheet_18: 4869740043832686992
+      Mouse_Click_Body_Spritesheet_19: 3688838630391885395
+      Mouse_Click_Body_Spritesheet_2: -6802098760260403586
+      Mouse_Click_Body_Spritesheet_20: -3083599871614708355
+      Mouse_Click_Body_Spritesheet_21: 638724108857218372
+      Mouse_Click_Body_Spritesheet_22: 7550217369512154093
+      Mouse_Click_Body_Spritesheet_23: -2062781718907800628
+      Mouse_Click_Body_Spritesheet_3: -6159269981578890594
+      Mouse_Click_Body_Spritesheet_4: 2107438801196776463
+      Mouse_Click_Body_Spritesheet_5: -3318952818508826951
+      Mouse_Click_Body_Spritesheet_6: -6936153171236934274
+      Mouse_Click_Body_Spritesheet_7: 3934709965342700687
+      Mouse_Click_Body_Spritesheet_8: 3910333683879783429
+      Mouse_Click_Body_Spritesheet_9: -5878151423252806025
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
