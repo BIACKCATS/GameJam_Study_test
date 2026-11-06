@@ -143,7 +143,26 @@ namespace JSH.UI
                 title.alignment = TMPro.TextAlignmentOptions.Center;
                 title.text = "일시정지";
                 Place(title.rectTransform, new Vector2(0f, 130f), new Vector2(360f, 50f));
+                title.transform.SetAsFirstSibling();
             }
+
+            // Center the complete stack, including the PNG buttons' actual heights.
+            // Fixed Y offsets otherwise leave unequal space above and below the menu.
+            const float spacing = 16f;
+            const int padding = 24;
+            float contentHeight = ((RectTransform)resume.transform).rect.height
+                + ((RectTransform)quit.transform).rect.height + spacing;
+            if (title != null) contentHeight += title.rectTransform.rect.height + spacing;
+            cardRect.sizeDelta = new Vector2(420f, contentHeight + padding * 2);
+            var layout = card.AddComponent<UnityEngine.UI.VerticalLayoutGroup>();
+            layout.childAlignment = TextAnchor.MiddleCenter;
+            layout.padding = new RectOffset(padding, padding, padding, padding);
+            layout.spacing = spacing;
+            layout.childControlWidth = false;
+            layout.childControlHeight = false;
+            layout.childForceExpandWidth = false;
+            layout.childForceExpandHeight = false;
+            UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(cardRect);
         }
 
         private static void Place(RectTransform rect, Vector2 position, Vector2 size)

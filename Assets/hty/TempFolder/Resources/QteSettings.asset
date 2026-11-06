@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddb0f2bf23272ae4ba9bdf4a63f20b16, type: 3}
+  m_Name: QteSettings
+  m_EditorClassIdentifier: Assembly-CSharp::JSH.Data.QteSettings
+  startingGauge: 0.5
+  gainPerClick: 0.1
+  drainPerSecond: 0.16
+  readySeconds: 0.6
+  framesPerSecond: 16
+  leftSheet: {fileID: 2800000, guid: a4656d79c0fb5754d9014e5a70bc27c9, type: 3}
+  rightSheet: {fileID: 2800000, guid: 2a9a547fca87bd046bd6d19f91e4e31d, type: 3}
+  font: {fileID: 11400000, guid: ebe4897619e6f964aa87a4617c52b281, type: 2}

@@ -4,6 +4,7 @@ namespace JSH.Data
     public enum MinigameType
     {
         None = 0,
+        Qte = 5,
         // 1 was Reflex (removed 2026-11-05). Do not reuse.
         Timing = 2,        // 설득 minigame
         Eject = 3,         // 퇴치 on a villain: in-scene "thrown off the train" event

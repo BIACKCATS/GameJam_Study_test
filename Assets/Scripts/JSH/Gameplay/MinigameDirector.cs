@@ -34,6 +34,11 @@ namespace JSH.Gameplay
         private Talkable _target;
         private Villain _villain;
         private TimingMinigame _timing;
+        [SerializeField] private QteSettings _qteSettings;
+        private QteMinigame _qte;
+        private int _roundStartedFrame;
+        public QteMinigame ActiveQte => _qte;
+        public QteSettings QteConfig => _qteSettings;
         private MinigameType _eventType = MinigameType.None;
         private DialogueOutcome _goal = DialogueOutcome.None;
         private float _eventTimer;
@@ -42,7 +47,7 @@ namespace JSH.Gameplay
         public int LastTimingInputFrame { get; private set; } = -1;
         public bool IsActive => _target != null;
         public Talkable CurrentTarget => _target;
-        public MinigameType CurrentType => _timing != null ? MinigameType.Timing : _eventType;
+        public MinigameType CurrentType => _qte != null ? MinigameType.Qte : _timing != null ? MinigameType.Timing : _eventType;
         public TimingMinigame ActiveTiming => _timing;
         /// <summary>What the current Timing minigame decides: Embrace (persuade) or Defeat (퇴치). None outside Timing sessions.</summary>
         public DialogueOutcome CurrentGoal => _goal;
@@ -81,7 +86,7 @@ namespace JSH.Gameplay
         public bool Resolve(Talkable target, DialogueOutcome outcome)
         {
             if (outcome == DialogueOutcome.None || target == null) return false;
-            return Begin(target, MinigameType.Timing, outcome);
+            return Begin(target, UnityEngine.Random.value < 0.5f ? MinigameType.Timing : MinigameType.Qte, outcome);
         }
 
         /// <summary>
@@ -92,6 +97,15 @@ namespace JSH.Gameplay
         {
             if (IsActive || target == null || type == MinigameType.None) return false;
             target.TryGetComponent(out Villain villain);
+            if (type == MinigameType.Qte)
+            {
+                if (_qteSettings == null) _qteSettings = Resources.Load<QteSettings>("QteSettings");
+                if (_qteSettings == null || !_qteSettings.leftSheet || !_qteSettings.rightSheet)
+                {
+                    Debug.LogError("[MinigameDirector] QTE settings or mouse animation sheets are missing.", this);
+                    return false;
+                }
+            }
             if (type == MinigameType.Timing && ResolveTimingSettings(target) == null)
             {
                 Debug.LogError("[MinigameDirector] Missing Timing settings (assign the default on the director).", this);
@@ -105,11 +119,12 @@ namespace JSH.Gameplay
 
             _target = target;
             _villain = villain;
-            _goal = type == MinigameType.Timing ? (timingGoal == DialogueOutcome.Defeat ? DialogueOutcome.Defeat : DialogueOutcome.Embrace)
+            _goal = type == MinigameType.Timing || type == MinigameType.Qte ? (timingGoal == DialogueOutcome.Defeat ? DialogueOutcome.Defeat : DialogueOutcome.Embrace)
                 : DialogueOutcome.None;
             EventBus<MinigameStateChangedEvent>.Raise(new MinigameStateChangedEvent(true, type, _target));
 
             if (type == MinigameType.Timing) StartTiming();
+            else if (type == MinigameType.Qte) StartQte();
             else if (type == MinigameType.Eject) StartEject();
             else StartCounterattack(CounterattackReason.AccusedPassenger);
             return true;
@@ -121,12 +136,24 @@ namespace JSH.Gameplay
             if (GameManager.HasInstance && GameManager.Instance.IsPaused) return; // pause-menu clicks must not hit
 
             float dt = Time.deltaTime;
-            if (_timing != null)
+            if (_qte != null)
+            {
+                if (Time.frameCount == _roundStartedFrame) return;
+                _qte.Tick(dt);
+                var mouse = Mouse.current;
+                if (mouse != null && (mouse.leftButton.wasPressedThisFrame || mouse.rightButton.wasPressedThisFrame))
+                {
+                    LastTimingInputFrame = Time.frameCount;
+                    _qte.Click(mouse.leftButton.wasPressedThisFrame, mouse.rightButton.wasPressedThisFrame);
+                }
+                if (_qte.IsFinished) FinishSkill(_qte.Success, MinigameType.Qte);
+            }
+            else if (_timing != null)
             {
                 _timing.Tick(dt);
                 if (Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame)
                 { LastTimingInputFrame = Time.frameCount; _timing.Stop(); }
-                if (_timing.IsFinished) FinishTiming();
+                if (_timing.IsFinished) FinishSkill(_timing.Success, MinigameType.Timing);
             }
             else if (_eventType != MinigameType.None)
             {
@@ -142,8 +169,18 @@ namespace JSH.Gameplay
             RoundStarted?.Invoke(MinigameType.Timing);
         }
 
+        private void StartQte()
+        {
+            _eventType = MinigameType.None;
+            _roundStartedFrame = Time.frameCount;
+            _qte = new QteMinigame(_qteSettings);
+            if (!TryGetComponent<JSH.UI.QteMinigameView>(out _)) gameObject.AddComponent<JSH.UI.QteMinigameView>();
+            RoundStarted?.Invoke(MinigameType.Qte);
+        }
+
         private void StartEject()
         {
+            _qte = null;
             _timing = null;
             _eventType = MinigameType.Eject;
             _eventTimer = _ejectDuration;
@@ -153,6 +190,7 @@ namespace JSH.Gameplay
 
         private void StartCounterattack(CounterattackReason reason)
         {
+            _qte = null;
             _timing = null;
             _eventType = MinigameType.Counterattack;
             _eventTimer = _counterattackDuration;
@@ -161,13 +199,12 @@ namespace JSH.Gameplay
             if (LifeSystem.HasInstance) LifeSystem.Instance.Damage(1);
         }
 
-        private void FinishTiming()
+        private void FinishSkill(bool success, MinigameType type)
         {
-            bool success = _timing.Success;
 
             if (_goal == DialogueOutcome.Defeat)
             {
-                EventBus<MinigameFinishedEvent>.Raise(new MinigameFinishedEvent(_target, MinigameType.Timing, success));
+                EventBus<MinigameFinishedEvent>.Raise(new MinigameFinishedEvent(_target, type, success));
                 if (_villain == null) StartCounterattack(CounterattackReason.AccusedPassenger); // passenger: always backfires
                 else if (success) StartEject(); // same session, no input-lock flicker
                 else
@@ -185,7 +222,7 @@ namespace JSH.Gameplay
                 _villain.Convert();
             }
 
-            EventBus<MinigameFinishedEvent>.Raise(new MinigameFinishedEvent(_target, MinigameType.Timing, success));
+            EventBus<MinigameFinishedEvent>.Raise(new MinigameFinishedEvent(_target, type, success));
 
             if (success) EndSession();
             else if (_villain != null)
@@ -244,6 +281,7 @@ namespace JSH.Gameplay
             Talkable target = _target;
             MinigameType type = CurrentType;
             _target = null;
+            _qte = null;
             _villain = null;
             _timing = null;
             _eventType = MinigameType.None;
