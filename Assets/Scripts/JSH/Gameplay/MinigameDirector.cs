@@ -37,6 +37,10 @@ namespace JSH.Gameplay
         [SerializeField] private QteSettings _qteSettings;
         private QteMinigame _qte;
         private int _roundStartedFrame;
+        private bool _qteResultPending;
+        private bool _qteResultSuccess;
+        private float _qteResultLeft;
+        public event Action<int> QteClickAccepted;
         public QteMinigame ActiveQte => _qte;
         public QteSettings QteConfig => _qteSettings;
         private MinigameType _eventType = MinigameType.None;
@@ -136,6 +140,17 @@ namespace JSH.Gameplay
             if (GameManager.HasInstance && GameManager.Instance.IsPaused) return; // pause-menu clicks must not hit
 
             float dt = Time.deltaTime;
+            if (_qteResultPending)
+            {
+                _qteResultLeft -= dt;
+                if (_qteResultLeft <= 0f)
+                {
+                    _qteResultPending = false;
+                    if (TryGetComponent<JSH.UI.QteMinigameView>(out var view)) view.HideImmediately();
+                    FinishSkill(_qteResultSuccess, MinigameType.Qte, true);
+                }
+                return;
+            }
             if (_qte != null)
             {
                 if (Time.frameCount == _roundStartedFrame) return;
@@ -144,7 +159,8 @@ namespace JSH.Gameplay
                 if (mouse != null && (mouse.leftButton.wasPressedThisFrame || mouse.rightButton.wasPressedThisFrame))
                 {
                     LastTimingInputFrame = Time.frameCount;
-                    _qte.Click(mouse.leftButton.wasPressedThisFrame, mouse.rightButton.wasPressedThisFrame);
+                    if (_qte.Click(mouse.leftButton.wasPressedThisFrame, mouse.rightButton.wasPressedThisFrame))
+                        QteClickAccepted?.Invoke(_qte.LastButton);
                 }
                 if (_qte.IsFinished) FinishSkill(_qte.Success, MinigameType.Qte);
             }
@@ -199,12 +215,21 @@ namespace JSH.Gameplay
             if (LifeSystem.HasInstance) LifeSystem.Instance.Damage(1);
         }
 
-        private void FinishSkill(bool success, MinigameType type)
+        private void FinishSkill(bool success, MinigameType type, bool resultShown = false)
         {
+            if (type == MinigameType.Qte && !resultShown)
+            {
+                if (_qteResultPending) return;
+                _qteResultPending = true;
+                _qteResultSuccess = success;
+                _qteResultLeft = Mathf.Max(0f, _qteSettings.resultHoldSeconds);
+                EventBus<MinigameFinishedEvent>.Raise(new MinigameFinishedEvent(_target, type, success));
+                return;
+            }
 
             if (_goal == DialogueOutcome.Defeat)
             {
-                EventBus<MinigameFinishedEvent>.Raise(new MinigameFinishedEvent(_target, type, success));
+                if (!resultShown) EventBus<MinigameFinishedEvent>.Raise(new MinigameFinishedEvent(_target, type, success));
                 if (_villain == null) StartCounterattack(CounterattackReason.AccusedPassenger); // passenger: always backfires
                 else if (success) StartEject(); // same session, no input-lock flicker
                 else
@@ -222,7 +247,7 @@ namespace JSH.Gameplay
                 _villain.Convert();
             }
 
-            EventBus<MinigameFinishedEvent>.Raise(new MinigameFinishedEvent(_target, type, success));
+            if (!resultShown) EventBus<MinigameFinishedEvent>.Raise(new MinigameFinishedEvent(_target, type, success));
 
             if (success) EndSession();
             else if (_villain != null)
@@ -277,6 +302,8 @@ namespace JSH.Gameplay
 
         private void EndSession()
         {
+            _qteResultPending = false;
+            if (TryGetComponent<JSH.UI.QteMinigameView>(out var view)) view.HideImmediately();
             if (!IsActive) return;
             Talkable target = _target;
             MinigameType type = CurrentType;
