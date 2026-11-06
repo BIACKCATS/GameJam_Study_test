@@ -14,12 +14,31 @@ namespace JSH.Core
         [SerializeField, Min(0f)] private float _fadeDuration = 0.3f;
 
         public bool IsLoading { get; private set; }
+        public float FadeDuration { get => _fadeDuration; set => _fadeDuration = Mathf.Max(0f, value); }
 
         protected override void OnSingletonAwake()
         {
+            EnsureFadeOverlay();
             SetFade(0f);
         }
 
+        private void EnsureFadeOverlay()
+        {
+            if (_fadeGroup != null) return;
+            var overlay = new GameObject("SceneFadeOverlay", typeof(RectTransform), typeof(Canvas),
+                typeof(UnityEngine.UI.GraphicRaycaster), typeof(CanvasGroup));
+            overlay.transform.SetParent(transform, false);
+            var canvas = overlay.GetComponent<Canvas>();
+            canvas.renderMode = RenderMode.ScreenSpaceOverlay;
+            canvas.sortingOrder = 32767;
+            _fadeGroup = overlay.GetComponent<CanvasGroup>();
+            var black = new GameObject("Black", typeof(RectTransform), typeof(UnityEngine.UI.Image));
+            var rect = (RectTransform)black.transform;
+            rect.SetParent(overlay.transform, false);
+            rect.anchorMin = Vector2.zero; rect.anchorMax = Vector2.one;
+            rect.offsetMin = rect.offsetMax = Vector2.zero;
+            black.GetComponent<UnityEngine.UI.Image>().color = Color.black;
+        }
         public void Load(string sceneName)
         {
             if (!IsLoading)

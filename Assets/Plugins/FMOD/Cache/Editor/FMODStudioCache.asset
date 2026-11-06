@@ -126,7 +126,7 @@ MonoBehaviour:
   Path: Assets/SJM/SFX/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639295496279391740
+  lastModified: 639295535495544424
   FileSizes:
   - Name: Desktop
     Value: 11098304
@@ -250,7 +250,7 @@ MonoBehaviour:
   Path: Assets/SJM/SFX/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639295496279391740
+  lastModified: 639295535495554356
   FileSizes:
   - Name: Desktop
     Value: 2130
@@ -640,11 +640,11 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: -5416950850475863660}
   cacheVersion: 131861
-  cacheTime: 639295496279391740
+  cacheTime: 639295535495554356
   SerializableEventsDict:
   - key: event:/Attack
     index: 0
-  - key: event:/train
+  - key: event:/Train
     index: 1
   - key: event:/UI
     index: 2
@@ -652,6 +652,50 @@ MonoBehaviour:
     index: 3
   - key: event:/NAGA
     index: 4
+  - key: event:/Talk
+    index: 5
+  - key: event:/Stopping_Train
+    index: 6
+  - key: event:/Close_Train_door
+    index: 7
+  - key: event:/Kick_the_villain
+    index: 8
+  - key: event:/Turn_On_The_light
+    index: 9
+  - key: event:/Turn_Off_The_light
+    index: 10
+  - key: event:/Hecktopascal_Kick
+    index: 11
+  - key: event:/Message_Sending_Alarm
+    index: 12
+  - key: event:/Hecktopascal_Kicked
+    index: 13
+  - key: event:/Health_lose
+    index: 14
+  - key: event:/Spark
+    index: 15
+  - key: event:/Message_Coming_Alarm
+    index: 16
+  - key: event:/Aim
+    index: 17
+  - key: event:/Writing
+    index: 18
+  - key: event:/YeYeITSO
+    index: 19
+  - key: event:/Health_add
+    index: 20
+  - key: event:/Passing_Dark
+    index: 21
+  - key: event:/Paper_stitching
+    index: 22
+  - key: event:/Letter_adding
+    index: 23
+  - key: event:/Firework
+    index: 24
+  - key: event:/StartMusic
+    index: 25
+  - key: event:/FinalMusic
+    index: 26
 --- !u!114 &137138433637039046
 MonoBehaviour:
   m_ObjectHideFlags: 0

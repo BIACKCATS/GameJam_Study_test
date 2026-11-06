@@ -20,6 +20,9 @@ namespace JSH.UI
     public sealed class TimingMinigameView : MonoBehaviour
     {
         [SerializeField] private UIPanel _panel;
+        [Header("Focus backdrop")]
+        [SerializeField, Range(0f, 1f)] private float _backdropOpacity = 0.55f;
+        private UnityEngine.UI.Image _focusBackdrop;
         [Tooltip("The wide judgment box. Its width maps the normalized range [-1, 1]. Pivot/anchor X must be centered.")]
         [SerializeField] private RectTransform _track;
         [Tooltip("Child of _track (anchor + pivot center). Positioned/sized from TargetMin..TargetMax each round.")]
@@ -71,6 +74,7 @@ namespace JSH.UI
 
         private void Start()
         {
+            EnsureBackdrop();
             if (_panel != null) _panel.SetVisible(false, true);
         }
 
@@ -100,8 +104,35 @@ namespace JSH.UI
             }
         }
 
+        private void EnsureBackdrop()
+        {
+            if (_panel == null) return;
+            if (_focusBackdrop == null)
+            {
+                var existing = _panel.transform.Find("FocusBackdrop");
+                if (existing) _focusBackdrop = existing.GetComponent<UnityEngine.UI.Image>();
+                if (_focusBackdrop == null)
+                {
+                    var go = new GameObject("FocusBackdrop", typeof(RectTransform), typeof(UnityEngine.UI.Image));
+                    go.transform.SetParent(_panel.transform, false);
+                    _focusBackdrop = go.GetComponent<UnityEngine.UI.Image>();
+                }
+                var rect = _focusBackdrop.rectTransform;
+                rect.anchorMin = Vector2.zero; rect.anchorMax = Vector2.one;
+                rect.offsetMin = rect.offsetMax = Vector2.zero;
+                rect.SetAsFirstSibling();
+                _focusBackdrop.raycastTarget = true;
+            }
+            _focusBackdrop.color = new Color(0f, 0f, 0f, _backdropOpacity);
+        }
+
+        private void OnValidate()
+        {
+            if (_focusBackdrop) _focusBackdrop.color = new Color(0f, 0f, 0f, _backdropOpacity);
+        }
         private void BeginRound(TimingMinigame timing)
         {
+            EnsureBackdrop();
             _timeLimit = Mathf.Max(0.01f, timing.TimeLeft); // TimeLeft starts at the full limit
             _wasReady = timing.IsReady;
             LayoutTargetZone(timing.TargetMin, timing.TargetMax);

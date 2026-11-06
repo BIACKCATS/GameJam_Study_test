@@ -92,13 +92,6 @@ namespace JSH.UI
         [SerializeField] private bool _skipOnInput = true;
         [SerializeField] private UnityEvent _onFinished;
 
-        [Header("Test values (used when gameplay set no EndingStats)")]
-        [SerializeField, Min(0)] private int _testReportCount = 12;
-        [SerializeField, Min(0)] private int _testEmbracedCount = 8;
-        [SerializeField, Min(0)] private int _testNotEmbracedCount = 4;
-        [SerializeField, Min(0)] private int _testMistakeCount = 2;
-        [SerializeField] private PeaceGrade _testGrade = PeaceGrade.A;
-
         private const int AllVisible = 99999;
 
         private Vector2[] _rowBasePos = Array.Empty<Vector2>();
@@ -161,13 +154,12 @@ namespace JSH.UI
             KillTweens();
         }
 
-        /// <summary>Play with EndingStats.Last (or the test values).</summary>
+        /// <summary>Play with recorded statistics; missing play data displays zero counts.</summary>
         public void Play()
         {
             if (!EndingStats.TryGetLast(out EndingStats stats))
             {
-                stats = new EndingStats(_testReportCount, _testEmbracedCount, _testNotEmbracedCount,
-                    _testMistakeCount, _testGrade);
+                stats = new EndingStats(0, 0, 0, 0, PeaceGrade.B);
             }
 
             Play(stats);

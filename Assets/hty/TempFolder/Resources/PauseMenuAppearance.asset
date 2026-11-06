@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ecbb4952ad08274fba4bad22c6ac1e3, type: 3}
+  m_Name: PauseMenuAppearance
+  m_EditorClassIdentifier: Assembly-CSharp::JSH.UI.PauseMenuAppearance
+  returnNormal: {fileID: 6916935565068086325, guid: 2ebc5c8eb87bda54eb7e49fbef2133cb, type: 3}
+  returnPressed: {fileID: -4145334484483642546, guid: 17e930e287ebda045be5b49bf85b60cc, type: 3}
+  exitNormal: {fileID: 8586078981887160897, guid: a63e72da41affa54c92656ed33887ca4, type: 3}
+  exitPressed: {fileID: 3520098282854015999, guid: ab04f7cdf9b110241ad96e26a0fbd65e, type: 3}
