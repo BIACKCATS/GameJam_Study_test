@@ -1,6 +1,7 @@
 using JSH.Core;
 using JSH.Data;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace JSH.Gameplay
 {
@@ -12,7 +13,7 @@ namespace JSH.Gameplay
     ///  - Reports      : embraced + not embraced (every villain dealt with or passed)
     ///  - Mistakes     : counterattack because a normal passenger was accused
     ///  - Grade        : embrace ratio and mistakes (thresholds below)
-    /// Counts reset when this component is enabled (new run / scene reload).
+    /// Counts reset when a gameplay scene is loaded, including reloads while already Playing.
     /// </summary>
     public sealed class EndingStatsTracker : MonoBehaviour
     {
@@ -27,17 +28,28 @@ namespace JSH.Gameplay
         private int _notEmbraced;
         private int _mistakes;
         private int _lastCountedCar = -1; // highest car index whose unresolved villains are already counted
+        private static EndingStatsTracker _owner;
+        private bool _initialized;
+        private int _runSceneHandle = -1;
 
         public EndingStats Current => Build();
 
         private void OnEnable()
         {
-            _embraced = 0;
-            _notEmbraced = 0;
-            _mistakes = 0;
-            _lastCountedCar = -1;
-            EmbracedVillains.Clear();
-            Publish();
+            // A new scene's [Managers] may be scheduled for destruction by Singleton.Awake.
+            // Its tracker must not clear the surviving owner's data or subscribe a second time.
+            if (_owner != null && _owner != this)
+            {
+                enabled = false;
+                return;
+            }
+            _owner = this;
+            if (!_initialized)
+            {
+                ResetRun();
+                _initialized = true;
+            }
+            SceneManager.sceneLoaded += OnSceneLoaded;
 
             EventBus<VillainConvertedEvent>.Subscribe(OnConverted);
             EventBus<VillainDefeatedEvent>.Subscribe(OnDefeated);
@@ -47,14 +59,45 @@ namespace JSH.Gameplay
             EventBus<CounterattackEvent>.Subscribe(OnCounterattack);
         }
 
+        private void ResetRun()
+        {
+            _embraced = 0;
+            _notEmbraced = 0;
+            _mistakes = 0;
+            _lastCountedCar = -1;
+            EmbracedVillains.Clear();
+            Publish();
+
+        }
+
+        private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+        {
+            if (_owner != this || scene.handle == _runSceneHandle) return;
+            // TrainProgress is scene-owned and identifies a fresh run without depending on
+            // a scene name, Title route, or Playing/Paused state. sceneLoaded precedes Start.
+            foreach (GameObject root in scene.GetRootGameObjects())
+            {
+                if (root.GetComponentInChildren<TrainProgress>(true) == null) continue;
+                _runSceneHandle = scene.handle;
+                ResetRun();
+                return;
+            }
+        }
+
         private void OnDisable()
         {
+            SceneManager.sceneLoaded -= OnSceneLoaded;
             EventBus<VillainConvertedEvent>.Unsubscribe(OnConverted);
             EventBus<VillainDefeatedEvent>.Unsubscribe(OnDefeated);
             EventBus<CarChangedEvent>.Unsubscribe(OnCarChanged);
             EventBus<TrainEndReachedEvent>.Unsubscribe(OnTrainEnd);
             EventBus<LivesDepletedEvent>.Unsubscribe(OnLivesDepleted);
             EventBus<CounterattackEvent>.Unsubscribe(OnCounterattack);
+        }
+
+        private void OnDestroy()
+        {
+            if (_owner == this) _owner = null;
         }
 
         private void OnConverted(VillainConvertedEvent evt)
