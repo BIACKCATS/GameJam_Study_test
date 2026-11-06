@@ -3,6 +3,7 @@ using JSH.Data;
 using JSH.Gameplay;
 using TMPro;
 using UnityEngine;
+using MoreMountains.Feedbacks;
 
 namespace JSH.UI
 {
@@ -16,16 +17,27 @@ namespace JSH.UI
         private MinigameDirector _director;
         private QteMinigame _round;
         private float _animationTime;
-        private float _resultLeft;
+        private bool _showingResult;
+        private MMF_Player _leftFeedback, _rightFeedback, _gaugeFeedback, _resultFeedback;
 
         private void Awake() => _director = GetComponent<MinigameDirector>();
-        private void OnEnable() => EventBus<MinigameFinishedEvent>.Subscribe(OnFinished);
+        private void OnEnable()
+        {
+            EventBus<MinigameFinishedEvent>.Subscribe(OnFinished);
+            _director.QteClickAccepted += OnClickAccepted;
+        }
         private void OnDisable()
         {
             EventBus<MinigameFinishedEvent>.Unsubscribe(OnFinished);
+            _director.QteClickAccepted -= OnClickAccepted;
+            HideImmediately();
+        }
+
+        public void HideImmediately()
+        {
             if (_root) _root.SetActive(false);
             _round = null;
-            _resultLeft = 0f;
+            _showingResult = false;
         }
 
         private void Update()
@@ -34,7 +46,7 @@ namespace JSH.UI
             {
                 if (_root) _root.SetActive(false);
                 _round = null;
-                _resultLeft = 0f;
+                _showingResult = false;
                 return;
             }
             if (_director.ActiveQte != null && _director.ActiveQte != _round)
@@ -42,16 +54,14 @@ namespace JSH.UI
                 _round = _director.ActiveQte;
                 if (!_root) Build();
                 _root.SetActive(true);
-                _animationTime = _resultLeft = 0f;
+                _animationTime = 0f;
+                _showingResult = false;
+                _prompt.color = Color.white;
+                _left.transform.localScale = _right.transform.localScale = _gauge.transform.localScale = _prompt.transform.localScale = Vector3.one;
             }
             if (!_root || !_root.activeSelf) return;
             if (GameManager.HasInstance && GameManager.Instance.IsPaused) return;
-            if (_resultLeft > 0f)
-            {
-                _resultLeft -= Time.deltaTime;
-                if (_resultLeft <= 0f) { _root.SetActive(false); _round = null; }
-                return;
-            }
+            if (_showingResult) return; // Director hides this before applying any follow-up event.
             if (_director.ActiveQte == null)
             {
                 _root.SetActive(false);
@@ -73,10 +83,43 @@ namespace JSH.UI
         {
             if (evt.Type != MinigameType.Qte) return;
             if (!_root) Build();
+            _round = _director.ActiveQte;
             _root.SetActive(true);
             _gauge.value = evt.Success ? 1f : 0f;
             _prompt.text = evt.Success ? "성공!" : "실패...";
-            _resultLeft = 0.6f;
+            _showingResult = true;
+            _prompt.color = evt.Success ? new Color(0.4f, 1f, 0.6f) : new Color(1f, 0.3f, 0.3f);
+            _resultFeedback.PlayFeedbacks();
+        }
+
+        private void OnClickAccepted(int button)
+        {
+            if (!_root) Build();
+            var feedback = button == 0 ? _leftFeedback : _rightFeedback;
+            feedback.StopFeedbacks();
+            (button == 0 ? _left.transform : _right.transform).localScale = Vector3.one;
+            feedback.PlayFeedbacks();
+            _gaugeFeedback.StopFeedbacks();
+            _gauge.transform.localScale = Vector3.one;
+            _gaugeFeedback.PlayFeedbacks();
+        }
+
+        private MMF_Player CreateFeedback(string name, Transform target, float peak, float duration)
+        {
+            var go = new GameObject(name);
+            go.transform.SetParent(_root.transform, false);
+            var player = go.AddComponent<MMF_Player>();
+            player.AddFeedback(new MMF_SquashAndStretch
+            {
+                SquashAndStretchTarget = target,
+                Axis = MMF_SquashAndStretch.PossibleAxis.YtoX,
+                AnimateScaleDuration = duration,
+                RemapCurveZero = 1f,
+                RemapCurveOne = peak,
+                AnimateCurve = new AnimationCurve(new Keyframe(0, 0), new Keyframe(0.3f, 1), new Keyframe(1, 0))
+            });
+            player.Initialization();
+            return player;
         }
 
         private static void Animate(UnityEngine.UI.RawImage image, int frame)
@@ -121,6 +164,10 @@ namespace JSH.UI
             _prompt.fontSize = 36;
             _prompt.alignment = TextAlignmentOptions.Center;
             _prompt.raycastTarget = false;
+            _leftFeedback = CreateFeedback("LeftClickFeedback", _left.transform, 0.78f, 0.16f);
+            _rightFeedback = CreateFeedback("RightClickFeedback", _right.transform, 0.78f, 0.16f);
+            _gaugeFeedback = CreateFeedback("GaugeClickFeedback", _gauge.transform, 1.18f, 0.15f);
+            _resultFeedback = CreateFeedback("ResultFeedback", _prompt.transform, 1.3f, 0.3f);
         }
 
         private UnityEngine.UI.RawImage MouseImage(string name, float x, Texture texture)
