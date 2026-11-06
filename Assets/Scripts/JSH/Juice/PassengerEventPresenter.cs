@@ -72,6 +72,10 @@ namespace JSH.Juice
             // MinigameDirector may wake after this component.
             if (MinigameDirector.HasInstance) MinigameDirector.Instance.SetEventHold(_isPlaying);
             if (_player == null) _player = FindPlayer();
+            // Debug presentation buttons must not intercept gameplay clicks or mutate the live HUD.
+            foreach (var button in FindObjectsByType<GongikNagaTestButton>(FindObjectsInactive.Include, FindObjectsSortMode.None)) button.gameObject.SetActive(false);
+            foreach (var button in FindObjectsByType<PassengerAttackTestButton>(FindObjectsInactive.Include, FindObjectsSortMode.None)) button.gameObject.SetActive(false);
+            foreach (var button in FindObjectsByType<HeartTestButton>(FindObjectsInactive.Include, FindObjectsSortMode.None)) button.gameObject.SetActive(false);
         }
 
         private static Transform FindPlayer()
@@ -158,6 +162,9 @@ namespace JSH.Juice
         private void OnEjectStarted(VillainEjectStartedEvent evt)
         {
             if (evt.Villain == null) return;
+            if (!MinigameDirector.HasInstance || MinigameDirector.Instance.CurrentType != JSH.Data.MinigameType.Eject
+                || MinigameDirector.Instance.CurrentTarget == null
+                || MinigameDirector.Instance.CurrentTarget.gameObject != evt.Villain.gameObject) return;
             string key = FindKey(_villainRules, evt.Villain.name);
             if (key == null)
             {

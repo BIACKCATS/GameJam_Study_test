@@ -52,6 +52,7 @@ namespace JSH.UI
         private void OnLivesChanged(LivesChangedEvent evt)
         {
             _lives = evt.Current;
+            if (evt.Delta < 0) HeartAnimationPlayer.PlayBreakSound();
             Reconcile();
         }
 
@@ -77,8 +78,7 @@ namespace JSH.UI
                 if (shouldBreak && !_broken[i])
                 {
                     if (_healLeft[i] > 0f) continue; // still healing: break once it has finished
-                    _broken[i] = true;
-                    HeartAnimationPlayer.PlayBreak(n);
+                    if (HeartAnimationPlayer.TryPlayBreak(n, false)) _broken[i] = true;
                 }
                 else if (!shouldBreak && _broken[i])
                 {

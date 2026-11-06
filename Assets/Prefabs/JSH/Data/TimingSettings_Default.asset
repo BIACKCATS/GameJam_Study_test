@@ -16,4 +16,4 @@ MonoBehaviour:
   _timeLimit: 5
   _sweepsPerSecond: 1.2
   _targetCenter: 0
-  _targetHalfWidth: 0.083
+  _targetHalfWidth: 0.11

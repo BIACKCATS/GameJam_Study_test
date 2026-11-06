@@ -50,6 +50,7 @@ namespace JSH.Gameplay
             SetAim(shift && canTalk);
 
             if (!shift || !canTalk || !mouse.leftButton.wasPressedThisFrame) return;
+            if (UnityEngine.EventSystems.EventSystem.current != null && UnityEngine.EventSystems.EventSystem.current.IsPointerOverGameObject()) return;
 
             Vector2 screen = mouse.position.ReadValue();
             Vector3 world = _camera.ScreenToWorldPoint(new Vector3(screen.x, screen.y, -_camera.transform.position.z));
@@ -69,7 +70,8 @@ namespace JSH.Gameplay
         private static bool CanStartTalk()
         {
             if (!DialogueRunner.HasInstance || DialogueRunner.Instance.IsActive) return false;
-            if (MinigameDirector.HasInstance && MinigameDirector.Instance.IsActive) return false;
+            if (MinigameDirector.HasInstance && (MinigameDirector.Instance.IsActive || MinigameDirector.Instance.LastTimingInputFrame == Time.frameCount)) return false;
+            if (PassengerAttackController.IsPlaying || GongikNagaController.IsPlaying) return false;
             if (GameManager.HasInstance && !GameManager.Instance.IsPlaying) return false; // paused / ending
             if (TrainProgress.HasInstance && TrainProgress.Instance.IsTransitioning) return false; // curtain / car change
             return true;

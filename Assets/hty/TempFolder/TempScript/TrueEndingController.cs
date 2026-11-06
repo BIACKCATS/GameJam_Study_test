@@ -77,7 +77,7 @@ public sealed class TrueEndingController : MonoBehaviour
             {pausedAnimators.Add(animator,animator.speed);animator.speed=0;}
         Time.timeScale=0;Cursor.visible=true;Cursor.lockState=CursorLockMode.None;
         running=true;returning=false;elapsed=0;FireworksLaunched=0;nextFirework=RandomInterval();
-        if(SoundManager.Instance) SoundManager.Instance.StopTrain();
+        if(SoundManager.Instance) SoundManager.Instance.PlayPresentationMusic(SoundNames.FinalMusic);
         lineup.Clear();
         // Keep the protagonist near the middle of the selected cast.
         var selected=new List<RectTransform>();
@@ -120,6 +120,7 @@ public sealed class TrueEndingController : MonoBehaviour
         destination=origin+(destination-origin)*RandomMultiplier(flightDistanceMultiplier);
         fx.Launch(fireworkSheets,origin,destination,Random.Range(Mathf.Max(0.1f,flightDuration.x),Mathf.Max(0.1f,flightDuration.y)),Random.Range(burstSize.x,burstSize.y),Mathf.Max(1,framesPerSecond),sizeScale);
         FireworksLaunched++;
+        if(SoundManager.Instance) SoundManager.Instance.PlaySound(SoundNames.Firework,0.64f,SoundNames.FireworkParameter,1f);
     }
     static float RandomMultiplier(Vector2 range)=>Random.Range(Mathf.Max(0.01f,Mathf.Min(range.x,range.y)),Mathf.Max(0.01f,Mathf.Max(range.x,range.y)));
     void StopPresentation()
@@ -128,6 +129,7 @@ public sealed class TrueEndingController : MonoBehaviour
         if(presentation)presentation.SetActive(false);
         if(!running)return;
         running=false;
+        if(SoundManager.Instance) SoundManager.Instance.StopSound(SoundNames.FinalMusic);
         Time.timeScale=previousTimeScale;Cursor.visible=previousCursorVisible;Cursor.lockState=previousCursorLock;
         AudioListener.pause=previousAudioPause;
         foreach(var item in pausedAnimators)if(item.Key)item.Key.speed=item.Value;

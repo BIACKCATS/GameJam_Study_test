@@ -13,9 +13,7 @@ public sealed class TrainSparkPlayer : MonoBehaviour
     public AudioSource audioSource;
     public AudioClip[] sparkSounds;
     public TextAsset legacySparkSound;
-    [Range(0, 1)] public float soundVolume = 0.2f;
-    [Tooltip("Probability of playing the Spark sound for each spark burst.")]
-    [Range(0, 1)] public float soundChance = 0.5f;
+    [Range(0, 1)] public float soundVolume = 0.3f;
     [Min(1)] public float framesPerSecond = 30;
     [Min(1)] public float pixelsPerUnit = 100;
     Sprite[] frames;
@@ -67,7 +65,7 @@ public sealed class TrainSparkPlayer : MonoBehaviour
         elapsed = 0; playing = true; BurstCount++;
         bumpCount = 0;
         target.sprite = frames[0]; target.enabled = true;
-        if(SoundManager.Instance && random.NextDouble() < Mathf.Clamp01(soundChance))
+        if(SoundManager.Instance)
             SoundManager.Instance.PlaySound(SoundNames.Spark, soundVolume);
     }
     void Update()

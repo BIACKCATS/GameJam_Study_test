@@ -5649,7 +5649,7 @@ MonoBehaviour:
   sparkSounds:
   - {fileID: 8300000, guid: 4267b36b1ce8c4beebe7ef729212f7a8, type: 3}
   legacySparkSound: {fileID: 4900000, guid: f32e4ab77e8dcbf45ba40e86a9fd5fdc, type: 3}
-  soundVolume: 0.2
+  soundVolume: 0.3
   framesPerSecond: 30
   pixelsPerUnit: 100
   bumpCount: 0

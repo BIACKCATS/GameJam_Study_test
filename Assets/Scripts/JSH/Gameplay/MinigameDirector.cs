@@ -39,6 +39,7 @@ namespace JSH.Gameplay
         private float _eventTimer;
         private Func<bool> _eventHold;
 
+        public int LastTimingInputFrame { get; private set; } = -1;
         public bool IsActive => _target != null;
         public Talkable CurrentTarget => _target;
         public MinigameType CurrentType => _timing != null ? MinigameType.Timing : _eventType;
@@ -123,7 +124,8 @@ namespace JSH.Gameplay
             if (_timing != null)
             {
                 _timing.Tick(dt);
-                if (Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame) _timing.Stop();
+                if (Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame)
+                { LastTimingInputFrame = Time.frameCount; _timing.Stop(); }
                 if (_timing.IsFinished) FinishTiming();
             }
             else if (_eventType != MinigameType.None)

@@ -55,7 +55,7 @@ public sealed class CrosshairAimController : MonoBehaviour
         if(!crosshair || !animationSheet) { Debug.LogError("CrosshairAimController: Assign crosshair and animation sheet.",this); return; }
         if(!aiming) { previousVisible=Cursor.visible; previousLock=Cursor.lockState; }
         aiming=true; closing=false; frame=0; clicking=false; aimStartedFrame=Time.frameCount;
-        if(SoundManager.Instance)SoundManager.Instance.PlaySound(SoundNames.Aim,0.8f);
+        if(SoundManager.Instance)SoundManager.Instance.PlaySound(SoundNames.Aim,0.72f);
         Cursor.lockState=CursorLockMode.Confined; Cursor.visible=false;
         crosshair.texture=animationSheet; crosshair.enabled=true;
         UpdateVisual();
@@ -133,7 +133,7 @@ public sealed class CrosshairAimController : MonoBehaviour
     {
         if(!aiming || closing) return;
         // Temporary close cue: reuse Aim until a dedicated off event is supplied.
-        if(SoundManager.Instance)SoundManager.Instance.PlaySound(SoundNames.Aim,0.8f);
+        if(SoundManager.Instance)SoundManager.Instance.PlaySound(SoundNames.Aim,0.72f);
         if(!dismissSheet) { Debug.LogError("CrosshairAimController: Assign Dismiss Sheet.",this); EndImmediately(); return; }
         closing=true; dismissFrame=0;
         UpdateVisual();

@@ -14,6 +14,87 @@ namespace BC.Core
     /// </summary>
     public class SoundManager : Singleton<SoundManager>
     {
+        private readonly List<(FMOD.Sound sound, FMOD.Channel channel)> _samples = new List<(FMOD.Sound, FMOD.Channel)>();
+        public void StopTrain() { StopAndRelease(ref _trainInstance); }
+        public void PlaySample(TextAsset wav, float volume, float pitch = 1f)
+        {
+            if (!wav) { Debug.LogError("SoundManager: Missing WAV sample."); return; }
+            var data = wav.bytes;
+            var info = new FMOD.CREATESOUNDEXINFO { cbsize = System.Runtime.InteropServices.Marshal.SizeOf(typeof(FMOD.CREATESOUNDEXINFO)), length = (uint)data.Length };
+            var result = RuntimeManager.CoreSystem.createSound(data, FMOD.MODE.OPENMEMORY | FMOD.MODE.CREATESAMPLE, ref info, out var sound);
+            if (result != FMOD.RESULT.OK) { Debug.LogError("SoundManager: " + result); return; }
+            result = RuntimeManager.CoreSystem.playSound(sound, default(FMOD.ChannelGroup), true, out var channel);
+            if (result != FMOD.RESULT.OK) { sound.release(); Debug.LogError("SoundManager: " + result); return; }
+            channel.setVolume(Mathf.Max(0f,volume)); channel.setPitch(Mathf.Max(0.01f,pitch)); channel.setPaused(false);
+            _samples.Add((sound, channel));
+        }
+        // Exclusive presentation music: never overlap title, ending, or gameplay music.
+        public void PlayPresentationMusic(string name)
+        {
+            StopAllMusic();
+            StopSound(SoundNames.StartMusic);
+            StopSound(SoundNames.FinalMusic);
+            PlaySound(name, 0.5f);
+        }
+        private string _pendingGameScene;
+        private int _pendingGameIndex = -1;
+        public void QueueTrainForScene(string sceneName, int buildIndex)
+        {
+            _pendingGameScene = sceneName;
+            _pendingGameIndex = buildIndex;
+        }
+        protected override void OnSingletonAwake()
+        {
+            UnityEngine.SceneManagement.SceneManager.sceneLoaded += OnSceneLoaded;
+            JSH.Core.EventBus<JSH.Gameplay.DialogueStateChangedEvent>.Subscribe(OnDialogueStateChanged);
+        }
+        private void OnDialogueStateChanged(JSH.Gameplay.DialogueStateChangedEvent evt)
+        {
+            if (evt.IsActive)
+            {
+                if (!TrueEndingController.IsPlaying && !GameOverSequenceController.IsPlaying)
+                    StartAttack(SoundNames.Attack, MasterVolume);
+            }
+            else EndAttack(1f);
+        }
+        private void OnSceneLoaded(UnityEngine.SceneManagement.Scene scene, UnityEngine.SceneManagement.LoadSceneMode mode)
+        {
+            bool match = !string.IsNullOrEmpty(_pendingGameScene)
+                ? scene.name == System.IO.Path.GetFileNameWithoutExtension(_pendingGameScene)
+                : _pendingGameIndex >= 0 && scene.buildIndex == _pendingGameIndex;
+            if (!match) return;
+            _pendingGameScene = null; _pendingGameIndex = -1;
+            if (TrueEndingController.IsPlaying || GameOverSequenceController.IsPlaying) return;
+            PlayTrain(SoundNames.Train, 0.8f);
+            SetMasterVolume(0.5f);
+        }
+        private void LateUpdate()
+        {
+            if (Instance != this || CrosshairAimController.IsVisible) return;
+            bool clicked = false;
+#if ENABLE_INPUT_SYSTEM
+            clicked = UnityEngine.InputSystem.Mouse.current != null &&
+                UnityEngine.InputSystem.Mouse.current.leftButton.wasPressedThisFrame;
+#elif ENABLE_LEGACY_INPUT_MANAGER
+            clicked = Input.GetMouseButtonDown(0);
+#endif
+            if (clicked) PlaySound(SoundNames.UI, 0.8f);
+        }
+        private readonly List<(EventInstance instance, float end, float fadeStart, float amplitude)> _trimmedSounds = new List<(EventInstance, float, float, float)>();
+        public void PlayTrimmedSound(string name, float volume, float trimEndSeconds, float fadeOutSeconds)
+        {
+            if (!TryCreate(name, out var sound)) return;
+            sound.getDescription(out var description);
+            if (description.getLength(out int milliseconds) != FMOD.RESULT.OK || milliseconds <= 0)
+            { sound.release(); Debug.LogError("SoundManager: Cannot determine event duration: " + name); return; }
+            float duration = Mathf.Max(0.01f, milliseconds / 1000f - Mathf.Max(0f,trimEndSeconds));
+            float amplitude = sound.setParameterByName(MasterVolumeParameter,Mathf.Clamp01(volume),true) == FMOD.RESULT.OK ? 1f : Mathf.Clamp01(volume);
+            sound.setVolume(amplitude);
+            // Store base amplitude separately via the event parameter when available.
+            float fade = Mathf.Clamp(fadeOutSeconds,0.001f,duration);
+            sound.start();
+            _trimmedSounds.Add((sound,Time.unscaledTime + duration,Time.unscaledTime + duration - fade,amplitude));
+        }
         private const string EventPathPrefix = "event:/";
         private const string MasterVolumeParameter = "MasterVolume";
         private const string AttackParameter = "Attack";
@@ -22,6 +103,8 @@ namespace BC.Core
         [SerializeField, Min(0f)] private float _attackFadeInSeconds = 0.5f;
         [SerializeField, Min(0.01f)] private float _attackFadeOutSeconds = 2f;
 
+        private string _lastTrainName = SoundNames.Train;
+        private bool _resumeTrainAfterAttack;
         private EventInstance _trainInstance;
         private EventInstance _attackInstance;
         private float _attackValue;
@@ -38,6 +121,9 @@ namespace BC.Core
         /// <summary>Starts the base music loop (Attack = 0, so the train track is at 100%).</summary>
         public void PlayTrain(string songName, float masterVolume)
         {
+            _lastTrainName = songName;
+            StopSound(SoundNames.StartMusic);
+            StopSound(SoundNames.FinalMusic);
             SetMasterVolume(masterVolume);
             StopAndRelease(ref _trainInstance);
 
@@ -75,6 +161,8 @@ namespace BC.Core
                 _attackInstance.start();
             }
 
+            _resumeTrainAfterAttack = true;
+            StopTrain();
             FadeAttackTo(1f, fadeInSeconds);
         }
 
@@ -106,7 +194,7 @@ namespace BC.Core
         /// (e.g. PlaySound(SoundNames.Firework, 0.8f, SoundNames.FireworkParameter, 1f)).
         /// For a loop that is already playing, the parameter is updated live.
         /// </summary>
-        public void PlaySound(string soundName, float masterVolume, string parameterName, float parameterValue)
+        public void PlaySound(string soundName, float masterVolume, string parameterName, float parameterValue, float gain = 1f)
         {
             float volume = Mathf.Clamp01(masterVolume);
             bool hasParameter = !string.IsNullOrEmpty(parameterName);
@@ -114,6 +202,7 @@ namespace BC.Core
             if (_loopingSounds.TryGetValue(soundName, out EventInstance playing) && playing.isValid())
             {
                 SetParameter(playing, MasterVolumeParameter, volume);
+                playing.setVolume(Mathf.Max(0f,gain));
                 if (hasParameter)
                 {
                     SetParameter(playing, parameterName, parameterValue);
@@ -128,6 +217,7 @@ namespace BC.Core
             }
 
             SetParameter(instance, MasterVolumeParameter, volume);
+            instance.setVolume(Mathf.Max(0f,gain));
             if (hasParameter)
             {
                 SetParameter(instance, parameterName, parameterValue);
@@ -156,7 +246,8 @@ namespace BC.Core
             _loopingSounds.Remove(soundName);
             if (instance.isValid())
             {
-                instance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+                instance.stop(soundName == SoundNames.StartMusic || soundName == SoundNames.FinalMusic
+                    ? FMOD.Studio.STOP_MODE.IMMEDIATE : FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
                 instance.release();
             }
         }
@@ -181,6 +272,7 @@ namespace BC.Core
 
         public void StopAllMusic()
         {
+            _resumeTrainAfterAttack = false;
             _isFadingAttack = false;
             _attackValue = 0f;
             _attackTarget = 0f;
@@ -190,6 +282,19 @@ namespace BC.Core
 
         private void Update()
         {
+            for (int i = _trimmedSounds.Count - 1; i >= 0; i--)
+            {
+                var cue = _trimmedSounds[i];
+                if (Time.unscaledTime >= cue.end)
+                { var sound = cue.instance; StopAndRelease(ref sound); _trimmedSounds.RemoveAt(i); }
+                else if (Time.unscaledTime >= cue.fadeStart)
+                    cue.instance.setVolume(cue.amplitude * Mathf.Clamp01((cue.end-Time.unscaledTime)/(cue.end-cue.fadeStart)));
+            }
+            for (int i = _samples.Count - 1; i >= 0; i--)
+            {
+                if (_samples[i].channel.isPlaying(out bool playing) != FMOD.RESULT.OK || !playing)
+                { _samples[i].sound.release(); _samples.RemoveAt(i); }
+            }
             if (!_isFadingAttack)
             {
                 return;
@@ -225,11 +330,22 @@ namespace BC.Core
             if (_attackTarget <= 0f)
             {
                 StopAndRelease(ref _attackInstance);
+                bool resume = _resumeTrainAfterAttack;
+                _resumeTrainAfterAttack = false;
+                if (resume && !TrueEndingController.IsPlaying && !GameOverSequenceController.IsPlaying
+                    && !IsSoundPlaying(SoundNames.StartMusic) && !IsSoundPlaying(SoundNames.FinalMusic))
+                    PlayTrain(_lastTrainName, MasterVolume);
             }
         }
 
         protected override void OnDestroy()
         {
+            UnityEngine.SceneManagement.SceneManager.sceneLoaded -= OnSceneLoaded;
+            JSH.Core.EventBus<JSH.Gameplay.DialogueStateChangedEvent>.Unsubscribe(OnDialogueStateChanged);
+            foreach (var sample in _samples) { sample.channel.stop(); sample.sound.release(); }
+            _samples.Clear();
+            foreach (var cue in _trimmedSounds) { var sound=cue.instance; StopAndRelease(ref sound); }
+            _trimmedSounds.Clear();
             StopAllMusic();
 
             foreach (EventInstance instance in _loopingSounds.Values)

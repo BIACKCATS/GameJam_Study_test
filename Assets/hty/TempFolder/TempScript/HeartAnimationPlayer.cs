@@ -33,18 +33,24 @@ public sealed class HeartAnimationPlayer : MonoBehaviour
     }
 
     /// <summary>Break one heart, numbered 1 to 3 from left to right.</summary>
-    public static void PlayBreak(int heartNumber)
+    public static void PlayBreak(int heartNumber) { TryPlayBreak(heartNumber); }
+    public static void PlayBreakSound()
     {
-        if(TrueEndingController.IsPlaying)return;
-        if (heartNumber < 1 || heartNumber > 3) { Debug.LogError($"HeartAnimationPlayer.PlayBreak: Invalid number {heartNumber}; expected 1..3."); return; }
+        if(SoundManager.Instance) SoundManager.Instance.PlaySound(SoundNames.HealthLose,instance ? instance.breakSoundVolume : 0.4f,null,0f,3f);
+    }
+    public static bool TryPlayBreak(int heartNumber, bool playSound = true)
+    {
+        if(TrueEndingController.IsPlaying)return false;
+        if (heartNumber < 1 || heartNumber > 3) { Debug.LogError($"HeartAnimationPlayer.PlayBreak: Invalid number {heartNumber}; expected 1..3."); return false; }
         if (!instance || !instance.ready || !instance.isActiveAndEnabled)
-        { Debug.LogError("HeartAnimationPlayer.PlayBreak: No active, configured controller in the scene."); return; }
+        { Debug.LogError("HeartAnimationPlayer.PlayBreak: No active, configured controller in the scene."); return false; }
         int index = heartNumber - 1;
         if (instance.states[index] != 0)
-        { Debug.LogError($"HeartAnimationPlayer.PlayBreak: Heart {heartNumber} is already breaking or hidden.", instance); return; }
-        if (!instance.hearts[index]) { Debug.LogError($"HeartAnimationPlayer: Heart {heartNumber} reference is missing.", instance); return; }
+        { Debug.LogError($"HeartAnimationPlayer.PlayBreak: Heart {heartNumber} is already breaking or hidden.", instance); return false; }
+        if (!instance.hearts[index]) { Debug.LogError($"HeartAnimationPlayer: Heart {heartNumber} reference is missing.", instance); return false; }
         instance.states[index] = 1; instance.frames[index] = 0; instance.Render(index);
-        if(SoundManager.Instance)SoundManager.Instance.PlaySound(SoundNames.HealthLose,instance.breakSoundVolume);
+        if(playSound) PlayBreakSound();
+        return true;
     }
 
     /// <summary>Restore a broken heart (1..3), then resume its shimmer.</summary>
@@ -59,7 +65,7 @@ public sealed class HeartAnimationPlayer : MonoBehaviour
         if (instance.states[index] == 0 || instance.states[index] == 3)
         { Debug.LogError($"HeartAnimationPlayer.PlayHeal: Heart {heartNumber} is already healthy or healing.", instance); return; }
         instance.states[index] = 3; instance.frames[index] = 0; instance.Render(index);
-        if(SoundManager.Instance) SoundManager.Instance.PlaySample(instance.healSound,0.8f);
+        if(SoundManager.Instance) SoundManager.Instance.PlaySample(instance.healSound,4.8f);
     }
 
     void Update()

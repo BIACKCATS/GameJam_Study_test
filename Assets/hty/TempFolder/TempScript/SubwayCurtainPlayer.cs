@@ -59,7 +59,7 @@ public sealed class SubwayCurtainPlayer : MonoBehaviour
         if (testButton) testButton.interactable = false;
         overlay.enabled = true; overlay.raycastTarget = true;
         Phase = "Enter";
-        if(SoundManager.Instance)SoundManager.Instance.PlaySound(SoundNames.PassingDark,0.8f);
+        if(SoundManager.Instance)SoundManager.Instance.PlayTrimmedSound(SoundNames.PassingDark,0.6f,1f,1f);
         yield return Animate(enterSheet);
         Phase = "Black";
         overlay.texture = blackTexture; overlay.uvRect = new Rect(0,0,1,1);
