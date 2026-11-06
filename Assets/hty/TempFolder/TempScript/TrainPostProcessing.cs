@@ -14,6 +14,8 @@ public sealed class TrainPostProcessing : MonoBehaviour
     [Range(0,1)] public float vignetteIntensity = 0.28f;
     [Range(0.01f,1)] public float vignetteSmoothness = 0.45f;
     public Color vignetteColor = Color.black;
+    float lampBrightness = 1f;
+    public void SetLampBrightness(float brightness) { lampBrightness = Mathf.Clamp01(brightness); Apply(); }
     MaterialPropertyBlock properties;
     void OnEnable() { Apply(); }
     void Update() { Apply(); }
@@ -32,7 +34,7 @@ public sealed class TrainPostProcessing : MonoBehaviour
         }
         if (interior) {
             if (properties == null) properties = new MaterialPropertyBlock();
-            interior.GetPropertyBlock(properties); properties.SetFloat("_LampEmission",lampEmission); interior.SetPropertyBlock(properties);
+            interior.GetPropertyBlock(properties); properties.SetFloat("_LampEmission",lampEmission * lampBrightness); properties.SetFloat("_LampBrightness",lampBrightness); interior.SetPropertyBlock(properties);
         }
     }
     void OnDisable()

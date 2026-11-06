@@ -63,6 +63,7 @@ public sealed class CrosshairAimController : MonoBehaviour
     void Update()
     {
         if((GameOverSequenceController.IsPlaying || TrueEndingController.IsPlaying))return;
+        if(JSH.Core.GameManager.HasInstance && JSH.Core.GameManager.Instance.IsPaused) return;
         if(!aiming) return;
         if(closing)
         {
@@ -76,9 +77,9 @@ public sealed class CrosshairAimController : MonoBehaviour
             UpdateVisual(); return;
         }
 #if ENABLE_INPUT_SYSTEM
-        if(escapeToStop && Keyboard.current!=null && Keyboard.current.escapeKey.wasPressedThisFrame) { End(); return; }
+        if(escapeToStop && !JSH.Core.GameManager.HasInstance && Keyboard.current!=null && Keyboard.current.escapeKey.wasPressedThisFrame) { End(); return; }
 #elif ENABLE_LEGACY_INPUT_MANAGER
-        if(escapeToStop && Input.GetKeyDown(KeyCode.Escape)) { End(); return; }
+        if(escapeToStop && !JSH.Core.GameManager.HasInstance && Input.GetKeyDown(KeyCode.Escape)) { End(); return; }
 #endif
         bool pressed=false;
 #if ENABLE_INPUT_SYSTEM

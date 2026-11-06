@@ -14,6 +14,7 @@ namespace JSH.UI
         [Tooltip("Scene to load on Start. Empty = next scene in Build Settings.")]
         [SerializeField] private string _gameSceneName;
 
+        [SerializeField, Min(0f)] private float _transitionFadeDuration = 0.6f;
         private bool _started;
 
         private void Start()
@@ -34,6 +35,8 @@ namespace JSH.UI
                 return;
             }
 
+            if (!SceneLoader.HasInstance) new GameObject("SceneLoader").AddComponent<SceneLoader>();
+            SceneLoader.Instance.FadeDuration = _transitionFadeDuration;
             _started = true;
             if (SoundManager.Instance) SoundManager.Instance.StopSound(SoundNames.StartMusic);
             if (GameManager.HasInstance)

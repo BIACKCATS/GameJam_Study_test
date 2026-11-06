@@ -17,6 +17,9 @@ namespace JSH.UI
         [SerializeField] private string _titleSceneName;
 
         private bool _started;
+        private bool _pauseCursorSaved;
+        private bool _cursorVisible;
+        private CursorLockMode _cursorLock;
 
         private void OnEnable()
         {
@@ -30,6 +33,7 @@ namespace JSH.UI
         // Start (not OnEnable) so every UIPanel has run Awake first.
         private void Start()
         {
+            ConfigurePauseMenu();
             _started = true;
             ApplyCurrent();
         }
@@ -42,12 +46,25 @@ namespace JSH.UI
         private void OnDisable()
         {
             EventBus<GameStateChangedEvent>.Unsubscribe(OnGameStateChanged);
+            RestoreCursor();
         }
 
         private void OnGameStateChanged(GameStateChangedEvent evt) => Apply(evt.Current, false);
 
         private void Apply(GameState state, bool instant)
         {
+            if (state == GameState.Paused && !_pauseCursorSaved)
+            {
+                _cursorVisible = Cursor.visible;
+                _cursorLock = Cursor.lockState;
+                _pauseCursorSaved = true;
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
+            }
+            else if (state != GameState.Paused)
+            {
+                RestoreCursor();
+            }
             SetPanel(_pausePanel, state == GameState.Paused, instant);
             SetPanel(_gameOverPanel, state == GameState.GameOver, instant);
             SetPanel(_clearPanel, state == GameState.Clear, instant);
@@ -62,6 +79,92 @@ namespace JSH.UI
         }
 
         // ---- Button hooks ----
+
+        private void RestoreCursor()
+        {
+            if (!_pauseCursorSaved) return;
+            Cursor.lockState = _cursorLock;
+            Cursor.visible = _cursorVisible;
+            _pauseCursorSaved = false;
+        }
+
+        private void ConfigurePauseMenu()
+        {
+            if (_pausePanel == null) return;
+            var panel = (RectTransform)_pausePanel.transform;
+            panel.SetAsLastSibling();
+            var canvas = _pausePanel.GetComponent<Canvas>();
+            if (canvas == null) canvas = _pausePanel.gameObject.AddComponent<Canvas>();
+            canvas.overrideSorting = true;
+            canvas.sortingOrder = 32000;
+            if (!_pausePanel.TryGetComponent<UnityEngine.UI.GraphicRaycaster>(out _))
+                _pausePanel.gameObject.AddComponent<UnityEngine.UI.GraphicRaycaster>();
+
+            var resume = panel.Find("BtnResume")?.GetComponent<UnityEngine.UI.Button>();
+            if (resume == null) return;
+            var quit = Instantiate(resume, panel);
+            quit.name = "BtnQuit";
+            // Replace copied Inspector callbacks rather than adding a second action.
+            resume.onClick = new UnityEngine.UI.Button.ButtonClickedEvent();
+            quit.onClick = new UnityEngine.UI.Button.ButtonClickedEvent();
+            resume.onClick.AddListener(Resume);
+            quit.onClick.AddListener(Quit);
+
+            var card = new GameObject("PauseCard", typeof(RectTransform), typeof(UnityEngine.UI.Image));
+            card.transform.SetParent(panel, false);
+            card.transform.SetAsFirstSibling();
+            var cardRect = (RectTransform)card.transform;
+            Place(cardRect, Vector2.zero, new Vector2(420f, 380f));
+            card.GetComponent<UnityEngine.UI.Image>().color = new Color(0.08f, 0.10f, 0.14f, 0.98f);
+            var backdrop = panel.GetComponent<UnityEngine.UI.Image>();
+            if (backdrop != null) backdrop.color = new Color(0f, 0f, 0f, 0.65f);
+            Place((RectTransform)resume.transform, new Vector2(0f, 20f), new Vector2(320f, 64f));
+            Place((RectTransform)quit.transform, new Vector2(0f, -120f), new Vector2(320f, 64f));
+            resume.GetComponentInChildren<TMPro.TMP_Text>(true).text = "돌아가기";
+            quit.GetComponentInChildren<TMPro.TMP_Text>(true).text = "종료하기";
+            var appearance = Resources.Load<PauseMenuAppearance>("PauseMenuAppearance");
+            if (appearance != null)
+            {
+                ApplyButtonSprites(resume, appearance.returnNormal, appearance.returnPressed);
+                ApplyButtonSprites(quit, appearance.exitNormal, appearance.exitPressed);
+            }
+            var title = panel.Find("Title")?.GetComponent<TMPro.TMP_Text>();
+            if (title != null)
+            {
+                title.text = "일시정지";
+                Place(title.rectTransform, new Vector2(0f, 140f), new Vector2(360f, 50f));
+            }
+        }
+
+        private static void Place(RectTransform rect, Vector2 position, Vector2 size)
+        {
+            rect.anchorMin = rect.anchorMax = rect.pivot = new Vector2(0.5f, 0.5f);
+            rect.anchoredPosition = position;
+            rect.sizeDelta = size;
+        }
+
+        private static void ApplyButtonSprites(UnityEngine.UI.Button button, Sprite normal, Sprite pressed)
+        {
+            if (normal == null || pressed == null) return;
+            var image = button.GetComponent<UnityEngine.UI.Image>();
+            image.sprite = normal;
+            image.type = UnityEngine.UI.Image.Type.Simple;
+            image.preserveAspect = true;
+            image.color = Color.white;
+            button.targetGraphic = image;
+            button.transition = UnityEngine.UI.Selectable.Transition.SpriteSwap;
+            button.spriteState = new UnityEngine.UI.SpriteState
+            {
+                highlightedSprite = normal,
+                selectedSprite = normal,
+                pressedSprite = pressed,
+                disabledSprite = normal
+            };
+            foreach (var label in button.GetComponentsInChildren<TMPro.TMP_Text>(true))
+                label.gameObject.SetActive(false); // The supplied PNG already contains the label.
+            var rect = (RectTransform)button.transform;
+            rect.sizeDelta = new Vector2(320f, 320f * normal.rect.height / normal.rect.width);
+        }
 
         public void Resume()
         {
